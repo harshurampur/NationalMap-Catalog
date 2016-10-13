@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2016-10-13
+
+* Updated list of LGAs from data.gov.au.
+
 ### 2016-09-15
 
 * Update 4 GA layers that have moved.
