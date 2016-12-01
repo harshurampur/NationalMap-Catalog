@@ -3772,7 +3772,7 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:cityoflaunceston OR organization:cityofmelbourne OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:launceston-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
+          "fq": "+(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:cityoflaunceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:launceston-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
         }
       ],
       "url": "http://www.data.gov.au",
@@ -7683,7 +7683,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:logan-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:logan-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7698,7 +7698,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-gold-coast AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-gold-coast AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7713,7 +7713,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:noosa-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:noosa-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7842,7 +7842,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-hobart AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-hobart AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7857,7 +7857,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:gcc AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:gcc AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7872,7 +7872,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:cityoflaunceston AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:cityoflaunceston AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7924,7 +7924,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-greater-dandenong AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-greater-dandenong AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7939,7 +7939,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:surf-coast-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:surf-coast-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7954,7 +7954,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:cardinia-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:cardinia-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7969,7 +7969,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:southern-grampians-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:southern-grampians-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7984,7 +7984,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-casey AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-casey AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -7999,7 +7999,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-greater-bendigo AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-greater-bendigo AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8014,7 +8014,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:yarriambiack-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:yarriambiack-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8029,7 +8029,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:horsham-rural-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:horsham-rural-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8044,7 +8044,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:hindmarsh-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:hindmarsh-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8059,7 +8059,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:loddon-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:loddon-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8074,7 +8074,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:west-wimmera-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:west-wimmera-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8089,7 +8089,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:alpine-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:alpine-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8104,7 +8104,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:www-mitchellshirecouncil-vic-gov-au AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:www-mitchellshirecouncil-vic-gov-au AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8119,7 +8119,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:mildura-rural-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:mildura-rural-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8134,7 +8134,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-greater-geelong AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-greater-geelong AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8149,7 +8149,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:hobsons-bay-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:hobsons-bay-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8164,7 +8164,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:macedon-ranges-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:macedon-ranges-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8179,7 +8179,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:corangamite-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:corangamite-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8194,7 +8194,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-ballarat AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-ballarat AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8209,7 +8209,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:golden-plains-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:golden-plains-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8224,7 +8224,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:nillumbik-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:nillumbik-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8239,7 +8239,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:glenelg-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:glenelg-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8254,7 +8254,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:colac-otway-shire AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:colac-otway-shire AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8269,7 +8269,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:wyndham-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:wyndham-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8284,7 +8284,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:northern-grampians-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:northern-grampians-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
@@ -8299,7 +8299,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:manningham-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:manningham-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
                 }
               ],
               "url": "http://www.data.gov.au",
