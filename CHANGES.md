@@ -2,6 +2,11 @@
 Change Log
 ==========
 
+### 2016-12-02
+
+* Added Round 2 Mobile Black Spot Program Funded Base Stations, renamed previous dataset to Round 1.
+* Updated to 2016 Catchment Scale Land Use.
+
 ### 2016-10-13
 
 * Updated list of LGAs from data.gov.au.
