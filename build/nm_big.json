@@ -1378,6 +1378,24 @@
               "resourceId": "205ef0d1-521b-4e3c-a26c-4e49e00f1a05"
             },
             {
+              "name": "Taxation Statistics 2012-2013",
+              "type": "csv",
+              "url": "http://data.gov.au/dataset/e29ef9ca-0d1a-47ec-9e9b-14a79a941511/resource/fc53a0c8-25e7-4024-b609-438a30b8d807/download/averagetaxableincome201213.csv",
+              "tableStyle": {
+                "dataVariable": "average taxable income",
+                "timeColumn": null
+              }
+            },
+            {
+              "name": "Taxation Statistics 2013-2014",
+              "type": "csv",
+              "url": "http://data.gov.au/dataset/25e81c18-2083-4abe-81b6-0f530053c63f/resource/9f10b598-fbbb-4028-a982-80d317de7c34/download/taxstats2014individual27selectedaveragesandmediansbypostcode.csv",
+              "tableStyle": {
+                "dataVariable": "averagetaxableincomeorloss",
+                "timeColumn": null
+              }
+            },
+            {
               "dataCustodian": "The AURIN project\n\nadmin@aurin.org.au",
               "type": "wms",
               "layers": "housingstress",
@@ -3783,7 +3801,7 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:cityoflaunceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:launceston-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
+          "fq": "+(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:cityoflaunceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:launceston-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
         }
       ],
       "url": "http://www.data.gov.au",
@@ -8300,6 +8318,66 @@
               ],
               "url": "http://www.data.gov.au",
               "name": "Northern Grampians",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeKml": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:frankston-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Frankston",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeKml": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:central-goldfields-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Central Goldfields",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeKml": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:yarra-ranges-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Yarra Ranges",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeKml": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-whittlesea AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Whittlesea",
               "type": "ckan",
               "includeCsv": true,
               "includeKml": true,
