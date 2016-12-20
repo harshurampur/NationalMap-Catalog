@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2016-12-21
+
+* Updated ABS 2016 Boundaries.
+
 ### 2016-12-20
 
 * Added New Victorian LGAs.
