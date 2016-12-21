@@ -5,6 +5,7 @@ Change Log
 ### 2016-12-21
 
 * Updated ABS 2016 Boundaries.
+* Updated Taxation Statistics ColorPalettes and ColorBins
 
 ### 2016-12-20
 
