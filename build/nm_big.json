@@ -18,6 +18,9 @@
   "catalog": [
     {
       "name": "National Datasets",
+      "shareKeys": [
+        "National Data Sets"
+      ],
       "type": "group",
       "items": [
         {
