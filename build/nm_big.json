@@ -18,7 +18,9 @@
   "catalog": [
     {
       "name": "National Datasets",
-      "id": "National Data Sets",
+      "shareKeys": [
+        "Root+Group/National+Data+Sets"
+      ],
       "type": "group",
       "items": [
         {
