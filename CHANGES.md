@@ -2,6 +2,16 @@
 Change Log
 ==========
 
+### 2016-12-21
+
+* Updated ABS 2016 Boundaries.
+* Updated Taxation Statistics ColorPalettes and ColorBins
+
+### 2016-12-20
+
+* Added New Victorian LGAs.
+* Added 2012-13 and 2013-14 Taxation Statistics.
+
 ### 2016-12-02
 
 * Added Round 2 Mobile Black Spot Program Funded Base Stations, renamed previous dataset to Round 1.
