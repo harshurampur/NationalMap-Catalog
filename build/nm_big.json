@@ -19,7 +19,7 @@
     {
       "name": "National Datasets",
       "shareKeys": [
-        "/National Data Sets"
+        "Root+Group/National+Data+Sets"
       ],
       "type": "group",
       "items": [
