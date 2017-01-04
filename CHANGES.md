@@ -2,15 +2,14 @@
 Change Log
 ==========
 
-### 2016-12-21
+### 2016-12-02-updated-2017-01-05
 
-* Updated ABS 2016 Boundaries.
-* Updated Taxation Statistics ColorPalettes and ColorBins
-
-### 2016-12-20
-
+* Renamed `National Data Sets` to `National Datasets`.
+* Renamed `ABS statistical boundaries` to `ABS Statistical Boundaries`.
 * Added New Victorian LGAs.
 * Added 2012-13 and 2013-14 Taxation Statistics.
+* Updated ABS 2016 Boundaries.
+* Updated Taxation Statistics ColorPalettes and ColorBins
 
 ### 2016-12-02
 
