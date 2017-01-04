@@ -18,7 +18,7 @@
   "catalog": [
     {
       "name": "National Datasets",
-      "id": "National Data Sets",
+      "id": "Root Group/National Data Sets",
       "type": "group",
       "items": [
         {
@@ -4068,6 +4068,7 @@
         {
           "type": "group",
           "name": "ABS Statistical Boundaries",
+          "id": "Root Group/Australian Bureau of Statistics (BETA)/ABS statistical boundaries",
           "items": [
             {
               "type": "group",
