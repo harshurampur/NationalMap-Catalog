@@ -2,6 +2,13 @@
 Change Log
 ==========
 
+### 2017-01-11
+
+* Added new LGAs
+* Added in LGAs with zero/protected datasets
+* Added new CKAN portal - localdata.net.au
+* Respecified Solr query for CKAN portals to include more formats and perform more stably.
+
 ### 2016-12-02-updated-2017-01-05
 
 * Renamed `National Data Sets` to `National Datasets`.

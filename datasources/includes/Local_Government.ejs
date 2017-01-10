@@ -2,14 +2,21 @@
     type: 'group',
     name: 'Local Government',
     items: [
-        <%# Mosman's spatial data is broken and/or lacks csv-geo-au tags. 
         {
             name: 'New South Wales',
             type: 'group',
             items: [
-                %- include('includes/dga_org', { name: 'Mosman', org: 'mosmanmunicipalcouncil' }) %,
+                <%- include('includes/dga_org', { name: 'Mosman', org: 'mosmanmunicipalcouncil' }) %>,
+                <%- include('includes/dga_org', { name: 'Lake Macquarie', org: 'lake-macquarie-city-council' }) %>,
             ]
-        }, %> 
+        },  
+        {
+            name: 'Northern Territory',
+            type: 'group',
+            items: [
+                <%- include('includes/dga_org', { name: 'Palmerston', org: 'city-of-palmerston' }) %>,
+            ]
+        },  
         {
             name: 'Queensland',
             type: 'group',
@@ -26,12 +33,15 @@
                 },
                 {
                   "type": "esri-group",
-                  "name": "Sunshine Coast Council (QLD)",
+                  "name": "Sunshine Coast",
                   "url": "https://gisservices.scc.qld.gov.au/arcgis/rest/services"
                 },
                 <%- include('includes/dga_org', { name: 'Logan', org: 'logan-city-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Gold Coast', org: 'city-of-gold-coast' }) %>,
                 <%- include('includes/dga_org', { name: 'Noosa', org: 'noosa-shire-council' }) %>,
+                <%- include('includes/dga_org', { name: 'Cairns', org: 'cairns-regional-council' }) %>,
+                <%- include('includes/dga_org', { name: 'Moreton Bay', org: 'moreton-bay-regional-council' }) %>,                
+                <%- include('includes/localdata_org', { name: 'Rockhampton', org: 'rockhampton-regional-council' }) %>,                
             ]
         },
         {
@@ -43,7 +53,12 @@
                 <%- include('includes/data_sa_org', { name: 'Playford', org: 'city-of-playford' }) %>,
                 <%- include('includes/data_sa_org', { name: 'Port Adelaide Enfield', org: 'port-adelaide-enfield-council' }) %>,
                 <%- include('includes/data_sa_org', { name: 'Salisbury', org: 'city-of-salisbury-council' }) %>,
-                <%- include('includes/data_sa_org', { name: 'Adelaide', org: 'adelaide-city-council' }) %>
+                <%- include('includes/data_sa_org', { name: 'Adelaide', org: 'adelaide-city-council' }) %>,
+                <%- include('includes/data_sa_org', { name: 'Mitcham', org: 'city-of-mitcham' }) %>,
+                <%- include('includes/data_sa_org', { name: 'Prospect', org: 'city-of-prospect' }) %>,
+                <%- include('includes/data_sa_org', { name: 'Tea Tree Gully', org: 'city-of-tea-tree-gully' }) %>,
+                <%- include('includes/data_sa_org', { name: 'Mount Barker', org: 'mount-barker-district-council' }) %>,
+                <%- include('includes/data_sa_org', { name: 'Naracoorte-Lucindale', org: 'naracoorte-lucindale-council' }) %>,
             ]
         },
         {
@@ -59,10 +74,10 @@
             name:'Western Australia',
             type: 'group',
             items: [
-                <%# auth required include('includes/data_wa_org', { name: 'Perth', org: 'city-of-perth' }) %>
-                <%- include('includes/data_wa_org', { name: 'Swan', org: 'city-of-swan' }) %>
-                <%# auth required include('includes/data_wa_org', { name: 'Wanneroo', org: 'city-of-wanneroo' }) %>
-                <%# auth required include('includes/data_wa_org', { name: 'Joondalup', org: 'city-of-joondalup' }) %>
+                <%- include('includes/data_wa_org', { name: 'Perth', org: 'city-of-perth' }) %>,
+                <%- include('includes/data_wa_org', { name: 'Swan', org: 'city-of-swan' }) %>,
+                <%- include('includes/data_wa_org', { name: 'Wanneroo', org: 'city-of-wanneroo' }) %>,
+                <%- include('includes/data_wa_org', { name: 'Joondalup', org: 'city-of-joondalup' }) %>,
             ]
         },
         {
@@ -96,7 +111,7 @@
                 <%- include('includes/dga_org', { name: 'Corangamite', org: 'corangamite-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Ballarat', org: 'city-of-ballarat' }) %>,
                 <%- include('includes/dga_org', { name: 'Golden Plains', org: 'golden-plains-shire-council' }) %>,
-                <%# include('includes/dga_org', { name: 'Wodonga', org: 'wodonga-city-council' }) , %>
+                <%- include('includes/dga_org', { name: 'Wodonga', org: 'wodonga-city-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Nillumbik', org: 'nillumbik-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Glenelg', org: 'glenelg-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Colac-Otway', org: 'colac-otway-shire' }) %>,
@@ -106,7 +121,12 @@
                 <%- include('includes/dga_org', { name: 'Central Goldfields', org: 'central-goldfields-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Yarra Ranges', org: 'yarra-ranges-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Whittlesea', org: 'city-of-whittlesea' }) %>,
-                <%- include('includes/dga_org', { name: 'Manningham', org: 'manningham-city-council' }) %>,            ]
+                <%- include('includes/dga_org', { name: 'Manningham', org: 'manningham-city-council' }) %>,
+                <%- include('includes/dga_org', { name: 'Boroondara', org: 'city-of-boroondara' }) %>,
+                <%- include('includes/dga_org', { name: 'Greater Shepparton', org: 'greater-shepparton-city-council' }) %>,
+                <%- include('includes/dga_org', { name: 'Moyne', org: 'moyne-shire-council' }) %>,
+                <%- include('includes/dga_org', { name: 'Warrnambool', org: 'warrnambool-city-council' }) %>,
+            ]
         }
     ]
 
