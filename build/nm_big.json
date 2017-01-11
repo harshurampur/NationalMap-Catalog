@@ -3818,13 +3818,19 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:cityoflaunceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:launceston-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
+          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:cityoflaunceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:launceston-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
         }
       ],
       "url": "http://www.data.gov.au",
       "type": "ckan",
       "name": "Data.gov.au",
-      "includeCsv": true
+      "includeCsv": true,
+      "includeGeoJson": true,
+      "includeKml": true,
+      "includeWms": true,
+      "includeWfs": true,
+      "includeEsriMapServer": true,
+      "includeEsriFeatureServer": true
     },
     {
       "items": [
@@ -7883,6 +7889,78 @@
       "name": "Local Government",
       "items": [
         {
+          "name": "New South Wales",
+          "type": "group",
+          "items": [
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:mosmanmunicipalcouncil AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Mosman",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:lake-macquarie-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Lake Macquarie",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            }
+          ]
+        },
+        {
+          "name": "Northern Territory",
+          "type": "group",
+          "items": [
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-palmerston AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Palmerston",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            }
+          ]
+        },
+        {
           "name": "Queensland",
           "type": "group",
           "items": [
@@ -7902,7 +7980,7 @@
             },
             {
               "type": "esri-group",
-              "name": "Sunshine Coast Council (QLD)",
+              "name": "Sunshine Coast",
               "url": "https://gisservices.scc.qld.gov.au/arcgis/rest/services"
             },
             {
@@ -7910,14 +7988,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:logan-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:logan-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Logan",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -7925,14 +8008,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-gold-coast AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-gold-coast AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Gold Coast",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -7940,14 +8028,77 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:noosa-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:noosa-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Noosa",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:cairns-regional-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Cairns",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:moreton-bay-regional-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Moreton Bay",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "filterQuery": [
+                {
+                  "fq": "(organization:rockhampton-regional-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://localdata.net.au",
+              "name": "Rockhampton",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -7961,16 +8112,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-onkaparinga AND(res_format:geojson OR res_format:GeoJSON OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:city-of-onkaparinga AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Onkaparinga",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -7978,16 +8132,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-burnside-local-council AND(res_format:geojson OR res_format:GeoJSON OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:city-of-burnside-local-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Burnside",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -7995,16 +8152,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-playford AND(res_format:geojson OR res_format:GeoJSON OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:city-of-playford AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Playford",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8012,16 +8172,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:port-adelaide-enfield-council AND(res_format:geojson OR res_format:GeoJSON OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:port-adelaide-enfield-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Port Adelaide Enfield",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8029,16 +8192,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-salisbury-council AND(res_format:geojson OR res_format:GeoJSON OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:city-of-salisbury-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Salisbury",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8046,16 +8212,119 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:adelaide-city-council AND(res_format:geojson OR res_format:GeoJSON OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:adelaide-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Adelaide",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-mitcham AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "https://data.sa.gov.au/data",
+              "name": "Mitcham",
+              "includeWms": true,
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-prospect AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "https://data.sa.gov.au/data",
+              "name": "Prospect",
+              "includeWms": true,
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-tea-tree-gully AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "https://data.sa.gov.au/data",
+              "name": "Tea Tree Gully",
+              "includeWms": true,
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:mount-barker-district-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "https://data.sa.gov.au/data",
+              "name": "Mount Barker",
+              "includeWms": true,
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:naracoorte-lucindale-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "https://data.sa.gov.au/data",
+              "name": "Naracoorte-Lucindale",
+              "includeWms": true,
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8069,14 +8338,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-hobart AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-hobart AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Hobart",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8084,14 +8358,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:gcc AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:gcc AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Glenorchy",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8099,14 +8378,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:cityoflaunceston AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:cityoflaunceston AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Launceston",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8118,7 +8402,25 @@
             {
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-swan AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:aus-geo-csv))"
+                  "fq": "(organization:city-of-perth AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://catalogue.beta.data.wa.gov.au",
+              "name": "Perth",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-swan AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://catalogue.beta.data.wa.gov.au",
@@ -8129,6 +8431,44 @@
               "includeKml": true,
               "includeWms": true,
               "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-wanneroo AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://catalogue.beta.data.wa.gov.au",
+              "name": "Wanneroo",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-joondalup AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://catalogue.beta.data.wa.gov.au",
+              "name": "Joondalup",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8151,14 +8491,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-greater-dandenong AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-greater-dandenong AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Greater Dandenong",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8166,14 +8511,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:surf-coast-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:surf-coast-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Surf Coast",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8181,14 +8531,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:cardinia-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:cardinia-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Cardinia",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8196,14 +8551,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:southern-grampians-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:southern-grampians-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Southern Grampians",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8211,14 +8571,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-casey AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-casey AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Casey",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8226,14 +8591,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-greater-bendigo AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-greater-bendigo AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Greater Bendigo",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8241,14 +8611,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:yarriambiack-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:yarriambiack-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Yarriambiack",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8256,14 +8631,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:horsham-rural-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:horsham-rural-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Horsham",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8271,14 +8651,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:hindmarsh-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:hindmarsh-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Hindmarsh",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8286,14 +8671,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:loddon-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:loddon-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Loddon",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8301,14 +8691,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:west-wimmera-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:west-wimmera-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "West Wimmera",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8316,14 +8711,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:alpine-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:alpine-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Alpine",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8331,14 +8731,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:www-mitchellshirecouncil-vic-gov-au AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:www-mitchellshirecouncil-vic-gov-au AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Mitchell",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8346,14 +8751,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:mildura-rural-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:mildura-rural-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Mildura",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8361,14 +8771,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-greater-geelong AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-greater-geelong AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Greater Geelong",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8376,14 +8791,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:hobsons-bay-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:hobsons-bay-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Hobsons Bay",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8391,14 +8811,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:macedon-ranges-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:macedon-ranges-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Macedon Ranges",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8406,14 +8831,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:corangamite-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:corangamite-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Corangamite",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8421,14 +8851,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-ballarat AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-ballarat AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Ballarat",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8436,14 +8871,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:golden-plains-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:golden-plains-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Golden Plains",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8451,14 +8891,39 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:nillumbik-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:wodonga-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Wodonga",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:nillumbik-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Nillumbik",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8466,14 +8931,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:glenelg-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:glenelg-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Glenelg",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8481,14 +8951,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:colac-otway-shire AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:colac-otway-shire AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Colac-Otway",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8496,14 +8971,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:wyndham-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:wyndham-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Wyndham",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8511,14 +8991,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:northern-grampians-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:northern-grampians-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Northern Grampians",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8526,14 +9011,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:frankston-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:frankston-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Frankston",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8541,14 +9031,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:central-goldfields-shire-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:central-goldfields-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Central Goldfields",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8556,14 +9051,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:yarra-ranges-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:yarra-ranges-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Yarra Ranges",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8571,14 +9071,19 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:city-of-whittlesea AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:city-of-whittlesea AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Whittlesea",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8586,14 +9091,99 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:manningham-city-council AND(res_format:wms OR res_format:WMS OR res_format:csv-geo-au OR res_format:CSV-GEO-AU OR res_format:aus-geo-csv) OR res_format:kml OR res_format:geojson)"
+                  "fq": "(organization:manningham-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
               "name": "Manningham",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:city-of-boroondara AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Boroondara",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:greater-shepparton-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Greater Shepparton",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:moyne-shire-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Moyne",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
+              "ungroupedTitle": ""
+            },
+            {
+              "minimumMaxScaleDenominator": 10000000000,
+              "filterByWmsGetCapabilities": false,
+              "filterQuery": [
+                {
+                  "fq": "(organization:warrnambool-city-council AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                }
+              ],
+              "url": "http://www.data.gov.au",
+              "name": "Warrnambool",
+              "type": "ckan",
+              "includeCsv": true,
+              "includeGeoJson": true,
+              "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
+              "includeEsriFeatureServer": true,
               "ungroupedTitle": ""
             }
           ]
