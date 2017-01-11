@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### 2017-01-11
+### 2017-01-12
 
 * Added new LGAs
 * Added in LGAs with zero/protected datasets
