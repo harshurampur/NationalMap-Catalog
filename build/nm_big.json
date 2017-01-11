@@ -3824,7 +3824,12 @@
       "url": "http://www.data.gov.au",
       "type": "ckan",
       "name": "Data.gov.au",
-      "includeCsv": true
+      "includeCsv": true,
+      "includeGeoJson": true,
+      "includeKml": true,
+      "includeWms": true,
+      "includeWfs": true,
+      "includeEsriMapServer": true
     },
     {
       "items": [
@@ -7898,7 +7903,11 @@
               "name": "Mosman",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -7913,7 +7922,11 @@
               "name": "Lake Macquarie",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -7934,7 +7947,11 @@
               "name": "Palmerston",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -7974,7 +7991,11 @@
               "name": "Logan",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -7989,7 +8010,11 @@
               "name": "Gold Coast",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8004,7 +8029,11 @@
               "name": "Noosa",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8019,7 +8048,11 @@
               "name": "Cairns",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8034,7 +8067,11 @@
               "name": "Moreton Bay",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8051,6 +8088,7 @@
               "includeKml": true,
               "includeWms": true,
               "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8069,11 +8107,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Onkaparinga",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8086,11 +8126,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Burnside",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8103,11 +8145,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Playford",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8120,11 +8164,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Port Adelaide Enfield",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8137,11 +8183,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Salisbury",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8154,11 +8202,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Adelaide",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8171,11 +8221,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Mitcham",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8188,11 +8240,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Prospect",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8205,11 +8259,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Tea Tree Gully",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8222,11 +8278,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Mount Barker",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8239,11 +8297,13 @@
               ],
               "url": "https://data.sa.gov.au/data",
               "name": "Naracoorte-Lucindale",
-              "includeWms": false,
+              "includeWms": true,
               "type": "ckan",
               "includeCsv": true,
-              "includeGeoJSON": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8264,7 +8324,11 @@
               "name": "Hobart",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8279,7 +8343,11 @@
               "name": "Glenorchy",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8294,7 +8362,11 @@
               "name": "Launceston",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8317,6 +8389,7 @@
               "includeKml": true,
               "includeWms": true,
               "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8333,6 +8406,7 @@
               "includeKml": true,
               "includeWms": true,
               "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8349,6 +8423,7 @@
               "includeKml": true,
               "includeWms": true,
               "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8365,6 +8440,7 @@
               "includeKml": true,
               "includeWms": true,
               "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]
@@ -8394,7 +8470,11 @@
               "name": "Greater Dandenong",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8409,7 +8489,11 @@
               "name": "Surf Coast",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8424,7 +8508,11 @@
               "name": "Cardinia",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8439,7 +8527,11 @@
               "name": "Southern Grampians",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8454,7 +8546,11 @@
               "name": "Casey",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8469,7 +8565,11 @@
               "name": "Greater Bendigo",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8484,7 +8584,11 @@
               "name": "Yarriambiack",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8499,7 +8603,11 @@
               "name": "Horsham",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8514,7 +8622,11 @@
               "name": "Hindmarsh",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8529,7 +8641,11 @@
               "name": "Loddon",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8544,7 +8660,11 @@
               "name": "West Wimmera",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8559,7 +8679,11 @@
               "name": "Alpine",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8574,7 +8698,11 @@
               "name": "Mitchell",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8589,7 +8717,11 @@
               "name": "Mildura",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8604,7 +8736,11 @@
               "name": "Greater Geelong",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8619,7 +8755,11 @@
               "name": "Hobsons Bay",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8634,7 +8774,11 @@
               "name": "Macedon Ranges",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8649,7 +8793,11 @@
               "name": "Corangamite",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8664,7 +8812,11 @@
               "name": "Ballarat",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8679,7 +8831,11 @@
               "name": "Golden Plains",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8694,7 +8850,11 @@
               "name": "Wodonga",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8709,7 +8869,11 @@
               "name": "Nillumbik",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8724,7 +8888,11 @@
               "name": "Glenelg",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8739,7 +8907,11 @@
               "name": "Colac-Otway",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8754,7 +8926,11 @@
               "name": "Wyndham",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8769,7 +8945,11 @@
               "name": "Northern Grampians",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8784,7 +8964,11 @@
               "name": "Frankston",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8799,7 +8983,11 @@
               "name": "Central Goldfields",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8814,7 +9002,11 @@
               "name": "Yarra Ranges",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8829,7 +9021,11 @@
               "name": "Whittlesea",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8844,7 +9040,11 @@
               "name": "Manningham",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8859,7 +9059,11 @@
               "name": "Boroondara",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8874,7 +9078,11 @@
               "name": "Greater Shepparton",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8889,7 +9097,11 @@
               "name": "Moyne",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             },
             {
@@ -8904,7 +9116,11 @@
               "name": "Warrnambool",
               "type": "ckan",
               "includeCsv": true,
+              "includeGeoJson": true,
               "includeKml": true,
+              "includeWms": true,
+              "includeWfs": true,
+              "includeEsriMapServer": true,
               "ungroupedTitle": ""
             }
           ]

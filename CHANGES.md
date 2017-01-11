@@ -8,6 +8,7 @@ Change Log
 * Added in LGAs with zero/protected datasets
 * Added new CKAN portal - localdata.net.au
 * Respecified Solr query for CKAN portals to include more formats and perform more stably.
+* Included more formats explicity for CKANCatalogItem
 
 ### 2016-12-02-updated-2017-01-05
 
