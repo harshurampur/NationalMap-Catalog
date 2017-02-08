@@ -12,6 +12,7 @@ var gutil = require('gulp-util');
 var watching = false; // if we're in watch mode, we try to never quit.
 var watchOptions = { poll:1000, interval: 1000 }; // time between watch intervals. OSX hates short intervals. Different versions of Gulp use different options.
 var sourceDir = 'datasources';
+var derivedSourceDir = 'derived_datasources';
 var workDir = 'work';
 var targetDir = 'build';
 // Create the build directory, because browserify flips out if the directory that might
@@ -118,49 +119,66 @@ gulp.task('validate', ['merge-datasources', 'make-validator-schema'], function()
     "name": "<%= name %>"
  */
 gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
+// gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
     var ejs = require('ejs');
     var JSON5 = require('json5');
-    try {
-        fs.accessSync(sourceDir);
-    } catch (e) {
-        // Datasources directory doesn't exist? No problem.
-        return;
-    }
-    fs.readdirSync(sourceDir).forEach(function(filename) {
-        if (filename.match(/\.ejs$/)) {
-            var templateFilename = path.join(sourceDir, filename);
-            var template = fs.readFileSync(templateFilename,'utf8');
-            var result = ejs.render(template, null, {filename: templateFilename});
+    var convertSdmxCsvToEjs = require('./convertSdmxCsvToEjs');
 
-            // Remove all new lines. This means you can add newlines to help keep source files manageable, without breaking your JSON.
-            // If you want actual new lines displayed somewhere, you should probably use <br/> if it's HTML, or \n\n if it's Markdown.
-            result = result.replace(/(?:\r\n|\r|\n)/g, '');
+    testAndRead(sourceDir);
+    // For now, render the sdmx-abs catalog to its own alternative file.
+    // When it moves out of beta, we will include this in nm.csv somehow.
+    convertSdmxCsvToEjs(sourceDir + '/' + 'sdmx-abs.csv', derivedSourceDir + '/' + 'sdmx-abs-beta.ejs');
+    testAndRead(derivedSourceDir);
 
-            var outFilename = filename.replace('.ejs', '.json');
-            var resultJson = '', resultJson_big = '';
-            try {
-                resultJson = JSON.stringify(JSON5.parse(result), null, 0);
-                resultJson_big = JSON.stringify(JSON5.parse(result), null, 2);
-                console.log('Rendered template ' + outFilename);
-            } catch (e) {
-                if (e.name === 'SyntaxError') {
-                    var context = 20;
-                    console.error('Syntax error while processing templates: ' + e.message);
-                    console.error(result.substring(e.at - context, e.at + context));
-                    console.error(new Array(context + 1).join('-').substring(0, Math.min(e.at, context)) + '^');
-                }
-                console.warn('Warning: Rendered template ' + outFilename + ' is not valid JSON.');
-            }
-            fs.writeFileSync(path.join(targetDir, outFilename), new Buffer(resultJson));
-            // write a non-minified version too.
-            fs.writeFileSync(path.join(targetDir, filename.replace('.ejs', '_big.json')), new Buffer(resultJson_big));
+    function testAndRead(dir) {
+        try {
+            fs.accessSync(dir);
+        } catch (e) {
+            // Datasources directory doesn't exist? No problem.
+            return;
         }
-    });
+        fs.readdirSync(dir).forEach(processSource);
+
+        function processSource(filename) {
+            if (filename.match(/\.ejs$/)) {
+                var templateFilename = path.join(dir, filename);
+                var template = fs.readFileSync(templateFilename, 'utf8');
+                var result = ejs.render(template, null, {filename: templateFilename});
+
+                // Remove new lines from inside quotes. This means you can add newlines to strings to help keep source files manageable, without breaking your JSON5.
+                // We can't remove _all_ new lines, since this would break comments in JSON5.
+                // NOTE: this replacement fails when there are unmatched quotes in comments - eg. apostrophes.
+                // If you want actual new lines displayed somewhere, you should probably use <br/> if it's HTML, or \n\n if it's Markdown.
+                // The first regex below finds text between quotes, which may include new lines.
+                // The second regex removes the new line characters from those matches, if any.
+                result = result.replace(/(["'])(?:(?!\1)[^\\]|\\.)*\1/g, match => match.replace(/(?:\r\n|\r|\n)/g, ''));
+
+                var outFilename = filename.replace('.ejs', '.json');
+                var resultJson = '', resultJson_big = '';
+                try {
+                    resultJson = JSON.stringify(JSON5.parse(result), null, 0);
+                    resultJson_big = JSON.stringify(JSON5.parse(result), null, 2);
+                    console.log('Rendered template ' + outFilename);
+                } catch (e) {
+                    if (e.name === 'SyntaxError') {
+                        var context = 20;
+                        console.error('Syntax error while processing templates: ' + e.message);
+                        console.error(result.substring(e.at - context, e.at + context));
+                        console.error(new Array(context + 1).join('-').substring(0, Math.min(e.at, context)) + '^');
+                    }
+                    console.warn('Warning: Rendered template ' + outFilename + ' is not valid JSON.');
+                }
+                fs.writeFileSync(path.join(targetDir, outFilename), new Buffer(resultJson));
+                // write a non-minified version too.
+                fs.writeFileSync(path.join(targetDir, filename.replace('.ejs', '_big.json')), new Buffer(resultJson_big));
+            }
+        }
+    }
 
 });
 
 gulp.task('watch-datasource-templates', ['render-datasource-templates'], function() {
-    return gulp.watch(['datasources/**/*.ejs','datasources/*.json'], watchOptions, [ 'render-datasource-templates' ]);
+    return gulp.watch(['datasources/**/*.csv', 'datasources/**/*.ejs', 'datasources/*.json'], watchOptions, [ 'render-datasource-templates' ]);
 });
 
 // Regenerate the anti-LGA filter in datasources/includes/lga_filter.ejs

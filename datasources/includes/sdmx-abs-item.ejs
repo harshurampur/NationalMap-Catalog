@@ -1,0 +1,98 @@
+// Pass optionally
+// group:    The group name to include this in, eg. "Dwellings"
+// name:     The name of the item, eg. "Number of Motor Vehicles"
+// bys:      A string with the "by" variables, eg. "By Age by Sex"
+// id:       The dataset id for the item, eg. "ABS_CENSUS2011_B29"
+// geoType:  One of "SAx" (for SA1-4 datasets), "LGA2011" (for LGA_2011 datasets), "SA1_SA" (for South Aust SA1 datasets).
+// hasState: Do we need to aggregate over the unnecessary STATE dimension?
+// singleValuedDimensionIds: An array of dimensions which can only take a single value, eg. ["SPC"].
+// sexId:    The sex dimension id - usually "MEASURE". Pass "" if none.
+// ageId:    The age dimension id - usually "AGE" (eg. ABS_CENSUS2011_B45 puts AGE in MEASURE, sex in SEX). Pass "" if none.
+// regionDimensionId: Required if the dimension id is not REGION, Eg. "ASGS_2011".
+// regionType: The region type, eg. "aus".
+// bOrT:     Either "B" or "T" if this is B- or T- series Census data.
+// measureWhitelist: Eg. Labour Force MEASURE has invalid entries such as "M" for "Migration:".
+// measureTotalValueIds: Additional total fields in the MEASURE dimension, eg. for Census B12, "8" is Total dependent children.
+{
+    "name": "<%= group %>",
+    "type": "group",
+    "isOpen": false,
+    "items": [
+        {
+            "name": "<%= name %>",
+            <% if (bys) { %> // If "bys" is not null, add another grouping level here
+                "type": "group",
+                "isOpen": false,
+                "items": [{
+                    "name": "<%= bys %>",
+            <% } %>
+            <% if (bOrT) { %> // If it is a B or T series, add 2 grouping levels here (for B/T and for LGA/SAx/SA_SA1s)
+                "type": "group",
+                "items": [{
+                    "name": <%- include("sdmx-abs-BT-name", {"bOrT": bOrT}) %>,
+                    "type": "group",
+                    "items": [{
+                        "name": <%- include("sdmx-abs-geo-name", {"geoType": geoType}) %>,
+            <% } %>
+            "type": "sdmx-json",
+            "sortValues": true,
+            "cleanFootnotes": true,
+            "url": "http://stat.data.abs.gov.au/sdmx-json/data/<%= id %>",
+            "description": "You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website at http://stat.data.abs.gov.au/Index.aspx?DatasetCode=<%= id %>. Click on the 'i' symbols on that page for further information.",
+            <% if (hasState) { %>
+               "aggregatedDimensionIds": ["STATE"],
+            <% } %>
+            <% if (singleValuedDimensionIds) { %>
+                "singleValuedDimensionIds": <%- JSON.stringify(singleValuedDimensionIds) %>,
+            <% } %>
+            "totalValueIds": {
+                "*": ["TOT", "LFTOT"],  // The dataflow for "COB" shows "TOTAL", but it isnt available in the data.
+                <% if (sexId) { %>
+                    "<%= sexId %>": ["3"],
+                <% } %>
+                <% if (ageId) { %>
+                    "<%= ageId %>": ["TT", "O15"],
+                <% } %>
+                <% if (measureTotalValueIds) { %>
+                    "MEASURE": <%- JSON.stringify(measureTotalValueIds) %>,
+                <% } %>
+                "SPC": ["TT"],
+                "MTWP": ["1M", "2M", "3M"],
+                "FMCF": ["CF", "1", "2", "3"],
+                "POUR": ["TOT", "1", "2", "2_0", "2_11"]
+            },
+            "whitelist": {
+                <% if (geoType=="LGA2011") { %>
+                    "REGIONTYPE": ["LGA2011"],
+                <% } %>
+                <% if (geoType=="LGA") { %>
+                    "REGIONTYPE": ["LGA"],
+                <% } %>
+                <% if (measureWhitelist) { %>
+                    "MEASURE": <%- JSON.stringify(measureWhitelist) %>,
+                <% } %>
+                "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
+            },
+            <% if (regionDimensionId) { %>
+                "regionDimensionId": "<%= regionDimensionId %>",
+            <% } %>
+            <% if (regionType) { %>
+                "regionType": "<%= regionType %>",
+            <% } %>
+            "selectedInitially": {
+                <% if (geoType=="LGA2011") { %>
+                    "REGIONTYPE": ["LGA2011"]
+                <% } %>
+                <% if (geoType=="SAx") { %>
+                    "REGIONTYPE": ["SA4"]
+                <% } %>
+            }
+            <% if (bOrT) { %> // If "bOrT" is not null, close the extra 2 grouping levels
+            }] }]
+            <% } %>
+            <% if (bys) { %> // If "bys" is not null, close the extra grouping level
+            }]
+            <% } %>
+        }
+    ]
+}
