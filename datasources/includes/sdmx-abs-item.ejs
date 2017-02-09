@@ -66,7 +66,9 @@
                 "SPC": ["TT"],
                 "MTWP": ["1M", "2M", "3M"],
                 "FMCF": ["CF", "1", "2", "3"],
-                "POUR": ["TOT", "1", "2", "2_0", "2_11"]
+                "POUR": ["TOT", "1", "2", "2_0", "2_11"],
+                "UAI1P": ["TOT", "2", "2_S", "2_D"],
+                "LFSP": ["TOT", "EMP", "UEMP"]
             },
             "whitelist": {
                 <% if (geoType=="LGA2011") { %>
@@ -80,6 +82,7 @@
                 <% } %>
                 "FMCF": ["TOT", "1", "2", "3", "9"],  // For B25. A hack to hide the detailed hierarchy, since we cannot cope with that yet.
                 "STRD": ["TOT", "OPD", "1", "2", "3", "9", "Z", "UPD"], // For B31. Hack as above. Note for B36 this is in MEASURE.
+                "LFSP": ["TOT", "EMP", "1", "2", "3", "4", "7", "Z", "UEMP"], // For B42. Hack to suppress some of the hierarchy.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
