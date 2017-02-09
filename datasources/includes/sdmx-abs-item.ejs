@@ -43,6 +43,7 @@
             <% } %>
             "type": "sdmx-json",
             "sortValues": "id",
+            "showWarnings": false, // Eg. many of the DEATHS datasets include 0 or 50 in the list of state codes; do not raise a warning to user.
             "cleanFootnotes": true,
             "url": "http://stat.data.abs.gov.au/sdmx-json/data/<%= id %>",
             "description": <%- include("sdmx-abs-description", {"description": description, "id": id}) %>,
@@ -94,11 +95,15 @@
             <% } %>
             "selectedInitially": {
                 <% if (geoType=="LGA2011") { %>
-                    "REGIONTYPE": ["LGA2011"]
+                    "REGIONTYPE": ["LGA2011"],
                 <% } %>
                 <% if (geoType=="SAx") { %>
-                    "REGIONTYPE": ["SA4"]
+                    "REGIONTYPE": ["SA4"],
                 <% } %>
+                <% if (measureSelectedInitially) { %>
+                    "MEASURE": <%- JSON.stringify(measureSelectedInitially) %>,
+                <% } %>
+                // Rely on JSON5 to ignore the trailing commas
             }
             <% if (subgroup) { %> // If "subgroup" is not null, close the extra grouping levels
             }]
