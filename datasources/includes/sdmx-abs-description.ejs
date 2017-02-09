@@ -1,0 +1,17 @@
+"<% if (description) { %>
+<%= description %>
+<br/>
+<% } %>
+<% if (bOrT==="B") { %>
+Counts are of all persons on Census night based on place of usual residence, not including overseas visitors.
+<br/>
+<% } %>
+<% if (bOrT==="T") { %>
+Counts are of all persons on Census night based on place of usual residence, including overseas visitors.
+<br/>
+<% } %>
+You can view this data, along with explanations of the meaning of terms, 
+on the ABS.Stat website at http://stat.data.abs.gov.au/Index.aspx?DatasetCode=<%= id %>. 
+Click on the 'i' symbols on that page for further information.
+"
+

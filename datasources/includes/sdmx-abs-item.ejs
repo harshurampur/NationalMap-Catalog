@@ -1,8 +1,9 @@
 // Pass optionally
-// group:    The group name to include this in, eg. "Dwellings"
-// name:     The name of the item, eg. "Number of Motor Vehicles"
-// bys:      A string with the "by" variables, eg. "By Age by Sex"
-// id:       The dataset id for the item, eg. "ABS_CENSUS2011_B29"
+// group:    The group name to include this in, eg. "Person".
+// subgroup: An optional subgroup name, eg. "Education".
+// name:     The name of the item, eg. "Number of Motor Vehicles".
+// bys:      A string with the "by" variables, eg. "By Age by Sex".
+// id:       The dataset id for the item, eg. "ABS_CENSUS2011_B29".
 // geoType:  One of "SAx" (for SA1-4 datasets), "LGA2011" (for LGA_2011 datasets), "SA1_SA" (for South Aust SA1 datasets).
 // hasState: Do we need to aggregate over the unnecessary STATE dimension?
 // singleValuedDimensionIds: An array of dimensions which can only take a single value, eg. ["SPC"].
@@ -19,14 +20,20 @@
     "isOpen": false,
     "items": [
         {
+            <% if (subgroup) { %> // If "subgroup" is not null, add another grouping level above "name"
+                "name": "<%= subgroup %>",
+                "type": "group",
+                "isOpen": false,
+                "items": [{
+            <% } %>
             "name": "<%= name %>",
-            <% if (bys) { %> // If "bys" is not null, add another grouping level here
+            <% if (bys) { %> // If "bys" is not null, add another grouping level under "name"
                 "type": "group",
                 "isOpen": false,
                 "items": [{
                     "name": "<%= bys %>",
             <% } %>
-            <% if (bOrT) { %> // If it is a B or T series, add 2 grouping levels here (for B/T and for LGA/SAx/SA_SA1s)
+            <% if (bOrT) { %> // If it is a B or T series, add 2 grouping levels under "name" (for B/T and for LGA/SAx/SA_SA1s)
                 "type": "group",
                 "items": [{
                     "name": <%- include("sdmx-abs-BT-name", {"bOrT": bOrT}) %>,
@@ -38,7 +45,7 @@
             "sortValues": true,
             "cleanFootnotes": true,
             "url": "http://stat.data.abs.gov.au/sdmx-json/data/<%= id %>",
-            "description": "You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website at http://stat.data.abs.gov.au/Index.aspx?DatasetCode=<%= id %>. Click on the 'i' symbols on that page for further information.",
+            "description": <%- include("sdmx-abs-description", {"description": description, "id": id}) %>,
             <% if (hasState) { %>
                "aggregatedDimensionIds": ["STATE"],
             <% } %>
@@ -71,6 +78,7 @@
                 <% if (measureWhitelist) { %>
                     "MEASURE": <%- JSON.stringify(measureWhitelist) %>,
                 <% } %>
+                "FMCF": ["TOT", "1", "2", "3", "9"],  // For B25. A hack to hide the detailed hierarchy, since we cannot cope with that yet.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
@@ -87,6 +95,9 @@
                     "REGIONTYPE": ["SA4"]
                 <% } %>
             }
+            <% if (subgroup) { %> // If "subgroup" is not null, close the extra grouping levels
+            }]
+            <% } %>
             <% if (bOrT) { %> // If "bOrT" is not null, close the extra 2 grouping levels
             }] }]
             <% } %>

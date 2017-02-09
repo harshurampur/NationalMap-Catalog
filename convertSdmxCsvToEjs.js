@@ -14,8 +14,9 @@ var replacements = [
 
 function convertSdmxCsvToEjs(csvPath, outPath) {
     var stringData = fs.readFileSync(csvPath, "utf8");
-    // var stringData = data.toString("utf8", 0, data.length);
     var rowsAsObjects = csv.toObjects(stringData, {onParseValue: processElement});
+    // Strip out any rows with false in a column titled "#include", if present.
+    rowsAsObjects = rowsAsObjects.filter(row => row['#include'] !== null);
     rowsAsObjects.forEach(removeCommentColumns);
     var out = { catalog: [{
         homeCamera: {
@@ -46,16 +47,17 @@ function removeCommentColumns(row) {
 }
 
 function processElement(raw) {
-    // Converts empty strings to null, True/False to Boolean (case insensitive);
+    // Converts empty strings to null, true (case insensitive) to Boolean true,
+    // false (case insensitive) to null (because onParseValue interprets a return value of false to mean "skip the value"!)
     // Objects and arrays to dictionaries and lists, interpreting single quotes as double (so ensure no apostrophes!);
     // Anything else is returned as a string.
     // Notably, does not convert numbers (since we don't need that).
-    if (raw === '') {
+    var lowercase = raw.toLowerCase().trim();
+    if (raw === '' || lowercase === 'false') {
         return null;
     }
-    var lowercase = raw.toLowerCase();
-    if (lowercase === 'true' || lowercase === 'false') {
-        return lowercase === 'true';
+    if (lowercase === 'true') {
+        return true;
     }
     try {
         return JSON.parse(raw.replace(/'/g,'"'));
