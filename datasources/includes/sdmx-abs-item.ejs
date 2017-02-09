@@ -42,7 +42,7 @@
                         "name": <%- include("sdmx-abs-geo-name", {"geoType": geoType}) %>,
             <% } %>
             "type": "sdmx-json",
-            "sortValues": true,
+            "sortValues": "id",
             "cleanFootnotes": true,
             "url": "http://stat.data.abs.gov.au/sdmx-json/data/<%= id %>",
             "description": <%- include("sdmx-abs-description", {"description": description, "id": id}) %>,
