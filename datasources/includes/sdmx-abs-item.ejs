@@ -79,6 +79,7 @@
                     "MEASURE": <%- JSON.stringify(measureWhitelist) %>,
                 <% } %>
                 "FMCF": ["TOT", "1", "2", "3", "9"],  // For B25. A hack to hide the detailed hierarchy, since we cannot cope with that yet.
+                "STRD": ["TOT", "OPD", "1", "2", "3", "9", "Z", "UPD"], // For B31. Hack as above. Note for B36 this is in MEASURE.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
