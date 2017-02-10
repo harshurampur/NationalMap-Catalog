@@ -1,7 +1,7 @@
-<% if (bOrT==="B") { %>
+<% if (series==="B") { %> // Currently B01 refers exclusively to Census 2011, but this may change.
   "2011 Census"
-<% } else if (bOrT==="T") { %>
+<% } else if (series==="T") { %>
   "Over time"
 <% } else { %>
-  "<%= bOrT %>"
+  "<%= series %>"
 <% } %>
