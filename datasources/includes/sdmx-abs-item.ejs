@@ -78,7 +78,8 @@
             "blacklist": {
                 "COB": ["TOTAL", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16"],  // TOTAL and regional groups do not have any data
                 "STATE": ["0"], // exclude Australia. Only needed in the rare case where STATE is not aggregated over (eg. ABS_DEM_QIM), but no Aust data is available.
-                "ASGS_2011": ["0"] // exclude Australia. Only needed in the rare case where ASGS_2011 is not interpreted as a region dimension, as above.
+                "ASGS_2011": ["0"], // exclude Australia. Only needed in the rare case where ASGS_2011 is not interpreted as a region dimension, as above.
+                "AGE": ["1519"] // Labour force, LF, has this unusual code in AGE, along with 1599. There is no data in 1519, so exclude it.
             },
             "whitelist": {
                 <% if (geoType && geoType.indexOf("LGA")===0) { %>
