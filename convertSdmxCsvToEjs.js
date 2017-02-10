@@ -7,9 +7,8 @@
 var fs = require('fs');
 var csv = require('terriajs/lib/ThirdParty/csv');
 var replacements = [
-    // . matches anything except a newline, so using [^.] to match a newline - lint complains about \n, and ^ doesn't work.
-    {old: new RegExp("[^.] {8}{", "g"), new: '\n        <%- include("../datasources/includes/sdmx-abs-item", {'},
-    {old: new RegExp("[^.] {8}}", "g"), new: "\n        }) %>"}
+    {old: new RegExp("\n {8}{", "g"), new: '\n        <%- include("../datasources/includes/sdmx-abs-item", {'},
+    {old: new RegExp("\n {8}}", "g"), new: "\n        }) %>"}
 ];
 
 function convertSdmxCsvToEjs(csvPath, outPath) {

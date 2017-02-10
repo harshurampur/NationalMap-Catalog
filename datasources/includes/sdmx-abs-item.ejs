@@ -75,16 +75,27 @@
                 "LEN": ["99"], // HF, Household finance (lenders)
                 "INFANT_AGE": ["IMTOT"],  // Infant ages, INFANTDEATHS_YEAROCCURENCE and INFANTDEATHS_REGISTRATIONYEAR
                 "DLC_11NC": ["210", "205"],  // For ABS_LAND_COVER
-                "ANZIC": ["TOTAL"]  // For ABS_LAMPS
+                "ANZIC": ["TOTAL"],  // For ABS_LAMPS
+                "LU_11NC": ["210", "205"],  // For ABS_LAND_USE
+                "LENDER": ["99"], // For LENDING_INDUSTRY and LENDING_BY_PURPOSE
+                "INDUSTRY": ["T"],  // For LENDING_INDUSTRY
+                "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE
             },
+            <% if (blacklist) { %>
+                // Use a custom blacklist.
+            "blacklist": <%- JSON.stringify(blacklist) %>,
+            <% } else { %>
+                // Use the generic blacklist. All these could actually now be moved into custom.
             "blacklist": {
                 "COB": ["TOTAL", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16"],  // TOTAL and regional groups do not have any data
                 "STATE": ["0"], // exclude Australia. Only needed in the rare case where STATE is not aggregated over (eg. ABS_DEM_QIM), but no Aust data is available.
                 "ASGS_2011": ["0"], // exclude Australia. Only needed in the rare case where ASGS_2011 is not interpreted as a region dimension, as above.
                 "AGE": ["1519"], // Labour force, LF, has this unusual code in AGE, along with 1599. There is no data in 1519, so exclude it.
                 "DLC_11": ["T"],  // Claims to be dynamic land cover total for ABS_LAND_COVER, but not present.
-                "MGT_PRACTICE": ["HEADER_.+"]  // None of the headers work.
+                "MGT_PRACTICE": ["HEADER_.+"],  // None of the headers work.
+                "LU_11": ["T"], // Not present in ABS_LAND_USE.
             },
+            <% } %>
             "whitelist": {
                 <% if (geoType && geoType.indexOf("LGA")===0) { %>
                     "REGIONTYPE": ["<%= geoType %>"],
