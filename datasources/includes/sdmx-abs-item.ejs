@@ -71,12 +71,12 @@
                 "UAI1P": ["TOT", "2", "2_S", "2_D"],
                 "LFSP": ["TOT", "EMP", "UEMP"]
             },
+            "blacklist": {
+                "COB": ["TOTAL", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16"]  // TOTAL and regional groups do not have any data
+            },
             "whitelist": {
-                <% if (geoType=="LGA2011") { %>
-                    "REGIONTYPE": ["LGA2011"],
-                <% } %>
-                <% if (geoType=="LGA") { %>
-                    "REGIONTYPE": ["LGA"],
+                <% if (geoType && geoType.indexOf("LGA")===0) { %>
+                    "REGIONTYPE": ["<%= geoType %>"],
                 <% } %>
                 <% if (measureWhitelist) { %>
                     "MEASURE": <%- JSON.stringify(measureWhitelist) %>,
@@ -94,6 +94,7 @@
                 "regionType": "<%= regionType %>",
             <% } %>
             "selectedInitially": {
+                // This first if is probably redundant, since the whitelist only lets LGA2011 through.
                 <% if (geoType=="LGA2011") { %>
                     "REGIONTYPE": ["LGA2011"],
                 <% } %>
@@ -103,7 +104,7 @@
                 <% if (measureSelectedInitially) { %>
                     "MEASURE": <%- JSON.stringify(measureSelectedInitially) %>,
                 <% } %>
-                // Rely on JSON5 to ignore the trailing commas
+                "COB": ["1101"] // Start with Australia. There is no working total value.
             }
             <% if (subgroup) { %> // If "subgroup" is not null, close the extra grouping levels
             }]
