@@ -90,8 +90,6 @@
             <% } else { %>
                 // Use the generic blacklist. All these could actually now be moved into custom.
             "blacklist": {
-                "STATE": ["0"], // exclude Australia. Only needed in the rare case where STATE is not aggregated over (eg. ABS_DEM_QIM), but no Aust data is available.
-                "ASGS_2011": ["0"], // exclude Australia. Only needed in the rare case where ASGS_2011 is not interpreted as a region dimension, as above.
                 "AGE": ["1519"], // Labour force, LF, has this unusual code in AGE, along with 1599. There is no data in 1519, so exclude it.
                 "DLC_11": ["T"],  // Claims to be dynamic land cover total for ABS_LAND_COVER, but not present.
                 "MGT_PRACTICE": ["HEADER_.+"],  // None of the headers work.
