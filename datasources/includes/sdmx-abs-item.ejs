@@ -15,6 +15,12 @@
 // measureWhitelist: Eg. Labour Force MEASURE has invalid entries such as "M" for "Migration:".
 // measureTotalValueIds: Additional total fields in the MEASURE dimension, eg. for Census B12, "8" is Total dependent children.
 {
+    <% if (series) { %> // If "series" is not null, put this in a top-level Census directory.
+    "name": "Census",
+    "type": "group",
+    "isOpen": true,
+    "items": [{
+    <% } %>
     "name": "<%= group %>",
     "type": "group",
     "isOpen": false,
@@ -131,15 +137,18 @@
                 "STATE": ["1", "2", "3", "4", "5", "6", "7", "8"], // In the rare case where STATE is not aggregated over (eg. ABS_DEM_QIM), start with all selected.
                 "ASGS_2011": ["1", "2", "3", "4", "5", "6", "7", "8"] // In the rare case where ASGS_2011 is not shown as a region (eg. ABS_DEM_QIM), start with all selected.
             }
-            <% if (subgroup) { %> // If "subgroup" is not null, close the extra grouping levels
-            }]
-            <% } %>
             <% if (series) { %> // If "series" is not null, close the extra 2 grouping levels
             }] }]
             <% } %>
             <% if (bys) { %> // If "bys" is not null, close the extra grouping level
             }]
             <% } %>
+            <% if (subgroup) { %> // If "subgroup" is not null, close the extra grouping levels
+            }]
+            <% } %>
         }
     ]
+    <% if (series) { %> // If "series" is not null, close the extra top-level grouping level
+    }]
+    <% } %>
 }
