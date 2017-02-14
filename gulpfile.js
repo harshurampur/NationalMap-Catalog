@@ -118,8 +118,8 @@ gulp.task('validate', ['merge-datasources', 'make-validator-schema'], function()
 
     "name": "<%= name %>"
  */
-gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
-// gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
+// gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
+gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
     var ejs = require('ejs');
     var JSON5 = require('json5');
     var convertSdmxCsvToEjs = require('./convertSdmxCsvToEjs');

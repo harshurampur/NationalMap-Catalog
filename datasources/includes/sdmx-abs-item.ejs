@@ -4,7 +4,7 @@
 // name:     The name of the item, eg. "Number of Motor Vehicles".
 // bys:      A string with the "by" variables, eg. "By Age by Sex".
 // id:       The dataset id for the item, eg. "ABS_CENSUS2011_B29".
-// idCount:  In case some dataset ids are repeated (eg. to show different aspects of a dataset), you must use different idCounts to distinguish them.
+// subId:    In case some dataset ids are repeated (eg. to show different aspects of a dataset), you must use different subId to distinguish them.
 // geoType:  One of "SAx" (for SA1-4 datasets), "LGA2011" (for LGA_2011 datasets), "SA1_SA" (for South Aust SA1 datasets).
 // hasState: Do we need to aggregate over the unnecessary STATE dimension?
 // singleValuedDimensionIds: An array of dimensions which can only take a single value, eg. ["SPC"].
@@ -50,7 +50,7 @@
                         "name": <%- include("sdmx-abs-geo-name", {"geoType": geoType}) %>,
             <% } %>
             "type": "sdmx-json",
-            "id": "ABS_SDMXJSON<%= idCount %>_<%= id %>", // Give this a unique id so we can move it around in the catalog in subsequent versions and always find it.
+            "id": "ABS_SDMX-JSON_<%= subId %>_<%= id %>", // Give this a unique id so we can move it around in the catalog in subsequent versions and always find it.
             "sortValues": "id",
             "showWarnings": false, // Eg. many of the DEATHS datasets include 0 or 50 in the list of state codes; do not raise a warning to user.
             "cleanFootnotes": true,
@@ -90,10 +90,9 @@
                 "LU_11NC": ["210", "205"],  // 210, 205 are for ABS_LAND_USE
                 "LU_11": ["T"],  // ABS_MONETARY_ACCOUNT, ABS_PHYSICAL_ACCOUNT_LU uses T for total.
                 "LENDER": ["99"], // For LENDING_INDUSTRY and LENDING_BY_PURPOSE
-                "INDUSTRY": ["T"],  // For LENDING_INDUSTRY
-                "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE
+                "INDUSTRY": ["T", "-", "-1"],  // T for LENDING_INDUSTRY, "-" for LABOUR_PRICE_INDEX (which fortunately has no T), "-1" for MERCH_EXP.
+                // "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE (not included)
                 "SITC_REV3": ["-1"],  // For MERCH_EXP
-                "INDUSTRY": ["-1"],  // For MERCH_EXP
                 "COUNTRY": ["-"],  // For MERCH_EXP
                 "STRD_BEDRD": ["._TOT"],  // For ABS_CENSUS2011_T16
                 "FMCF_INCC": ["TOT_TOT"], // For ABS_CENSUS2011_T26
@@ -104,6 +103,8 @@
                 "PLC_0611": ["10"], // For ABS_PHYSICAL_ACCOUNT_LC (closing stock 2011)
                 "PERSON_LA": ["16"], // For ABS_PERSONS_PROJ
                 "LEASE_TYPE": ["3"], // For PETROLEUM_EXPLORATION
+                "ASSET": ["999"], // For CAPEX
+                "SECTOR": ["7"],  // For LABOUR_PRICE_INDEX
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
@@ -122,6 +123,7 @@
                 "MTWP": ["TOT", "[1-3]M", "00[1-9]", "010", "011", "232", "TA", "BA", "B2", "233", "234", "Z"], // For B45. Hack to suppress some of the hierarchy.
                 "TYPP": ["TOT", "10", "2", "3", "40", "50", "60", "Z", "V"], // For B15 and T13. Suppress some of the hierarchy.
                 "FMCF_INCC": [".*_.*"], // For T26. Only values containing an underscore have data.
+                "IND": ["-"], // For CAPEX. No sub-industries have data by state.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
