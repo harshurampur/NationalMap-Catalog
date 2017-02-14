@@ -85,9 +85,10 @@
                 "LEN": ["99"], // HF, Household finance (lenders)
                 "INFANT_AGE": ["IMTOT"],  // Infant ages, INFANTDEATHS_YEAROCCURENCE and INFANTDEATHS_REGISTRATIONYEAR
                 "DLC_11NC": ["210", "205"],  // For ABS_LAND_COVER
+                "DLC_11": ["T"], // For ABS_PHYSICAL_ACCOUNT_LC
                 "ANZIC": ["TOTAL"],  // For ABS_LAMPS
                 "LU_11NC": ["210", "205"],  // 210, 205 are for ABS_LAND_USE
-                "LU_11": ["T"],  // ABS_MONETARY_ACCOUNT uses T for total.
+                "LU_11": ["T"],  // ABS_MONETARY_ACCOUNT, ABS_PHYSICAL_ACCOUNT_LU uses T for total.
                 "LENDER": ["99"], // For LENDING_INDUSTRY and LENDING_BY_PURPOSE
                 "INDUSTRY": ["T"],  // For LENDING_INDUSTRY
                 "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE
@@ -99,6 +100,10 @@
                 "DEPOSIT_TYPE": ["6"], // For MINING_EXPLORATION
                 "MINERAL_TYPE": ["11"], // For MINING_EXPLORATION
                 "MLU_0611": ["9"], // For ABS_MONETARY_ACCOUNT ("Closing stock 2011")
+                "PLU_0611": ["10"], // For ABS_PHYSICAL_ACCOUNT_LU (closing stock 2011)
+                "PLC_0611": ["10"], // For ABS_PHYSICAL_ACCOUNT_LC (closing stock 2011)
+                "PERSON_LA": ["16"], // For ABS_PERSONS_PROJ
+                "LEASE_TYPE": ["3"], // For PETROLEUM_EXPLORATION
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
