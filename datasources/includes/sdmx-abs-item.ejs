@@ -94,6 +94,7 @@
                 "INDUSTRY": ["-1"],  // For MERCH_EXP
                 "COUNTRY": ["-"],  // For MERCH_EXP
                 "STRD_BEDRD": ["._TOT"],  // For ABS_CENSUS2011_T16
+                "FMCF_INCC": ["TOT_TOT"], // For ABS_CENSUS2011_T26
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
@@ -106,11 +107,12 @@
                 <% if (measureWhitelist) { %>
                     "MEASURE": <%- JSON.stringify(measureWhitelist) %>,
                 <% } %>
-                "FMCF": ["TOT", "[1-3]", "9"],  // For B25. A hack to hide the detailed hierarchy, since we cannot cope with that yet.
+                "FMCF": ["TOT", "[1-3]", "9"],  // For B25 and T25. A hack to hide the detailed hierarchy, since we cannot cope with that yet.
                 "STRD": ["TOT", "OPD", "[1-3]", "9", "11", "Z", "UPD"], // For B31-36 and T15-18. Hack as above. Note for B36 this is in MEASURE. Note T15 uses 11 for separate house, 1 has no data.
                 "LFSP": ["TOT", "EMP", "[1-4]", "7", "Z", "UEMP"], // For B42. Hack to suppress some of the hierarchy.
                 "MTWP": ["TOT", "[1-3]M", "00[1-9]", "010", "011", "232", "TA", "BA", "B2", "233", "234", "Z"], // For B45. Hack to suppress some of the hierarchy.
                 "TYPP": ["TOT", "10", "2", "3", "40", "50", "60", "Z", "V"], // For B15 and T13. Suppress some of the hierarchy.
+                "FMCF_INCC": [".*_.*"], // For T26. Only values containing an underscore have data.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
