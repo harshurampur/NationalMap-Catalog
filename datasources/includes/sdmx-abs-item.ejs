@@ -86,7 +86,8 @@
                 "INFANT_AGE": ["IMTOT"],  // Infant ages, INFANTDEATHS_YEAROCCURENCE and INFANTDEATHS_REGISTRATIONYEAR
                 "DLC_11NC": ["210", "205"],  // For ABS_LAND_COVER
                 "ANZIC": ["TOTAL"],  // For ABS_LAMPS
-                "LU_11NC": ["210", "205"],  // For ABS_LAND_USE
+                "LU_11NC": ["210", "205"],  // 210, 205 are for ABS_LAND_USE
+                "LU_11": ["T"],  // ABS_MONETARY_ACCOUNT uses T for total.
                 "LENDER": ["99"], // For LENDING_INDUSTRY and LENDING_BY_PURPOSE
                 "INDUSTRY": ["T"],  // For LENDING_INDUSTRY
                 "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE
@@ -95,6 +96,9 @@
                 "COUNTRY": ["-"],  // For MERCH_EXP
                 "STRD_BEDRD": ["._TOT"],  // For ABS_CENSUS2011_T16
                 "FMCF_INCC": ["TOT_TOT"], // For ABS_CENSUS2011_T26
+                "DEPOSIT_TYPE": ["6"], // For MINING_EXPLORATION
+                "MINERAL_TYPE": ["11"], // For MINING_EXPLORATION
+                "MLU_0611": ["9"], // For ABS_MONETARY_ACCOUNT ("Closing stock 2011")
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
