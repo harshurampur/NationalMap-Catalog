@@ -7,7 +7,7 @@
         "south": -45,
         "west": 109
       },
-      "name": "ABS SDMX-JSON (testing only)",
+      "name": "ABS SDMX-JSON (beta)",
       "type": "group",
       "isOpen": true,
       "items": [
@@ -41319,7 +41319,7 @@
           "isOpen": false,
           "items": [
             {
-              "name": "Annual ERP by Country of Birth",
+              "name": "Annual ERP by Country of Birth by Age",
               "type": "group",
               "isOpen": false,
               "items": [
@@ -41342,6 +41342,10 @@
                     ],
                     "SEX_ABS": [
                       "3"
+                    ],
+                    "AGE": [
+                      "TT",
+                      "O15"
                     ],
                     "SPC": [
                       "TT"
@@ -41512,7 +41516,7 @@
                     "IND": [
                       "-"
                     ],
-                    "": [
+                    "AGE": [
                       "A[0-9]+",
                       "T.*",
                       "O.*"
