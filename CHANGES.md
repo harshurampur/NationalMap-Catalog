@@ -2,6 +2,14 @@
 Change Log
 ==========
 
+### 2017-02-15-updated-2017-03-02
+
+* Removed `Administrative Boundaries` from the Queensland Government group because the MapServer no longer exists.
+
+### 2017-02-15
+
+* Updated the LGA filter.
+
 ### 2017-01-12
 
 * Added new LGAs
