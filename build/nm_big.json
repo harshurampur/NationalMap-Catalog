@@ -3818,7 +3818,7 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:city-of-launceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council)"
+          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:city-of-launceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarriambiack-shire-council) -(organization:australian-institute-of-marine-science OR organization:geoscienceaustralia OR organization:integrated-marine-observing-system-imos OR organization:csiro-oceans-and-atmosphere-information-and-data-centre OR organization:csiro-marine-and-amospheric-research OR organization:state-of-the-environment OR organization:moreton-bay-regional-council OR organization:yarra-ranges-council OR organization:new-south-wales-datasets OR organization:south-australian-governments)"
         }
       ],
       "url": "http://www.data.gov.au",
@@ -3845,6 +3845,66 @@
           "dataCustodian": "[Australian Bureau of Meteorology](http://www.bom.gov.au/water/geofabric/)",
           "description": "[Licence](http://creativecommons.org/licenses/by/3.0/au/)",
           "name": "Water (Bureau of Meteorology Geofabric)"
+        },
+        {
+          "minimumMaxScaleDenominator": 10000000000,
+          "filterByWmsGetCapabilities": false,
+          "filterQuery": [
+            {
+              "fq": "(organization:geoscienceaustralia AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+            }
+          ],
+          "url": "http://www.data.gov.au",
+          "name": "Geoscience Australia",
+          "type": "ckan",
+          "includeCsv": true,
+          "includeGeoJson": true,
+          "includeKml": true,
+          "includeWms": true,
+          "includeWfs": true,
+          "includeEsriMapServer": true,
+          "includeEsriFeatureServer": true,
+          "ungroupedTitle": ""
+        },
+        {
+          "minimumMaxScaleDenominator": 10000000000,
+          "filterByWmsGetCapabilities": false,
+          "filterQuery": [
+            {
+              "fq": "(organization:australian-institute-of-marine-science AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+            }
+          ],
+          "url": "http://www.data.gov.au",
+          "name": "Australian Institute of Marine Science",
+          "type": "ckan",
+          "includeCsv": true,
+          "includeGeoJson": true,
+          "includeKml": true,
+          "includeWms": true,
+          "includeWfs": true,
+          "includeEsriMapServer": true,
+          "includeEsriFeatureServer": true,
+          "ungroupedTitle": ""
+        },
+        {
+          "minimumMaxScaleDenominator": 10000000000,
+          "filterByWmsGetCapabilities": false,
+          "filterQuery": [
+            {
+              "fq": "(organization:integrated-marine-observing-system-imos AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+            }
+          ],
+          "url": "http://www.data.gov.au",
+          "name": "Integrated Marine Observing System (IMOS)",
+          "type": "ckan",
+          "includeCsv": true,
+          "includeGeoJson": true,
+          "includeKml": true,
+          "includeWms": true,
+          "includeWfs": true,
+          "includeEsriMapServer": true,
+          "includeEsriFeatureServer": true,
+          "ungroupedTitle": ""
         }
       ],
       "type": "group",
