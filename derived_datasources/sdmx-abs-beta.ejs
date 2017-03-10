@@ -2220,7 +2220,11 @@
             "OPD"
           ],
           "measureSelectedInitially": null,
-          "blacklist": null,
+          "blacklist": {
+            "STRD": [
+              "TOT"
+            ]
+          },
           "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
@@ -2251,7 +2255,11 @@
             "OPD"
           ],
           "measureSelectedInitially": null,
-          "blacklist": null,
+          "blacklist": {
+            "STRD": [
+              "TOT"
+            ]
+          },
           "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
@@ -2282,7 +2290,11 @@
             "OPD"
           ],
           "measureSelectedInitially": null,
-          "blacklist": null,
+          "blacklist": {
+            "STRD": [
+              "TOT"
+            ]
+          },
           "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
@@ -4653,12 +4665,15 @@
           "subId": null,
           "geoType": "SAx",
           "hasState": true,
-          "singleValuedDimensionIds": null,
+          "singleValuedDimensionIds": [
+            "DT",
+            "TSEST"
+          ],
           "sexId": null,
           "ageId": null,
-          "regionDimensionId": null,
+          "regionDimensionId": "ASGC_2010",
           "series": null,
-          "regionType": null,
+          "regionType": "ste",
           "measureWhitelist": null,
           "measureTotalValueIds": null,
           "measureSelectedInitially": null,
@@ -4672,14 +4687,17 @@
           "bys": null,
           "id": "NEWMVSALES",
           "subId": null,
-          "geoType": "SAx",
-          "hasState": true,
-          "singleValuedDimensionIds": null,
+          "geoType": null,
+          "hasState": null,
+          "singleValuedDimensionIds": [
+            "MEASURE",
+            "TSEST"
+          ],
           "sexId": null,
           "ageId": null,
-          "regionDimensionId": null,
+          "regionDimensionId": "ASGS_2011",
           "series": null,
-          "regionType": null,
+          "regionType": "ste",
           "measureWhitelist": null,
           "measureTotalValueIds": null,
           "measureSelectedInitially": null,
