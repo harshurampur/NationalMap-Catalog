@@ -4027,8 +4027,8 @@
           "measureWhitelist": null,
           "measureTotalValueIds": null,
           "measureSelectedInitially": null,
-          "blacklist": null,
-          "description": "Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)"
+          "blacklist": "{\"SITC_REV3\": [\"[0-9]{3}\"]",
+          "description": "Not all the data available in this dataset is displayed here. Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
           "group": "Imports and Exports",
@@ -4048,8 +4048,8 @@
           "measureWhitelist": null,
           "measureTotalValueIds": null,
           "measureSelectedInitially": null,
-          "blacklist": null,
-          "description": "Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)"
+          "blacklist": "{\"SITC_REV3\": [\"[0-9]{3}\"]",
+          "description": "Not all the data available in this dataset is displayed here. Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
           "group": "Agriculture and Mining",
@@ -5396,7 +5396,9 @@
           "series": "T",
           "regionType": null,
           "measureWhitelist": null,
-          "measureTotalValueIds": null,
+          "measureTotalValueIds": [
+            "SOL"
+          ],
           "measureSelectedInitially": null,
           "blacklist": null,
           "description": null
@@ -5417,7 +5419,9 @@
           "series": "T",
           "regionType": null,
           "measureWhitelist": null,
-          "measureTotalValueIds": null,
+          "measureTotalValueIds": [
+            "SOL"
+          ],
           "measureSelectedInitially": null,
           "blacklist": null,
           "description": null
@@ -6285,7 +6289,11 @@
           "series": "T",
           "regionType": null,
           "measureWhitelist": null,
-          "measureTotalValueIds": null,
+          "measureTotalValueIds": [
+            "LF",
+            "EMP",
+            "UEMP"
+          ],
           "measureSelectedInitially": null,
           "blacklist": null,
           "description": null
@@ -6306,7 +6314,11 @@
           "series": "T",
           "regionType": null,
           "measureWhitelist": null,
-          "measureTotalValueIds": null,
+          "measureTotalValueIds": [
+            "LF",
+            "EMP",
+            "UEMP"
+          ],
           "measureSelectedInitially": null,
           "blacklist": null,
           "description": null

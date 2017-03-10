@@ -86,13 +86,13 @@
                 "INFANT_AGE": ["IMTOT"],  // Infant ages, INFANTDEATHS_YEAROCCURENCE and INFANTDEATHS_REGISTRATIONYEAR
                 "DLC_11NC": ["210", "205"],  // For ABS_LAND_COVER
                 "DLC_11": ["T"], // For ABS_PHYSICAL_ACCOUNT_LC
-                "ANZIC": ["TOTAL"],  // For ABS_LAMPS
+                "ANZIC": ["01", "TOTAL"],  // For ABS_LAMPS
                 "LU_11NC": ["210", "205"],  // 210, 205 are for ABS_LAND_USE
                 "LU_11": ["T"],  // ABS_MONETARY_ACCOUNT, ABS_PHYSICAL_ACCOUNT_LU uses T for total.
                 "LENDER": ["99"], // For LENDING_INDUSTRY and LENDING_BY_PURPOSE
                 "INDUSTRY": ["-1", "T", "-"],  // T for LENDING_INDUSTRY, "-" for LABOUR_PRICE_INDEX (which fortunately has no T), "-1" for MERCH_EXP/IMP. MERCH_... also has T for a subtotal, so put this after -1.
                 // "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE (not included)
-                "SITC_REV3": ["-1"],  // For MERCH_EXP
+                "SITC_REV3": ["-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],  // For MERCH_EXP, MERCH_IMP
                 "COUNTRY": ["-"],  // For MERCH_EXP
                 "STRD_BEDRD": ["._TOT"],  // For ABS_CENSUS2011_T16
                 "FMCF_INCC": ["TOT_TOT"], // For ABS_CENSUS2011_T26
@@ -108,6 +108,9 @@
                 "VEHICLE": ["900"], // For NEWMVSALES
                 "IND_R": ["20"],  // For RT (Retail Trade)
                 "RELP": ["2"], // For ABS_CENSUS2011_B14 and T12, Religious Affiliation.
+                "ANCP": ["TOTP"], // For ABS_CENSUS2011_T09 and ABS_CENSUS2011_B08
+                "LANP": ["LOTE", "71", "52", "41", "65"], // For ABS_CENSUS2011_B13 and ABS_CENSUS2011_T10
+                "ENGLP": ["OTH", "SOL"],  // For ABS_CENSUS2011_B11, B12. Note T11 uses "SOL" in the MEASURE dim.
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
