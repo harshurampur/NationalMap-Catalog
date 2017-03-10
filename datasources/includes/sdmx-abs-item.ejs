@@ -16,6 +16,7 @@
 // measureWhitelist: Eg. Labour Force MEASURE has invalid entries such as "M" for "Migration:".
 // measureTotalValueIds: Additional total fields in the MEASURE dimension, eg. for Census B12, "8" is Total dependent children.
 // blacklist: A custom blacklist, as an object whose keys are dimension ids, and values are arrays of blacklisted values.
+// nameOutsideCatalog: Optional value for the name of the item outside the catalog, if different.
 {
     <% if (series) { %> // If "series" is not null, put this in a top-level Census directory.
     "name": "Census",
@@ -34,20 +35,41 @@
                 "isOpen": false,
                 "items": [{
             <% } %>
-            "name": "<%= name %>",
+            <% if (!bys && !series && nameOutsideCatalog) { %>
+                "name": "<%= nameOutsideCatalog %>",
+                "nameInCatalog": "<%= name %>",
+            <% } else { %>
+                "name": "<%= name %>",
+            <% } %>
             <% if (bys) { %> // If "bys" is not null, add another grouping level under "name"
                 "type": "group",
                 "isOpen": false,
                 "items": [{
-                    "name": "<%= bys %>",
             <% } %>
             <% if (series) { %> // If it is a B or T series, add 2 grouping levels under "name" (for B/T and for LGA/SAx/SA_SA1s)
+                <% if (bys) { %> // "bys" didnt put the name in yet, because it depends on series.
+                    "name": "<%= bys %>",
+                <% } %>
                 "type": "group",
                 "items": [{
                     "name": <%- include("sdmx-abs-BT-name", {"series": series}) %>,
                     "type": "group",
                     "items": [{
-                        "name": <%- include("sdmx-abs-geo-name", {"geoType": geoType}) %>,
+                        "nameInCatalog": <%- include("sdmx-abs-geo-name", {"geoType": geoType}) %>,
+                        <% if (nameOutsideCatalog) { %>
+                            "name": "<%= nameOutsideCatalog %>",
+                        <% } else { %>
+                            "name": "<%= name %>",
+                        <% } %>
+            <% } else { %>
+                <% if (bys) { %> // "bys" didnt put the name in yet, because it depends on series.
+                    "nameInCatalog": "<%= bys %>",
+                    <% if (nameOutsideCatalog) { %>
+                        "name": "<%= nameOutsideCatalog %>",
+                    <% } else { %>
+                        "name": "<%= name %>",
+                    <% } %>
+                <% } %>
             <% } %>
             "type": "sdmx-json",
             "id": "ABS_SDMX-JSON_<%= subId %>_<%= id %>", // Give this a unique id so we can move it around in the catalog in subsequent versions and always find it.

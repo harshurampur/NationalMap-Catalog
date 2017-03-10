@@ -35,7 +35,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Median Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_INCOME_ABS_CENSUS2011_B02",
                               "sortValues": "id",
@@ -331,7 +332,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Median Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_INCOME_ABS_CENSUS2011_B02_LGA",
                               "sortValues": "id",
@@ -630,7 +632,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Median Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_INCOME_ABS_CENSUS2011_B02_SA1_SA",
                               "sortValues": "id",
@@ -918,7 +921,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Median Mortgage and Rent",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_RENT_ABS_CENSUS2011_B02",
                           "sortValues": "id",
@@ -1206,7 +1210,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Median Mortgage and Rent",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_RENT_ABS_CENSUS2011_B02_LGA",
                           "sortValues": "id",
@@ -1497,7 +1502,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By SA1 (South Australia only)",
+                          "nameInCatalog": "By SA1 (South Australia only)",
+                          "name": "Median Mortgage and Rent",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_RENT_ABS_CENSUS2011_B02_SA1_SA",
                           "sortValues": "id",
@@ -1782,7 +1788,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Average Household Size",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_B02",
                           "sortValues": "id",
@@ -2070,7 +2077,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Average Household Size",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_B02_LGA",
                           "sortValues": "id",
@@ -2361,7 +2369,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By SA1 (South Australia only)",
+                          "nameInCatalog": "By SA1 (South Australia only)",
+                          "name": "Average Household Size",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_B02_SA1_SA",
                           "sortValues": "id",
@@ -2651,7 +2660,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Median Age",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_AGE_ABS_CENSUS2011_B02",
                               "sortValues": "id",
@@ -2945,7 +2955,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Median Age",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_AGE_ABS_CENSUS2011_B02_LGA",
                               "sortValues": "id",
@@ -3242,7 +3253,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Median Age",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_AGE_ABS_CENSUS2011_B02_SA1_SA",
                               "sortValues": "id",
@@ -3538,7 +3550,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Place of Residence on Census Night",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B03",
                                   "sortValues": "id",
@@ -3837,7 +3850,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Place of Residence on Census Night",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B03_LGA",
                                   "sortValues": "id",
@@ -4139,7 +4153,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Place of Residence on Census Night",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B03_SA1_SA",
                                   "sortValues": "id",
@@ -4435,7 +4450,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Place of Residence on Census Night",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B04",
                                   "sortValues": "id",
@@ -4737,7 +4753,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Place of Residence on Census Night",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B04_LGA",
                                   "sortValues": "id",
@@ -5042,7 +5059,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Place of Residence on Census Night",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B04_SA1_SA",
                                   "sortValues": "id",
@@ -5341,7 +5359,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Registered Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B05",
                                   "sortValues": "id",
@@ -5643,7 +5662,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Registered Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B05_LGA",
                                   "sortValues": "id",
@@ -5948,7 +5968,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Registered Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B05_SA1_SA",
                                   "sortValues": "id",
@@ -6247,7 +6268,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Social Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B06",
                                   "sortValues": "id",
@@ -6549,7 +6571,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Social Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B06_LGA",
                                   "sortValues": "id",
@@ -6854,7 +6877,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Social Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B06_SA1_SA",
                                   "sortValues": "id",
@@ -7148,7 +7172,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Indigenous Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B07",
                               "sortValues": "id",
@@ -7443,7 +7468,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Indigenous Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B07_LGA",
                               "sortValues": "id",
@@ -7741,7 +7767,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Indigenous Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B07_SA1_SA",
                               "sortValues": "id",
@@ -8038,7 +8065,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Ancestry",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B08",
                                   "sortValues": "id",
@@ -8333,7 +8361,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Ancestry",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B08_LGA",
                                   "sortValues": "id",
@@ -8631,7 +8660,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Ancestry",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B08_SA1_SA",
                                   "sortValues": "id",
@@ -8923,7 +8953,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B09",
                                   "sortValues": "id",
@@ -9221,7 +9252,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B09_LGA",
                                   "sortValues": "id",
@@ -9522,7 +9554,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B09_SA1_SA",
                                   "sortValues": "id",
@@ -9817,7 +9850,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B10",
                                   "sortValues": "id",
@@ -10112,7 +10146,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B10_LGA",
                                   "sortValues": "id",
@@ -10410,7 +10445,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B10_SA1_SA",
                                   "sortValues": "id",
@@ -10702,7 +10738,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Proficiency in Spoken English/Language",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B11",
                                   "sortValues": "id",
@@ -11000,7 +11037,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Proficiency in Spoken English/Language",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B11_LGA",
                                   "sortValues": "id",
@@ -11301,7 +11339,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Proficiency in Spoken English/Language",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B11_SA1_SA",
                                   "sortValues": "id",
@@ -11596,7 +11635,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Proficiency in Spoken English/Language of Parents",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B12",
                                   "sortValues": "id",
@@ -11898,7 +11938,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Proficiency in Spoken English/Language of Parents",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B12_LGA",
                                   "sortValues": "id",
@@ -12203,7 +12244,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Proficiency in Spoken English/Language of Parents",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B12_SA1_SA",
                                   "sortValues": "id",
@@ -12502,7 +12544,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Language Spoken at Home",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B13",
                                   "sortValues": "id",
@@ -12800,7 +12843,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Language Spoken at Home",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B13_LGA",
                                   "sortValues": "id",
@@ -13101,7 +13145,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Language Spoken at Home",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B13_SA1_SA",
                                   "sortValues": "id",
@@ -13391,7 +13436,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Religious Affiliation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B14",
                               "sortValues": "id",
@@ -13687,7 +13733,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Religious Affiliation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B14_LGA",
                               "sortValues": "id",
@@ -13986,7 +14033,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Religious Affiliation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B14_SA1_SA",
                               "sortValues": "id",
@@ -14284,7 +14332,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Type of Educational Institution Attending",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B15",
                                   "sortValues": "id",
@@ -14582,7 +14631,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Type of Educational Institution Attending",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B15_LGA",
                                   "sortValues": "id",
@@ -14883,7 +14933,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Type of Educational Institution Attending",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B15_SA1_SA",
                                   "sortValues": "id",
@@ -15178,7 +15229,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Highest Year of School Completed",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B16",
                                   "sortValues": "id",
@@ -15480,7 +15532,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Highest Year of School Completed",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B16_LGA",
                                   "sortValues": "id",
@@ -15785,7 +15838,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Highest Year of School Completed",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B16_SA1_SA",
                                   "sortValues": "id",
@@ -16084,7 +16138,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Total Personal Income",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B17",
                                   "sortValues": "id",
@@ -16386,7 +16441,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Total Personal Income",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B17_LGA",
                                   "sortValues": "id",
@@ -16691,7 +16747,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Total Personal Income",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B17_SA1_SA",
                                   "sortValues": "id",
@@ -16985,7 +17042,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Need for Assistance",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B18",
                               "sortValues": "id",
@@ -17280,7 +17338,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Need for Assistance",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B18_LGA",
                               "sortValues": "id",
@@ -17578,7 +17637,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Need for Assistance",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B18_SA1_SA",
                               "sortValues": "id",
@@ -17875,7 +17935,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Voluntary Work for an Organisation or Group",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B19",
                                   "sortValues": "id",
@@ -18177,7 +18238,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Voluntary Work for an Organisation or Group",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B19_LGA",
                                   "sortValues": "id",
@@ -18482,7 +18544,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Voluntary Work for an Organisation or Group",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B19_SA1_SA",
                                   "sortValues": "id",
@@ -18781,7 +18844,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Unpaid Domestic Work: Number of Hours",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B20",
                                   "sortValues": "id",
@@ -19083,7 +19147,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Unpaid Domestic Work: Number of Hours",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B20_LGA",
                                   "sortValues": "id",
@@ -19388,7 +19453,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Unpaid Domestic Work: Number of Hours",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B20_SA1_SA",
                                   "sortValues": "id",
@@ -19687,7 +19753,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Unpaid Assistance to a Person with a Disability",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B21",
                                   "sortValues": "id",
@@ -19989,7 +20056,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Unpaid Assistance to a Person with a Disability",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B21_LGA",
                                   "sortValues": "id",
@@ -20294,7 +20362,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Unpaid Assistance to a Person with a Disability",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B21_SA1_SA",
                                   "sortValues": "id",
@@ -20593,7 +20662,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Unpaid Child Care",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B22",
                                   "sortValues": "id",
@@ -20895,7 +20965,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Unpaid Child Care",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B22_LGA",
                                   "sortValues": "id",
@@ -21200,7 +21271,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Unpaid Child Care",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B22_SA1_SA",
                                   "sortValues": "id",
@@ -21494,7 +21566,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Relationship in Household",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B23",
                               "sortValues": "id",
@@ -21789,7 +21862,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Relationship in Household",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B23_LGA",
                               "sortValues": "id",
@@ -22087,7 +22161,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Relationship in Household",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B23_SA1_SA",
                               "sortValues": "id",
@@ -22379,7 +22454,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Number of Children Ever Born",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B24",
                               "sortValues": "id",
@@ -22671,7 +22747,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Number of Children Ever Born",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B24_LGA",
                               "sortValues": "id",
@@ -22966,7 +23043,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Number of Children Ever Born",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B24_SA1_SA",
                               "sortValues": "id",
@@ -23250,7 +23328,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Family Composition",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B25",
                           "sortValues": "id",
@@ -23534,7 +23613,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Family Composition",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B25_LGA",
                           "sortValues": "id",
@@ -23821,7 +23901,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By SA1 (South Australia only)",
+                          "nameInCatalog": "By SA1 (South Australia only)",
+                          "name": "Family Composition",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B25_SA1_SA",
                           "sortValues": "id",
@@ -24107,7 +24188,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B26",
                               "sortValues": "id",
@@ -24395,7 +24477,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B26_LGA",
                               "sortValues": "id",
@@ -24686,7 +24769,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B26_SA1_SA",
                               "sortValues": "id",
@@ -24966,7 +25050,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Family Blending",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B27",
                           "sortValues": "id",
@@ -25247,7 +25332,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Family Blending",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B27_LGA",
                           "sortValues": "id",
@@ -25531,7 +25617,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By SA1 (South Australia only)",
+                          "nameInCatalog": "By SA1 (South Australia only)",
+                          "name": "Family Blending",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B27_SA1_SA",
                           "sortValues": "id",
@@ -25814,7 +25901,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Total Household Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B28",
                               "sortValues": "id",
@@ -26102,7 +26190,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Total Household Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B28_LGA",
                               "sortValues": "id",
@@ -26393,7 +26482,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Total Household Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B28_SA1_SA",
                               "sortValues": "id",
@@ -26673,7 +26763,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Number of Motor Vehicles",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B29",
                           "sortValues": "id",
@@ -26963,7 +27054,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Number of Motor Vehicles",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B29_LGA",
                           "sortValues": "id",
@@ -27256,7 +27348,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By SA1 (South Australia only)",
+                          "nameInCatalog": "By SA1 (South Australia only)",
+                          "name": "Number of Motor Vehicles",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B29_SA1_SA",
                           "sortValues": "id",
@@ -27548,7 +27641,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Number of Persons Usually Resident",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B30",
                               "sortValues": "id",
@@ -27836,7 +27930,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Number of Persons Usually Resident",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B30_LGA",
                               "sortValues": "id",
@@ -28127,7 +28222,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Number of Persons Usually Resident",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B30_SA1_SA",
                               "sortValues": "id",
@@ -28412,7 +28508,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B31",
                               "sortValues": "id",
@@ -28703,7 +28800,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B31_LGA",
                               "sortValues": "id",
@@ -28997,7 +29095,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B31_SA1_SA",
                               "sortValues": "id",
@@ -29285,7 +29384,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Tenure Type and Landlord Type",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B32",
                               "sortValues": "id",
@@ -29590,7 +29690,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Tenure Type and Landlord Type",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B32_LGA",
                               "sortValues": "id",
@@ -29898,7 +29999,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Tenure Type and Landlord Type",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B32_SA1_SA",
                               "sortValues": "id",
@@ -30200,7 +30302,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Mortgage Repayment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B33",
                               "sortValues": "id",
@@ -30500,7 +30603,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Mortgage Repayment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B33_LGA",
                               "sortValues": "id",
@@ -30803,7 +30907,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Mortgage Repayment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B33_SA1_SA",
                               "sortValues": "id",
@@ -31100,7 +31205,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B34",
                               "sortValues": "id",
@@ -31388,7 +31494,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B34_LGA",
                               "sortValues": "id",
@@ -31679,7 +31786,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B34_SA1_SA",
                               "sortValues": "id",
@@ -31959,7 +32067,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Type of Internet Connection",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B35",
                           "sortValues": "id",
@@ -32252,7 +32361,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Type of Internet Connection",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B35_LGA",
                           "sortValues": "id",
@@ -32548,7 +32658,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By SA1 (South Australia only)",
+                          "nameInCatalog": "By SA1 (South Australia only)",
+                          "name": "Type of Internet Connection",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B35_SA1_SA",
                           "sortValues": "id",
@@ -32843,7 +32954,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B36",
                               "sortValues": "id",
@@ -33140,7 +33252,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B36_LGA",
                               "sortValues": "id",
@@ -33440,7 +33553,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B36_SA1_SA",
                               "sortValues": "id",
@@ -33734,9 +33848,10 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Employment rates",
                               "type": "sdmx-json",
-                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B37",
+                              "id": "ABS_SDMX-JSON_RATE_ABS_CENSUS2011_B37",
                               "sortValues": "id",
                               "showWarnings": false,
                               "cleanFootnotes": true,
@@ -34033,9 +34148,10 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Employment rates",
                               "type": "sdmx-json",
-                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B37_LGA",
+                              "id": "ABS_SDMX-JSON_RATE_ABS_CENSUS2011_B37_LGA",
                               "sortValues": "id",
                               "showWarnings": false,
                               "cleanFootnotes": true,
@@ -34335,9 +34451,10 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Employment rates",
                               "type": "sdmx-json",
-                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B37_SA1_SA",
+                              "id": "ABS_SDMX-JSON_RATE_ABS_CENSUS2011_B37_SA1_SA",
                               "sortValues": "id",
                               "showWarnings": false,
                               "cleanFootnotes": true,
@@ -34631,9 +34748,10 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Labour Force Size",
                               "type": "sdmx-json",
-                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B37",
+                              "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_B37",
                               "sortValues": "id",
                               "showWarnings": false,
                               "cleanFootnotes": true,
@@ -34933,9 +35051,10 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Labour Force Size",
                               "type": "sdmx-json",
-                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B37_LGA",
+                              "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_B37_LGA",
                               "sortValues": "id",
                               "showWarnings": false,
                               "cleanFootnotes": true,
@@ -35238,9 +35357,10 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Labour Force Size",
                               "type": "sdmx-json",
-                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B37_SA1_SA",
+                              "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_B37_SA1_SA",
                               "sortValues": "id",
                               "showWarnings": false,
                               "cleanFootnotes": true,
@@ -35542,7 +35662,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Place of Usual Residence 1 Year Ago",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B38",
                                   "sortValues": "id",
@@ -35840,7 +35961,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Place of Usual Residence 1 Year Ago",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B38_LGA",
                                   "sortValues": "id",
@@ -36141,7 +36263,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Place of Usual Residence 1 Year Ago",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B38_SA1_SA",
                                   "sortValues": "id",
@@ -36436,7 +36559,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Place of Usual Residence 5 Years Ago",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B39",
                                   "sortValues": "id",
@@ -36740,7 +36864,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Place of Usual Residence 5 Years Ago",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B39_LGA",
                                   "sortValues": "id",
@@ -37047,7 +37172,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Place of Usual Residence 5 Years Ago",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B39_SA1_SA",
                                   "sortValues": "id",
@@ -37348,7 +37474,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Non-School Qualification: Level of Education",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B40",
                                   "sortValues": "id",
@@ -37650,7 +37777,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Non-School Qualification: Level of Education",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B40_LGA",
                                   "sortValues": "id",
@@ -37955,7 +38083,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Non-School Qualification: Level of Education",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B40_SA1_SA",
                                   "sortValues": "id",
@@ -38254,7 +38383,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Non-School Qualification: Field of Study",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B41",
                                   "sortValues": "id",
@@ -38556,7 +38686,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Non-School Qualification: Field of Study",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B41_LGA",
                                   "sortValues": "id",
@@ -38862,7 +38993,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By SA1 (South Australia only)",
+                                  "nameInCatalog": "By SA1 (South Australia only)",
+                                  "name": "Non-School Qualification: Field of Study",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B41_SA1_SA",
                                   "sortValues": "id",
@@ -39156,7 +39288,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Labour Force Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B42",
                               "sortValues": "id",
@@ -39451,7 +39584,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Labour Force Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B42_LGA",
                               "sortValues": "id",
@@ -39749,7 +39883,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Labour Force Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B42_SA1_SA",
                               "sortValues": "id",
@@ -40041,7 +40176,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B43",
                               "sortValues": "id",
@@ -40336,7 +40472,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B43_LGA",
                               "sortValues": "id",
@@ -40634,7 +40771,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B43_SA1_SA",
                               "sortValues": "id",
@@ -40926,7 +41064,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B44",
                               "sortValues": "id",
@@ -41214,7 +41353,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B44_LGA",
                               "sortValues": "id",
@@ -41505,7 +41645,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B44_SA1_SA",
                               "sortValues": "id",
@@ -41790,7 +41931,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Occupation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B45",
                               "sortValues": "id",
@@ -42085,7 +42227,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Occupation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B45_LGA",
                               "sortValues": "id",
@@ -42383,7 +42526,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By SA1 (South Australia only)",
+                              "nameInCatalog": "By SA1 (South Australia only)",
+                              "name": "Occupation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B45_SA1_SA",
                               "sortValues": "id",
@@ -42662,7 +42806,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Month by Sex",
+                  "nameInCatalog": "by Month by Sex",
+                  "name": "Deaths at Year of Occurrence",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__DEATHS_MONTHOCCURENCE",
                   "sortValues": "id",
@@ -42936,7 +43081,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Age by Sex",
+                  "nameInCatalog": "by Age by Sex",
+                  "name": "Deaths at Year of Occurrence",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__DEATHS_AGESPECIFIC_OCCURENCEYEAR",
                   "sortValues": "id",
@@ -43214,7 +43360,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Age by Sex",
+                  "nameInCatalog": "by Age by Sex",
+                  "name": "Deaths at Year of Registration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__DEATHS_AGESPECIFIC_REGISTRATIONYEAR",
                   "sortValues": "id",
@@ -43492,7 +43639,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Indigenous Status by Age by Sex",
+                  "nameInCatalog": "by Indigenous Status by Age by Sex",
+                  "name": "Deaths at Year of Registration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__DEATHS_INDIGENOUS",
                   "sortValues": "id",
@@ -43775,7 +43923,8 @@
                   "isOpen": false,
                   "items": [
                     {
-                      "name": "by Indigenous Status by Sex",
+                      "nameInCatalog": "by Indigenous Status by Sex",
+                      "name": "At Year of Registration",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__DEATHS_INDIGENOUS_SUMMARY",
                       "sortValues": "id",
@@ -44051,7 +44200,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Deaths by Marital Status by Age by Sex",
+                  "nameInCatalog": "Deaths by Marital Status by Age by Sex",
+                  "name": "Deaths at Year of Registration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__DEATHS_MARITAL_STATUS",
                   "sortValues": "id",
@@ -44325,7 +44475,8 @@
                   "isOpen": false,
                   "items": [
                     {
-                      "name": "by Sex",
+                      "nameInCatalog": "by Sex",
+                      "name": "At Year of Registration",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__DEATHS_SUMMARY",
                       "sortValues": "id",
@@ -44601,7 +44752,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by LGA (ASGS 2013)",
+                  "nameInCatalog": "by LGA (ASGS 2013)",
+                  "name": "Annual ERP",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_LGA",
                   "sortValues": "id",
@@ -44867,7 +45019,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by LGA (ASGS 2013)",
+                  "nameInCatalog": "by LGA (ASGS 2013)",
+                  "name": "Annual ERP by Age by Sex",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ERP_LGA",
                   "sortValues": "id",
@@ -45139,7 +45292,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by LGA (ASGS 2014)",
+                  "nameInCatalog": "by LGA (ASGS 2014)",
+                  "name": "Annual ERP",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_LGA2014",
                   "sortValues": "id",
@@ -45407,7 +45561,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by LGA (ASGS 2014)",
+                  "nameInCatalog": "by LGA (ASGS 2014)",
+                  "name": "Annual ERP by Age by Sex",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ERP_LGA2014",
                   "sortValues": "id",
@@ -45679,7 +45834,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by LGA (ASGS 2015)",
+                  "nameInCatalog": "by LGA (ASGS 2015)",
+                  "name": "Annual ERP",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ERP_LGA2015",
                   "sortValues": "id",
@@ -45947,7 +46103,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by LGA (ASGS 2015)",
+                  "nameInCatalog": "by LGA (ASGS 2015)",
+                  "name": "Annual ERP by Age by Sex",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_LGA2015",
                   "sortValues": "id",
@@ -46219,7 +46376,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Statistical Area",
+                  "nameInCatalog": "by Statistical Area",
+                  "name": "Annual ERP by Age by Sex",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ERP_ASGS",
                   "sortValues": "id",
@@ -46491,7 +46649,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Statistical Area",
+                  "nameInCatalog": "by Statistical Area",
+                  "name": "Annual ERP",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_ASGS",
                   "sortValues": "id",
@@ -46760,7 +46919,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by State and Territories",
+                  "nameInCatalog": "by State and Territories",
+                  "name": "Annual ERP by Country of Birth by Age",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_ERP_COB_STATE",
                   "sortValues": "id",
@@ -47831,7 +47991,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Age by Sex",
+                  "nameInCatalog": "by Age by Sex",
+                  "name": "Infant Deaths at Year of Registration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__INFANTDEATHS_REGISTRATIONYEAR",
                   "sortValues": "id",
@@ -48106,7 +48267,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by Age by Sex",
+                  "nameInCatalog": "by Age by Sex",
+                  "name": "Infant Deaths at Year of Occurrence",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__INFANTDEATHS_YEAROCCURENCE",
                   "sortValues": "id",
@@ -48377,7 +48539,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by State or Territory of Arrival, by Sex",
+                  "nameInCatalog": "by State or Territory of Arrival, by Sex",
+                  "name": "Interstate Migration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON_ARR_ABS_DEM_QIM",
                   "sortValues": "id",
@@ -48653,7 +48816,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by State or Territory of Departure, by Sex",
+                  "nameInCatalog": "by State or Territory of Departure, by Sex",
+                  "name": "Interstate Migration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON_DEP_ABS_DEM_QIM",
                   "sortValues": "id",
@@ -48924,7 +49088,8 @@
           "isOpen": false,
           "items": [
             {
-              "name": "Over time, from 1978",
+              "name": "Labour Force",
+              "nameInCatalog": "Over time, from 1978",
               "type": "sdmx-json",
               "id": "ABS_SDMX-JSON__LF",
               "sortValues": "id",
@@ -49200,7 +49365,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Land Cover, changes between 2005 and 2011",
+                  "nameInCatalog": "Land Cover, changes between 2005 and 2011",
+                  "name": "Land Use and Cover in South Australia",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_LAND_COVER",
                   "sortValues": "id",
@@ -49736,7 +49902,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Land Use, changes between 2006 and 2011",
+                  "nameInCatalog": "Land Use, changes between 2006 and 2011",
+                  "name": "Land Use and Cover in South Australia",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_LAND_USE",
                   "sortValues": "id",
@@ -51066,7 +51233,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Monetary account for land use, between 2006 and 2011",
+                  "nameInCatalog": "Monetary account for land use, between 2006 and 2011",
+                  "name": "Land Use and Cover in South Australia",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_MONETARY_ACCOUNT",
                   "sortValues": "id",
@@ -51331,7 +51499,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Calendar years 1997 to 2015, by Age by Sex",
+                  "nameInCatalog": "Calendar years 1997 to 2015, by Age by Sex",
+                  "name": "Net Interstate Migration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__INTERSTATEMIGRATION_CY",
                   "sortValues": "id",
@@ -51606,7 +51775,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Arrivals and Departures, State/Territory, Major groupings and visa, Financial years 2004-05 to 2013-14",
+                  "nameInCatalog": "Arrivals and Departures, State/Territory, Major groupings and visa, Financial years 2004-05 to 2013-14",
+                  "name": "Net Overseas Migration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_NOM_VISA_FY",
                   "sortValues": "id",
@@ -51890,7 +52060,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Calendar years 2004 to 2015, by Age by Sex",
+                  "nameInCatalog": "Calendar years 2004 to 2015, by Age by Sex",
+                  "name": "Net Overseas Migration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__NETOVERSEASMIGRATION_CY",
                   "sortValues": "id",
@@ -52165,7 +52336,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Arrivals and Departures, State/Territory, Major groupings and visa, Calendar years 2004 to 2013",
+                  "nameInCatalog": "Arrivals and Departures, State/Territory, Major groupings and visa, Calendar years 2004 to 2013",
+                  "name": "Net Overseas Migration",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_NOM_VISA_CY",
                   "sortValues": "id",
@@ -52985,7 +53157,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Physical account for land cover, between 2006 and 2011",
+                  "nameInCatalog": "Physical account for land cover, between 2006 and 2011",
+                  "name": "Land Use and Cover in South Australia",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_PHYSICAL_ACCOUNT_LC",
                   "sortValues": "id",
@@ -53250,7 +53423,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "Physical account for land use, between 2006 to 2011",
+                  "nameInCatalog": "Physical account for land use, between 2006 to 2011",
+                  "name": "Land Use and Cover in South Australia",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ABS_PHYSICAL_ACCOUNT_LU",
                   "sortValues": "id",
@@ -54322,7 +54496,8 @@
               "isOpen": false,
               "items": [
                 {
-                  "name": "by State or Territory, by Age by Sex",
+                  "nameInCatalog": "by State or Territory, by Age by Sex",
+                  "name": "Quarterly ERP",
                   "type": "sdmx-json",
                   "id": "ABS_SDMX-JSON__ERP_QUARTERLY",
                   "sortValues": "id",
@@ -56742,7 +56917,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Method of Travel to Work",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_WORK_TRAV_ABS_REGIONAL_ASGS",
                           "sortValues": "id",
@@ -59140,7 +59316,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Median Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_INCOME_ABS_CENSUS2011_T02",
                               "sortValues": "id",
@@ -59436,7 +59613,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Median Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_INCOME_ABS_CENSUS2011_T02_LGA",
                               "sortValues": "id",
@@ -59730,7 +59908,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Median Mortgage and Rent",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_RENT_ABS_CENSUS2011_T02",
                           "sortValues": "id",
@@ -60018,7 +60197,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Median Mortgage and Rent",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_RENT_ABS_CENSUS2011_T02_LGA",
                           "sortValues": "id",
@@ -60309,7 +60489,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Statistical Area",
+                          "nameInCatalog": "By Statistical Area",
+                          "name": "Average Household Size",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_T02",
                           "sortValues": "id",
@@ -60597,7 +60778,8 @@
                       "type": "group",
                       "items": [
                         {
-                          "name": "By Local Government Area",
+                          "nameInCatalog": "By Local Government Area",
+                          "name": "Average Household Size",
                           "type": "sdmx-json",
                           "id": "ABS_SDMX-JSON_SIZE_ABS_CENSUS2011_T02_LGA",
                           "sortValues": "id",
@@ -60893,7 +61075,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Median Age",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_AGE_ABS_CENSUS2011_T02",
                               "sortValues": "id",
@@ -61187,7 +61370,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Median Age",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON_AGE_ABS_CENSUS2011_T02_LGA",
                               "sortValues": "id",
@@ -61489,7 +61673,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Age Ranges",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T03",
                                   "sortValues": "id",
@@ -61791,7 +61976,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Age Ranges",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T03_LGA",
                                   "sortValues": "id",
@@ -62096,7 +62282,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Registered Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T04",
                                   "sortValues": "id",
@@ -62398,7 +62585,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Registered Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T04_LGA",
                                   "sortValues": "id",
@@ -62703,7 +62891,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Social Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T05",
                                   "sortValues": "id",
@@ -63005,7 +63194,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Social Marital Status",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T05_LGA",
                                   "sortValues": "id",
@@ -63305,7 +63495,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Indigenous Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T06",
                               "sortValues": "id",
@@ -63600,7 +63791,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Indigenous Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T06_LGA",
                               "sortValues": "id",
@@ -63898,7 +64090,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Number of Children Ever Born",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T07",
                               "sortValues": "id",
@@ -64190,7 +64383,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Number of Children Ever Born",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T07_LGA",
                               "sortValues": "id",
@@ -64490,7 +64684,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T08",
                                   "sortValues": "id",
@@ -64788,7 +64983,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Country of Birth",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T08_LGA",
                                   "sortValues": "id",
@@ -65089,7 +65285,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Ancestry",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T09",
                                   "sortValues": "id",
@@ -65384,7 +65581,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Ancestry",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T09_LGA",
                                   "sortValues": "id",
@@ -65682,7 +65880,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Language Spoken at Home",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T10",
                                   "sortValues": "id",
@@ -65980,7 +66179,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Language Spoken at Home",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T10_LGA",
                                   "sortValues": "id",
@@ -66281,7 +66481,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Proficiency in Spoken English/Language",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T11",
                                   "sortValues": "id",
@@ -66589,7 +66790,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Proficiency in Spoken English/Language",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T11_LGA",
                                   "sortValues": "id",
@@ -66895,7 +67097,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Religious Affiliation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T12",
                               "sortValues": "id",
@@ -67192,7 +67395,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Religious Affiliation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T12_LGA",
                               "sortValues": "id",
@@ -67497,7 +67701,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Type of Educational Institution Attending",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T13",
                                   "sortValues": "id",
@@ -67795,7 +68000,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Type of Educational Institution Attending",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T13_LGA",
                                   "sortValues": "id",
@@ -68091,7 +68297,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T14",
                               "sortValues": "id",
@@ -68384,7 +68591,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T14_LGA",
                               "sortValues": "id",
@@ -68680,7 +68888,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T15",
                               "sortValues": "id",
@@ -68973,7 +69182,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T15_LGA",
                               "sortValues": "id",
@@ -69269,7 +69479,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T16",
                               "sortValues": "id",
@@ -69562,7 +69773,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T16_LGA",
                               "sortValues": "id",
@@ -69858,7 +70070,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T17",
                               "sortValues": "id",
@@ -70151,7 +70364,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Dwelling Structure",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T17_LGA",
                               "sortValues": "id",
@@ -70447,7 +70661,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Tenure Type and Landlord Type",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T18",
                               "sortValues": "id",
@@ -70740,7 +70955,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Tenure Type and Landlord Type",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T18_LGA",
                               "sortValues": "id",
@@ -71036,7 +71252,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T19",
                               "sortValues": "id",
@@ -71324,7 +71541,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T19_LGA",
                               "sortValues": "id",
@@ -71615,7 +71833,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T20",
                               "sortValues": "id",
@@ -71909,7 +72128,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T20_LGA",
                               "sortValues": "id",
@@ -72206,7 +72426,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T21",
                               "sortValues": "id",
@@ -72500,7 +72721,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Rent",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T21_LGA",
                               "sortValues": "id",
@@ -72797,7 +73019,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T22",
                               "sortValues": "id",
@@ -73085,7 +73308,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T22_LGA",
                               "sortValues": "id",
@@ -73376,7 +73600,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T23",
                               "sortValues": "id",
@@ -73664,7 +73889,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T23_LGA",
                               "sortValues": "id",
@@ -73955,7 +74181,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Total Household Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T24",
                               "sortValues": "id",
@@ -74243,7 +74470,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Total Household Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T24_LGA",
                               "sortValues": "id",
@@ -74534,7 +74762,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Family Composition",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T25",
                               "sortValues": "id",
@@ -74822,7 +75051,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Family Composition",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T25_LGA",
                               "sortValues": "id",
@@ -75113,7 +75343,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Family Composition",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T26_LGA",
                               "sortValues": "id",
@@ -75407,7 +75638,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Family Composition and Social Marital Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T27",
                               "sortValues": "id",
@@ -75695,7 +75927,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Family Composition and Social Marital Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T27_LGA",
                               "sortValues": "id",
@@ -75986,7 +76219,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T29",
                               "sortValues": "id",
@@ -76274,7 +76508,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Total Family Income",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T29_LGA",
                               "sortValues": "id",
@@ -76570,7 +76805,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Non-School Qualification: Level of Education",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T30",
                                   "sortValues": "id",
@@ -76872,7 +77108,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Non-School Qualification: Level of Education",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T30_LGA",
                                   "sortValues": "id",
@@ -77177,7 +77414,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Statistical Area",
+                                  "nameInCatalog": "By Statistical Area",
+                                  "name": "Non-School Qualification: Field of Study",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T31",
                                   "sortValues": "id",
@@ -77479,7 +77717,8 @@
                               "type": "group",
                               "items": [
                                 {
-                                  "name": "By Local Government Area",
+                                  "nameInCatalog": "By Local Government Area",
+                                  "name": "Non-School Qualification: Field of Study",
                                   "type": "sdmx-json",
                                   "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T31_LGA",
                                   "sortValues": "id",
@@ -77779,7 +78018,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T32",
                               "sortValues": "id",
@@ -78079,7 +78319,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Status",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T32_LGA",
                               "sortValues": "id",
@@ -78382,7 +78623,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T33",
                               "sortValues": "id",
@@ -78673,7 +78915,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Industry of Employment",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T33_LGA",
                               "sortValues": "id",
@@ -78967,7 +79210,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Statistical Area",
+                              "nameInCatalog": "By Statistical Area",
+                              "name": "Occupation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T34",
                               "sortValues": "id",
@@ -79258,7 +79502,8 @@
                           "type": "group",
                           "items": [
                             {
-                              "name": "By Local Government Area",
+                              "nameInCatalog": "By Local Government Area",
+                              "name": "Occupation",
                               "type": "sdmx-json",
                               "id": "ABS_SDMX-JSON__ABS_CENSUS2011_T34_LGA",
                               "sortValues": "id",
