@@ -4027,7 +4027,14 @@
           "measureWhitelist": null,
           "measureTotalValueIds": null,
           "measureSelectedInitially": null,
-          "blacklist": "{\"SITC_REV3\": [\"[0-9]{3}\"]",
+          "blacklist": {
+            "SITC_REV3": [
+              "[0-9]{3}"
+            ],
+            "INDUSTRY": [
+              "[A-T]"
+            ]
+          },
           "description": "Not all the data available in this dataset is displayed here. Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
@@ -4048,7 +4055,14 @@
           "measureWhitelist": null,
           "measureTotalValueIds": null,
           "measureSelectedInitially": null,
-          "blacklist": "{\"SITC_REV3\": [\"[0-9]{3}\"]",
+          "blacklist": {
+            "SITC_REV3": [
+              "[0-9]{3}"
+            ],
+            "INDUSTRY": [
+              "[A-T]"
+            ]
+          },
           "description": "Not all the data available in this dataset is displayed here. Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
@@ -5400,7 +5414,12 @@
             "SOL"
           ],
           "measureSelectedInitially": null,
-          "blacklist": null,
+          "blacklist": {
+            "MEASURE": [
+              "SOL",
+              "EO"
+            ]
+          },
           "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
@@ -5423,7 +5442,12 @@
             "SOL"
           ],
           "measureSelectedInitially": null,
-          "blacklist": null,
+          "blacklist": {
+            "MEASURE": [
+              "SOL",
+              "EO"
+            ]
+          },
           "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {

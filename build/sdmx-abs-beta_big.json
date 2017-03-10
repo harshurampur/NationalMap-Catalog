@@ -50425,7 +50425,14 @@
                   "SOL"
                 ]
               },
-              "blacklist": "{\"SITC_REV3\": [\"[0-9]{3}\"]",
+              "blacklist": {
+                "SITC_REV3": [
+                  "[0-9]{3}"
+                ],
+                "INDUSTRY": [
+                  "[A-T]"
+                ]
+              },
               "whitelist": {
                 "FMCF": [
                   "TOT",
@@ -50683,7 +50690,14 @@
                   "SOL"
                 ]
               },
-              "blacklist": "{\"SITC_REV3\": [\"[0-9]{3}\"]",
+              "blacklist": {
+                "SITC_REV3": [
+                  "[0-9]{3}"
+                ],
+                "INDUSTRY": [
+                  "[A-T]"
+                ]
+              },
               "whitelist": {
                 "FMCF": [
                   "TOT",
@@ -66436,6 +66450,12 @@
                                       "SOL"
                                     ]
                                   },
+                                  "blacklist": {
+                                    "MEASURE": [
+                                      "SOL",
+                                      "EO"
+                                    ]
+                                  },
                                   "whitelist": {
                                     "FMCF": [
                                       "TOT",
@@ -66736,6 +66756,12 @@
                                     "ENGLP": [
                                       "OTH",
                                       "SOL"
+                                    ]
+                                  },
+                                  "blacklist": {
+                                    "MEASURE": [
+                                      "SOL",
+                                      "EO"
                                     ]
                                   },
                                   "whitelist": {

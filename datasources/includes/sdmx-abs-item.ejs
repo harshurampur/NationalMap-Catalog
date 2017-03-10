@@ -90,7 +90,7 @@
                 "LU_11NC": ["210", "205"],  // 210, 205 are for ABS_LAND_USE
                 "LU_11": ["T"],  // ABS_MONETARY_ACCOUNT, ABS_PHYSICAL_ACCOUNT_LU uses T for total.
                 "LENDER": ["99"], // For LENDING_INDUSTRY and LENDING_BY_PURPOSE
-                "INDUSTRY": ["-1", "T", "-"],  // T for LENDING_INDUSTRY, "-" for LABOUR_PRICE_INDEX (which fortunately has no T), "-1" for MERCH_EXP/IMP. MERCH_... also has T for a subtotal, so put this after -1.
+                "INDUSTRY": ["-1", "T", "-"],  // T for LENDING_INDUSTRY, "-" for LABOUR_PRICE_INDEX (which fortunately has no T), "-1" for MERCH_EXP/IMP. MERCH_IMP/EXP also has A-T subtotals, which we put in a blacklist.
                 // "PURPOSE": ["TOTAL_CF"],  // For LENDING_BY_PURPOSE (not included)
                 "SITC_REV3": ["-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],  // For MERCH_EXP, MERCH_IMP
                 "COUNTRY": ["-"],  // For MERCH_EXP
