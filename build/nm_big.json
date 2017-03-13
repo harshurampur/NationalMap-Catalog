@@ -1346,94 +1346,124 @@
         {
           "items": [
             {
-              "getFeatureInfoFormats": [
-                {
-                  "type": "html"
-                }
-              ],
-              "layers": "1,2,3,4,5",
-              "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer",
-              "type": "esri-mapServer",
-              "legendUrl": "http://www.ga.gov.au/gis/server/capabilities/NEXIS_PopDensity_Legend.png",
-              "rectangle": [
-                112.93529,
-                -38.2088,
-                152.06206,
-                -11.05104
-              ],
-              "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
               "name": "Population Estimates",
-              "featureInfoTemplate": "{{Pixel Value}} people in 100m radius.",
-              "info": [
+              "type": "group",
+              "items": [
                 {
-                  "name": "Licence",
-                  "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+                  "name": "Residential Population Density",
+                  "getFeatureInfoFormats": [
+                    {
+                      "type": "html"
+                    }
+                  ],
+                  "layers": "1,2,3,4,5",
+                  "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer",
+                  "type": "esri-mapServer",
+                  "legendUrl": "http://www.ga.gov.au/gis/server/capabilities/NEXIS_PopDensity_Legend.png",
+                  "rectangle": [
+                    112.93529,
+                    -38.2088,
+                    152.06206,
+                    -11.05104
+                  ],
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "featureInfoTemplate": "{{Pixel Value}} people in 100m radius.",
+                  "info": [
+                    {
+                      "name": "Licence",
+                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "name": "Taxation Statistics 2011-2012",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "taxation-statistics-2011-12",
-              "resourceId": "205ef0d1-521b-4e3c-a26c-4e49e00f1a05"
-            },
-            {
-              "name": "Taxation Statistics 2012-2013",
-              "type": "csv",
-              "url": "http://data.gov.au/dataset/e29ef9ca-0d1a-47ec-9e9b-14a79a941511/resource/fc53a0c8-25e7-4024-b609-438a30b8d807/download/averagetaxableincome201213.csv",
-              "tableStyle": {
-                "dataVariable": "average taxable income",
-                "timeColumn": null,
-                "colorBins": [
-                  -5000,
-                  41154,
-                  50770,
-                  60385,
-                  70000
-                ],
-                "colorPalette": "5-class PuBu"
-              }
-            },
-            {
-              "name": "Taxation Statistics 2013-2014",
-              "type": "csv",
-              "url": "http://data.gov.au/dataset/25e81c18-2083-4abe-81b6-0f530053c63f/resource/9f10b598-fbbb-4028-a982-80d317de7c34/download/taxstats2014individual27selectedaveragesandmediansbypostcode.csv",
-              "tableStyle": {
-                "dataVariable": "averagetaxableincomeorloss",
-                "timeColumn": null,
-                "colorBins": [
-                  -5000,
-                  41154,
-                  50770,
-                  60385,
-                  70000
-                ],
-                "colorPalette": "5-class PuBu"
-              }
-            },
-            {
-              "dataCustodian": "The AURIN project\n\nadmin@aurin.org.au",
-              "type": "wms",
-              "layers": "housingstress",
-              "url": "https://geoserver.aurin.org.au/nm/wms",
-              "name": "Housing Stress",
-              "info": [
+              "name": "Taxation Statistics",
+              "type": "group",
+              "items": [
                 {
-                  "name": "Licence",
-                  "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+                  "name": "Taxation Statistics 2011-2012",
+                  "type": "ckan-resource",
+                  "url": "https://data.gov.au",
+                  "datasetId": "taxation-statistics-2011-12",
+                  "resourceId": "205ef0d1-521b-4e3c-a26c-4e49e00f1a05"
+                },
+                {
+                  "name": "Taxation Statistics 2012-2013",
+                  "type": "csv",
+                  "url": "http://data.gov.au/dataset/e29ef9ca-0d1a-47ec-9e9b-14a79a941511/resource/fc53a0c8-25e7-4024-b609-438a30b8d807/download/averagetaxableincome201213.csv",
+                  "tableStyle": {
+                    "dataVariable": "average taxable income",
+                    "timeColumn": null,
+                    "colorBins": [
+                      -5000,
+                      41154,
+                      50770,
+                      60385,
+                      70000
+                    ],
+                    "colorPalette": "5-class PuBu"
+                  }
+                },
+                {
+                  "name": "Taxation Statistics 2013-2014",
+                  "type": "csv",
+                  "url": "http://data.gov.au/dataset/25e81c18-2083-4abe-81b6-0f530053c63f/resource/9f10b598-fbbb-4028-a982-80d317de7c34/download/taxstats2014individual27selectedaveragesandmediansbypostcode.csv",
+                  "tableStyle": {
+                    "dataVariable": "averagetaxableincomeorloss",
+                    "timeColumn": null,
+                    "colorBins": [
+                      -5000,
+                      41154,
+                      50770,
+                      60385,
+                      70000
+                    ],
+                    "colorPalette": "5-class PuBu"
+                  }
                 }
               ]
             },
             {
-              "name": "Agricultural exposure",
-              "type": "esri-mapServer",
-              "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Agricultural_Exposure/MapServer"
+              "name": "Housing",
+              "type": "group",
+              "items": [
+                {
+                  "dataCustodian": "The AURIN project\n\nadmin@aurin.org.au",
+                  "type": "wms",
+                  "layers": "housingstress",
+                  "url": "https://geoserver.aurin.org.au/nm/wms",
+                  "name": "Housing Stress",
+                  "info": [
+                    {
+                      "name": "Licence",
+                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "name": "Building exposure",
-              "type": "esri-mapServer",
-              "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer"
+              "name": "Agriculture and Mining",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Agricultural Exposure",
+                  "type": "esri-mapServer",
+                  "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Agricultural_Exposure/MapServer"
+                }
+              ]
+            },
+            {
+              "name": "Finance, Business and Trade",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Industrial Building Exposure",
+                  "type": "esri-mapServer",
+                  "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer"
+                }
+              ]
             }
           ],
           "type": "group",

@@ -46551,18 +46551,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP",
+                  "name": "Annual Estimated Resident Population",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by LGA (ASGS 2013)",
-                      "name": "Annual ERP",
+                      "name": "Annual Estimated Resident Population",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_LGA",
                       "sortValues": "id",
@@ -46830,18 +46830,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP by Age by Sex",
+                  "name": "Annual Estimated Resident Population by Age by Sex",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by LGA (ASGS 2013)",
-                      "name": "Annual ERP by Age by Sex",
+                      "name": "Annual Estimated Resident Population by Age by Sex",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ERP_LGA",
                       "sortValues": "id",
@@ -47115,18 +47115,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP",
+                  "name": "Annual Estimated Resident Population",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by LGA (ASGS 2014)",
-                      "name": "Annual ERP",
+                      "name": "Annual Estimated Resident Population",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_LGA2014",
                       "sortValues": "id",
@@ -47396,18 +47396,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP by Age by Sex",
+                  "name": "Annual Estimated Resident Population by Age by Sex",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by LGA (ASGS 2014)",
-                      "name": "Annual ERP by Age by Sex",
+                      "name": "Annual Estimated Resident Population by Age by Sex",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ERP_LGA2014",
                       "sortValues": "id",
@@ -47681,18 +47681,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP",
+                  "name": "Annual Estimated Resident Population",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by LGA (ASGS 2015)",
-                      "name": "Annual ERP",
+                      "name": "Annual Estimated Resident Population",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ERP_LGA2015",
                       "sortValues": "id",
@@ -47962,18 +47962,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP by Age by Sex",
+                  "name": "Annual Estimated Resident Population by Age by Sex",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by LGA (ASGS 2015)",
-                      "name": "Annual ERP by Age by Sex",
+                      "name": "Annual Estimated Resident Population by Age by Sex",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_LGA2015",
                       "sortValues": "id",
@@ -48247,18 +48247,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP by Age by Sex",
+                  "name": "Annual Estimated Resident Population by Age by Sex",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by Statistical Area",
-                      "name": "Annual ERP by Age by Sex",
+                      "name": "Annual Estimated Resident Population by Age by Sex",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ERP_ASGS",
                       "sortValues": "id",
@@ -48532,18 +48532,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP",
+                  "name": "Annual Estimated Resident Population",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by Statistical Area",
-                      "name": "Annual ERP",
+                      "name": "Annual Estimated Resident Population",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ANNUAL_ERP_ASGS",
                       "sortValues": "id",
@@ -48814,18 +48814,18 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Annual ERP by Country of Birth by Age",
+                  "name": "Annual Estimated Resident Population by Country of Birth by Age",
                   "type": "group",
                   "isOpen": false,
                   "items": [
                     {
                       "nameInCatalog": "by State and Territories",
-                      "name": "Annual ERP by Country of Birth by Age",
+                      "name": "Annual Estimated Resident Population by Country of Birth by Age",
                       "type": "sdmx-json",
                       "id": "ABS_SDMX-JSON__ABS_ERP_COB_STATE",
                       "sortValues": "id",
