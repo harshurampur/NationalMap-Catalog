@@ -34,11 +34,13 @@
     "isOpen": false,
     "items": [{
     <% } %>
+    <% if (group) { %> // If "group" is not null, put it in a group with that name.
     "name": "<%= group %>",
     "type": "group",
     "isOpen": false,
     "items": [
         {
+    <% } %>
             <% if (subgroup) { %> // If "subgroup" is not null, add another grouping level above "name"
                 "name": "<%= subgroup %>",
                 "type": "group",
@@ -195,8 +197,10 @@
             <% if (subgroup) { %> // If "subgroup" is not null, close the extra grouping levels
             }]
             <% } %>
+    <% if (group) { %> // If "group" is not null, close the group.
         }
     ]
+    <% } %>
     <% if (series) { %> // If "series" is not null, close the extra top-level grouping level
     }]
     <% } %>
