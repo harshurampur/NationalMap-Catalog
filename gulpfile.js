@@ -118,17 +118,15 @@ gulp.task('validate', ['merge-datasources', 'make-validator-schema'], function()
 
     "name": "<%= name %>"
  */
-gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
-// gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
+// gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
+gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
     var ejs = require('ejs');
     var JSON5 = require('json5');
     var convertSdmxCsvToEjs = require('./lib/convertSdmxCsvToEjs');
 
+    // Start by rendering the sdmx-abs catalog from the csv to ejs, which is an input to nm.ejs.
+    convertSdmxCsvToEjs(sourceDir + '/' + 'sdmx-abs.csv', derivedSourceDir + '/' + 'sdmx-abs.ejs');
     testAndRead(sourceDir);
-    // For now, render the sdmx-abs catalog to its own alternative file.
-    // When it moves out of beta, we will include this in nm.csv somehow.
-    convertSdmxCsvToEjs(sourceDir + '/' + 'sdmx-abs.csv', derivedSourceDir + '/' + 'sdmx-abs-beta.ejs');
-    testAndRead(derivedSourceDir);
 
     function testAndRead(dir) {
         try {
@@ -185,7 +183,7 @@ gulp.task('watch-datasource-templates', ['render-datasource-templates'], functio
 // Needs to be run manually every now and then.
 gulp.task('update-lga-filter', function() {
     var requestp = require('request-promise');
-    console.log('Contacting data.gov.au')
+    console.log('Contacting data.gov.au');
     return requestp({
         url: 'https://data.gov.au/api/3/action/organization_list?all_fields=true',
         json: true
