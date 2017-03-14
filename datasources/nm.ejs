@@ -20,6 +20,7 @@
             "name": "National Datasets",
             "id": "Root Group/National Data Sets",
             "type": "group",
+            "isOpen": true,
             "items": [
                 <%- include National_Datasets/Communications %>,
                 <%- include National_Datasets/Ground_Water %>,
@@ -42,6 +43,15 @@
         },
         <%- include includes/data_gov_au %>,
         <%- include includes/Data_Providers %>,
+        {
+            "type": "group",
+            "name": "Australian Bureau of Statistics",
+            "id": "Root Group/Australian Bureau of Statistics (BETA)",
+            "initialMessage": {
+                "content": "The ABS data on National Map has been updated and improved! You can now find all the data that was here, plus more, in the National Datasets section - mostly under 'Social and Economic', but with further data under 'Land' and 'Environment'.",
+                "title": "ABS Data has moved"
+            }
+        },
         <%- include includes/ACT %>,
         <%- include includes/NSW %>,
         <%- include includes/NT %>,
@@ -51,7 +61,7 @@
         <%- include includes/VIC %>,
         <%- include includes/WA %>,
         <%- include includes/Local_Government %>,
-        <%- include ../derived_datasources/sdmx-abs.ejs %>,
+        <%- include ../derived_datasources/sdmx-abs.ejs %>
     ]
 }
 

@@ -20,6 +20,7 @@
       "name": "National Datasets",
       "id": "Root Group/National Data Sets",
       "type": "group",
+      "isOpen": true,
       "items": [
         {
           "items": [
@@ -3966,6 +3967,15 @@
       ],
       "type": "group",
       "name": "Data Providers"
+    },
+    {
+      "type": "group",
+      "name": "Australian Bureau of Statistics",
+      "id": "Root Group/Australian Bureau of Statistics (BETA)",
+      "initialMessage": {
+        "content": "The ABS data on National Map has been updated and improved! You can now find all the data that was here, plus more, in the National Datasets section - mostly under 'Social and Economic', but with further data under 'Land' and 'Environment'.",
+        "title": "ABS Data has moved"
+      }
     },
     {
       "type": "group",
@@ -64306,278 +64316,271 @@
           "type": "group",
           "items": [
             {
-              "name": "Estimated Resident Population",
+              "name": "Population Estimates",
               "type": "group",
               "isOpen": false,
               "items": [
                 {
-                  "name": "Quarterly ERP",
-                  "type": "group",
-                  "isOpen": false,
-                  "items": [
-                    {
-                      "nameInCatalog": "by State or Territory, by Age by Sex",
-                      "name": "Quarterly ERP",
-                      "type": "sdmx-json",
-                      "id": "ABS_SDMX-JSON__ERP_QUARTERLY",
-                      "sortValues": "id",
-                      "showWarnings": false,
-                      "cleanFootnotes": true,
-                      "forceShowDimensionIds": [
-                        "MEASURE"
-                      ],
-                      "url": "http://stat.data.abs.gov.au/sdmx-json/data/ERP_QUARTERLY",
-                      "description": "Estimated resident population (ERP) is the official estimate of the Australian population, which links people to a place of usual residence within Australia. Estimates of the resident population are based on Census counts by place of usual residence (excluding short-term overseas visitors in Australia), with an allowance for Census net undercount, to which are added the estimated number of Australian residents temporarily overseas at the time of the Census. Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/3412.0Explanatory%20Notes12014-15?OpenDocument).<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ERP_QUARTERLY). Click on the 'i' symbols on that page for further information and links.",
-                      "singleValuedDimensionIds": [
-                        "MEASURE"
-                      ],
-                      "totalValueIds": {
-                        "*": [
-                          "TOT",
-                          "LFTOT"
-                        ],
-                        "SEX_ABS": [
-                          "3"
-                        ],
-                        "AGE": [
-                          "TT",
-                          "O15"
-                        ],
-                        "SPC": [
-                          "TT"
-                        ],
-                        "MTWP": [
-                          "1M",
-                          "2M",
-                          "3M"
-                        ],
-                        "FMCF": [
-                          "CF",
-                          "1",
-                          "2",
-                          "3"
-                        ],
-                        "POUR": [
-                          "TOT",
-                          "1",
-                          "2",
-                          "2_0",
-                          "2_11"
-                        ],
-                        "UAI1P": [
-                          "TOT",
-                          "2",
-                          "2_S",
-                          "2_D"
-                        ],
-                        "LFSP": [
-                          "TOT",
-                          "EMP",
-                          "UEMP"
-                        ],
-                        "FAMILY_TYPE": [
-                          "6"
-                        ],
-                        "HH_TYPE": [
-                          "4"
-                        ],
-                        "LEN": [
-                          "99"
-                        ],
-                        "INFANT_AGE": [
-                          "IMTOT"
-                        ],
-                        "DLC_11NC": [
-                          "210",
-                          "205"
-                        ],
-                        "DLC_11": [
-                          "T"
-                        ],
-                        "ANZIC": [
-                          "01",
-                          "TOTAL"
-                        ],
-                        "LU_11NC": [
-                          "210",
-                          "205"
-                        ],
-                        "LU_11": [
-                          "T"
-                        ],
-                        "LENDER": [
-                          "99"
-                        ],
-                        "INDUSTRY": [
-                          "-1",
-                          "T",
-                          "-"
-                        ],
-                        "SITC_REV3": [
-                          "-1",
-                          "0",
-                          "1",
-                          "2",
-                          "3",
-                          "4",
-                          "5",
-                          "6",
-                          "7",
-                          "8",
-                          "9"
-                        ],
-                        "COUNTRY": [
-                          "-"
-                        ],
-                        "STRD_BEDRD": [
-                          "._TOT"
-                        ],
-                        "FMCF_INCC": [
-                          "TOT_TOT"
-                        ],
-                        "DEPOSIT_TYPE": [
-                          "6"
-                        ],
-                        "MINERAL_TYPE": [
-                          "11"
-                        ],
-                        "MLU_0611": [
-                          "9"
-                        ],
-                        "PLU_0611": [
-                          "10"
-                        ],
-                        "PLC_0611": [
-                          "10"
-                        ],
-                        "PERSON_LA": [
-                          "16"
-                        ],
-                        "LEASE_TYPE": [
-                          "3"
-                        ],
-                        "ASSET": [
-                          "999"
-                        ],
-                        "SECTOR": [
-                          "7"
-                        ],
-                        "VEHICLE": [
-                          "900"
-                        ],
-                        "IND_R": [
-                          "20"
-                        ],
-                        "RELP": [
-                          "2"
-                        ],
-                        "ANCP": [
-                          "TOTP"
-                        ],
-                        "LANP": [
-                          "LOTE",
-                          "71",
-                          "52",
-                          "41",
-                          "65"
-                        ],
-                        "ENGLP": [
-                          "OTH",
-                          "SOL"
-                        ]
-                      },
-                      "whitelist": {
-                        "FMCF": [
-                          "TOT",
-                          "[1-3]",
-                          "9"
-                        ],
-                        "STRD": [
-                          "TOT",
-                          "OPD",
-                          "[1-3]",
-                          "9",
-                          "11",
-                          "Z",
-                          "UPD"
-                        ],
-                        "LFSP": [
-                          "TOT",
-                          "EMP",
-                          "[1-4]",
-                          "7",
-                          "Z",
-                          "UEMP"
-                        ],
-                        "MTWP": [
-                          "TOT",
-                          "[1-3]M",
-                          "00[1-9]",
-                          "010",
-                          "011",
-                          "232",
-                          "TA",
-                          "BA",
-                          "B2",
-                          "233",
-                          "234",
-                          "Z"
-                        ],
-                        "TYPP": [
-                          "TOT",
-                          "10",
-                          "2",
-                          "3",
-                          "40",
-                          "50",
-                          "60",
-                          "Z",
-                          "V"
-                        ],
-                        "FMCF_INCC": [
-                          ".*_.*"
-                        ],
-                        "IND": [
-                          "-"
-                        ],
-                        "AGE": [
-                          "A[0-9]+",
-                          "T.*",
-                          "O.*"
-                        ]
-                      },
-                      "regionDimensionId": "STATE",
-                      "regionType": "ste",
-                      "selectedInitially": {
-                        "COB": [
-                          "1101"
-                        ],
-                        "DT": [
-                          "5"
-                        ],
-                        "STATE": [
-                          "1",
-                          "2",
-                          "3",
-                          "4",
-                          "5",
-                          "6",
-                          "7",
-                          "8"
-                        ],
-                        "ASGS_2011": [
-                          "1",
-                          "2",
-                          "3",
-                          "4",
-                          "5",
-                          "6",
-                          "7",
-                          "8"
-                        ]
-                      }
-                    }
-                  ]
+                  "name": "Quarterly Estimated Resident Population by Age by Sex",
+                  "nameInCatalog": "Quarterly Estimated Resident Population by Age by Sex",
+                  "type": "sdmx-json",
+                  "id": "ABS_SDMX-JSON__ERP_QUARTERLY",
+                  "sortValues": "id",
+                  "showWarnings": false,
+                  "cleanFootnotes": true,
+                  "forceShowDimensionIds": [
+                    "MEASURE"
+                  ],
+                  "url": "http://stat.data.abs.gov.au/sdmx-json/data/ERP_QUARTERLY",
+                  "description": "Estimated resident population (ERP) is the official estimate of the Australian population, which links people to a place of usual residence within Australia. Estimates of the resident population are based on Census counts by place of usual residence (excluding short-term overseas visitors in Australia), with an allowance for Census net undercount, to which are added the estimated number of Australian residents temporarily overseas at the time of the Census. Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/3412.0Explanatory%20Notes12014-15?OpenDocument).<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ERP_QUARTERLY). Click on the 'i' symbols on that page for further information and links.",
+                  "singleValuedDimensionIds": [
+                    "MEASURE"
+                  ],
+                  "totalValueIds": {
+                    "*": [
+                      "TOT",
+                      "LFTOT"
+                    ],
+                    "SEX_ABS": [
+                      "3"
+                    ],
+                    "AGE": [
+                      "TT",
+                      "O15"
+                    ],
+                    "SPC": [
+                      "TT"
+                    ],
+                    "MTWP": [
+                      "1M",
+                      "2M",
+                      "3M"
+                    ],
+                    "FMCF": [
+                      "CF",
+                      "1",
+                      "2",
+                      "3"
+                    ],
+                    "POUR": [
+                      "TOT",
+                      "1",
+                      "2",
+                      "2_0",
+                      "2_11"
+                    ],
+                    "UAI1P": [
+                      "TOT",
+                      "2",
+                      "2_S",
+                      "2_D"
+                    ],
+                    "LFSP": [
+                      "TOT",
+                      "EMP",
+                      "UEMP"
+                    ],
+                    "FAMILY_TYPE": [
+                      "6"
+                    ],
+                    "HH_TYPE": [
+                      "4"
+                    ],
+                    "LEN": [
+                      "99"
+                    ],
+                    "INFANT_AGE": [
+                      "IMTOT"
+                    ],
+                    "DLC_11NC": [
+                      "210",
+                      "205"
+                    ],
+                    "DLC_11": [
+                      "T"
+                    ],
+                    "ANZIC": [
+                      "01",
+                      "TOTAL"
+                    ],
+                    "LU_11NC": [
+                      "210",
+                      "205"
+                    ],
+                    "LU_11": [
+                      "T"
+                    ],
+                    "LENDER": [
+                      "99"
+                    ],
+                    "INDUSTRY": [
+                      "-1",
+                      "T",
+                      "-"
+                    ],
+                    "SITC_REV3": [
+                      "-1",
+                      "0",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8",
+                      "9"
+                    ],
+                    "COUNTRY": [
+                      "-"
+                    ],
+                    "STRD_BEDRD": [
+                      "._TOT"
+                    ],
+                    "FMCF_INCC": [
+                      "TOT_TOT"
+                    ],
+                    "DEPOSIT_TYPE": [
+                      "6"
+                    ],
+                    "MINERAL_TYPE": [
+                      "11"
+                    ],
+                    "MLU_0611": [
+                      "9"
+                    ],
+                    "PLU_0611": [
+                      "10"
+                    ],
+                    "PLC_0611": [
+                      "10"
+                    ],
+                    "PERSON_LA": [
+                      "16"
+                    ],
+                    "LEASE_TYPE": [
+                      "3"
+                    ],
+                    "ASSET": [
+                      "999"
+                    ],
+                    "SECTOR": [
+                      "7"
+                    ],
+                    "VEHICLE": [
+                      "900"
+                    ],
+                    "IND_R": [
+                      "20"
+                    ],
+                    "RELP": [
+                      "2"
+                    ],
+                    "ANCP": [
+                      "TOTP"
+                    ],
+                    "LANP": [
+                      "LOTE",
+                      "71",
+                      "52",
+                      "41",
+                      "65"
+                    ],
+                    "ENGLP": [
+                      "OTH",
+                      "SOL"
+                    ]
+                  },
+                  "whitelist": {
+                    "FMCF": [
+                      "TOT",
+                      "[1-3]",
+                      "9"
+                    ],
+                    "STRD": [
+                      "TOT",
+                      "OPD",
+                      "[1-3]",
+                      "9",
+                      "11",
+                      "Z",
+                      "UPD"
+                    ],
+                    "LFSP": [
+                      "TOT",
+                      "EMP",
+                      "[1-4]",
+                      "7",
+                      "Z",
+                      "UEMP"
+                    ],
+                    "MTWP": [
+                      "TOT",
+                      "[1-3]M",
+                      "00[1-9]",
+                      "010",
+                      "011",
+                      "232",
+                      "TA",
+                      "BA",
+                      "B2",
+                      "233",
+                      "234",
+                      "Z"
+                    ],
+                    "TYPP": [
+                      "TOT",
+                      "10",
+                      "2",
+                      "3",
+                      "40",
+                      "50",
+                      "60",
+                      "Z",
+                      "V"
+                    ],
+                    "FMCF_INCC": [
+                      ".*_.*"
+                    ],
+                    "IND": [
+                      "-"
+                    ],
+                    "AGE": [
+                      "A[0-9]+",
+                      "T.*",
+                      "O.*"
+                    ]
+                  },
+                  "regionDimensionId": "STATE",
+                  "regionType": "ste",
+                  "selectedInitially": {
+                    "COB": [
+                      "1101"
+                    ],
+                    "DT": [
+                      "5"
+                    ],
+                    "STATE": [
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8"
+                    ],
+                    "ASGS_2011": [
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8"
+                    ]
+                  }
                 }
               ]
             }

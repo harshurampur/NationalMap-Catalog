@@ -1574,12 +1574,13 @@
         }
       ],
       "initialMessage": {
-        "key": "AbsDataProviderWarning",
-        "content": "This is an experimental section providing access to online data services at the Australian Bureau of Statistics (ABS).\n\nNationalMap provides a geospatial viewer for these datasets and the ability to look at different slices of the data using the Now Viewing panel on the left.\n\nFor deeper analysis of the ABS data, visit http://www.abs.gov.au/ for datasets and viewing tools.",
-        "title": "ABS Data Provider Information"
+        "key": "AbsDataITTShared",
+        "content": "This section uses a legacy interface to the ABS data, which will stop working in a future update. There is an improved interface to the ABS data available in the National Datasets section, mostly under the Social and Economic heading, but with additional data under Land and Environment.",
+        "title": "Legacy ABS Data Interface"
       },
       "type": "group",
-      "name": "Australian Bureau of Statistics (BETA)"
+      "name": "Australian Bureau of Statistics",
+      "id": "Root Group/Australian Bureau of Statistics (BETA)"
     }
   ]
 }
