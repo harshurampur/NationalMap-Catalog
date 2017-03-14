@@ -515,7 +515,7 @@
                 },
                 {
                   "name": "Agricultural Exposure",
-                  "id": "Root Group/National Data Sets/Social and Economic/Agricultural Exposure",
+                  "id": "Root Group/National Data Sets/Social and Economic/Agricultural exposure",
                   "type": "esri-mapServer",
                   "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Agricultural_Exposure/MapServer"
                 }
@@ -1360,6 +1360,7 @@
           "items": [
             {
               "name": "Population Estimates",
+              "id": "Population Estimates",
               "type": "group",
               "items": [
                 {
@@ -1466,7 +1467,7 @@
               "items": [
                 {
                   "name": "Industrial Building Exposure",
-                  "id": "Root Group/National Data Sets/Social and Economic/Building Exposure",
+                  "id": "Root Group/National Data Sets/Social and Economic/Building exposure",
                   "type": "esri-mapServer",
                   "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer"
                 }
