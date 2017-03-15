@@ -2,6 +2,13 @@
 Change Log
 ==========
 
+### 2017-03-15
+
+* Deprecated the old Australian Bureau of Statistics group and instead interspersed ABS items (now based on SDMX-JSON) into National Datasets.  Moved a few existing items into subfolders as appropriate.
+* Moved `Agricultural exposure` from `Social and Economic` to `Land`.
+* Moved ABS Statistical Boundaries datasets into the Data Providers group.
+* Specified the character set for the ABC Photo Stories CSV file in order to fix a problem with incorrect display of unusual characters.
+
 ### 2017-02-15-updated-2017-03-07
 
 * Created dga_filter.ejs to tidy data.gov.au query
