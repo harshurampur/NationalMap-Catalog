@@ -267,7 +267,8 @@
               "tableStyle": {
                 "dataVariable": "State",
                 "timeColumn": null
-              }
+              },
+              "charSet": "iso-8859-1"
             },
             {
               "name": "ABC Photo Stories by date",
@@ -279,7 +280,8 @@
               "tableStyle": {
                 "dataVariable": "State",
                 "displayDuration": 1440
-              }
+              },
+              "charSet": "iso-8859-1"
             },
             {
               "id": "54a553a0",
