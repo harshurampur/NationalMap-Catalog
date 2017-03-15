@@ -58620,9 +58620,6 @@
                   ],
                   "url": "http://stat.data.abs.gov.au/sdmx-json/data/HF",
                   "description": "This publication presents statistics on housing finance commitments made by significant lenders. This includes secured finance commitments for the construction or purchase of owner occupied dwellings and finance commitments for the construction or purchase of dwellings for rent or resale (investment housing). Also included are the outstanding values of housing loan assets to individuals held by lenders at the end of each reference month. Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/exnote/5609.0).<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=HF). Click on the 'i' symbols on that page for further information and links.",
-                  "aggregatedDimensionIds": [
-                    "STATE"
-                  ],
                   "singleValuedDimensionIds": [
                     "DT",
                     "TSEST"
