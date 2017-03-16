@@ -184,7 +184,7 @@
                     "MEASURE": <%- JSON.stringify(measureSelectedInitially) %>,
                 <% } %>
                 "COB": ["1101"], // Start with Australia. There is no working total value.
-                "DT": ["5"], // for series HF, start with average loan size.
+                "DT": ["2"], // for series HF and RT, start with a $ amount (was "5" but that breaks RT).
                 "STATE": ["1", "2", "3", "4", "5", "6", "7", "8"], // In the rare case where STATE is not aggregated over (eg. ABS_DEM_QIM), start with all selected.
                 "ASGS_2011": ["1", "2", "3", "4", "5", "6", "7", "8"] // In the rare case where ASGS_2011 is not shown as a region (eg. ABS_DEM_QIM), start with all selected.
             }
