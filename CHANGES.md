@@ -8,6 +8,10 @@ Change Log
 * Moved `Agricultural exposure` from `Social and Economic` to `Land`.
 * Moved ABS Statistical Boundaries datasets into the Data Providers group.
 * Specified the character set for the ABC Photo Stories CSV file in order to fix a problem with incorrect display of unusual characters.
+* Created a catalog group for State of the Environment in the Data Providers group.
+* Added a Beta Queeensland Government Group for their new webservices.
+* Added `Telecommunications in New Developments` to Communications.
+* Restructured `Surface Water` National Dataset and added `Dynamic Hydrology and Marine Layer`. 
 
 ### 2017-02-15-updated-2017-03-07
 
