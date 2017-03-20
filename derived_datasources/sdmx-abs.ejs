@@ -4556,7 +4556,7 @@
     "id": "HF",
     "subId": null,
     "geoType": null,
-    "hasState": true,
+    "hasState": null,
     "singleValuedDimensionIds": [
       "DT",
       "TSEST"
@@ -5677,7 +5677,7 @@
     "id": "RT",
     "subId": null,
     "geoType": "SAx",
-    "hasState": true,
+    "hasState": null,
     "singleValuedDimensionIds": [
       "DT",
       "TSEST"
@@ -5690,7 +5690,15 @@
     "measureWhitelist": null,
     "measureTotalValueIds": null,
     "measureSelectedInitially": null,
-    "blacklist": null,
+    "blacklist": {
+      "FREQUENCY": [
+        "Q"
+      ],
+      "DT": [
+        "3",
+        "4"
+      ]
+    },
     "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
