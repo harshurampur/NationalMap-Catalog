@@ -189,7 +189,6 @@ gulp.task('update-lga-filter', function() {
         json: true
     }).then(function(results) {
         var filterFile = 'datasources/includes/lga_filter.ejs';
-        //var r = results.result.filter( org => org.extras.filter(jurisdiction => jurisdiction.value == 'Local Government').length > 0).map(org => 'organization:' + org.name);
         var r = results.result.filter( org => org.extras.filter(extra => extra.key === 'jurisdiction' && extra.value === 'Local Government').length > 0).map(org => 'organization:' + org.name);
         fs.writeFileSync(filterFile, '<%# Generated automatically by gulpfile.js %>' + r.join(' OR '));
         console.log('Updated filter from data.gov.au in ' + filterFile);
