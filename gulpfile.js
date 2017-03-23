@@ -118,8 +118,8 @@ gulp.task('validate', ['merge-datasources', 'make-validator-schema'], function()
 
     "name": "<%= name %>"
  */
-// gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
-gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
+gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
+// gulp.task('render-datasource-templates', function() {  // just for testing, removes update-lga-filter
     var ejs = require('ejs');
     var JSON5 = require('json5');
     var convertSdmxCsvToEjs = require('./lib/convertSdmxCsvToEjs');
@@ -185,11 +185,11 @@ gulp.task('update-lga-filter', function() {
     var requestp = require('request-promise');
     console.log('Contacting data.gov.au');
     return requestp({
-        url: 'https://data.gov.au/api/3/action/organization_list?all_fields=true',
+        url: 'https://data.gov.au/api/3/action/organization_list?all_fields=true&include_extras=true',
         json: true
     }).then(function(results) {
         var filterFile = 'datasources/includes/lga_filter.ejs';
-        var r = results.result.filter(org => org.title.match(/city|shire/i)).map(org => 'organization:' + org.name);
+        var r = results.result.filter( org => org.extras.filter(jurisdiction => jurisdiction.value == 'Local Government').length > 0).map(org => 'organization:' + org.name);
         fs.writeFileSync(filterFile, '<%# Generated automatically by gulpfile.js %>' + r.join(' OR '));
         console.log('Updated filter from data.gov.au in ' + filterFile);
     }).catch(function(e) {

@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-04-15
+
+* Modified `gulp update-lga-filter` to test for `Jurisdiction=Local Government` as opposed to matching a regex and reactivated as part of gulp.
+
 ### 2017-03-15-updated-2017-03-20
 
 * Created a catalog group for State of the Environment in the Data Providers group.
