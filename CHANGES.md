@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### 2017-04-15
+### 2017-04-13
 
 * Modified `gulp update-lga-filter` to test for `Jurisdiction=Local Government` as opposed to matching a regex and reactivated as part of gulp.
 
