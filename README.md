@@ -33,7 +33,7 @@ npm run build
 
 This command compiles the catalog fragments from `datasources/` into a single, minified `build/nm.json`. A list of Geoscience Australia services used is also generated in `build/ga_services.txt`.
 
-If you don't have commit access directly to the NationalMap-Catalog repository on GitHub, create a fork and then add your fork as a remote.  The URL of the remote can be found in the GitHub UI.  Click the green `Clone or download` button in the top right of the main GitHub page for your fork and copy the URL from the text box.  Then run:
+If you don't have commit access directly to the NationalMap-Catalog repository on GitHub, create a fork and then add your fork as a remote by running:
 
 ```
 git remote add kring https://github.com/kring/NationalMap-Catalog.git
