@@ -75,7 +75,7 @@ Replace `kring` with your GitHub user name, and replace `my-awesome-catalog-chan
 
 You can test your changes before you even commit them to GitHub by dragging/dropping the generated catalog file, as described above.  But a slightly more "real world" test is possible once your changes are pushed to GitHub.
 
-Use the GitHub UI to find the branch containing your changes in your NationalMap-Catalog fork.  Then navigate to the `build/nm.json` directory and click the Download button.  Copy the URL that your browser visits, and tack it onto the end of this URL: `http://nationalmap.gov.au/#clean&`.  For example: http://nationalmap.gov.au/#clean&https://github.com/kring/NationalMap-Catalog/raw/master/build/nm.json
+Use the GitHub UI to find the branch containing your changes in your NationalMap-Catalog fork.  Then navigate to the `build/nm.json` directory and click the Download button.  Copy the URL that your browser visits, and tack it onto the end of this URL: `http://nationalmap.gov.au/#clean&`.  For example: http://nationalmap.gov.au/#clean&https://github.com/kring/NationalMap-Catalog/raw/test/build/nm.json
 
 NationalMap will open with your modified catalog.
 
