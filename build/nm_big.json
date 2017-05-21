@@ -1063,8 +1063,9 @@
               ]
             },
             {
-              "url": "http://services.ga.gov.au/gis/rest/services/Landcover_WM/MapServer",
-              "type": "esri-mapServer",
+              "url": "http://services.ga.gov.au/gis/services/Land_Cover_WM/MapServer/WMSServer?service=WMS&request=GetCapabilities",
+              "layers": "Land_Cover_Class",
+              "type": "wms",
               "rectangle": [
                 110,
                 -45.00479,
@@ -1421,36 +1422,36 @@
                 {
                   "name": "Taxation Statistics 2012-2013",
                   "id": "Root Group/National Data Sets/Social and Economic/Taxation Statistics 2012-2013",
-                  "type": "csv",
-                  "url": "http://data.gov.au/dataset/e29ef9ca-0d1a-47ec-9e9b-14a79a941511/resource/fc53a0c8-25e7-4024-b609-438a30b8d807/download/averagetaxableincome201213.csv",
+                  "type": "ckan-resource",
+                  "url": "http://data.gov.au/",
+                  "resourceId": "fc53a0c8-25e7-4024-b609-438a30b8d807",
                   "tableStyle": {
                     "dataVariable": "average taxable income",
                     "timeColumn": null,
-                    "colorBins": [
-                      -5000,
-                      41154,
-                      50770,
-                      60385,
-                      70000
-                    ],
                     "colorPalette": "5-class PuBu"
                   }
                 },
                 {
                   "name": "Taxation Statistics 2013-2014",
                   "id": "Root Group/National Data Sets/Social and Economic/Taxation Statistics 2013-2014",
-                  "type": "csv",
-                  "url": "http://data.gov.au/dataset/25e81c18-2083-4abe-81b6-0f530053c63f/resource/9f10b598-fbbb-4028-a982-80d317de7c34/download/taxstats2014individual27selectedaveragesandmediansbypostcode.csv",
+                  "type": "ckan-resource",
+                  "url": "http://data.gov.au/",
+                  "resourceId": "9f10b598-fbbb-4028-a982-80d317de7c34",
                   "tableStyle": {
                     "dataVariable": "averagetaxableincomeorloss",
                     "timeColumn": null,
-                    "colorBins": [
-                      -5000,
-                      41154,
-                      50770,
-                      60385,
-                      70000
-                    ],
+                    "colorPalette": "5-class PuBu"
+                  }
+                },
+                {
+                  "name": "Taxation Statistics 2014-2015",
+                  "id": "Root Group/National Data Sets/Social and Economic/Taxation Statistics 2014-2015",
+                  "type": "ckan-resource",
+                  "url": "https://data.gov.au",
+                  "resourceId": "4e21e064-9ff9-4033-a79a-37681f9e54b1",
+                  "tableStyle": {
+                    "dataVariable": "Average taxable income or loss",
+                    "timeColumn": null,
                     "colorPalette": "5-class PuBu"
                   }
                 }
@@ -3912,7 +3913,7 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brisbane-city-council OR organization:cairns-regional-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:city-of-launceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moreton-bay-regional-council OR organization:mosmanmunicipalcouncil OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:surf-coast-shire-council OR organization:swan-hill-rural-city-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarra-ranges-council OR organization:yarriambiack-shire-council) -(organization:australian-institute-of-marine-science OR organization:geoscienceaustralia OR organization:integrated-marine-observing-system-imos OR organization:csiro-oceans-and-atmosphere-information-and-data-centre OR organization:csiro-marine-and-amospheric-research OR organization:state-of-the-environment OR organization:new-south-wales-datasets OR organization:south-australian-governments)"
+          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brimbank-city-council OR organization:brisbane-city-council OR organization:cairns-regional-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:city-of-launceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-stonnington OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mildura-rural-city-council OR organization:moreton-bay-regional-council OR organization:mosmanmunicipalcouncil OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:strathbogie-shire-council OR organization:surf-coast-shire-council OR organization:swan-hill-rural-city-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarra-ranges-council OR organization:yarriambiack-shire-council) -(organization:australian-institute-of-marine-science OR organization:geoscienceaustralia OR organization:integrated-marine-observing-system-imos OR organization:csiro-oceans-and-atmosphere-information-and-data-centre OR organization:csiro-marine-and-amospheric-research OR organization:state-of-the-environment OR organization:new-south-wales-datasets OR organization:south-australian-governments)"
         }
       ],
       "url": "http://www.data.gov.au",
