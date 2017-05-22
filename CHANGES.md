@@ -2,6 +2,12 @@
 Change Log
 ==========
 
+### 2017-04-13-updated-2017-05-22
+
+* Fixed broken link to `National Datasets -> Land -> Land Cover`.
+* Added `National Datasets -> Social and Economic -> Taxation Statistics 2014-2015`.
+* Changed the Taxation Statistics datasets to use a different colour scheme and to default to displaying the "Average taxable income or loss" column.
+
 ### 2017-04-13
 
 * Modified `gulp update-lga-filter` to test for `Jurisdiction=Local Government` as opposed to matching a regex and reactivated as part of gulp.
