@@ -11611,7 +11611,7 @@
               "filterByWmsGetCapabilities": false,
               "filterQuery": [
                 {
-                  "fq": "(organization:cityoflaunceston AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
+                  "fq": "(organization:city-of-launceston AND res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\"))"
                 }
               ],
               "url": "http://www.data.gov.au",
