@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### 2017-05-15
+### 2017-06-15
 
 * Changed the 2011 ABS SDMX-JSON items to explicitly require 2011 regions, because the default will be updated to 2016.
 
