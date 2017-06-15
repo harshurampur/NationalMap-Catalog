@@ -5,6 +5,7 @@ Change Log
 ### 2017-06-15
 
 * Changed the 2011 ABS SDMX-JSON items to explicitly require 2011 regions, because the default will be updated to 2016.
+* Used the correct ID for the City of Launceston on data.gov.au: `city-of-launceston` instead of `cityoflaunceston`.
 
 ### 2017-04-13-updated-2017-05-22
 
