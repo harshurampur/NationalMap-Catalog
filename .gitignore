@@ -1,3 +1,4 @@
 /node_modules/
 /work/
 /datasources/*.xlsx
+.DS_Store
