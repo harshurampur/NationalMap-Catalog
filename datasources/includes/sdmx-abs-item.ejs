@@ -178,9 +178,9 @@
                 "regionType": "<%= regionType %>",
             <% } %>
             "selectedInitially": {
-                // This first if is probably redundant, since the whitelist only lets LGA2011 through.
-                <% if (geoType=="LGA2011") { %>
-                    "REGIONTYPE": ["LGA2011"],
+                // This first if is probably redundant, since the whitelist only lets LGAxxxx through.
+                <% if (geoType && geoType.indexOf("LGA")===0) { %>
+                    "REGIONTYPE": ["<%= geoType %>"],
                 <% } %>
                 <% if (geoType=="SAx") { %>
                     "REGIONTYPE": ["SA4"],

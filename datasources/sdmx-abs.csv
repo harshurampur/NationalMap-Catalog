@@ -351,5 +351,5 @@ FALSE,,,,,,,PATERNITY_AGE_STATE,"Paternity, by age, by state",,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,RES_DWELL,Residential Dwellings: Unstratified Medians and Counts by Dwelling Type by GCCSA,,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,RES_PROP_INDEX,"Residential Property Price Indexes, All Series by GCCSA",,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,
-TRUE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_LGA,,LGA2016,TRUE,,SEX_ABS,AGE,LGA2016,,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_LGA
+TRUE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_LGA,,LGA2016,TRUE,,SEX_ABS,AGE,LGA_2016,,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_LGA
 TRUE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_SA,,SAx,TRUE,,SEX_ABS,AGE,ASGS_2016,{{name}}_code_2016,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_SA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_SA

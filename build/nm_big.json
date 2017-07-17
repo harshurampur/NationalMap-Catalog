@@ -59428,6 +59428,9 @@
                         ]
                       },
                       "selectedInitially": {
+                        "REGIONTYPE": [
+                          "LGA"
+                        ],
                         "COB": [
                           "1101"
                         ],
@@ -59996,6 +59999,9 @@
                       "regionDimensionId": "LGA2014",
                       "regionType": "lga_code_2014",
                       "selectedInitially": {
+                        "REGIONTYPE": [
+                          "LGA2014"
+                        ],
                         "COB": [
                           "1101"
                         ],
@@ -60564,6 +60570,9 @@
                       "regionDimensionId": "LGA_2015",
                       "regionType": "lga_code_2015",
                       "selectedInitially": {
+                        "REGIONTYPE": [
+                          "LGA2015"
+                        ],
                         "COB": [
                           "1101"
                         ],
@@ -96112,8 +96121,11 @@
                                           "O.*"
                                         ]
                                       },
-                                      "regionDimensionId": "LGA2016",
+                                      "regionDimensionId": "LGA_2016",
                                       "selectedInitially": {
+                                        "REGIONTYPE": [
+                                          "LGA2016"
+                                        ],
                                         "COB": [
                                           "1101"
                                         ],
