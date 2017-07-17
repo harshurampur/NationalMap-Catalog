@@ -3912,7 +3912,7 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brimbank-city-council OR organization:brisbane-city-council OR organization:cairns-regional-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:city-of-launceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-port-phillip OR organization:city-of-stonnington OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glen-eira-city-council OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mansfield-shire-council OR organization:melton-city-council OR organization:mildura-rural-city-council OR organization:moreton-bay-regional-council OR organization:mosmanmunicipalcouncil OR organization:moyne-shire-council OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:strathbogie-shire-council OR organization:surf-coast-shire-council OR organization:swan-hill-rural-city-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarra-ranges-council OR organization:yarriambiack-shire-council) -(organization:australian-institute-of-marine-science OR organization:geoscienceaustralia OR organization:integrated-marine-observing-system-imos OR organization:csiro-oceans-and-atmosphere-information-and-data-centre OR organization:csiro-marine-and-amospheric-research OR organization:state-of-the-environment OR organization:new-south-wales-datasets OR organization:south-australian-governments)"
+          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR CSV-GEO-AU OR csv-geo-au OR aus-geo-csv OR \"Esri REST\")) -(organization:alpine-shire-council OR organization:brimbank-city-council OR organization:brisbane-city-council OR organization:cairns-regional-council OR organization:cardinia-shire-council OR organization:central-goldfields-shire-council OR organization:city-of-ballarat OR organization:city-of-boroondara OR organization:city-of-casey OR organization:city-of-gold-coast OR organization:city-of-greater-bendigo OR organization:city-of-greater-dandenong OR organization:city-of-greater-geelong OR organization:city-of-hobart OR organization:city-of-ipswich OR organization:city-of-launceston OR organization:cityofmelbourne OR organization:city-of-palmerston OR organization:city-of-port-phillip OR organization:city-of-stonnington OR organization:city-of-whittlesea OR organization:colac-otway-shire OR organization:corangamite-shire-council OR organization:frankston-city-council OR organization:gcc OR organization:glen-eira-city-council OR organization:glenelg-shire-council OR organization:golden-plains-shire-council OR organization:greater-shepparton-city-council OR organization:hindmarsh-shire-council OR organization:hobsons-bay-city-council OR organization:horsham-rural-city-council OR organization:lake-macquarie-city-council OR organization:loddon-shire-council OR organization:logan-city-council OR organization:macedon-ranges-shire-council OR organization:manningham-city-council OR organization:mansfield-shire-council OR organization:melton-city-council OR organization:moreton-bay-regional-council OR organization:mosmanmunicipalcouncil OR organization:nillumbik-shire-council OR organization:noosa-shire-council OR organization:northern-grampians-shire-council OR organization:southern-grampians-shire-council OR organization:strathbogie-shire-council OR organization:surf-coast-shire-council OR organization:swan-hill-rural-city-council OR organization:warrnambool-city-council OR organization:west-wimmera-shire-council OR organization:wodonga-city-council OR organization:www-mitchellshirecouncil-vic-gov-au OR organization:wyndham-city-council OR organization:yarra-ranges-council OR organization:yarriambiack-shire-council) -(organization:australian-institute-of-marine-science OR organization:geoscienceaustralia OR organization:integrated-marine-observing-system-imos OR organization:csiro-oceans-and-atmosphere-information-and-data-centre OR organization:csiro-marine-and-amospheric-research OR organization:state-of-the-environment OR organization:new-south-wales-datasets OR organization:south-australian-governments)"
         }
       ],
       "url": "http://www.data.gov.au",
@@ -95826,6 +95826,641 @@
                                       "8"
                                     ]
                                   }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "National Datasets",
+      "type": "group",
+      "items": [
+        {
+          "name": "Social and Economic",
+          "type": "group",
+          "items": [
+            {
+              "name": "Census",
+              "type": "group",
+              "isOpen": false,
+              "items": [
+                {
+                  "name": "Person",
+                  "type": "group",
+                  "isOpen": false,
+                  "items": [
+                    {
+                      "name": "Age",
+                      "type": "group",
+                      "isOpen": false,
+                      "items": [
+                        {
+                          "name": "Ranges",
+                          "type": "group",
+                          "isOpen": false,
+                          "items": [
+                            {
+                              "name": "by Sex",
+                              "type": "group",
+                              "items": [
+                                {
+                                  "name": "2016 Census",
+                                  "type": "group",
+                                  "items": [
+                                    {
+                                      "nameInCatalog": "By Local Government Area",
+                                      "name": "Place of Residence on Census Night",
+                                      "type": "sdmx-json",
+                                      "id": "ABS_SDMX-JSON__ABS_C16_T01_LGA",
+                                      "cacheDuration": "2h",
+                                      "sortValues": "id",
+                                      "showWarnings": false,
+                                      "cleanFootnotes": true,
+                                      "forceShowDimensionIds": [
+                                        "MEASURE"
+                                      ],
+                                      "url": "http://stat.data.abs.gov.au/sdmx-json/data/ABS_C16_T01_LGA",
+                                      "description": "You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ABS_C16_T01_LGA).  Click on the _i_ symbols on that page for further information and links. Please note that ABS.Stat beta is continuing to be developed. Data will be updated as soon as possible following its 11:30 am release on the ABS website.",
+                                      "aggregatedDimensionIds": [
+                                        "STATE"
+                                      ],
+                                      "totalValueIds": {
+                                        "*": [
+                                          "TOT",
+                                          "LFTOT"
+                                        ],
+                                        "SEX_ABS": [
+                                          "3"
+                                        ],
+                                        "AGE": [
+                                          "TT",
+                                          "O15"
+                                        ],
+                                        "SPC": [
+                                          "TT"
+                                        ],
+                                        "MTWP": [
+                                          "1M",
+                                          "2M",
+                                          "3M"
+                                        ],
+                                        "FMCF": [
+                                          "CF",
+                                          "1",
+                                          "2",
+                                          "3"
+                                        ],
+                                        "POUR": [
+                                          "TOT",
+                                          "1",
+                                          "2",
+                                          "2_0",
+                                          "2_11"
+                                        ],
+                                        "UAI1P": [
+                                          "TOT",
+                                          "2",
+                                          "2_S",
+                                          "2_D"
+                                        ],
+                                        "LFSP": [
+                                          "TOT",
+                                          "EMP",
+                                          "UEMP"
+                                        ],
+                                        "FAMILY_TYPE": [
+                                          "6"
+                                        ],
+                                        "HH_TYPE": [
+                                          "4"
+                                        ],
+                                        "LEN": [
+                                          "99"
+                                        ],
+                                        "INFANT_AGE": [
+                                          "IMTOT"
+                                        ],
+                                        "DLC_11NC": [
+                                          "210",
+                                          "205"
+                                        ],
+                                        "DLC_11": [
+                                          "T"
+                                        ],
+                                        "ANZIC": [
+                                          "01",
+                                          "TOTAL"
+                                        ],
+                                        "LU_11NC": [
+                                          "210",
+                                          "205"
+                                        ],
+                                        "LU_11": [
+                                          "T"
+                                        ],
+                                        "LENDER": [
+                                          "99"
+                                        ],
+                                        "INDUSTRY": [
+                                          "-1",
+                                          "T",
+                                          "-"
+                                        ],
+                                        "SITC_REV3": [
+                                          "-1",
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8",
+                                          "9"
+                                        ],
+                                        "COUNTRY": [
+                                          "-"
+                                        ],
+                                        "STRD_BEDRD": [
+                                          "._TOT"
+                                        ],
+                                        "FMCF_INCC": [
+                                          "TOT_TOT"
+                                        ],
+                                        "DEPOSIT_TYPE": [
+                                          "6"
+                                        ],
+                                        "MINERAL_TYPE": [
+                                          "11"
+                                        ],
+                                        "MLU_0611": [
+                                          "9"
+                                        ],
+                                        "PLU_0611": [
+                                          "10"
+                                        ],
+                                        "PLC_0611": [
+                                          "10"
+                                        ],
+                                        "PERSON_LA": [
+                                          "16"
+                                        ],
+                                        "LEASE_TYPE": [
+                                          "3"
+                                        ],
+                                        "ASSET": [
+                                          "999"
+                                        ],
+                                        "SECTOR": [
+                                          "7"
+                                        ],
+                                        "VEHICLE": [
+                                          "900"
+                                        ],
+                                        "IND_R": [
+                                          "20"
+                                        ],
+                                        "RELP": [
+                                          "2"
+                                        ],
+                                        "ANCP": [
+                                          "TOTP"
+                                        ],
+                                        "LANP": [
+                                          "LOTE",
+                                          "71",
+                                          "52",
+                                          "41",
+                                          "65"
+                                        ],
+                                        "ENGLP": [
+                                          "OTH",
+                                          "SOL"
+                                        ]
+                                      },
+                                      "whitelist": {
+                                        "REGIONTYPE": [
+                                          "LGA2016"
+                                        ],
+                                        "FMCF": [
+                                          "TOT",
+                                          "[1-3]",
+                                          "9"
+                                        ],
+                                        "STRD": [
+                                          "TOT",
+                                          "OPD",
+                                          "[1-3]",
+                                          "9",
+                                          "11",
+                                          "Z",
+                                          "UPD"
+                                        ],
+                                        "LFSP": [
+                                          "TOT",
+                                          "EMP",
+                                          "[1-4]",
+                                          "7",
+                                          "Z",
+                                          "UEMP"
+                                        ],
+                                        "MTWP": [
+                                          "TOT",
+                                          "[1-3]M",
+                                          "00[1-9]",
+                                          "010",
+                                          "011",
+                                          "232",
+                                          "TA",
+                                          "BA",
+                                          "B2",
+                                          "233",
+                                          "234",
+                                          "Z"
+                                        ],
+                                        "TYPP": [
+                                          "TOT",
+                                          "10",
+                                          "2",
+                                          "3",
+                                          "40",
+                                          "50",
+                                          "60",
+                                          "Z",
+                                          "V"
+                                        ],
+                                        "FMCF_INCC": [
+                                          ".*_.*"
+                                        ],
+                                        "IND": [
+                                          "-"
+                                        ],
+                                        "AGE": [
+                                          "A[0-9]+",
+                                          "T.*",
+                                          "O.*"
+                                        ]
+                                      },
+                                      "regionDimensionId": "LGA2016",
+                                      "selectedInitially": {
+                                        "COB": [
+                                          "1101"
+                                        ],
+                                        "DT": [
+                                          "2"
+                                        ],
+                                        "STATE": [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8"
+                                        ],
+                                        "ASGS_2011": [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "National Datasets",
+      "type": "group",
+      "items": [
+        {
+          "name": "Social and Economic",
+          "type": "group",
+          "items": [
+            {
+              "name": "Census",
+              "type": "group",
+              "isOpen": false,
+              "items": [
+                {
+                  "name": "Person",
+                  "type": "group",
+                  "isOpen": false,
+                  "items": [
+                    {
+                      "name": "Age",
+                      "type": "group",
+                      "isOpen": false,
+                      "items": [
+                        {
+                          "name": "Ranges",
+                          "type": "group",
+                          "isOpen": false,
+                          "items": [
+                            {
+                              "name": "by Sex",
+                              "type": "group",
+                              "items": [
+                                {
+                                  "name": "2016 Census",
+                                  "type": "group",
+                                  "items": [
+                                    {
+                                      "nameInCatalog": "By Statistical Area",
+                                      "name": "Place of Residence on Census Night",
+                                      "type": "sdmx-json",
+                                      "id": "ABS_SDMX-JSON__ABS_C16_T01_SA",
+                                      "cacheDuration": "2h",
+                                      "regionNameTemplate": "{{name}}_code_2016",
+                                      "sortValues": "id",
+                                      "showWarnings": false,
+                                      "cleanFootnotes": true,
+                                      "forceShowDimensionIds": [
+                                        "MEASURE"
+                                      ],
+                                      "url": "http://stat.data.abs.gov.au/sdmx-json/data/ABS_C16_T01_SA",
+                                      "description": "You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ABS_C16_T01_SA).  Click on the _i_ symbols on that page for further information and links. Please note that ABS.Stat beta is continuing to be developed. Data will be updated as soon as possible following its 11:30 am release on the ABS website.",
+                                      "aggregatedDimensionIds": [
+                                        "STATE"
+                                      ],
+                                      "totalValueIds": {
+                                        "*": [
+                                          "TOT",
+                                          "LFTOT"
+                                        ],
+                                        "SEX_ABS": [
+                                          "3"
+                                        ],
+                                        "AGE": [
+                                          "TT",
+                                          "O15"
+                                        ],
+                                        "SPC": [
+                                          "TT"
+                                        ],
+                                        "MTWP": [
+                                          "1M",
+                                          "2M",
+                                          "3M"
+                                        ],
+                                        "FMCF": [
+                                          "CF",
+                                          "1",
+                                          "2",
+                                          "3"
+                                        ],
+                                        "POUR": [
+                                          "TOT",
+                                          "1",
+                                          "2",
+                                          "2_0",
+                                          "2_11"
+                                        ],
+                                        "UAI1P": [
+                                          "TOT",
+                                          "2",
+                                          "2_S",
+                                          "2_D"
+                                        ],
+                                        "LFSP": [
+                                          "TOT",
+                                          "EMP",
+                                          "UEMP"
+                                        ],
+                                        "FAMILY_TYPE": [
+                                          "6"
+                                        ],
+                                        "HH_TYPE": [
+                                          "4"
+                                        ],
+                                        "LEN": [
+                                          "99"
+                                        ],
+                                        "INFANT_AGE": [
+                                          "IMTOT"
+                                        ],
+                                        "DLC_11NC": [
+                                          "210",
+                                          "205"
+                                        ],
+                                        "DLC_11": [
+                                          "T"
+                                        ],
+                                        "ANZIC": [
+                                          "01",
+                                          "TOTAL"
+                                        ],
+                                        "LU_11NC": [
+                                          "210",
+                                          "205"
+                                        ],
+                                        "LU_11": [
+                                          "T"
+                                        ],
+                                        "LENDER": [
+                                          "99"
+                                        ],
+                                        "INDUSTRY": [
+                                          "-1",
+                                          "T",
+                                          "-"
+                                        ],
+                                        "SITC_REV3": [
+                                          "-1",
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8",
+                                          "9"
+                                        ],
+                                        "COUNTRY": [
+                                          "-"
+                                        ],
+                                        "STRD_BEDRD": [
+                                          "._TOT"
+                                        ],
+                                        "FMCF_INCC": [
+                                          "TOT_TOT"
+                                        ],
+                                        "DEPOSIT_TYPE": [
+                                          "6"
+                                        ],
+                                        "MINERAL_TYPE": [
+                                          "11"
+                                        ],
+                                        "MLU_0611": [
+                                          "9"
+                                        ],
+                                        "PLU_0611": [
+                                          "10"
+                                        ],
+                                        "PLC_0611": [
+                                          "10"
+                                        ],
+                                        "PERSON_LA": [
+                                          "16"
+                                        ],
+                                        "LEASE_TYPE": [
+                                          "3"
+                                        ],
+                                        "ASSET": [
+                                          "999"
+                                        ],
+                                        "SECTOR": [
+                                          "7"
+                                        ],
+                                        "VEHICLE": [
+                                          "900"
+                                        ],
+                                        "IND_R": [
+                                          "20"
+                                        ],
+                                        "RELP": [
+                                          "2"
+                                        ],
+                                        "ANCP": [
+                                          "TOTP"
+                                        ],
+                                        "LANP": [
+                                          "LOTE",
+                                          "71",
+                                          "52",
+                                          "41",
+                                          "65"
+                                        ],
+                                        "ENGLP": [
+                                          "OTH",
+                                          "SOL"
+                                        ]
+                                      },
+                                      "whitelist": {
+                                        "FMCF": [
+                                          "TOT",
+                                          "[1-3]",
+                                          "9"
+                                        ],
+                                        "STRD": [
+                                          "TOT",
+                                          "OPD",
+                                          "[1-3]",
+                                          "9",
+                                          "11",
+                                          "Z",
+                                          "UPD"
+                                        ],
+                                        "LFSP": [
+                                          "TOT",
+                                          "EMP",
+                                          "[1-4]",
+                                          "7",
+                                          "Z",
+                                          "UEMP"
+                                        ],
+                                        "MTWP": [
+                                          "TOT",
+                                          "[1-3]M",
+                                          "00[1-9]",
+                                          "010",
+                                          "011",
+                                          "232",
+                                          "TA",
+                                          "BA",
+                                          "B2",
+                                          "233",
+                                          "234",
+                                          "Z"
+                                        ],
+                                        "TYPP": [
+                                          "TOT",
+                                          "10",
+                                          "2",
+                                          "3",
+                                          "40",
+                                          "50",
+                                          "60",
+                                          "Z",
+                                          "V"
+                                        ],
+                                        "FMCF_INCC": [
+                                          ".*_.*"
+                                        ],
+                                        "IND": [
+                                          "-"
+                                        ],
+                                        "AGE": [
+                                          "A[0-9]+",
+                                          "T.*",
+                                          "O.*"
+                                        ]
+                                      },
+                                      "regionDimensionId": "ASGS_2016",
+                                      "selectedInitially": {
+                                        "REGIONTYPE": [
+                                          "SA4"
+                                        ],
+                                        "COB": [
+                                          "1101"
+                                        ],
+                                        "DT": [
+                                          "2"
+                                        ],
+                                        "STATE": [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8"
+                                        ],
+                                        "ASGS_2011": [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8"
+                                        ]
+                                      }
+                                    }
+                                  ]
                                 }
                               ]
                             }
