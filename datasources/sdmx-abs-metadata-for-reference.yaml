@@ -45854,11 +45854,849 @@
     - id: TIME_PERIOD
       name: Time
 
-ABS_C16_T02_LGA could not parse as xml
-ABS_C16_T10_LGA could not parse as xml
-ABS_C16_T08_SA could not parse as xml
-ABS_C16_T02_SA could not parse as xml
-ABS_C16_T08_LGA could not parse as xml
+- id: ABS_C16_T02_LGA
+  dimensions:
+    - id: MSTP_2016
+      name: Registered marital status
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Never married
+            - id: '2'
+              name: Widowed
+            - id: '3'
+              name: 'Divorced '
+            - id: '4'
+              name: Separated
+            - id: '5'
+              name: Married
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T10_LGA
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: RELP_2016
+      name: Religious affiliation
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Buddhism
+              children:
+                - id: '101'
+                  name: Buddhism
+                  children:
+                    - id: '1011'
+                      name: Buddhism
+            - id: '2'
+              name: Christianity
+              children:
+                - id: '200'
+                  name: 'Christianity, nfd'
+                  children:
+                    - id: '2000'
+                      name: 'Christianity, nfd'
+                - id: '201'
+                  name: Anglican
+                  children:
+                    - id: '2012'
+                      name: Anglican Church of Australia
+                    - id: '2013'
+                      name: Anglican Catholic Church
+                    - id: '2019'
+                      name: Other Anglican
+                - id: '203'
+                  name: Baptist
+                  children:
+                    - id: '2031'
+                      name: Baptist
+                - id: '205'
+                  name: Brethren
+                  children:
+                    - id: '2051'
+                      name: Brethren
+                - id: '207'
+                  name: Catholic
+                  children:
+                    - id: '2070'
+                      name: 'Catholic, nfd'
+                    - id: '2071'
+                      name: Western Catholic
+                    - id: '2072'
+                      name: Maronite Catholic
+                    - id: '2073'
+                      name: Melkite Catholic
+                    - id: '2074'
+                      name: Ukrainian Catholic
+                    - id: '2075'
+                      name: Chaldean Catholic
+                    - id: '2076'
+                      name: Syro Malabar Catholic
+                    - id: '2079'
+                      name: 'Catholic, nec'
+                - id: '211'
+                  name: Churches of Christ
+                  children:
+                    - id: '2110'
+                      name: 'Churches of Christ, nfd'
+                    - id: '2111'
+                      name: Churches of Christ (Conference)
+                    - id: '2112'
+                      name: Church of Christ (Nondenominational)
+                    - id: '2113'
+                      name: International Church of Christ
+                - id: '213'
+                  name: Jehovah's Witnesses
+                  children:
+                    - id: '2131'
+                      name: Jehovah's Witnesses
+                - id: '215'
+                  name: Latterday Saints
+                  children:
+                    - id: '2150'
+                      name: 'Latterday Saints, nfd'
+                    - id: '2151'
+                      name: The Church of Jesus Christ of Latterday Saints
+                    - id: '2152'
+                      name: Community of Christ
+                - id: '217'
+                  name: Lutheran
+                  children:
+                    - id: '2171'
+                      name: Lutheran
+                - id: '221'
+                  name: Oriental Orthodox
+                  children:
+                    - id: '2210'
+                      name: 'Oriental Orthodox, nfd'
+                    - id: '2212'
+                      name: Armenian Apostolic
+                    - id: '2214'
+                      name: Coptic Orthodox Church
+                    - id: '2215'
+                      name: Syrian Orthodox Church
+                    - id: '2216'
+                      name: Ethiopian Orthodox Church
+                    - id: '2219'
+                      name: 'Oriental Orthodox, nec'
+                - id: '222'
+                  name: Assyrian Apostolic
+                  children:
+                    - id: '2220'
+                      name: 'Assyrian Apostolic, nfd'
+                    - id: '2221'
+                      name: Assyrian Church of the East
+                    - id: '2222'
+                      name: Ancient Church of the East
+                    - id: '2229'
+                      name: 'Assyrian Apostolic, nec'
+                - id: '223'
+                  name: Eastern Orthodox
+                  children:
+                    - id: '2230'
+                      name: 'Eastern Orthodox, nfd'
+                    - id: '2231'
+                      name: Albanian Orthodox
+                    - id: '2232'
+                      name: Antiochian Orthodox
+                    - id: '2233'
+                      name: Greek Orthodox
+                    - id: '2234'
+                      name: Macedonian Orthodox
+                    - id: '2235'
+                      name: Romanian Orthodox
+                    - id: '2236'
+                      name: Russian Orthodox
+                    - id: '2237'
+                      name: Serbian Orthodox
+                    - id: '2238'
+                      name: Ukrainian Orthodox
+                    - id: '2239'
+                      name: 'Eastern Orthodox, nec'
+                - id: '225'
+                  name: Presbyterian and Reformed
+                  children:
+                    - id: '2250'
+                      name: 'Presbyterian and Reformed, nfd'
+                    - id: '2251'
+                      name: Presbyterian
+                    - id: '2252'
+                      name: Reformed
+                    - id: '2253'
+                      name: Free Reformed
+                - id: '227'
+                  name: Salvation Army
+                  children:
+                    - id: '2271'
+                      name: Salvation Army
+                - id: '231'
+                  name: Seventhday Adventist
+                  children:
+                    - id: '2311'
+                      name: Seventhday Adventist
+                - id: '233'
+                  name: Uniting Church
+                  children:
+                    - id: '2331'
+                      name: Uniting Church
+                - id: '24'
+                  name: Pentecostal
+                  children:
+                    - id: '2400'
+                      name: 'Pentecostal, nfd'
+                    - id: '2401'
+                      name: Apostolic Church (Australia)
+                    - id: '2402'
+                      name: Australian Christian Churches (Assemblies of God)
+                    - id: '2403'
+                      name: Bethesda Ministries International (Bethesda Churches)
+                    - id: '2404'
+                      name: C3 Church Global (Christian City Church)
+                    - id: '2406'
+                      name: >-
+                        International Network of Churches (Christian Outreach
+                        Centres)
+                    - id: '2407'
+                      name: CRC International (Christian Revival Crusade)
+                    - id: '2411'
+                      name: Foursquare Gospel Church
+                    - id: '2412'
+                      name: Full Gospel Church of Australia (Full Gospel Church)
+                    - id: '2413'
+                      name: Revival Centres
+                    - id: '2414'
+                      name: Rhema Family Church
+                    - id: '2415'
+                      name: United Pentecostal
+                    - id: '2416'
+                      name: Acts 2 Alliance
+                    - id: '2417'
+                      name: Christian Church in Australia
+                    - id: '2418'
+                      name: Pentecostal City Life Church
+                    - id: '2421'
+                      name: Revival Fellowship
+                    - id: '2422'
+                      name: Victory Life Centre
+                    - id: '2423'
+                      name: Victory Worship Centre
+                    - id: '2424'
+                      name: Worship Centre Network
+                    - id: '2499'
+                      name: 'Pentecostal, nec'
+                - id: '28'
+                  name: Other Protestant
+                  children:
+                    - id: '2800'
+                      name: 'Other Protestant, nfd'
+                    - id: '2801'
+                      name: Aboriginal Evangelical Missions
+                    - id: '2802'
+                      name: Born Again Christian
+                    - id: '2803'
+                      name: Christian and Missionary Alliance
+                    - id: '2804'
+                      name: Church of the Nazarene
+                    - id: '2805'
+                      name: Congregational
+                    - id: '2806'
+                      name: Ethnic Evangelical Churches
+                    - id: '2807'
+                      name: Independent Evangelical Churches
+                    - id: '2808'
+                      name: Wesleyan Methodist Church
+                    - id: '2811'
+                      name: Christian Community Churches of Australia
+                    - id: '2812'
+                      name: 'Methodist, so described'
+                    - id: '2813'
+                      name: United Methodist Church
+                    - id: '2899'
+                      name: 'Other Protestant, nec'
+                - id: '29'
+                  name: Other Christian
+                  children:
+                    - id: '2900'
+                      name: 'Other Christian, nfd'
+                    - id: '2901'
+                      name: Apostolic Church of Queensland
+                    - id: '2902'
+                      name: Christadelphians
+                    - id: '2903'
+                      name: Christian Science
+                    - id: '2904'
+                      name: Gnostic Christians
+                    - id: '2905'
+                      name: Liberal Catholic Church
+                    - id: '2906'
+                      name: New Apostolic Church
+                    - id: '2907'
+                      name: New Churches (Swedenborgian)
+                    - id: '2908'
+                      name: Ratana (Maori)
+                    - id: '2911'
+                      name: Religious Science
+                    - id: '2912'
+                      name: Religious Society of Friends (Quakers)
+                    - id: '2913'
+                      name: Temple Society
+                    - id: '2915'
+                      name: Grace Communion International (Worldwide Church of God)
+                    - id: '2999'
+                      name: 'Other Christian, nec'
+            - id: '3'
+              name: Hinduism
+              children:
+                - id: '301'
+                  name: Hinduism
+                  children:
+                    - id: '3011'
+                      name: Hinduism
+            - id: '4'
+              name: Islam
+              children:
+                - id: '401'
+                  name: Islam
+                  children:
+                    - id: '4011'
+                      name: Islam
+            - id: '5'
+              name: Judaism
+              children:
+                - id: '501'
+                  name: Judaism
+                  children:
+                    - id: '5011'
+                      name: Judaism
+            - id: '6'
+              name: Other Religions
+              children:
+                - id: '601'
+                  name: Australian Aboriginal Traditional Religions
+                  children:
+                    - id: '6011'
+                      name: Australian Aboriginal Traditional Religions
+                - id: '603'
+                  name: Baha'i
+                  children:
+                    - id: '6031'
+                      name: Baha'i
+                - id: '605'
+                  name: Chinese Religions
+                  children:
+                    - id: '6050'
+                      name: 'Chinese Religions, nfd'
+                    - id: '6051'
+                      name: Ancestor Veneration
+                    - id: '6052'
+                      name: Confucianism
+                    - id: '6053'
+                      name: Taoism
+                    - id: '6059'
+                      name: 'Chinese Religions, nec'
+                - id: '607'
+                  name: Druse
+                  children:
+                    - id: '6071'
+                      name: Druse
+                - id: '611'
+                  name: Japanese Religions
+                  children:
+                    - id: '6110'
+                      name: 'Japanese Religions, nfd'
+                    - id: '6111'
+                      name: Shinto
+                    - id: '6112'
+                      name: Sukyo Mahikari
+                    - id: '6113'
+                      name: Tenrikyo
+                    - id: '6119'
+                      name: 'Japanese Religions, nec'
+                - id: '613'
+                  name: Nature Religions
+                  children:
+                    - id: '6130'
+                      name: 'Nature Religions, nfd'
+                    - id: '6131'
+                      name: Animism
+                    - id: '6132'
+                      name: Druidism
+                    - id: '6133'
+                      name: Paganism
+                    - id: '6135'
+                      name: Wiccan (Witchcraft)
+                    - id: '6139'
+                      name: 'Nature Religions, nec'
+                - id: '615'
+                  name: Sikhism
+                  children:
+                    - id: '6151'
+                      name: Sikhism
+                - id: '617'
+                  name: Spiritualism
+                  children:
+                    - id: '6171'
+                      name: Spiritualism
+                - id: '69'
+                  name: Miscellaneous Religions
+                  children:
+                    - id: '6901'
+                      name: Mandaean
+                    - id: '6902'
+                      name: Yezidi
+                    - id: '6991'
+                      name: Caodaism
+                    - id: '6992'
+                      name: Church of Scientology
+                    - id: '6993'
+                      name: Eckankar
+                    - id: '6994'
+                      name: Rastafari
+                    - id: '6995'
+                      name: Satanism
+                    - id: '6996'
+                      name: Theosophy
+                    - id: '6997'
+                      name: Jainism
+                    - id: '6998'
+                      name: Zoroastrianism
+                    - id: '6999'
+                      name: 'Religious Groups, nec'
+            - id: '7'
+              name: >-
+                Secular Beliefs and Other Spiritual Beliefs and No Religious
+                Affiliation
+              children:
+                - id: '7000'
+                  name: >-
+                    Secular Beliefs and Other Spiritual Beliefs and No Religious
+                    Affiliation
+                - id: '71'
+                  name: 'No Religion, (so described)'
+                  children:
+                    - id: '7101'
+                      name: 'No Religion, so described'
+                - id: '72'
+                  name: Secular Beliefs
+                  children:
+                    - id: '7200'
+                      name: 'Secular Beliefs, nfd'
+                    - id: '7201'
+                      name: Agnosticism
+                    - id: '7202'
+                      name: Atheism
+                    - id: '7203'
+                      name: Humanism
+                    - id: '7204'
+                      name: Rationalism
+                    - id: '7299'
+                      name: 'Secular Beliefs, nec'
+                - id: '73'
+                  name: Other Spiritual Beliefs
+                  children:
+                    - id: '7300'
+                      name: 'Other Spiritual Beliefs, nfd'
+                    - id: '7301'
+                      name: Multi Faith
+                    - id: '7302'
+                      name: New Age
+                    - id: '7303'
+                      name: Own Spiritual Beliefs
+                    - id: '7304'
+                      name: Theism
+                    - id: '7305'
+                      name: Unitarian Universalism
+                    - id: '7399'
+                      name: 'Other Spiritual Beliefs, nec'
+            - id: '0000'
+              name: Inadequately described
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T08_SA
+  dimensions:
+    - id: ENGLP_2016
+      name: 'Proficiency in Spoken English '
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Speaks English only
+            - id: '2'
+              name: 'Speaks other language and speaks English: Very well'
+            - id: '3'
+              name: 'Speaks other language and speaks English: Well'
+            - id: '4'
+              name: 'Speaks other language and speaks English: Not well'
+            - id: '5'
+              name: 'Speaks other language and speaks English: Not at all'
+            - id: '6'
+              name: >-
+                Not stated - both language (LANP) and proficiency (ENGP) not
+                stated
+            - id: Z
+              name: >-
+                Not stated - language (LANP) stated, proficiency (ENGP) not
+                stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T02_SA
+  dimensions:
+    - id: MSTP_2016
+      name: Registered marital status
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Never married
+            - id: '2'
+              name: Widowed
+            - id: '3'
+              name: 'Divorced '
+            - id: '4'
+              name: Separated
+            - id: '5'
+              name: Married
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T08_LGA
+  dimensions:
+    - id: ENGLP_2016
+      name: 'Proficiency in Spoken English '
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Speaks English only
+            - id: '2'
+              name: 'Speaks other language and speaks English: Very well'
+            - id: '3'
+              name: 'Speaks other language and speaks English: Well'
+            - id: '4'
+              name: 'Speaks other language and speaks English: Not well'
+            - id: '5'
+              name: 'Speaks other language and speaks English: Not at all'
+            - id: '6'
+              name: >-
+                Not stated - both language (LANP) and proficiency (ENGP) not
+                stated
+            - id: Z
+              name: >-
+                Not stated - language (LANP) stated, proficiency (ENGP) not
+                stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
 - id: ABS_C16_T09_LGA
   dimensions:
     - id: SEX_ABS
