@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-07-21
+
+* Added Australian Bureau of Statistics Census 2016 layers.
+
 ### 2017-06-15-updated-2017-07-20
 
 * Updated Brisbane City Council to use resource names instead of dataset names.
