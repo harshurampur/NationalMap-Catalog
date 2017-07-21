@@ -15,6 +15,7 @@ var sourceDir = 'datasources';
 var derivedSourceDir = 'derived_datasources';
 var workDir = 'work';
 var targetDir = 'build';
+var absSdmxCsvPath = sourceDir + '/' + 'sdmx-abs.csv';
 // Create the build directory, because browserify flips out if the directory that might
 // contain an existing source map doesn't exist.
 
@@ -125,7 +126,7 @@ gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
     var convertSdmxCsvToEjs = require('./lib/convertSdmxCsvToEjs');
 
     // Start by rendering the sdmx-abs catalog from the csv to ejs, which is an input to nm.ejs.
-    convertSdmxCsvToEjs(sourceDir + '/' + 'sdmx-abs.csv', derivedSourceDir + '/' + 'sdmx-abs.ejs');
+    convertSdmxCsvToEjs(absSdmxCsvPath, derivedSourceDir + '/' + 'sdmx-abs.ejs');
     testAndRead(sourceDir);
 
     function testAndRead(dir) {
@@ -174,6 +175,20 @@ gulp.task('render-datasource-templates', ['update-lga-filter'], function() {
     }
 
 });
+
+gulp.task('get-abs-sdmx-metadata', function() {
+    const sdmxJsonDataFlow = "http://stat.data.abs.gov.au/sdmx-json/dataflow/";
+    const sdmxDataStructure = "http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/";
+    const ignoreJsonDimensionIds = ["TIME_PERIOD", "STATE", "REGION", "ASGS_2011", "ASGS_2016", "LGA_2011", "LGA_2013", "LGA_2014", "LGA2014",
+        "LGA_2015", "LGA_2016", "ASGS_2011_STATE_GCCSA_SA4_SA3_SA2", "ASGC_2010", "NRM_2012", "POA", "SSC"];
+    var getSdmxMetaData = require('./lib/getSdmxMetaData');
+    var csv = require('./lib/ThirdParty/csv');
+    var stringData = fs.readFileSync(absSdmxCsvPath, "utf8");
+    var rowsAsObjects = csv.toObjects(stringData);
+    var ids = rowsAsObjects.filter(row => !row["#include"] || row["#include"].toLowerCase()[0] === 't').map(row => row.id);
+    getSdmxMetaData(ids, sdmxJsonDataFlow, sdmxDataStructure, ignoreJsonDimensionIds);
+});
+
 
 gulp.task('watch-datasource-templates', ['render-datasource-templates'], function() {
     return gulp.watch(['datasources/**/*.csv', 'datasources/**/*.ejs', 'datasources/*.json'], watchOptions, [ 'render-datasource-templates' ]);

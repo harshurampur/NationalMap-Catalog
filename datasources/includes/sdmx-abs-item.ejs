@@ -169,6 +169,10 @@
                 "TYPP": ["TOT", "10", "2", "3", "40", "50", "60", "Z", "V"], // For B15 and T13. Suppress some of the hierarchy.
                 "FMCF_INCC": [".*_.*"], // For T26. Only values containing an underscore have data.
                 "IND": ["-"], // For CAPEX. No sub-industries have data by state.
+                "ANCP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T05_LGA/SA, only TOT and 4-digit children codes have valid data.
+                "BPLP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T06,7_LGA/SA, only TOT and 4-digit children codes have valid data.
+                "RELP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T10_LGA/SA, only TOT and 4-digit children codes have valid data.
+                "LANP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T09_LGA/SA, only TOT and 4-digit children codes have valid data.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
@@ -178,9 +182,9 @@
                 "regionType": "<%= regionType %>",
             <% } %>
             "selectedInitially": {
-                // This first if is probably redundant, since the whitelist only lets LGA2011 through.
-                <% if (geoType=="LGA2011") { %>
-                    "REGIONTYPE": ["LGA2011"],
+                // This first if is probably redundant, since the whitelist only lets LGAxxxx through.
+                <% if (geoType && geoType.indexOf("LGA")===0) { %>
+                    "REGIONTYPE": ["<%= geoType %>"],
                 <% } %>
                 <% if (geoType=="SAx") { %>
                     "REGIONTYPE": ["SA4"],
