@@ -49935,3 +49935,4777 @@
       name: Region
     - id: TIME_PERIOD
       name: Census year
+
+- id: ATSI_BIRTHS_SUMM
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+        - id: '4'
+          name: Male births
+        - id: '5'
+          name: Female births
+        - id: '7'
+          name: Nuptial births
+        - id: '8'
+          name: Ex-nuptial births
+        - id: '9'
+          name: 'Ex-nuptial, paternity acknowledged births'
+        - id: '10'
+          name: 'Ex-nuptial, paternity not acknowledged births'
+        - id: '13'
+          name: Confinements
+        - id: '14'
+          name: Median age of mother
+        - id: '15'
+          name: Median age of father
+        - id: '18'
+          name: Births where both parents are Aboriginal or Torres Strait Islander
+        - id: '19'
+          name: Births where only mother is Aboriginal or Torres Strait Islander
+        - id: '20'
+          name: Births where only father is Aboriginal or Torres Strait Islander
+    - id: INDIGENOUS_STATUS
+      name: Indigenous status
+      values:
+        - id: IM
+          name: Births to Aboriginal and Torres Strait Islander mothers
+        - id: IB
+          name: Aboriginal and Torres Strait Islander births
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ATSI_FERTILITY
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+        - id: '11'
+          name: Fertility rate
+    - id: INDIG_STATUS
+      name: Indigenous status
+      values:
+        - id: IM
+          name: Births to Aboriginal and Torres Strait Islander mothers
+        - id: IB
+          name: Aboriginal and Torres Strait Islander births
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: TT
+          name: All ages
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_ABORIGINAL_POPPROJ_INDREGION
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: POP_PROJ
+          name: Projected population
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: TT
+          name: All ages
+        - id: '6599'
+          name: 65 and over
+    - id: INDIGENOUS_REGION
+      name: Indigenous region
+      values:
+        - id: '101'
+          name: Dubbo
+        - id: '102'
+          name: North-Eastern NSW
+        - id: '103'
+          name: North-Western NSW
+        - id: '104'
+          name: NSW Central and North Coast
+        - id: '105'
+          name: Riverina - Orange
+        - id: '106'
+          name: South-Eastern NSW
+        - id: '107'
+          name: Sydney - Wollongong
+        - id: '201'
+          name: Melbourne
+        - id: '202'
+          name: Victoria exc. Melbourne
+        - id: '301'
+          name: Brisbane
+        - id: '302'
+          name: Cairns - Atherton
+        - id: '303'
+          name: Cape York
+        - id: '304'
+          name: Mount Isa
+        - id: '305'
+          name: Rockhampton
+        - id: '306'
+          name: Toowoomba - Roma
+        - id: '307'
+          name: Torres Strait
+        - id: '308'
+          name: Townsville - Mackay
+        - id: '401'
+          name: Adelaide
+        - id: '402'
+          name: Port Augusta
+        - id: '403'
+          name: Port Lincoln - Ceduna
+        - id: '501'
+          name: Broome
+        - id: '502'
+          name: Geraldton
+        - id: '503'
+          name: Kalgoorlie
+        - id: '504'
+          name: Kununurra
+        - id: '505'
+          name: Perth
+        - id: '506'
+          name: South Hedland
+        - id: '507'
+          name: South-Western WA
+        - id: '508'
+          name: West Kimberley
+        - id: '601'
+          name: Tasmania
+        - id: '701'
+          name: Alice Springs
+        - id: '702'
+          name: Apatula
+        - id: '703'
+          name: Darwin
+        - id: '704'
+          name: Jabiru - Tiwi
+        - id: '705'
+          name: Katherine
+        - id: '706'
+          name: Nhulunbuy
+        - id: '707'
+          name: Tennant Creek
+        - id: '801'
+          name: ACT
+    - id: PROJ_SERIES
+      name: Projection series
+      values:
+        - id: '1'
+          name: Series A
+        - id: '2'
+          name: Series B
+        - id: '3'
+          name: Series C
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABORIGINAL_POP_PROJ_REMOTE
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: POP_PROJ
+          name: Projected population
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: TT
+          name: All ages
+        - id: 75OVER
+          name: 75 and over
+    - id: REGION
+      name: Remoteness area
+    - id: SERIES
+      name: Projection series
+      values:
+        - id: '1'
+          name: Series A
+        - id: '2'
+          name: Series B
+        - id: '3'
+          name: Series C
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABORIGINAL_POP_PROJ
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: POP_PROJ
+          name: Projected population
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: TT
+          name: All ages
+    - id: ASGS_2011
+      name: State/Territory
+    - id: PROJ_SERIES
+      name: Projection series
+      values:
+        - id: '1'
+          name: Series A
+        - id: '2'
+          name: Series B
+        - id: '3'
+          name: Series C
+        - id: '4'
+          name: Series D
+        - id: '5'
+          name: Series E
+        - id: '6'
+          name: Series F
+        - id: '7'
+          name: Series G
+        - id: '8'
+          name: Series H
+        - id: '9'
+          name: Series I
+        - id: '10'
+          name: Series J
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ALC
+  dimensions:
+    - id: TYP
+      name: Type of Volume
+      values:
+        - id: '1'
+          name: Volume of pure alcohol
+        - id: '2'
+          name: Volume of beverage
+    - id: MEA
+      name: Measure
+      values:
+        - id: '1'
+          name: Total apparent consumption ('000 litres)
+        - id: '2'
+          name: Per capita apparent consumption (litres)
+    - id: BEVT
+      name: Beverage Type
+      values:
+        - id: '1'
+          name: Beer
+        - id: '2'
+          name: Wine
+        - id: '3'
+          name: Spirits and RTDs
+        - id: '4'
+          name: Total all beverages
+        - id: '5'
+          name: Cider
+    - id: SUB
+      name: Beverage Subtype/Strength
+      values:
+        - id: '1'
+          name: Low alcohol beer
+        - id: '2'
+          name: Other alcohol beer
+        - id: '3'
+          name: Low strength beer
+        - id: '4'
+          name: Mid strength beer
+        - id: '5'
+          name: Full strength beer
+        - id: '6'
+          name: Total beer
+        - id: '7'
+          name: White table wine
+        - id: '8'
+          name: Red table wine
+        - id: '9'
+          name: Other wines
+        - id: '10'
+          name: Total wine
+        - id: '11'
+          name: Spirits
+        - id: '12'
+          name: RTDs
+        - id: '13'
+          name: Total spirits and RTDs
+        - id: '15'
+          name: Cider
+        - id: '14'
+          name: Total all beverages
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_ACLD_LFSTATUS
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+        - id: '6599'
+          name: 65 and over
+        - id: '2534'
+          name: 25 - 34
+        - id: '3544'
+          name: 35 - 44
+        - id: '4554'
+          name: 45 - 54
+        - id: '5564'
+          name: 55 - 64
+        - id: '1524'
+          name: 15 - 24
+    - id: ASGS_2011
+      name: Region
+    - id: LF_2006
+      name: Labour Force Status in 2006
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Employed
+            - id: '2'
+              name: Employed full-time
+            - id: '3'
+              name: Employed part-time
+            - id: '4'
+              name: Unemployed
+            - id: '5'
+              name: Not in the labour force
+    - id: LF_2011
+      name: Labour Force Status in 2011
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Employed
+            - id: '2'
+              name: Employed full-time
+            - id: '3'
+              name: Employed part-time
+            - id: '4'
+              name: Unemployed
+            - id: '5'
+              name: Not in the labour force
+
+- id: ABS_ACLD_TENURE
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+        - id: '6599'
+          name: 65 and over
+        - id: '0014'
+          name: 0 - 14
+        - id: '2534'
+          name: 25 - 34
+        - id: '3544'
+          name: 35 - 44
+        - id: '4554'
+          name: 45 - 54
+        - id: '5564'
+          name: 55 - 64
+        - id: '1524'
+          name: 15 - 24
+    - id: ASGS_2011
+      name: Region
+    - id: TENURE_2006
+      name: Tenure and landlord type in 2006
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Owned outright
+            - id: '2'
+              name: Owned with a mortgage
+            - id: '3'
+              name: Rented
+            - id: '4'
+              name: 'Rented: Public'
+            - id: '5'
+              name: 'Rented: Private'
+            - id: '6'
+              name: Other tenure type
+    - id: TENURE_2011
+      name: Tenure and landlord type in 2011
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Owned outright
+            - id: '2'
+              name: Owned with a mortgage
+            - id: '3'
+              name: Rented
+            - id: '4'
+              name: 'Rented: Public'
+            - id: '5'
+              name: 'Rented: Private'
+            - id: '6'
+              name: Other tenure type
+
+- id: ABS_ACLD_UNPAIDASST
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+        - id: '6599'
+          name: 65 and over
+        - id: '2534'
+          name: 25 - 34
+        - id: '3544'
+          name: 35 - 44
+        - id: '4554'
+          name: 45 - 54
+        - id: '5564'
+          name: 55 - 64
+        - id: '1524'
+          name: 15 - 24
+    - id: ASGS_2011
+      name: Region
+    - id: UNPAIDASST_2006
+      name: Unpaid assistance to a person with disability in 2006
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Provided unpaid assistance
+            - id: '2'
+              name: No unpaid assistance provided
+    - id: UNPAIDASST_2011
+      name: Unpaid assistance to a person with disability in 2011
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Provided unpaid assistance
+            - id: '2'
+              name: No unpaid assistance provided
+
+- id: ABS_ACLD_VOLWORK
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+        - id: '6599'
+          name: 65 and over
+        - id: '2534'
+          name: 25 - 34
+        - id: '3544'
+          name: 35 - 44
+        - id: '4554'
+          name: 45 - 54
+        - id: '5564'
+          name: 55 - 64
+        - id: '1524'
+          name: 15 - 24
+    - id: ASGS_2011
+      name: Region
+    - id: VOLWORK_2006
+      name: Voluntary work for an organisation or group in 2006
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Volunteer
+            - id: '2'
+              name: Not a volunteer
+    - id: VOLWORK_2011
+      name: Voluntary work for an organisation or group in 2011
+      values:
+        - id: T
+          name: Total
+          children:
+            - id: '1'
+              name: Volunteer
+            - id: '2'
+              name: Not a volunteer
+
+- id: BOP
+  dimensions:
+    - id: DT
+      name: Measure
+      values:
+        - id: '1'
+          name: Current Prices ($ Millions)
+        - id: '2'
+          name: Chain Volume Measures ($ Millions)
+        - id: '3'
+          name: Implicit Price Deflators (Index)
+        - id: '4'
+          name: Terms of Trade
+        - id: '5'
+          name: Chain Laspeyres Price Indexes
+    - id: ITEM
+      name: Data Item
+      values:
+        - id: '100'
+          name: Current account
+          children:
+            - id: '110'
+              name: Goods and services credits
+            - id: '120'
+              name: Goods and services debits
+            - id: '130'
+              name: Goods and services
+              children:
+                - id: '170'
+                  name: Goods
+                  children:
+                    - id: '1000'
+                      name: Goods credits
+                      children:
+                        - id: '1050'
+                          name: 'Goods credits, General merchandise'
+                          children:
+                            - id: '1100'
+                              name: 'Goods credits, Rural goods'
+                              children:
+                                - id: '1150'
+                                  name: >-
+                                    Goods credits, Rural goods, Meat and meat
+                                    preparations
+                                - id: '1200'
+                                  name: >-
+                                    Goods credits, Rural goods, Cereal grains
+                                    and cereal preparations
+                                - id: '1250'
+                                  name: >-
+                                    Goods credits, Rural goods, Wool and
+                                    sheepskins
+                                - id: '1300'
+                                  name: 'Goods credits, Rural goods, Other rural'
+                            - id: '1350'
+                              name: 'Goods credits, Non-rural goods'
+                              children:
+                                - id: '1400'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Metal ores
+                                    and minerals
+                                - id: '1450'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Coal, coke
+                                    and briquettes
+                                - id: '1500'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Other
+                                    mineral fuels
+                                - id: '1550'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Metals
+                                    (excl. non-monetary gold)
+                                - id: '1600'
+                                  name: 'Goods credits, Non-rural goods, Machinery'
+                                - id: '1650'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Transport
+                                    equipment
+                                - id: '1700'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Other
+                                    manufactures
+                                - id: '1750'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Other
+                                    non-rural (incl. sugar and beverages)
+                                  children:
+                                    - id: '1760'
+                                      name: >-
+                                        Goods credits, Non-rural goods, Other
+                                        Non-rural, Beverages
+                                    - id: '1770'
+                                      name: >-
+                                        Goods credits, Non-rural goods, Other
+                                        non-rural, Sugar, sugar preparations and
+                                        honey
+                                    - id: '1780'
+                                      name: >-
+                                        Goods credits, Non-rural goods, Other
+                                        non-rural, Other
+                                - id: '1800'
+                                  name: >-
+                                    Goods credits, Non-rural goods, Goods
+                                    procured in ports by carriers
+                        - id: '1850'
+                          name: >-
+                            Goods credits, Net exports of goods under
+                            merchanting
+                          children:
+                            - id: '1851'
+                              name: >-
+                                Goods credits, Goods acquired under merchanting
+                                (negative exports)
+                            - id: '1852'
+                              name: 'Goods credits, Goods sold under merchanting'
+                        - id: '1900'
+                          name: 'Goods credits, Non-monetary gold'
+                    - id: '2000'
+                      name: Goods debits
+                      children:
+                        - id: '2050'
+                          name: 'Goods debits, General merchandise'
+                          children:
+                            - id: '2100'
+                              name: 'Goods debits, Consumption goods'
+                              children:
+                                - id: '2150'
+                                  name: >-
+                                    Goods debits, Consumption goods, Food and
+                                    beverages, mainly for consumption
+                                - id: '2200'
+                                  name: >-
+                                    Goods debits, Consumption goods, Household
+                                    electrical items
+                                - id: '2250'
+                                  name: >-
+                                    Goods debits, Consumption goods,
+                                    Non-industrial transport equipment
+                                - id: '2300'
+                                  name: >-
+                                    Goods debits, Consumption goods, Textiles,
+                                    clothing and footwear
+                                - id: '2350'
+                                  name: >-
+                                    Goods debits, Consumption goods, Toys, books
+                                    and leisure goods
+                                - id: '2400'
+                                  name: >-
+                                    Goods debits, Consumption goods, Consumption
+                                    goods n.e.s.
+                            - id: '2450'
+                              name: 'Goods debits, Capital goods'
+                              children:
+                                - id: '2500'
+                                  name: >-
+                                    Goods debits, Capital goods, Machinery and
+                                    industrial equipment
+                                - id: '2550'
+                                  name: 'Goods debits, Capital goods, ADP equipment'
+                                - id: '2600'
+                                  name: >-
+                                    Goods debits, Capital goods,
+                                    Telecommunications equipment
+                                - id: '2650'
+                                  name: >-
+                                    Goods debits, Capital goods, Civil aircraft
+                                    and confidentialised items
+                                - id: '2700'
+                                  name: >-
+                                    Goods debits, Capital goods, Industrial
+                                    transport equipment n.e.s.
+                                - id: '2750'
+                                  name: >-
+                                    Goods debits, Capital goods, Capital goods
+                                    n.e.s.
+                            - id: '2800'
+                              name: >-
+                                Goods debits, Intermediate and other merchandise
+                                goods
+                              children:
+                                - id: '2850'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Food and beverages,
+                                    mainly for industry
+                                - id: '2900'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Primary industrial
+                                    supplies n.e.s.
+                                - id: '2950'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Fuels and lubricants
+                                - id: '3000'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Parts for transport
+                                    equipment
+                                - id: '3050'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Parts for ADP equipment
+                                - id: '3100'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Other parts for capital
+                                    goods
+                                - id: '3150'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Organic and inorganic
+                                    chemicals
+                                - id: '3200'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Paper and paperboard
+                                - id: '3250'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Textile yarn and fabrics
+                                - id: '3300'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Iron and steel
+                                - id: '3350'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Plastics
+                                - id: '3400'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Processed industrial
+                                    supplies n.e.s.
+                                - id: '3450'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Other merchandise goods
+                                - id: '3500'
+                                  name: >-
+                                    Goods debits, Intermediate and other
+                                    merchandise goods, Goods procured in ports
+                                    by carriers
+                        - id: '3550'
+                          name: 'Goods debits, Non-monetary gold'
+                - id: '180'
+                  name: Services
+                  children:
+                    - id: '4000'
+                      name: Services credits
+                      children:
+                        - id: '4050'
+                          name: >-
+                            Services credits, Manufacturing services on physical
+                            inputs owned by others
+                        - id: '4100'
+                          name: >-
+                            Services credits, Maintenance and repair services
+                            n.i.e.
+                        - id: '4150'
+                          name: 'Services credits, Transport'
+                          children:
+                            - id: '4200'
+                              name: 'Services credits, Passenger transport'
+                            - id: '4250'
+                              name: 'Services credits, Freight transport'
+                            - id: '4300'
+                              name: 'Services credits, Other transport'
+                            - id: '4350'
+                              name: 'Services credits, Postal and courier sevices'
+                        - id: '4400'
+                          name: 'Services credits, Travel'
+                          children:
+                            - id: '4450'
+                              name: 'Services credits, Business travel'
+                            - id: '4500'
+                              name: 'Services credits, Personal travel'
+                              children:
+                                - id: '4505'
+                                  name: >-
+                                    Services credits, Education-related personal
+                                    travel
+                                - id: '4510'
+                                  name: 'Services credits, Other personal travel'
+                        - id: '4550'
+                          name: 'Services credits, Other services'
+                          children:
+                            - id: '4600'
+                              name: 'Services credits, Construction'
+                            - id: '4650'
+                              name: 'Services credits, Insurance and pension services'
+                              children:
+                                - id: '4655'
+                                  name: >-
+                                    Services credits, Insurance and pension
+                                    services - Direct insurance
+                                  children:
+                                    - id: '4656'
+                                      name: >-
+                                        Services credits, Insurance and pension
+                                        services - Direct insurance, Freight
+                                    - id: '4657'
+                                      name: >-
+                                        Services credits, Insurance and pension
+                                        services - Direct insurance, Life
+                                    - id: '4658'
+                                      name: >-
+                                        Services credits, Insurance and pension
+                                        services - Direct insurance, Other
+                                - id: '4660'
+                                  name: >-
+                                    Services credits, Insurance and pension
+                                    services - Reinsurance
+                                - id: '4665'
+                                  name: >-
+                                    Services credits, Insurance and pension
+                                    services - Auxiliary services
+                                - id: '4670'
+                                  name: >-
+                                    Services credits, Insurance and pension
+                                    services - Pension services
+                                - id: '4675'
+                                  name: >-
+                                    Services credits, Insurance and pension
+                                    services - Standardised guarantee services
+                            - id: '4700'
+                              name: 'Services credits, Financial services'
+                              children:
+                                - id: '4710'
+                                  name: >-
+                                    Services credits, Financial services -
+                                    Explicitly charged and other financial
+                                    services
+                                - id: '4720'
+                                  name: >-
+                                    Services credits, Financial services -
+                                    Financial Intermediation Services Indirectly
+                                    Measured
+                            - id: '4750'
+                              name: >-
+                                Services credits, Charges for the use of
+                                intellectual property n.i.e.
+                              children:
+                                - id: '4755'
+                                  name: >-
+                                    Services credits, Charges for the use of
+                                    intellectual property n.i.e. - Licences to
+                                    reproduce and/or distribute computer
+                                    services
+                                  children:
+                                    - id: '4756'
+                                      name: >-
+                                        Services credits, Charges for the use of
+                                        intellectual property n.i.e. - Licences
+                                        to reproduce and/or distribute computer
+                                        services, Software
+                                    - id: '4757'
+                                      name: >-
+                                        Services credits, Charges for the use of
+                                        intellectual property n.i.e. - Licences
+                                        to reproduce and/or distribute computer
+                                        services, Hardware and design
+                                - id: '4760'
+                                  name: >-
+                                    Services credits, Charges for the use of
+                                    intellectual property n.i.e. - Licences to
+                                    reproduce and/or distribute audiovisual and
+                                    related services
+                                - id: '4765'
+                                  name: >-
+                                    Services credits, Charges for the use of
+                                    intellectual property n.i.e. - Outcomes of
+                                    research and development
+                                - id: '4770'
+                                  name: >-
+                                    Services credits, Charges for the use of
+                                    intellectual property n.i.e. - Franchise and
+                                    trademarks licensing fees
+                                - id: '4775'
+                                  name: >-
+                                    Services credits, Charges for the use of
+                                    intellectual property n.i.e. - Other charges
+                                  children:
+                                    - id: '4776'
+                                      name: >-
+                                        Services credits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Royalties on education
+                                    - id: '4777'
+                                      name: >-
+                                        Services credits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Royalties on telecommunication
+                                        services
+                                    - id: '4778'
+                                      name: >-
+                                        Services credits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Music
+                                    - id: '4779'
+                                      name: >-
+                                        Services credits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Other
+                            - id: '4800'
+                              name: >-
+                                Services credits, Telecommunications, computer
+                                and information services
+                              children:
+                                - id: '4850'
+                                  name: >-
+                                    Services credits, Telecommunications,
+                                    computer and information services -
+                                    Telecommunication
+                                  children:
+                                    - id: '4860'
+                                      name: >-
+                                        Services credits, Telecommunications,
+                                        computer and information services -
+                                        Telecommunication, Telephone
+                                    - id: '4870'
+                                      name: >-
+                                        Services credits, Telecommunications,
+                                        computer and information services -
+                                        Telecommunication, Other
+                                - id: '4900'
+                                  name: >-
+                                    Services credits, Computer and information
+                                    services
+                                  children:
+                                    - id: '4910'
+                                      name: >-
+                                        Services credits, Computer and
+                                        information services - Computer
+                                      children:
+                                        - id: '4911'
+                                          name: >-
+                                            Services credits, Computer and
+                                            information services - Computer,
+                                            Hardware and software consultancy
+                                        - id: '4912'
+                                          name: >-
+                                            Services credits, Computer and
+                                            information services - Computer, Data
+                                            processing
+                                    - id: '4920'
+                                      name: >-
+                                        Services credits, Computer and
+                                        information services - Information
+                                        services
+                                      children:
+                                        - id: '4921'
+                                          name: >-
+                                            Services credits, Computer and
+                                            information services - Information
+                                            services, Database
+                                        - id: '4922'
+                                          name: >-
+                                            Services credits, Computer and
+                                            information services - Information
+                                            services, Newsagency subscription
+                                    - id: '4930'
+                                      name: >-
+                                        Services credits, Computer and
+                                        information services - Other computer
+                                        and information services
+                            - id: '4950'
+                              name: 'Services credits, Other business services'
+                              children:
+                                - id: '5000'
+                                  name: >-
+                                    Services credits, Other business services -
+                                    Research and development services
+                                - id: '5050'
+                                  name: >-
+                                    Services credits, Other business services -
+                                    Professional and management consulting
+                                    services
+                                  children:
+                                    - id: '5060'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Professional and management
+                                        consulting services, Legal, accounting,
+                                        management consulting, public relations
+                                        and other professional services
+                                      children:
+                                        - id: '5061'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Professional and management
+                                            consulting services, Legal, accounting,
+                                            management consulting, public relations
+                                            and other professional, Legal
+                                        - id: '5062'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Professional and management
+                                            consulting services, Legal, accounting,
+                                            management consulting, public relations
+                                            and other professional, Accounting,
+                                            auditing, bookkeeping and tax consulting
+                                            services
+                                        - id: '5063'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Professional and management
+                                            consulting services, Legal, accounting,
+                                            management consulting, public relations
+                                            and other professional, Business,
+                                            management consulting and public
+                                            relations services
+                                        - id: '5064'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Professional and management
+                                            consulting services, Legal, accounting,
+                                            management consulting, public relations
+                                            and other professional, Other
+                                            professional services
+                                        - id: '5065'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Professional and management
+                                            consulting services, Legal, accounting,
+                                            management consulting, public relations
+                                            and other professional, Management fees
+                                            n.i.e.
+                                    - id: '5070'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Professional and management
+                                        consulting services, Advertising, market
+                                        research and public opinion polling
+                                        services
+                                - id: '5100'
+                                  name: >-
+                                    Services credits, Other business services -
+                                    Technical, trade-related and other business
+                                    services
+                                  children:
+                                    - id: '5110'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Technical, trade-related and
+                                        other business services, Architectural,
+                                        engineering, scientific and other
+                                        technical services
+                                      children:
+                                        - id: '5111'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Architectural
+                                        - id: '5112'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Engineering
+                                        - id: '5113'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Surveying services
+                                        - id: '5114'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Scientific and other
+                                            technical services
+                                    - id: '5120'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Technical, trade-related and
+                                        other business services, Waste treatment
+                                        and de-pollution, agricultural and
+                                        mining services
+                                      children:
+                                        - id: '5121'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Waste treatment
+                                            and de-pollution, agricultural and
+                                            mining services, Waste treatment and
+                                            de-pollution
+                                        - id: '5122'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Waste treatment
+                                            and de-pollution, agricultural and
+                                            mining services, Incidental to
+                                            agriculture; forestry and fishing
+                                        - id: '5123'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Waste treatment
+                                            and de-pollution, agricultural and
+                                            mining services, Incidental to mining;
+                                            and oil and gas extraction
+                                        - id: '5124'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Waste treatment
+                                            and de-pollution, agricultural and
+                                            mining services, Other on-site
+                                            processing services
+                                    - id: '5130'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Technical, trade-related and
+                                        other business services, Operational
+                                        leasing services
+                                      children:
+                                        - id: '5131'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Operational
+                                            leasing services, Air operational
+                                            leasing services
+                                        - id: '5132'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Operational
+                                            leasing services, Sea operational
+                                            leasing services
+                                        - id: '5133'
+                                          name: >-
+                                            Services credits, Other business
+                                            services - Technical, trade-related and
+                                            other business services, Operational
+                                            leasing services, Other operational
+                                            leasing services
+                                    - id: '5140'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Technical, trade-related and
+                                        other business services, Trade-related
+                                        commission services
+                                    - id: '5145'
+                                      name: >-
+                                        Services credits, Other business
+                                        services - Technical, trade-related and
+                                        other business services, Other business
+                                        services n.i.e.
+                            - id: '5150'
+                              name: >-
+                                Services credits, Personal, cultural and
+                                recreational services
+                              children:
+                                - id: '5200'
+                                  name: >-
+                                    Services credits, Personal, cultural and
+                                    recreational services - Audiovisual and
+                                    related services
+                                  children:
+                                    - id: '5210'
+                                      name: >-
+                                        Services credits, Personal, cultural and
+                                        recreational services - Audiovisual and
+                                        related services, Royalties on film;
+                                        television; home entertainment and other
+                                        audiovisual
+                                      children:
+                                        - id: '5211'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Film
+                                        - id: '5212'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Television
+                                        - id: '5213'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Home entertainment
+                                            royalties
+                                        - id: '5214'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Other audiovisual royalties
+                                        - id: '5215'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Other film, TV and
+                                            multimedia royalties
+                                    - id: '5220'
+                                      name: >-
+                                        Services credits, Personal, cultural and
+                                        recreational services - Audiovisual and
+                                        related services, Other audiovisual
+                                        n.i.e.
+                                - id: '5250'
+                                  name: >-
+                                    Services credits, Personal, cultural and
+                                    recreational services - Other personal,
+                                    cultural and recreational services
+                                  children:
+                                    - id: '5260'
+                                      name: >-
+                                        Services credits, Personal, cultural and
+                                        recreational services - Other personal,
+                                        cultural and recreational services,
+                                        Health
+                                    - id: '5270'
+                                      name: >-
+                                        Services credits, Personal, cultural and
+                                        recreational services - Other personal,
+                                        cultural and recreational services,
+                                        Education services
+                                      children:
+                                        - id: '5271'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Consultancy services
+                                        - id: '5272'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Correspondence
+                                            courses
+                                        - id: '5273'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Services through
+                                            educational institutions
+                                        - id: '5274'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Other educational
+                                            services
+                                    - id: '5280'
+                                      name: >-
+                                        Services credits, Personal, cultural and
+                                        recreational services - Other personal,
+                                        cultural and recreational services,
+                                        Other recreational
+                                      children:
+                                        - id: '5281'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Other recreational, Sporting and
+                                            entertainment services
+                                        - id: '5282'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Other recreational, Off-shore gambling
+                                            services
+                                        - id: '5283'
+                                          name: >-
+                                            Services credits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Other recreational, Other recreational
+                                            n.i.e.
+                            - id: '5300'
+                              name: >-
+                                Services credits, Government goods and services
+                                n.i.e.
+                              children:
+                                - id: '5310'
+                                  name: >-
+                                    Services credits, Government goods and
+                                    services n.i.e. - Embassies & consulates
+                                  children:
+                                    - id: '5311'
+                                      name: >-
+                                        Services credits, Government goods and
+                                        services n.i.e. - Embassies &
+                                        consulates, Missions expenditure
+                                    - id: '5312'
+                                      name: >-
+                                        Services credits, Government goods and
+                                        services n.i.e. - Embassies &
+                                        consulates, Employees expenditure
+                                - id: '5320'
+                                  name: >-
+                                    Services credits, Government goods and
+                                    services n.i.e. - Military units & agencies
+                                - id: '5330'
+                                  name: >-
+                                    Services credits, Government goods and
+                                    services n.i.e. - Other
+                    - id: '5350'
+                      name: >-
+                        Memorandum items - Gross inward insurance premiums
+                        receivable
+                    - id: '5400'
+                      name: Memorandum items - Gross inward insurance claims payable
+                    - id: '5450'
+                      name: Memorandum items - Tourism related services credits
+                    - id: '6000'
+                      name: Services debits
+                      children:
+                        - id: '6050'
+                          name: >-
+                            Services debits, Manufacturing services on physical
+                            inputs owned by others
+                        - id: '6100'
+                          name: >-
+                            Services debits, Maintenance and repair services
+                            n.i.e.
+                        - id: '6150'
+                          name: 'Services debits, Transport'
+                          children:
+                            - id: '6200'
+                              name: 'Services debits, Passenger transport'
+                            - id: '6250'
+                              name: 'Services debits, Freight transport'
+                            - id: '6300'
+                              name: 'Services debits, Other transport'
+                            - id: '6350'
+                              name: 'Services debits, Postal and courier services'
+                        - id: '6400'
+                          name: 'Services debits, Travel'
+                          children:
+                            - id: '6450'
+                              name: 'Services debits, Business travel'
+                            - id: '6500'
+                              name: 'Services debits, Personal travel'
+                              children:
+                                - id: '6505'
+                                  name: >-
+                                    Services debits, Education-related personal
+                                    travel
+                                - id: '6510'
+                                  name: 'Services debits, Other personal travel'
+                        - id: '6550'
+                          name: 'Services debits, Other services'
+                          children:
+                            - id: '6600'
+                              name: 'Services debits, Construction'
+                            - id: '6650'
+                              name: 'Services debits, Insurance and pension services'
+                              children:
+                                - id: '6655'
+                                  name: >-
+                                    Services debits, Insurance and pension
+                                    services - Direct insurance
+                                  children:
+                                    - id: '6656'
+                                      name: >-
+                                        Services debits, Insurance and pension
+                                        services - Direct insurance, Freight
+                                    - id: '6657'
+                                      name: >-
+                                        Services debits, Insurance and pension
+                                        services - Direct insurance, Life
+                                    - id: '6658'
+                                      name: >-
+                                        Services debits, Insurance and pension
+                                        services - Direct insurance, Other
+                                - id: '6660'
+                                  name: >-
+                                    Services debits, Insurance and pension
+                                    services - Reinsurance
+                                - id: '6665'
+                                  name: >-
+                                    Services debits, Insurance and pension
+                                    services - Auxiliary services
+                                - id: '6670'
+                                  name: >-
+                                    Services debits, Insurance and pension
+                                    services - Pension services
+                                - id: '6675'
+                                  name: >-
+                                    Services debits, Insurance and pension
+                                    services - Standardised guarantee services
+                            - id: '6700'
+                              name: 'Services debits, Financial services'
+                              children:
+                                - id: '6710'
+                                  name: >-
+                                    Services debits, Financial services -
+                                    Explicitly charged and other financial
+                                    services
+                                - id: '6720'
+                                  name: >-
+                                    Services debits, Financial services -
+                                    Financial Intermediation Services Indirectly
+                                    Measured
+                            - id: '6750'
+                              name: >-
+                                Services debits, Charges for the use of
+                                intellectual property n.i.e.
+                              children:
+                                - id: '6755'
+                                  name: >-
+                                    Services debits, Charges for the use of
+                                    intellectual property n.i.e. - Licences to
+                                    reproduce and/or distribute computer
+                                    services
+                                  children:
+                                    - id: '6756'
+                                      name: >-
+                                        Services debits, Charges for the use of
+                                        intellectual property n.i.e. - Licences
+                                        to reproduce and/or distribute computer
+                                        services, Software
+                                    - id: '6757'
+                                      name: >-
+                                        Services debits, Charges for the use of
+                                        intellectual property n.i.e. - Licences
+                                        to reproduce and/or distribute computer
+                                        services, Hardware and design
+                                - id: '6760'
+                                  name: >-
+                                    Services debits, Charges for the use of
+                                    intellectual property n.i.e. - Licences to
+                                    reproduce and/or distribute audiovisual and
+                                    related services
+                                - id: '6765'
+                                  name: >-
+                                    Services debits, Charges for the use of
+                                    intellectual property n.i.e. - Outcomes of
+                                    research and development
+                                - id: '6770'
+                                  name: >-
+                                    Services debits, Charges for the use of
+                                    intellectual property n.i.e. - Franchise and
+                                    trademarks licensing fees
+                                - id: '6775'
+                                  name: >-
+                                    Services debits, Charges for the use of
+                                    intellectual property n.i.e. - Other charges
+                                  children:
+                                    - id: '6776'
+                                      name: >-
+                                        Services debits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Royalties on education
+                                    - id: '6777'
+                                      name: >-
+                                        Services debits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Royalties on telecommunication
+                                        services
+                                    - id: '6778'
+                                      name: >-
+                                        Services debits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Music
+                                    - id: '6779'
+                                      name: >-
+                                        Services debits, Charges for the use of
+                                        intellectual property n.i.e. - Other
+                                        charges, Other
+                            - id: '6800'
+                              name: >-
+                                Services debits, Telecommunications, computer
+                                and information services
+                              children:
+                                - id: '6850'
+                                  name: >-
+                                    Services debits, Telecommunications,
+                                    computer and information services -
+                                    Telecommunication
+                                  children:
+                                    - id: '6860'
+                                      name: >-
+                                        Services debits, Telecommunications,
+                                        computer and information services -
+                                        Telecommunication, Telephone
+                                    - id: '6870'
+                                      name: >-
+                                        Services debits, Telecommunications,
+                                        computer and information services -
+                                        Telecommunication, Other
+                                - id: '6900'
+                                  name: >-
+                                    Services debits, Computer and information
+                                    services
+                                  children:
+                                    - id: '6910'
+                                      name: >-
+                                        Services debits, Computer and
+                                        information services - Computer
+                                      children:
+                                        - id: '6911'
+                                          name: >-
+                                            Services debits, Computer and
+                                            information services - Computer,
+                                            Hardware and software consultancy
+                                        - id: '6912'
+                                          name: >-
+                                            Services debits, Computer and
+                                            information services - Computer, Data
+                                            processing
+                                    - id: '6920'
+                                      name: >-
+                                        Services debits, Computer and
+                                        information services - Information
+                                        services
+                                      children:
+                                        - id: '6921'
+                                          name: >-
+                                            Services debits, Computer and
+                                            information services - Information
+                                            services, Database
+                                        - id: '6922'
+                                          name: >-
+                                            Services debits, Computer and
+                                            information services - Information
+                                            services, Newsagency subscription
+                                    - id: '6930'
+                                      name: >-
+                                        Services debits, Computer and
+                                        information services - Other computer
+                                        and information services
+                            - id: '6950'
+                              name: 'Services debits, Other business services'
+                              children:
+                                - id: '7000'
+                                  name: >-
+                                    Services debits, Other business services -
+                                    Research and development services
+                                - id: '7050'
+                                  name: >-
+                                    Services debits, Other business services -
+                                    Professional and management consulting
+                                    services
+                                  children:
+                                    - id: '7060'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Professional and management consulting
+                                        services, Legal, accounting, management
+                                        consulting, public relations and other
+                                        professional services
+                                      children:
+                                        - id: '7061'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Professional and management consulting
+                                            services, Legal, accounting, management
+                                            consulting, public relations and other
+                                            professional, Legal
+                                        - id: '7062'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Professional and management consulting
+                                            services, Legal, accounting, management
+                                            consulting, public relations and other
+                                            professional, Accounting, auditing,
+                                            bookkeeping and tax consulting services
+                                        - id: '7063'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Professional and management consulting
+                                            services, Legal, accounting, management
+                                            consulting, public relations and other
+                                            professional, Business, management
+                                            consulting and public relations services
+                                        - id: '7064'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Professional and management consulting
+                                            services, Legal, accounting, management
+                                            consulting, public relations and other
+                                            professional, Other professional
+                                            services
+                                        - id: '7065'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Professional and management consulting
+                                            services, Legal, accounting, management
+                                            consulting, public relations and other
+                                            professional, Management fees n.i.e.
+                                    - id: '7070'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Professional and management consulting
+                                        services, Advertising, market research
+                                        and public opinion polling services
+                                - id: '7100'
+                                  name: >-
+                                    Services debits, Other business services -
+                                    Technical, trade-related and other business
+                                    services
+                                  children:
+                                    - id: '7110'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Technical, trade-related and other
+                                        business services, Architectural,
+                                        engineering, scientific and other
+                                        technical services
+                                      children:
+                                        - id: '7111'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Architectural
+                                        - id: '7112'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Engineering
+                                        - id: '7113'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Surveying services
+                                        - id: '7114'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Architectural,
+                                            engineering, scientific and other
+                                            technical services, Scientific and other
+                                            technical services
+                                    - id: '7120'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Technical, trade-related and other
+                                        business services, Waste treatment and
+                                        de-pollution, agricultural and mining
+                                        services
+                                      children:
+                                        - id: '7121'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Waste treatment and
+                                            de-pollution, agricultural and mining
+                                            services, Waste treatment and
+                                            de-pollution
+                                        - id: '7122'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Waste treatment and
+                                            de-pollution, agricultural and mining
+                                            services, Incidental to agriculture;
+                                            forestry and fishing
+                                        - id: '7123'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Waste treatment and
+                                            de-pollution, agricultural and mining
+                                            services, Incidental to mining; and oil
+                                            and gas extraction
+                                        - id: '7124'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Waste treatment and
+                                            de-pollution, agricultural and mining
+                                            services, Other on-site processing
+                                            services
+                                    - id: '7130'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Technical, trade-related and other
+                                        business services, Operational leasing
+                                        services
+                                      children:
+                                        - id: '7131'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Operational leasing
+                                            services, Air operational leasing
+                                            services
+                                        - id: '7132'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Operational leasing
+                                            services, Sea operational leasing
+                                            services
+                                        - id: '7133'
+                                          name: >-
+                                            Services debits, Other business services
+                                            - Technical, trade-related and other
+                                            business services, Operational leasing
+                                            services, Other operational leasing
+                                            services
+                                    - id: '7140'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Technical, trade-related and other
+                                        business services, Trade-related
+                                        commission services
+                                    - id: '7145'
+                                      name: >-
+                                        Services debits, Other business services
+                                        - Technical, trade-related and other
+                                        business services, Other business
+                                        services n.i.e.
+                            - id: '7150'
+                              name: >-
+                                Services debits, Personal, cultural and
+                                recreational services
+                              children:
+                                - id: '7200'
+                                  name: >-
+                                    Services debits, Personal, cultural and
+                                    recreational services - Audiovisual and
+                                    related services
+                                  children:
+                                    - id: '7210'
+                                      name: >-
+                                        Services debits, Personal, cultural and
+                                        recreational services - Audiovisual and
+                                        related services, Royalties on film;
+                                        television; home entertainment and other
+                                        audiovisual
+                                      children:
+                                        - id: '7211'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Film
+                                        - id: '7212'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Television
+                                        - id: '7213'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Home entertainment
+                                            royalties
+                                        - id: '7214'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Other audiovisual royalties
+                                        - id: '7215'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Audiovisual and
+                                            related services, Royalties on film;
+                                            television; home entertainment and other
+                                            audiovisual, Other film, TV and
+                                            multimedia royalties
+                                    - id: '7220'
+                                      name: >-
+                                        Services debits, Personal, cultural and
+                                        recreational services - Audiovisual and
+                                        related services, Other audiovisual
+                                        n.i.e.
+                                - id: '7250'
+                                  name: >-
+                                    Services debits, Personal, cultural and
+                                    recreational services - Other personal,
+                                    cultural and recreational services
+                                  children:
+                                    - id: '7260'
+                                      name: >-
+                                        Services debits, Personal, cultural and
+                                        recreational services - Other personal,
+                                        cultural and recreational services,
+                                        Health
+                                    - id: '7270'
+                                      name: >-
+                                        Services debits, Personal, cultural and
+                                        recreational services - Other personal,
+                                        cultural and recreational services,
+                                        Education services
+                                      children:
+                                        - id: '7271'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Consultancy services
+                                        - id: '7272'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Correspondence
+                                            courses
+                                        - id: '7273'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Services through
+                                            educational institutions
+                                        - id: '7274'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Education services, Other educational
+                                            services
+                                    - id: '7280'
+                                      name: >-
+                                        Services debits, Personal, cultural and
+                                        recreational services - Other personal,
+                                        cultural and recreational services,
+                                        Other recreational
+                                      children:
+                                        - id: '7281'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Other recreational, Sporting and
+                                            entertainment services
+                                        - id: '7282'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Other recreational, Off-shore gambling
+                                            services
+                                        - id: '7283'
+                                          name: >-
+                                            Services debits, Personal, cultural and
+                                            recreational services - Other personal,
+                                            cultural and recreational services,
+                                            Other recreational, Other recreational
+                                            n.i.e.
+                            - id: '7300'
+                              name: >-
+                                Services debits, Government goods and services
+                                n.i.e.
+                              children:
+                                - id: '7310'
+                                  name: >-
+                                    Services debits, Government goods and
+                                    services n.i.e. - Embassies & consulates
+                                  children:
+                                    - id: '7311'
+                                      name: >-
+                                        Services debits, Government goods and
+                                        services n.i.e. - Embassies &
+                                        consulates, Missions expenditure
+                                    - id: '7312'
+                                      name: >-
+                                        Services debits, Government goods and
+                                        services n.i.e. - Embassies &
+                                        consulates, Employees expenditure
+                                - id: '7320'
+                                  name: >-
+                                    Services debits, Government goods and
+                                    services n.i.e. - Military units & agencies
+                                - id: '7330'
+                                  name: >-
+                                    Services debits, Government goods and
+                                    services n.i.e. - Other
+                    - id: '7350'
+                      name: >-
+                        Memorandum items - Gross outward insurance premiums
+                        payable
+                    - id: '7400'
+                      name: >-
+                        Memorandum items - Gross outward insurance claims
+                        receivable
+                    - id: '7450'
+                      name: Memorandum items - Tourism related services debits
+            - id: '8700'
+              name: Primary income
+              children:
+                - id: '8710'
+                  name: Primary income credits
+                - id: '8720'
+                  name: Primary income debits
+            - id: '8100'
+              name: Secondary income
+              children:
+                - id: '8110'
+                  name: Secondary income credits
+                  children:
+                    - id: '8120'
+                      name: 'Secondary income credits, General government'
+                    - id: '8130'
+                      name: 'Secondary income credits, Other sectors'
+                      children:
+                        - id: '8140'
+                          name: >-
+                            Secondary income credits, Other sectors, Personal
+                            transfers
+                          children:
+                            - id: '8150'
+                              name: >-
+                                Secondary income credits, Other sectors,
+                                Personal transfers, Workers remittances
+                        - id: '8160'
+                          name: >-
+                            Secondary income credits, Other sectors, Other
+                            current transfers
+                          children:
+                            - id: '8170'
+                              name: >-
+                                Secondary income credits, Other sectors, Other
+                                current transfers, Non-life insurance premiums
+                                and claims
+                            - id: '8180'
+                              name: >-
+                                Secondary income credits, Other sectors, Other
+                                current transfers, Other
+                - id: '8210'
+                  name: Secondary income debits
+                  children:
+                    - id: '8220'
+                      name: 'Secondary income debits, General government'
+                    - id: '8230'
+                      name: 'Secondary income debits, Other sectors'
+                      children:
+                        - id: '8240'
+                          name: >-
+                            Secondary income debits, Other sectors, Personal
+                            transfers
+                          children:
+                            - id: '8250'
+                              name: >-
+                                Secondary income debits, Other sectors, Personal
+                                transfers, Work remittances
+                        - id: '8260'
+                          name: >-
+                            Secondary income debits, Other sectors, Other
+                            current transfers
+                          children:
+                            - id: '8270'
+                              name: >-
+                                Secondary income debits, Other sectors, Other
+                                current transfers, Non-life insurance transfers
+                            - id: '8280'
+                              name: >-
+                                Secondary income debits, Other sectors, Other
+                                current transfers, Other
+        - id: '8750'
+          name: Capital and financial account
+          children:
+            - id: '8305'
+              name: Capital account
+              children:
+                - id: '8400'
+                  name: >-
+                    Capital account, Acquisitions/disposals of non-produced
+                    non-financial assets
+                  children:
+                    - id: '8510'
+                      name: >-
+                        Capital account credits, Gross disposals of non-produced
+                        non-financial assets
+                    - id: '8610'
+                      name: >-
+                        Capital account debits, Gross acquisitions of
+                        non-produced non-financial assets
+                - id: '8450'
+                  name: 'Capital account, Capital transfers'
+                  children:
+                    - id: '8520'
+                      name: 'Capital account credits, Capital transfers'
+                      children:
+                        - id: '8530'
+                          name: >-
+                            Capital account credits, Capital transfers, General
+                            government
+                          children:
+                            - id: '8540'
+                              name: >-
+                                Capital account credits, Capital transfers,
+                                General government, Debt forgiveness
+                            - id: '8550'
+                              name: >-
+                                Capital account credits, Capital transfers,
+                                General government, Other capital transfers
+                        - id: '8560'
+                          name: >-
+                            Capital account credits, Capital transfers, Other
+                            sectors
+                          children:
+                            - id: '8570'
+                              name: >-
+                                Capital account credits, Capital transfers,
+                                Other sectors, Debt forgiveness
+                            - id: '8580'
+                              name: >-
+                                Capital account credits, Capital transfers,
+                                Other sectors, Other capital transfers
+                    - id: '8620'
+                      name: 'Capital account debits, Capital transfers'
+                      children:
+                        - id: '8630'
+                          name: >-
+                            Capital account debits, Capital transfers, General
+                            government
+                          children:
+                            - id: '8640'
+                              name: >-
+                                Capital account debits, Capital transfers,
+                                General government, Debt forgiveness
+                            - id: '8650'
+                              name: >-
+                                Capital account debits, Capital transfers,
+                                General government, Other capital transfers
+                        - id: '8660'
+                          name: >-
+                            Capital account debits, Capital transfers, Other
+                            sectors
+                          children:
+                            - id: '8670'
+                              name: >-
+                                Capital account debits, Capital transfers, Other
+                                sectors, Debt forgiveness
+                            - id: '8680'
+                              name: >-
+                                Capital account debits, Capital Transfers, Other
+                                sectors, Other capital transfers
+                - id: '8500'
+                  name: Capital account credits
+                - id: '8600'
+                  name: Capital account debits
+            - id: '8800'
+              name: Financial account
+              children:
+                - id: '8805'
+                  name: 'Financial account, Direct investment'
+                  children:
+                    - id: '8810'
+                      name: 'Financial account, Direct investment assets'
+                    - id: '8815'
+                      name: 'Financial account, Direct investment liabilities'
+                - id: '8820'
+                  name: 'Financial account, Portfolio investment'
+                  children:
+                    - id: '8825'
+                      name: 'Financial account, Portfolio investment assets'
+                    - id: '8830'
+                      name: 'Financial account, Portfolio investment liabilities'
+                - id: '8835'
+                  name: 'Financial account, Financial derivatives'
+                  children:
+                    - id: '8840'
+                      name: 'Financial account, Financial derivatives assets'
+                    - id: '8845'
+                      name: 'Financial account, Financial derivatives liabilities'
+                - id: '8850'
+                  name: 'Financial account, Other investment'
+                  children:
+                    - id: '8855'
+                      name: 'Financial account, Other investment assets'
+                    - id: '8860'
+                      name: 'Financial account, Other investment liabilities'
+                - id: '8865'
+                  name: 'Financial account, Reserve assets'
+        - id: '8900'
+          name: Net errors and omissions
+    - id: TSEST
+      name: Adjustment Type
+      values:
+        - id: '10'
+          name: Original
+        - id: '20'
+          name: Seasonally Adjusted
+        - id: '30'
+          name: Trend
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: Q
+          name: Quarterly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: BIRTHS_AGE_FATHER
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+    - id: NUPTIALITY
+      name: Nuptiality
+      values:
+        - id: '2'
+          name: 'Ex-nuptial, paternity acknowledged'
+        - id: '1'
+          name: Nuptial
+        - id: TOT
+          name: Total
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+          children:
+            - id: '0015'
+              name: 0 - 15
+        - id: '999'
+          name: not stated
+        - id: A15
+          name: 15 - 19
+          children:
+            - id: '16'
+              name: '16'
+            - id: '17'
+              name: '17'
+            - id: '18'
+              name: '18'
+            - id: '19'
+              name: '19'
+        - id: A20
+          name: 20 - 24
+          children:
+            - id: '20'
+              name: '20'
+            - id: '21'
+              name: '21'
+            - id: '22'
+              name: '22'
+            - id: '23'
+              name: '23'
+            - id: '24'
+              name: '24'
+        - id: A25
+          name: 25 - 29
+          children:
+            - id: '25'
+              name: '25'
+            - id: '26'
+              name: '26'
+            - id: '27'
+              name: '27'
+            - id: '28'
+              name: '28'
+            - id: '29'
+              name: '29'
+        - id: A30
+          name: 30 - 34
+          children:
+            - id: '30'
+              name: '30'
+            - id: '31'
+              name: '31'
+            - id: '32'
+              name: '32'
+            - id: '33'
+              name: '33'
+            - id: '34'
+              name: '34'
+        - id: A35
+          name: 35 - 39
+          children:
+            - id: '35'
+              name: '35'
+            - id: '36'
+              name: '36'
+            - id: '37'
+              name: '37'
+            - id: '38'
+              name: '38'
+            - id: '39'
+              name: '39'
+        - id: A40
+          name: 40 - 44
+          children:
+            - id: '40'
+              name: '40'
+            - id: '41'
+              name: '41'
+            - id: '42'
+              name: '42'
+            - id: '43'
+              name: '43'
+            - id: '44'
+              name: '44'
+        - id: A45
+          name: 45 - 49
+          children:
+            - id: '45'
+              name: '45'
+            - id: '46'
+              name: '46'
+            - id: '47'
+              name: '47'
+            - id: '48'
+              name: '48'
+            - id: '49'
+              name: '49'
+        - id: A50
+          name: 50 - 54
+          children:
+            - id: '50'
+              name: '50'
+            - id: '51'
+              name: '51'
+            - id: '52'
+              name: '52'
+            - id: '53'
+              name: '53'
+            - id: '54'
+              name: '54'
+        - id: A55
+          name: 55 - 59
+          children:
+            - id: '55'
+              name: '55'
+            - id: '56'
+              name: '56'
+            - id: '57'
+              name: '57'
+            - id: '58'
+              name: '58'
+        - id: '5999'
+          name: 59 years and over
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: BIRTHS_AGE_MOTHER
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+    - id: NUPTIALITY
+      name: Nuptiality
+      values:
+        - id: '2'
+          name: 'Ex-nuptial, paternity acknowledged'
+        - id: '3'
+          name: 'Ex-nuptial, paternity not acknowledged'
+        - id: '1'
+          name: Nuptial
+        - id: TOT
+          name: Total
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+          children:
+            - id: '0015'
+              name: 0 - 15
+        - id: '999'
+          name: not stated
+        - id: A15
+          name: 15 - 19
+          children:
+            - id: '16'
+              name: '16'
+            - id: '17'
+              name: '17'
+            - id: '18'
+              name: '18'
+            - id: '19'
+              name: '19'
+        - id: A20
+          name: 20 - 24
+          children:
+            - id: '20'
+              name: '20'
+            - id: '21'
+              name: '21'
+            - id: '22'
+              name: '22'
+            - id: '23'
+              name: '23'
+            - id: '24'
+              name: '24'
+        - id: A25
+          name: 25 - 29
+          children:
+            - id: '25'
+              name: '25'
+            - id: '26'
+              name: '26'
+            - id: '27'
+              name: '27'
+            - id: '28'
+              name: '28'
+            - id: '29'
+              name: '29'
+        - id: A30
+          name: 30 - 34
+          children:
+            - id: '30'
+              name: '30'
+            - id: '31'
+              name: '31'
+            - id: '32'
+              name: '32'
+            - id: '33'
+              name: '33'
+            - id: '34'
+              name: '34'
+        - id: A35
+          name: 35 - 39
+          children:
+            - id: '35'
+              name: '35'
+            - id: '36'
+              name: '36'
+            - id: '37'
+              name: '37'
+            - id: '38'
+              name: '38'
+            - id: '39'
+              name: '39'
+        - id: A40
+          name: 40 - 44
+          children:
+            - id: '40'
+              name: '40'
+            - id: '41'
+              name: '41'
+            - id: '42'
+              name: '42'
+            - id: '43'
+              name: '43'
+            - id: '44'
+              name: '44'
+        - id: A45
+          name: 45 - 49
+          children:
+            - id: '45'
+              name: '45'
+            - id: '46'
+              name: '46'
+            - id: '47'
+              name: '47'
+            - id: '48'
+              name: '48'
+        - id: '4999'
+          name: 49 years and over
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: BIRTHS_MONTH_OCCURRENCE
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+    - id: MONTH_OCCURENCE
+      name: Month of occurence
+      values:
+        - id: '1'
+          name: January
+        - id: '2'
+          name: February
+        - id: '3'
+          name: March
+        - id: '4'
+          name: April
+        - id: '5'
+          name: May
+        - id: '6'
+          name: June
+        - id: '7'
+          name: July
+        - id: '8'
+          name: August
+        - id: '9'
+          name: September
+        - id: '10'
+          name: October
+        - id: '11'
+          name: November
+        - id: '12'
+          name: December
+        - id: TOT
+          name: Total
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: BIRTHS_SUMMARY
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+        - id: '2'
+          name: Population
+        - id: '3'
+          name: Crude birth rate
+        - id: '4'
+          name: Male births
+        - id: '5'
+          name: Female births
+        - id: '6'
+          name: Sex ratio
+        - id: '7'
+          name: Nuptial births
+        - id: '8'
+          name: Ex-nuptial births
+        - id: '9'
+          name: 'Ex-nuptial, paternity acknowledged births'
+        - id: '10'
+          name: 'Ex-nuptial, paternity not acknowledged births'
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: BA_GCCSA
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Number of building jobs
+        - id: '2'
+          name: Value of building jobs ($'000)
+        - id: '3'
+          name: Number of dwelling units
+    - id: RANGE
+      name: Value Range
+      values:
+        - id: '1'
+          name: Total
+        - id: '2'
+          name: Value of $50 million and over
+        - id: '3'
+          name: Value of $20 million to less than $50 million
+        - id: '4'
+          name: Value of $5 million to less than $20 million
+        - id: '5'
+          name: Value of $1 million to less than $5 million
+        - id: '6'
+          name: 'Value of $250,000 to less than $1 million'
+        - id: '7'
+          name: 'Value of $50,000 to less than $250,000'
+    - id: SECTOR
+      name: Sector of Ownership
+      values:
+        - id: '1'
+          name: Private Sector
+        - id: '5'
+          name: Public Sector
+        - id: '9'
+          name: Total Sectors
+    - id: WORK
+      name: Type of Work
+      values:
+        - id: '1'
+          name: New
+        - id: '2'
+          name: Alterations and additions
+        - id: '3'
+          name: Alterations and additions creating dwellings
+        - id: '4'
+          name: Alterations and additions not creating dwellings
+        - id: '5'
+          name: Relocation of dwellings
+        - id: '6'
+          name: Demolition of dwellings
+        - id: '7'
+          name: Conversions
+        - id: '8'
+          name: Alterations and additions including conversions
+        - id: '9'
+          name: Total Work
+    - id: BUILDING
+      name: Type of Building
+      values:
+        - id: '110'
+          name: Houses
+        - id: '121'
+          name: 'Semi-detached, row or terrace houses, townhouses - One storey'
+        - id: '122'
+          name: >-
+            Semi-detached, row or terrace houses, townhouses - Two or more
+            storeys
+        - id: '120'
+          name: 'Semi-detached, row or terrace houses, townhouses - Total'
+        - id: '131'
+          name: Flats units or apartments - In a one or two storey block
+        - id: '132'
+          name: Flats units or apartments - In a three storey block
+        - id: '133'
+          name: Flats units or apartments - In a four or more storey block
+        - id: '130'
+          name: >-
+            Flats units or apartments - Total including those attached to a
+            house
+        - id: '150'
+          name: Total Other Residential
+        - id: '100'
+          name: Total Residential
+        - id: '210'
+          name: Retail and wholesale trade buildings
+        - id: '220'
+          name: Transport buildings
+        - id: '230'
+          name: Offices
+        - id: '290'
+          name: Commercial buildings n.e.c.
+        - id: '200'
+          name: Commercial Buildings - Total
+        - id: '310'
+          name: Factories and other secondary production buildings
+        - id: '320'
+          name: Warehouses
+        - id: '330'
+          name: Agricultural and aquacultural buildings
+        - id: '390'
+          name: Other industrial buildings n.e.c.
+        - id: '300'
+          name: Industrial Buildings - Total
+        - id: '410'
+          name: Education buildings
+        - id: '420'
+          name: Religion buildings
+        - id: '430'
+          name: Aged care facilities
+        - id: '440'
+          name: Health buildings
+        - id: '450'
+          name: Entertainment and recreation buildings
+        - id: '460'
+          name: Short term accommodation buildings
+        - id: '490'
+          name: Other non-residential n.e.c.
+        - id: '400'
+          name: Other Non-residential - Total
+        - id: '700'
+          name: Total Non-residential
+        - id: '800'
+          name: Dwellings excluding new residential
+        - id: '850'
+          name: Dwellings excluding houses
+        - id: '999'
+          name: Total
+    - id: REGION
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: M
+          name: Monthly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_BA_SA2_ASGS2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Total number of dwelling units
+        - id: '2'
+          name: Total value of building jobs
+    - id: SECTOR
+      name: Sector of Ownership
+      values:
+        - id: '1'
+          name: Private Sector
+        - id: '5'
+          name: Public Sector
+        - id: '9'
+          name: Total Sectors
+    - id: WORK
+      name: Type of work
+      values:
+        - id: '1'
+          name: New
+        - id: '2'
+          name: Alterations and additions
+        - id: '7'
+          name: Conversions
+        - id: '8'
+          name: Alterations and additions including conversions
+        - id: '9'
+          name: Total Work
+    - id: BUILDING_TYPE
+      name: Type of building
+      values:
+        - id: '110'
+          name: Houses
+        - id: '121'
+          name: 'Semi-detached, row or terrace houses, townhouses - One storey'
+        - id: '122'
+          name: >-
+            Semi-detached, row or terrace houses, townhouses - Two or more
+            storeys
+        - id: '120'
+          name: 'Semi-detached, row or terrace houses, townhouses - Total'
+        - id: '131'
+          name: Flats units or apartments - In a one or two storey block
+        - id: '132'
+          name: Flats units or apartments - In a three storey block
+        - id: '133'
+          name: Flats units or apartments - In a four or more storey block
+        - id: '130'
+          name: >-
+            Flats units or apartments - Total including those attached to a
+            house
+        - id: '150'
+          name: Total Other Residential
+        - id: '100'
+          name: Total Residential
+        - id: '210'
+          name: Retail and wholesale trade buildings
+        - id: '220'
+          name: Transport buildings
+        - id: '230'
+          name: Offices
+        - id: '290'
+          name: Commercial buildings n.e.c.
+        - id: '200'
+          name: Commercial Buildings - Total
+        - id: '310'
+          name: Factories and other secondary production buildings
+        - id: '320'
+          name: Warehouses
+        - id: '330'
+          name: Agricultural and aquacultural buildings
+        - id: '390'
+          name: Other industrial buildings n.e.c.
+        - id: '300'
+          name: Industrial Buildings - Total
+        - id: '410'
+          name: Education buildings
+        - id: '420'
+          name: Religion buildings
+        - id: '430'
+          name: Aged care facilities
+        - id: '440'
+          name: Health buildings
+        - id: '450'
+          name: Entertainment and recreation buildings
+        - id: '460'
+          name: Short term accommodation buildings
+        - id: '490'
+          name: Other non-residential n.e.c.
+        - id: '400'
+          name: Other Non-residential - Total
+        - id: '700'
+          name: Total Non-residential
+        - id: '800'
+          name: Dwellings excluding new residential
+        - id: '850'
+          name: Dwellings excluding houses
+        - id: '999'
+          name: Total
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+    - id: ASGS_2016
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: M
+          name: Monthly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: QBIS
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '10'
+          name: Sales ($ Million)
+        - id: '20'
+          name: Sales (% Change)
+        - id: '30'
+          name: 'Sales, Chain Volume Measure ($ Million)'
+        - id: '40'
+          name: 'Sales, Chain Volume measure (% Change)'
+        - id: '50'
+          name: Inventories ($ Million)
+        - id: '60'
+          name: Inventories (% Change)
+        - id: '70'
+          name: 'Inventories, Chain Volume measure ($ Million)'
+        - id: '80'
+          name: 'Inventories, CVM, % Change'
+        - id: '90'
+          name: Wages
+        - id: '100'
+          name: 'Wages, % Change'
+        - id: '110'
+          name: Gross Operating Profits
+        - id: '120'
+          name: 'Gross Operating Profits, % Change'
+        - id: '130'
+          name: Profit before Income Tax
+        - id: '140'
+          name: 'Profit before Income Tax, % Change'
+        - id: '150'
+          name: Inventories to Sales Ratio
+        - id: '160'
+          name: Sales to Wages Ratio
+        - id: '170'
+          name: Gross Operating Profits to Sales Ratio
+    - id: IND
+      name: Industry
+      values:
+        - id: B
+          name: Mining
+        - id: C
+          name: Manufacturing
+        - id: '11'
+          name: Food product manufacturing
+        - id: '12'
+          name: Beverage and tobacco product manufacturing
+        - id: '13'
+          name: 'Textile, leather, clothing and footwear manufacturing'
+        - id: '14'
+          name: Wood product manufacturing
+        - id: '15'
+          name: 'Pulp, paper and converted paper product manufacturing'
+        - id: '16'
+          name: Printing (including the reproduction of recorded media)
+        - id: '17'
+          name: Petroleum and coal product manufacturing
+        - id: '18'
+          name: Basic chemical and chemical product manufacturing
+        - id: '19'
+          name: Polymer product and rubber product manufacturing
+        - id: '20'
+          name: Non-metallic mineral product manufacturing
+        - id: '21'
+          name: Primary metal and metal product manufacturing
+        - id: '22'
+          name: Fabricated metal product manufacturing
+        - id: '23'
+          name: Transport equipment manufacturing
+        - id: '24'
+          name: Machinery and equipment manufacturing
+        - id: '25'
+          name: Furniture and other manufacturing
+        - id: D
+          name: 'Electricity, gas, water and waste services'
+        - id: E
+          name: Construction
+        - id: F
+          name: Wholesale trade
+        - id: G
+          name: Retail trade
+        - id: H
+          name: Accommodation and food services
+        - id: I
+          name: 'Transport, postal and warehousing'
+        - id: J
+          name: Information media and telecommunications
+        - id: K
+          name: Financial and insurance services
+        - id: L
+          name: 'Rental, hiring and real estate services'
+        - id: M
+          name: 'Professional, scientific and technical services'
+        - id: 'N'
+          name: Administrative and support services
+        - id: P
+          name: Education and Training
+        - id: Q
+          name: Health Care and Social Assistance
+        - id: R
+          name: Arts and recreation services
+        - id: S
+          name: Other services
+        - id: TOTAL
+          name: Total
+    - id: REGION
+      name: Region
+    - id: SCOPE
+      name: Business Scope
+      values:
+        - id: '2'
+          name: CORP
+        - id: '3'
+          name: UNINCORP
+        - id: '99'
+          name: TOTAL
+    - id: TSEST
+      name: Adjustment Type
+      values:
+        - id: '10'
+          name: Original
+        - id: '20'
+          name: Seasonally Adjusted
+        - id: '30'
+          name: Trend
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: Q
+          name: Quarterly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: CONFINEMENTS_NUPTIALITY
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '13'
+          name: Confinements
+        - id: '14'
+          name: Median age of mother
+        - id: '15'
+          name: Median age of father
+        - id: '16'
+          name: Median age of first-time mother
+        - id: '17'
+          name: Median duration of marriage
+    - id: NUPTIAL_STATUS
+      name: Nuptial status
+      values:
+        - id: '2'
+          name: 'Ex-nuptial, paternity acknowledged'
+        - id: '3'
+          name: 'Ex-nuptial, paternity not acknowledged'
+        - id: '1'
+          name: Nuptial
+        - id: TOT
+          name: Total
+        - id: '11'
+          name: Ex-nuptial
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: CONFINEMENTS_PLURALITY
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '13'
+          name: Confinements
+    - id: PLURALITY
+      name: Plurality
+      values:
+        - id: '00'
+          name: Single
+        - id: SX_2
+          name: Twins
+        - id: SX_3
+          name: Triplets and higher order
+        - id: SX_4
+          name: Total multiple confinements
+        - id: SX_6
+          name: Total
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: CPI
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Index Numbers
+        - id: '2'
+          name: Percentage Change from Previous Period
+        - id: '3'
+          name: Percentage Change from Corresponding Quarter of the Previous Year
+        - id: '4'
+          name: Contribution to Total CPI
+        - id: '5'
+          name: Change in Contribution to Total CPI
+    - id: REGION
+      name: Region
+    - id: INDEX
+      name: Index
+      values:
+        - id: '10001'
+          name: All groups CPI
+          children:
+            - id: '20001'
+              name: Food and non-alcoholic beverages
+              children:
+                - id: '30002'
+                  name: Bread and cereal products
+                  children:
+                    - id: '40005'
+                      name: Bread
+                    - id: '40006'
+                      name: Cakes and biscuits
+                    - id: '40007'
+                      name: Breakfast cereals
+                    - id: '40008'
+                      name: Other cereal products
+                - id: '30003'
+                  name: Meat and seafoods
+                  children:
+                    - id: '40009'
+                      name: Beef and veal
+                    - id: '131178'
+                      name: Pork
+                    - id: '40010'
+                      name: Lamb and goat
+                    - id: '40012'
+                      name: Poultry
+                    - id: '40014'
+                      name: Other meats
+                    - id: '40015'
+                      name: Fish and other seafood
+                - id: '30001'
+                  name: Dairy and related products
+                  children:
+                    - id: '40001'
+                      name: Milk
+                    - id: '40002'
+                      name: Cheese
+                    - id: '40004'
+                      name: Ice cream and other dairy products
+                - id: '114120'
+                  name: Fruit and vegetables
+                  children:
+                    - id: '114121'
+                      name: Fruit
+                    - id: '114122'
+                      name: Vegetables
+                - id: '131179'
+                  name: Food products n.e.c.
+                  children:
+                    - id: '40027'
+                      name: Eggs
+                    - id: '40029'
+                      name: 'Jams, honey and spreads'
+                    - id: '97549'
+                      name: Food additives and condiments
+                    - id: '97550'
+                      name: Oils and fats
+                    - id: '115501'
+                      name: Snacks and confectionery
+                    - id: '40034'
+                      name: Other food products n.e.c.
+                - id: '131180'
+                  name: Non-alcoholic beverages
+                  children:
+                    - id: '40030'
+                      name: 'Coffee, tea and cocoa'
+                    - id: '115520'
+                      name: 'Waters, soft drinks and juices'
+                - id: '30007'
+                  name: Meals out and take away foods
+                  children:
+                    - id: '40025'
+                      name: Restaurant meals
+                    - id: '40026'
+                      name: Take away and fast foods
+            - id: '20006'
+              name: Alcohol and tobacco
+              children:
+                - id: '30026'
+                  name: Alcoholic beverages
+                  children:
+                    - id: '40089'
+                      name: Spirits
+                    - id: '40088'
+                      name: Wine
+                    - id: '40087'
+                      name: Beer
+                - id: '30027'
+                  name: Tobacco
+                  children:
+                    - id: '40090'
+                      name: Tobacco
+            - id: '20002'
+              name: Clothing and footwear
+              children:
+                - id: '131181'
+                  name: Garments
+                  children:
+                    - id: '97551'
+                      name: Garments for men
+                    - id: '97554'
+                      name: Garments for women
+                    - id: '97555'
+                      name: Garments for infants and children
+                - id: '30012'
+                  name: Footwear
+                  children:
+                    - id: '40045'
+                      name: Footwear for men
+                    - id: '40046'
+                      name: Footwear for women
+                    - id: '40047'
+                      name: Footwear for infants and children
+                - id: '97556'
+                  name: Accessories and clothing services
+                  children:
+                    - id: '97557'
+                      name: Accessories
+                    - id: '40048'
+                      name: 'Cleaning, repair and hire of clothing and footwear'
+            - id: '20003'
+              name: Housing
+              children:
+                - id: '115522'
+                  name: Rents
+                  children:
+                    - id: '30014'
+                      name: Rents
+                - id: '131186'
+                  name: New dwelling purchase by owner-occupiers
+                  children:
+                    - id: '97559'
+                      name: New dwelling purchase by owner-occupiers
+                - id: '131187'
+                  name: Other housing
+                  children:
+                    - id: '40053'
+                      name: Maintenance and repair of the dwelling
+                    - id: '97560'
+                      name: Property rates and charges
+                - id: '30016'
+                  name: Utilities
+                  children:
+                    - id: '97558'
+                      name: Water and sewerage
+                    - id: '40055'
+                      name: Electricity
+                    - id: '115524'
+                      name: Gas and other household fuels
+            - id: '20004'
+              name: 'Furnishings, household equipment and services'
+              children:
+                - id: '131184'
+                  name: Furniture and furnishings
+                  children:
+                    - id: '40058'
+                      name: Furniture
+                    - id: '131185'
+                      name: Carpets and other floor coverings
+                - id: '131182'
+                  name: Household textiles
+                  children:
+                    - id: '131183'
+                      name: Household textiles
+                - id: '97561'
+                  name: 'Household appliances, utensils and tools'
+                  children:
+                    - id: '40060'
+                      name: Major household appliances
+                    - id: '115484'
+                      name: Small electric household appliances
+                    - id: '115485'
+                      name: 'Glassware, tableware and household utensils'
+                    - id: '40066'
+                      name: Tools and equipment for house and garden
+                - id: '97563'
+                  name: Non-durable household products
+                  children:
+                    - id: '40067'
+                      name: Cleaning and maintenance products
+                    - id: '40095'
+                      name: Personal care products
+                    - id: '97564'
+                      name: Other non-durable household products
+                - id: '97565'
+                  name: Domestic and household services
+                  children:
+                    - id: '115498'
+                      name: Child care
+                    - id: '40096'
+                      name: Hairdressing and personal grooming services
+                    - id: '115500'
+                      name: Other household services
+            - id: '115486'
+              name: Health
+              children:
+                - id: '131188'
+                  name: 'Medical products, appliances and equipment'
+                  children:
+                    - id: '40094'
+                      name: Pharmaceutical products
+                    - id: '40092'
+                      name: Therapeutic appliances and equipment
+                - id: '131189'
+                  name: 'Medical, dental and hospital services'
+                  children:
+                    - id: '40091'
+                      name: Medical and hospital services
+                    - id: '40093'
+                      name: Dental services
+            - id: '20005'
+              name: Transport
+              children:
+                - id: '30024'
+                  name: Private motoring
+                  children:
+                    - id: '40080'
+                      name: Motor vehicles
+                    - id: '40084'
+                      name: Spare parts and accessories for motor vehicles
+                    - id: '40081'
+                      name: Automotive fuel
+                    - id: '40085'
+                      name: Maintenance and repair of motor vehicles
+                    - id: '40083'
+                      name: Other services in respect of motor vehicles
+                - id: '30025'
+                  name: Urban transport fares
+                  children:
+                    - id: '40086'
+                      name: Urban transport fares
+            - id: '115488'
+              name: Communication
+              children:
+                - id: '30022'
+                  name: Communication
+                  children:
+                    - id: '40077'
+                      name: Postal services
+                    - id: '40078'
+                      name: Telecommunication equipment and services
+            - id: '115489'
+              name: Recreation and culture
+              children:
+                - id: '131193'
+                  name: 'Audio, visual and computing equipment and services'
+                  children:
+                    - id: '40098'
+                      name: 'Audio, visual and computing equipment'
+                    - id: '131190'
+                      name: 'Audio, visual and computing media and services'
+                - id: '131191'
+                  name: 'Newspapers, books and stationery'
+                  children:
+                    - id: '97567'
+                      name: Books
+                    - id: '131192'
+                      name: 'Newspapers, magazines and stationery'
+                - id: '30033'
+                  name: Holiday travel and accommodation
+                  children:
+                    - id: '40101'
+                      name: Domestic holiday travel and accommodation
+                    - id: '40102'
+                      name: International holiday travel and accommodation
+                - id: '115492'
+                  name: 'Other recreation, sport and culture'
+                  children:
+                    - id: '97571'
+                      name: 'Equipment for sports, camping and open-air recreation'
+                    - id: '97572'
+                      name: 'Games, toys and hobbies'
+                    - id: '40073'
+                      name: Pets and related products
+                    - id: '40072'
+                      name: Veterinary and other services for pets
+                    - id: '97573'
+                      name: Sports participation
+                    - id: '97574'
+                      name: 'Other recreational, sporting and cultural services'
+            - id: '115493'
+              name: Education
+              children:
+                - id: '40106'
+                  name: Education
+                  children:
+                    - id: '115495'
+                      name: Preschool and primary education
+                    - id: '115496'
+                      name: Secondary education
+                    - id: '115497'
+                      name: Tertiary education
+            - id: '126670'
+              name: Insurance and financial services
+              children:
+                - id: '115528'
+                  name: Insurance
+                  children:
+                    - id: '115529'
+                      name: Insurance
+                - id: '131195'
+                  name: Financial services
+                  children:
+                    - id: '131194'
+                      name: Deposit and loan facilities (direct charges)
+                    - id: '1144'
+                      name: Other financial services
+        - id: '115901'
+          name: All groups CPI excluding
+          children:
+            - id: '115902'
+              name: All groups CPI excluding Food and non-alcoholic beverages
+            - id: '115922'
+              name: All groups CPI excluding Alcohol and tobacco
+            - id: '115941'
+              name: All groups CPI excluding Clothing and footwear
+            - id: '115961'
+              name: All groups CPI excluding Housing
+            - id: '117101'
+              name: >-
+                All groups CPI excluding Furnishings, household equipment and
+                services
+            - id: '117104'
+              name: All groups CPI excluding Health
+            - id: '117107'
+              name: All groups CPI excluding Transport
+            - id: '117121'
+              name: All groups CPI excluding Communication
+            - id: '117124'
+              name: All groups CPI excluding Recreation and culture
+            - id: '117127'
+              name: All groups CPI excluding Education
+            - id: '128058'
+              name: All groups CPI excluding Insurance and financial services
+            - id: '128061'
+              name: >-
+                All groups CPI excluding Housing and Insurance and financial
+                services
+            - id: '117144'
+              name: All groups CPI excluding Medical and hospital services
+            - id: '104122'
+              name: All groups CPI excluding 'volatile items'
+            - id: '131197'
+              name: All groups CPI excluding food and energy
+        - id: '131198'
+          name: All groups CPI including
+          children:
+            - id: '131199'
+              name: >-
+                All groups CPI including deposit and loan facilities (indirect
+                charges)
+        - id: '104099'
+          name: Market goods and services excluding 'volatile items'
+          children:
+            - id: '104102'
+              name: Market goods and services excluding 'volatile items' - Goods
+            - id: '104105'
+              name: Market goods and services excluding 'volatile items' - Services
+            - id: '104120'
+              name: Market goods and services excluding 'volatile items' - Total
+        - id: '104100'
+          name: Goods and services series
+          children:
+            - id: '104101'
+              name: 'All groups, goods component'
+            - id: '104104'
+              name: 'All groups, services component'
+        - id: '102674'
+          name: International trade exposure series
+          children:
+            - id: '102675'
+              name: Tradables
+            - id: '102676'
+              name: Non-tradables
+        - id: '999901'
+          name: 'All groups CPI, seasonally adjusted'
+        - id: '999900'
+          name: Underlying trend series
+          children:
+            - id: '999902'
+              name: Trimmed Mean
+            - id: '999903'
+              name: Weighted Median
+    - id: TSEST
+      name: Adjustment Type
+      values:
+        - id: '10'
+          name: Original
+        - id: '20'
+          name: Seasonally Adjusted
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: Q
+          name: Quarterly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_ERP_LGA2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: ERP
+          name: Estimated Resident Population
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: FREQUENCY
+      name: FREQUENCY
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: TIME
+
+- id: ERP_COB
+  dimensions:
+    - id: MEASURE
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: TT
+          name: All ages
+        - id: '7599'
+          name: 75 and over
+    - id: COB
+      name: Country of Birth
+      values:
+        - id: TOTAL
+          name: Total
+        - id: '1000'
+          name: 'Oceania and Antarctica, nfd'
+        - id: '1101'
+          name: Australia
+        - id: '1102'
+          name: Norfolk Island
+        - id: '1199'
+          name: 'Australian External Territories, nec'
+        - id: '1201'
+          name: New Zealand
+        - id: '1301'
+          name: New Caledonia
+        - id: '1302'
+          name: Papua New Guinea
+        - id: '1303'
+          name: Solomon Islands
+        - id: '1304'
+          name: Vanuatu
+        - id: '1401'
+          name: Guam
+        - id: '1402'
+          name: Kiribati
+        - id: '1403'
+          name: Marshall Islands
+        - id: '1404'
+          name: 'Micronesia, Federated States of'
+        - id: '1405'
+          name: Nauru
+        - id: '1406'
+          name: Northern Mariana Islands
+        - id: '1407'
+          name: Palau
+        - id: '1501'
+          name: Cook Islands
+        - id: '1502'
+          name: Fiji
+        - id: '1503'
+          name: French Polynesia
+        - id: '1504'
+          name: Niue
+        - id: '1505'
+          name: Samoa
+        - id: '1506'
+          name: 'Samoa, American'
+        - id: '1507'
+          name: Tokelau
+        - id: '1508'
+          name: Tonga
+        - id: '1511'
+          name: Tuvalu
+        - id: '1512'
+          name: Wallis and Futuna
+        - id: '1513'
+          name: Pitcairn Islands
+        - id: '1599'
+          name: 'Polynesia (excludes Hawaii), nec'
+        - id: '1601'
+          name: Adelie Land (France)
+        - id: '1602'
+          name: Argentinian Antarctic Territory
+        - id: '1603'
+          name: Australian Antarctic Territory
+        - id: '1604'
+          name: British Antarctic Territory
+        - id: '1605'
+          name: Chilean Antarctic Territory
+        - id: '1606'
+          name: Queen Maud Land (Norway)
+        - id: '1607'
+          name: Ross Dependency (New Zealand)
+        - id: '2000'
+          name: 'North-West Europe, nfd'
+        - id: '2102'
+          name: England
+        - id: '2103'
+          name: Isle of Man
+        - id: '2104'
+          name: Northern Ireland
+        - id: '2105'
+          name: Scotland
+        - id: '2106'
+          name: Wales
+        - id: '2107'
+          name: Guernsey
+        - id: '2108'
+          name: Jersey
+        - id: '2201'
+          name: Ireland
+        - id: '2301'
+          name: Austria
+        - id: '2302'
+          name: Belgium
+        - id: '2303'
+          name: France
+        - id: '2304'
+          name: Germany
+        - id: '2305'
+          name: Liechtenstein
+        - id: '2306'
+          name: Luxembourg
+        - id: '2307'
+          name: Monaco
+        - id: '2308'
+          name: Netherlands
+        - id: '2311'
+          name: Switzerland
+        - id: '2401'
+          name: Denmark
+        - id: '2402'
+          name: Faroe Islands
+        - id: '2403'
+          name: Finland
+        - id: '2404'
+          name: Greenland
+        - id: '2405'
+          name: Iceland
+        - id: '2406'
+          name: Norway
+        - id: '2407'
+          name: Sweden
+        - id: '2408'
+          name: Aland Islands
+        - id: '3101'
+          name: Andorra
+        - id: '3102'
+          name: Gibraltar
+        - id: '3103'
+          name: Holy See
+        - id: '3104'
+          name: Italy
+        - id: '3105'
+          name: Malta
+        - id: '3106'
+          name: Portugal
+        - id: '3107'
+          name: San Marino
+        - id: '3108'
+          name: Spain
+        - id: '3200'
+          name: 'South Eastern Europe, nfd'
+        - id: '3201'
+          name: Albania
+        - id: '3202'
+          name: Bosnia and Herzegovina
+        - id: '3203'
+          name: Bulgaria
+        - id: '3204'
+          name: Croatia
+        - id: '3205'
+          name: Cyprus
+        - id: '3206'
+          name: Former Yugoslav Republic of Macedonia (FYROM)
+        - id: '3207'
+          name: Greece
+        - id: '3208'
+          name: Moldova
+        - id: '3211'
+          name: Romania
+        - id: '3212'
+          name: Slovenia
+        - id: '3214'
+          name: Montenegro
+        - id: '3215'
+          name: Serbia
+        - id: '3216'
+          name: Kosovo
+        - id: '3301'
+          name: Belarus
+        - id: '3302'
+          name: Czech Republic
+        - id: '3303'
+          name: Estonia
+        - id: '3304'
+          name: Hungary
+        - id: '3305'
+          name: Latvia
+        - id: '3306'
+          name: Lithuania
+        - id: '3307'
+          name: Poland
+        - id: '3308'
+          name: Russian Federation
+        - id: '3311'
+          name: Slovakia
+        - id: '3312'
+          name: Ukraine
+        - id: '4100'
+          name: 'North Africa, nfd'
+        - id: '4101'
+          name: Algeria
+        - id: '4102'
+          name: Egypt
+        - id: '4103'
+          name: Libya
+        - id: '4104'
+          name: Morocco
+        - id: '4105'
+          name: Sudan
+        - id: '4106'
+          name: Tunisia
+        - id: '4107'
+          name: Western Sahara
+        - id: '4108'
+          name: Spanish North Africa
+        - id: '4111'
+          name: South Sudan
+        - id: '4200'
+          name: 'Middle East, nfd'
+        - id: '4201'
+          name: Bahrain
+        - id: '4202'
+          name: Gaza Strip and West Bank
+        - id: '4203'
+          name: Iran
+        - id: '4204'
+          name: Iraq
+        - id: '4205'
+          name: Israel
+        - id: '4206'
+          name: Jordan
+        - id: '4207'
+          name: Kuwait
+        - id: '4208'
+          name: Lebanon
+        - id: '4211'
+          name: Oman
+        - id: '4212'
+          name: Qatar
+        - id: '4213'
+          name: Saudi Arabia
+        - id: '4214'
+          name: Syria
+        - id: '4215'
+          name: Turkey
+        - id: '4216'
+          name: United Arab Emirates
+        - id: '4217'
+          name: Yemen
+        - id: '5101'
+          name: 'Myanmar, The Republic of the Union of '
+        - id: '5102'
+          name: Cambodia
+        - id: '5103'
+          name: Laos
+        - id: '5104'
+          name: Thailand
+        - id: '5105'
+          name: Vietnam
+        - id: '5200'
+          name: 'Maritime South-East Asia, nfd'
+        - id: '5201'
+          name: Brunei Darussalam
+        - id: '5202'
+          name: Indonesia
+        - id: '5203'
+          name: Malaysia
+        - id: '5204'
+          name: Philippines
+        - id: '5205'
+          name: Singapore
+        - id: '5206'
+          name: Timor-Leste
+        - id: '6101'
+          name: 'China (excludes SARs and Taiwan) '
+        - id: '6102'
+          name: Hong Kong (SAR of China)
+        - id: '6103'
+          name: Macau (SAR of China)
+        - id: '6104'
+          name: Mongolia
+        - id: '6105'
+          name: 'Taiwan '
+        - id: '6201'
+          name: Japan
+        - id: '6202'
+          name: 'Korea, Democratic People''s Republic of (North)'
+        - id: '6203'
+          name: 'Korea, Republic of (South)'
+        - id: '7101'
+          name: Bangladesh
+        - id: '7102'
+          name: Bhutan
+        - id: '7103'
+          name: India
+        - id: '7104'
+          name: Maldives
+        - id: '7105'
+          name: Nepal
+        - id: '7106'
+          name: Pakistan
+        - id: '7107'
+          name: Sri Lanka
+        - id: '7201'
+          name: Afghanistan
+        - id: '7202'
+          name: Armenia
+        - id: '7203'
+          name: Azerbaijan
+        - id: '7204'
+          name: Georgia
+        - id: '7205'
+          name: Kazakhstan
+        - id: '7206'
+          name: Kyrgyzstan
+        - id: '7207'
+          name: Tajikistan
+        - id: '7208'
+          name: Turkmenistan
+        - id: '7211'
+          name: Uzbekistan
+        - id: '8100'
+          name: 'Northern America, nfd'
+        - id: '8101'
+          name: Bermuda
+        - id: '8102'
+          name: Canada
+        - id: '8103'
+          name: St Pierre and Miquelon
+        - id: '8104'
+          name: United States of America
+        - id: '8200'
+          name: 'South America, nfd'
+        - id: '8201'
+          name: Argentina
+        - id: '8202'
+          name: 'Bolivia, Plurinational State of'
+        - id: '8203'
+          name: Brazil
+        - id: '8204'
+          name: Chile
+        - id: '8205'
+          name: Colombia
+        - id: '8206'
+          name: Ecuador
+        - id: '8207'
+          name: Falkland Islands
+        - id: '8208'
+          name: French Guiana
+        - id: '8211'
+          name: Guyana
+        - id: '8212'
+          name: Paraguay
+        - id: '8213'
+          name: Peru
+        - id: '8214'
+          name: Suriname
+        - id: '8215'
+          name: Uruguay
+        - id: '8216'
+          name: 'Venezuela, Bolivarian Republic of'
+        - id: '8299'
+          name: 'South America, nec'
+        - id: '8300'
+          name: 'Central America, nfd'
+        - id: '8301'
+          name: Belize
+        - id: '8302'
+          name: Costa Rica
+        - id: '8303'
+          name: El Salvador
+        - id: '8304'
+          name: Guatemala
+        - id: '8305'
+          name: Honduras
+        - id: '8306'
+          name: Mexico
+        - id: '8307'
+          name: Nicaragua
+        - id: '8308'
+          name: Panama
+        - id: '8400'
+          name: 'Caribbean, nfd'
+        - id: '8401'
+          name: Anguilla
+        - id: '8402'
+          name: Antigua and Barbuda
+        - id: '8403'
+          name: Aruba
+        - id: '8404'
+          name: Bahamas
+        - id: '8405'
+          name: Barbados
+        - id: '8406'
+          name: Cayman Islands
+        - id: '8407'
+          name: Cuba
+        - id: '8408'
+          name: Dominica
+        - id: '8411'
+          name: Dominican Republic
+        - id: '8412'
+          name: Grenada
+        - id: '8413'
+          name: Guadeloupe
+        - id: '8414'
+          name: Haiti
+        - id: '8415'
+          name: Jamaica
+        - id: '8416'
+          name: Martinique
+        - id: '8417'
+          name: Montserrat
+        - id: '8421'
+          name: Puerto Rico
+        - id: '8422'
+          name: St Kitts and Nevis
+        - id: '8423'
+          name: St Lucia
+        - id: '8424'
+          name: St Vincent and the Grenadines
+        - id: '8425'
+          name: Trinidad and Tobago
+        - id: '8426'
+          name: Turks and Caicos Islands
+        - id: '8427'
+          name: 'Virgin Islands, British '
+        - id: '8428'
+          name: 'Virgin Islands, United States'
+        - id: '8431'
+          name: St Barthelemy
+        - id: '8432'
+          name: St Martin (French part)
+        - id: '8433'
+          name: 'Bonaire, Sint Eustatius and Saba'
+        - id: '8434'
+          name: Curacao
+        - id: '8435'
+          name: Sint Maarten (Dutch part)
+        - id: '9000'
+          name: 'Sub-Saharan Africa, nfd'
+        - id: '9101'
+          name: Benin
+        - id: '9102'
+          name: Burkina Faso
+        - id: '9103'
+          name: Cameroon
+        - id: '9104'
+          name: Cabo Verde
+        - id: '9105'
+          name: Central African Republic
+        - id: '9106'
+          name: Chad
+        - id: '9107'
+          name: 'Congo, Republic of'
+        - id: '9108'
+          name: 'Congo, Democratic Republic of'
+        - id: '9111'
+          name: Cote d'Ivoire
+        - id: '9112'
+          name: Equatorial Guinea
+        - id: '9113'
+          name: Gabon
+        - id: '9114'
+          name: Gambia
+        - id: '9115'
+          name: Ghana
+        - id: '9116'
+          name: Guinea
+        - id: '9117'
+          name: Guinea-Bissau
+        - id: '9118'
+          name: Liberia
+        - id: '9121'
+          name: Mali
+        - id: '9122'
+          name: Mauritania
+        - id: '9123'
+          name: Niger
+        - id: '9124'
+          name: Nigeria
+        - id: '9125'
+          name: Sao Tome and Principe
+        - id: '9126'
+          name: Senegal
+        - id: '9127'
+          name: Sierra Leone
+        - id: '9128'
+          name: Togo
+        - id: '9201'
+          name: Angola
+        - id: '9202'
+          name: Botswana
+        - id: '9203'
+          name: Burundi
+        - id: '9204'
+          name: Comoros
+        - id: '9205'
+          name: Djibouti
+        - id: '9206'
+          name: Eritrea
+        - id: '9207'
+          name: Ethiopia
+        - id: '9208'
+          name: Kenya
+        - id: '9211'
+          name: Lesotho
+        - id: '9212'
+          name: Madagascar
+        - id: '9213'
+          name: Malawi
+        - id: '9214'
+          name: Mauritius
+        - id: '9215'
+          name: Mayotte
+        - id: '9216'
+          name: Mozambique
+        - id: '9217'
+          name: Namibia
+        - id: '9218'
+          name: Reunion
+        - id: '9221'
+          name: Rwanda
+        - id: '9222'
+          name: St Helena
+        - id: '9223'
+          name: Seychelles
+        - id: '9224'
+          name: Somalia
+        - id: '9225'
+          name: South Africa
+        - id: '9226'
+          name: Swaziland
+        - id: '9227'
+          name: Tanzania
+        - id: '9228'
+          name: Uganda
+        - id: '9231'
+          name: Zambia
+        - id: '9232'
+          name: Zimbabwe
+        - id: '9299'
+          name: 'Southern and East Africa, nec'
+        - id: X_0000
+          name: Inadequately Described
+    - id: REGION
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_ERP_COB_MAG_SEXRATIO
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: SEX_RATIO
+          name: Sex ratio
+        - id: MEDIAN_AGE
+          name: Median Age
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+    - id: AGE
+      name: Age
+      values:
+        - id: TT
+          name: All ages
+    - id: COB
+      name: Country of Birth
+      values:
+        - id: TOTAL
+          name: Total
+          children:
+            - id: '1'
+              name: Oceania and Antarctica
+              children:
+                - id: '1101'
+                  name: Australia
+                - id: '1201'
+                  name: New Zealand
+                - id: '1302'
+                  name: Papua New Guinea
+                - id: '1501'
+                  name: Cook Islands
+                - id: '1502'
+                  name: Fiji
+                - id: '1505'
+                  name: Samoa
+                - id: '1508'
+                  name: Tonga
+            - id: '2'
+              name: North-Western Europe
+              children:
+                - id: '2100'
+                  name: United Kingdom
+                - id: '2201'
+                  name: Ireland
+                - id: '2301'
+                  name: Austria
+                - id: '2302'
+                  name: Belgium
+                - id: '2303'
+                  name: France
+                - id: '2304'
+                  name: Germany
+                - id: '2308'
+                  name: Netherlands
+                - id: '2311'
+                  name: Switzerland
+                - id: '2401'
+                  name: Denmark
+                - id: '2403'
+                  name: Finland
+                - id: '2406'
+                  name: Norway
+                - id: '2407'
+                  name: Sweden
+            - id: '3'
+              name: Southern and Eastern Europe
+              children:
+                - id: '3104'
+                  name: Italy
+                - id: '3105'
+                  name: Malta
+                - id: '3106'
+                  name: Portugal
+                - id: '3108'
+                  name: Spain
+                - id: '3202'
+                  name: Bosnia And Herzegovina
+                - id: '3203'
+                  name: Bulgaria
+                - id: '3204'
+                  name: Croatia
+                - id: '3205'
+                  name: Cyprus
+                - id: '3206'
+                  name: Former Yugoslav Republic Of Macedonia (FYROM)
+                - id: '3207'
+                  name: Greece
+                - id: '3211'
+                  name: Romania
+                - id: '3212'
+                  name: Slovenia
+                - id: '3215'
+                  name: Serbia
+                - id: '3302'
+                  name: Czech Republic
+                - id: '3303'
+                  name: Estonia
+                - id: '3304'
+                  name: Hungary
+                - id: '3305'
+                  name: Latvia
+                - id: '3307'
+                  name: Poland
+                - id: '3308'
+                  name: Russian Federation
+                - id: '3311'
+                  name: Slovakia
+                - id: '3312'
+                  name: Ukraine
+                - id: '3201'
+                  name: Albania
+            - id: '4'
+              name: North Africa and the Middle East
+              children:
+                - id: '4102'
+                  name: Egypt
+                - id: '4105'
+                  name: Sudan
+                - id: '4111'
+                  name: South Sudan
+                - id: '4203'
+                  name: Iran
+                - id: '4204'
+                  name: Iraq
+                - id: '4205'
+                  name: Israel
+                - id: '4206'
+                  name: Jordan
+                - id: '4207'
+                  name: Kuwait
+                - id: '4208'
+                  name: Lebanon
+                - id: '4213'
+                  name: Saudi Arabia
+                - id: '4214'
+                  name: Syria
+                - id: '4215'
+                  name: Turkey
+                - id: '4216'
+                  name: United Arab Emirates
+            - id: '5'
+              name: South-East Asia
+              children:
+                - id: '5101'
+                  name: Myanmar
+                - id: '5102'
+                  name: Cambodia
+                - id: '5103'
+                  name: Laos
+                - id: '5104'
+                  name: Thailand
+                - id: '5105'
+                  name: Vietnam
+                - id: '5202'
+                  name: Indonesia
+                - id: '5203'
+                  name: Malaysia
+                - id: '5204'
+                  name: Philippines
+                - id: '5205'
+                  name: Singapore
+                - id: '5206'
+                  name: Timor-Leste
+            - id: '6'
+              name: North-East Asia
+              children:
+                - id: '6101'
+                  name: China (Excludes SAR and Taiwan)
+                - id: '6102'
+                  name: Hong Kong (SAR of China)
+                - id: '6105'
+                  name: Taiwan
+                - id: '6201'
+                  name: Japan
+                - id: '6203'
+                  name: 'Korea, Republic of (South)'
+            - id: '7'
+              name: Southern and Central Asia
+              children:
+                - id: '7101'
+                  name: Bangladesh
+                - id: '7102'
+                  name: Bhutan
+                - id: '7103'
+                  name: India
+                - id: '7105'
+                  name: Nepal
+                - id: '7106'
+                  name: Pakistan
+                - id: '7107'
+                  name: Sri Lanka
+                - id: '7201'
+                  name: Afghanistan
+            - id: '8'
+              name: Americas
+              children:
+                - id: '8102'
+                  name: Canada
+                - id: '8104'
+                  name: United States of America
+                - id: '8201'
+                  name: Argentina
+                - id: '8203'
+                  name: Brazil
+                - id: '8204'
+                  name: Chile
+                - id: '8205'
+                  name: Colombia
+                - id: '8213'
+                  name: Peru
+                - id: '8215'
+                  name: Uruguay
+                - id: '8216'
+                  name: Venezuela
+                - id: '8303'
+                  name: El Salvador
+                - id: '8306'
+                  name: Mexico
+            - id: '9'
+              name: Sub-Saharan Africa
+              children:
+                - id: '9108'
+                  name: Congo
+                - id: '9115'
+                  name: Ghana
+                - id: '9124'
+                  name: Nigeria
+                - id: '9127'
+                  name: Sierra Leone
+                - id: '9206'
+                  name: Eritrea
+                - id: '9207'
+                  name: Ethiopia
+                - id: '9208'
+                  name: Kenya
+                - id: '9214'
+                  name: Mauritius
+                - id: '9224'
+                  name: Somalia
+                - id: '9225'
+                  name: South Africa
+                - id: '9227'
+                  name: Tanzania
+                - id: '9231'
+                  name: Zambia
+                - id: '9232'
+                  name: Zimbabwe
+            - id: A
+              name: Other and Not Stated
+            - id: AUST_BORN
+              name: Australia-Born
+            - id: TOB
+              name: Overseas-Born
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: FERTILITY_AGE_STATE
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+        - id: '2'
+          name: Female population
+        - id: '11'
+          name: Fertility rate
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+          children:
+            - id: '15'
+              name: '15'
+            - id: '16'
+              name: '16'
+            - id: '17'
+              name: '17'
+            - id: '18'
+              name: '18'
+            - id: '19'
+              name: '19'
+        - id: A20
+          name: 20 - 24
+          children:
+            - id: '20'
+              name: '20'
+            - id: '21'
+              name: '21'
+            - id: '22'
+              name: '22'
+            - id: '23'
+              name: '23'
+            - id: '24'
+              name: '24'
+        - id: A25
+          name: 25 - 29
+          children:
+            - id: '25'
+              name: '25'
+            - id: '26'
+              name: '26'
+            - id: '27'
+              name: '27'
+            - id: '28'
+              name: '28'
+            - id: '29'
+              name: '29'
+        - id: A30
+          name: 30 - 34
+          children:
+            - id: '30'
+              name: '30'
+            - id: '31'
+              name: '31'
+            - id: '32'
+              name: '32'
+            - id: '33'
+              name: '33'
+            - id: '34'
+              name: '34'
+        - id: A35
+          name: 35 - 39
+          children:
+            - id: '35'
+              name: '35'
+            - id: '36'
+              name: '36'
+            - id: '37'
+              name: '37'
+            - id: '38'
+              name: '38'
+            - id: '39'
+              name: '39'
+        - id: A40
+          name: 40 - 44
+          children:
+            - id: '40'
+              name: '40'
+            - id: '41'
+              name: '41'
+            - id: '42'
+              name: '42'
+            - id: '43'
+              name: '43'
+            - id: '44'
+              name: '44'
+        - id: A45
+          name: 45 - 49
+          children:
+            - id: '45'
+              name: '45'
+            - id: '46'
+              name: '46'
+            - id: '47'
+              name: '47'
+            - id: '48'
+              name: '48'
+            - id: '49'
+              name: '49'
+        - id: TT
+          name: All ages
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: PATERNITY_AGE_STATE
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Births
+        - id: '2'
+          name: Male population
+        - id: '12'
+          name: Paternity rate
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+          children:
+            - id: '15'
+              name: '15'
+            - id: '16'
+              name: '16'
+            - id: '17'
+              name: '17'
+            - id: '18'
+              name: '18'
+            - id: '19'
+              name: '19'
+        - id: A20
+          name: 20 - 24
+          children:
+            - id: '20'
+              name: '20'
+            - id: '21'
+              name: '21'
+            - id: '22'
+              name: '22'
+            - id: '23'
+              name: '23'
+            - id: '24'
+              name: '24'
+        - id: A25
+          name: 25 - 29
+          children:
+            - id: '25'
+              name: '25'
+            - id: '26'
+              name: '26'
+            - id: '27'
+              name: '27'
+            - id: '28'
+              name: '28'
+            - id: '29'
+              name: '29'
+        - id: A30
+          name: 30 - 34
+          children:
+            - id: '30'
+              name: '30'
+            - id: '31'
+              name: '31'
+            - id: '32'
+              name: '32'
+            - id: '33'
+              name: '33'
+            - id: '34'
+              name: '34'
+        - id: A35
+          name: 35 - 39
+          children:
+            - id: '35'
+              name: '35'
+            - id: '36'
+              name: '36'
+            - id: '37'
+              name: '37'
+            - id: '38'
+              name: '38'
+            - id: '39'
+              name: '39'
+        - id: A40
+          name: 40 - 44
+          children:
+            - id: '40'
+              name: '40'
+            - id: '41'
+              name: '41'
+            - id: '42'
+              name: '42'
+            - id: '43'
+              name: '43'
+            - id: '44'
+              name: '44'
+        - id: A45
+          name: 45 - 49
+          children:
+            - id: '45'
+              name: '45'
+            - id: '46'
+              name: '46'
+            - id: '47'
+              name: '47'
+            - id: '48'
+              name: '48'
+            - id: '49'
+              name: '49'
+        - id: A50
+          name: 50 - 54
+          children:
+            - id: '50'
+              name: '50'
+            - id: '51'
+              name: '51'
+            - id: '52'
+              name: '52'
+            - id: '53'
+              name: '53'
+            - id: '54'
+              name: '54'
+        - id: A55
+          name: 55 - 59
+          children:
+            - id: '55'
+              name: '55'
+            - id: '56'
+              name: '56'
+            - id: '57'
+              name: '57'
+            - id: '58'
+              name: '58'
+            - id: '59'
+              name: '59'
+        - id: TT
+          name: All ages
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: RES_DWELL
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Number of Established House Transfers
+        - id: '2'
+          name: Number of Attached Dwelling Transfers
+        - id: '3'
+          name: Median Price of Established House Transfers ($'000)
+        - id: '4'
+          name: Median Price of Attached Dwelling Transfers ($'000)
+        - id: '5'
+          name: Mean price of residential dwelling ($'000)
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: Q
+          name: Quarterly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: RES_PROP_INDEX
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Index Number
+        - id: '2'
+          name: Percentage change from previous quarter
+        - id: '3'
+          name: Percentage change from corresponding quarter of the previous year
+    - id: PROP_TYPE
+      name: Property type
+      values:
+        - id: '3'
+          name: Residential property
+        - id: '2'
+          name: Established houses
+        - id: '1'
+          name: Attached dwellings
+    - id: ASGS_2011
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: Q
+          name: Quarterly
+    - id: TIME_PERIOD
+      name: Time
