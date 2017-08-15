@@ -5,6 +5,7 @@ Change Log
 ### 2017-07-21-updated-2017-08-15
 
 * Updated links to some Geoscience Australia services in National Datasets.
+* Removed the Integrated Marine Observing System (IMOS) from Data Providers because it has no items.
 
 ### 2017-07-21
 
