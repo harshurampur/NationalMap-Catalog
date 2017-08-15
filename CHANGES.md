@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-07-21-updated-2017-08-15
+
+* Updated links to some Geoscience Australia services in National Datasets.
+
 ### 2017-07-21
 
 * Added Australian Bureau of Statistics Census 2016 layers.
