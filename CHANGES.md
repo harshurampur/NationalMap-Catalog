@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-07-21-updated-2017-08-17
+
+* Updated the `Aspect` and `Land slope in percent` layers in the `Elevation` group to use new ArcGIS MapServers.
+
 ### 2017-07-21-updated-2017-08-15
 
 * Updated links to some Geoscience Australia services in National Datasets.
