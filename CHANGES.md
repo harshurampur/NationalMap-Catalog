@@ -5,6 +5,7 @@ Change Log
 ### 2017-07-21-updated-2017-08-22
 
 * Fixed the URL to National Datasets -> Communications -> Radio Licenses (ACMA).
+* Use the 2011 POA boundaries for the Taxation Statistics layers (2012-2013, 2013-2014, and 2014-2015), and don't show warnings about missing non-spatial regions.
 
 ### 2017-07-21-updated-2017-08-17
 
