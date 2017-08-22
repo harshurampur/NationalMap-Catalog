@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-07-21-updated-2017-08-22
+
+* Fixed the URL to National Datasets -> Communications -> Radio Licenses (ACMA).
+
 ### 2017-07-21-updated-2017-08-17
 
 * Updated the `Aspect` and `Land slope in percent` layers in the `Elevation` group to use new ArcGIS MapServers.
