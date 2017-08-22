@@ -5,6 +5,7 @@ Change Log
 ### 2017-07-21-updated-2017-08-22
 
 * Fixed the URL to National Datasets -> Communications -> Radio Licenses (ACMA).
+* Don't show warnings about missing non-spatial regions when loading the `csv-geo-au` taxation statistics layers.
 
 ### 2017-07-21-updated-2017-08-17
 
