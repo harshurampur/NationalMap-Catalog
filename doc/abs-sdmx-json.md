@@ -13,30 +13,32 @@ Unfortunately the SDMX-JSON API needs a fair bit of customisation to work with T
 - When the API doesn't have any data, instead of returning no data, it returns badly formed JSON.
 - The region dimension is identified inconsistently across datasets.
 - Some datasets have an extra STATE dimension that needs to be aggregated over explicitly.
+- Some datasets have dimensions with values like "GDP (market exchange rates)", "GDP (PPP)", "GDP (USD)". These are alternatives, not values you can add together. This is not indicated in the SDMX-JSON.
+- There is no explanatory description of the dataset in the SDMX-JSON.
 
-The hierarchical value problem is the most painful one, because the values for every dataset have to be checked against the more definitive SDMX (XML) source and remapped. This can't be fully automated at runtime because we also have to suppress those values for which no data will be returned. Also, I don't want to require that an exactly equivalent SDMX version of the data is available.
+The hierarchical value problem is the most painful one, because the values for every dataset have to be checked against the more definitive SDMX (XML) source and remapped. This can't be fully automated at runtime because we also have to suppress those values for which no data will be returned. Also, I don't want to introduce a runtime dependency on an exactly equivalent SDMX version of the data.
 
 ## Compilation process overview
 
 The source of truth is this file: [datasources/sdmx-abs.csv](../datasources/sdmx-abs.csv).  Changes to this file are picked up by `gulp build` and incorporated into `build/nm.json`. The rows of this file are reformatted by [datasources/includes/sdmx-abs-item.ejs](../datasources/includes/sdmx-abs-item.ejs), which briefly explains the meaning of each column.
 
-Some enrichment also occurs in [datasources/includes/sdmx-abs-item.ejs](../datasources/includes/sdmx-abs-item.ejs). In particular this adds generic `totalValueIds` and `whitelists` to every item.
+Some enrichment also occurs in sdmx-abs-item.ejs, unfortunately. In particular this adds generic `totalValueIds` and `whitelists` to every item.
 
 ## Sample ABS SDMX-JSON endpoints
 
-Sample SDMX-JSON metadata endpoint: http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T02_LGA
-Sample SDMX (XML) metadata endpoint: http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T02_LGA
-Sample data endpoint: http://stat.data.abs.gov.au/sdmx-json/data/ABS_C16_T02_LGA/TOT.TT.3..LGA2016./all
+- Sample SDMX-JSON metadata endpoint: http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T02_LGA
+- Sample SDMX (XML) metadata endpoint: http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T02_LGA
+- Sample data endpoint: http://stat.data.abs.gov.au/sdmx-json/data/ABS_C16_T02_LGA/TOT.TT.3..LGA2016./all
 
 ## A How-To Guide
 
 ### 1. Add the new datasets to sdmx-abs.csv
 
-Manually find newly available datasets by looking at the source code of (http://stat.data.abs.gov.au/sdmx-json/)[http://stat.data.abs.gov.au/sdmx-json/], and comparing to the datasets currently listed.
+Manually find newly available datasets by looking at the source code of [http://stat.data.abs.gov.au/sdmx-json/](http://stat.data.abs.gov.au/sdmx-json/), and comparing to the datasets currently listed.
 
 Add the ids to the appropriate column of [datasources/sdmx-abs.csv](../datasources/sdmx-abs.csv).
 
-### 2. Work out where and how each dataset should appear in the catalog
+### 2. Configure where and how each dataset should appear in the catalog
 
 The columns which determine position in the catalog are:
 
@@ -49,9 +51,9 @@ The columns which determine position in the catalog are:
 - `geoType`: One of '', 'SAx', 'LGA####', 'SA1_SA' or something else. This generates a [level of hierarchy](../datasources/includes/sdmx-abs-geo-name.ejs), eg. named "By Statistical Area" (for "SAx").
 - `series`: One of '', 'B', 'T' or something else. This affects the [name](../datasources/includes/sdmx-abs-name.ejs) of the item ('B' => '2011 Census', 'T' => 'Over time'), and the [description](../datasources/includes/sdmx-abs-description.ejs) of the item.
 
-The compilation process follows an overly complicated process to convert all that information into a position in the catalog hierarchy. I apologise for how complicated it is. It could be rewritten much more clearly.
+The compilation process follows an overly complicated process to convert all that information into a position in the catalog hierarchy. Sorry - this could be rewritten much more clearly.
 
-### 3. Deal with hierarchical and missing values
+### 3. Configure hierarchical and missing values
 
 As written, the gulp task `gulp get-abs-sdmx-metadata` will read the metadata for every dataset in the csv file from both the SDMX-JSON and the SDMX XML.
 
@@ -59,9 +61,9 @@ You probably don't want to do this for all the existing datasets. You can either
 - temporarily put "FALSE" in the first `#include` column for all the datasets you don't want it to run; or,
 - modify the task in `gulpfile.js` so that the variable `ids` only includes the new dataset ids.
 
-Then run the task. The output just goes to stdout in yaml format (some irrelevant output is suppressed to remove clutter, eg. all the region codes). Copy the output to the end of (sdmx-abs-metadata-for-reference.yaml)[../datasources/sdmx-abs-metadata-for-reference.yaml], for reference.
+Then run the task. The output just goes to stdout in yaml format (some irrelevant output is suppressed to remove clutter, eg. all the region codes). Copy the output to the end of [sdmx-abs-metadata-for-reference.yaml](../datasources/sdmx-abs-metadata-for-reference.yaml), for reference.
 
-You can scan this yaml output to quickly find hierarchical dimension values. Eg. this output shows that the Sex dimension has a total value (id 3, name Persons) with males (id 1) and females (id 2) as children.
+You can scan this `yaml` output to quickly find hierarchical dimension values. Eg. the output below shows that the `sex` dimension has a total value (id 3, name Persons), with males (id 1) and females (id 2) as children:
 
 ```
 - id: ABS_C16_T11_LGA
@@ -78,9 +80,9 @@ You can scan this yaml output to quickly find hierarchical dimension values. Eg.
               name: Females
 ```
 
-You now need to tell NationalMap which values to show and which to ignore, and which values correspond to the grand total for each dimension - often "TOT", but eg. for Sex it's "3", as above.  That’s needed so the map can show percentages of regional totals properly, and so the user can’t select "persons" and "male" together, which wouldn’t make sense.
+You now need to tell NationalMap which values to show and which to ignore, and which values correspond to the grand total for each dimension - often this is `TOT`, but for `sex` it's `3`, as above.  We need to do this so TerriaJS can show percentages of regional totals properly, and so the user can't select "persons" and "male" together, which wouldn’t make sense.
 
-The following column determine how each dimension is presented to the user:
+The following columns determine how each dimension is presented to the user:
 
 - `sexId`: The sex dimension id, if present - usually "SEX_ABS", but in older datasets can be "SEX" or "MEASURE". The sole impact of this is that the ejs file automatically sets id "3" as the total measure for this dimension.
 - `ageId`: The age dimension id, if present. The ejs file adds "TT" and "O15" as totals, and sets a whitelist on the dimension to `["A[0-9]+", "T.*", "O.*"]`, so that only five-year ranges and totals, not individual years, are available.
@@ -107,7 +109,7 @@ Some datasets have dimensions with values like "GDP (market exchange rates)", "G
 
 Tell TerriaJS about such dimensions by setting `singleValuedDimensionIds` to an array of dimensions which can only take a single value, eg. ["SPC"].
 
-### 6. Descriptions
+### 6. Add a dataset-specific description
 
 Finally, anything in the  `description` column is placed at the front of the default description generated by [sdmx-abs-description.ejs](../datasources/includes/sdmx-abs-description.ejs).
 
