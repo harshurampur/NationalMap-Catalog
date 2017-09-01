@@ -113,4 +113,4 @@ Finally, anything in the  `description` column is placed at the front of the def
 
 ### 7. Compile and test!
 
-Type `gulp build` and try it out in your local NationalMap!
+Type `gulp build` and try it out in your local NationalMap.
