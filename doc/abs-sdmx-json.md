@@ -28,29 +28,30 @@ Sample SDMX-JSON metadata endpoint: http://stat.data.abs.gov.au/sdmx-json/datafl
 Sample SDMX (XML) metadata endpoint: http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T02_LGA
 Sample data endpoint: http://stat.data.abs.gov.au/sdmx-json/data/ABS_C16_T02_LGA/TOT.TT.3..LGA2016./all
 
-## The How-To Guide
+## A How-To Guide
 
-### Add the new datasets to sdmx-abs.csv
+### 1. Add the new datasets to sdmx-abs.csv
 
 Manually find newly available datasets by looking at the source code of (http://stat.data.abs.gov.au/sdmx-json/)[http://stat.data.abs.gov.au/sdmx-json/], and comparing to the datasets currently listed.
 
 Add the ids to the appropriate column of [datasources/sdmx-abs.csv](../datasources/sdmx-abs.csv).
 
-### Work out where and how each dataset should appear in the catalog
+### 2. Work out where and how each dataset should appear in the catalog
 
-Let's take `ABS_C16_T12_LGA`, "Highest Year of School Completed by Age by Sex", as an example. The columns which determine position in the catalog are:
+The columns which determine position in the catalog are:
+
 - `outerGroups`: An optional array of group names into which this item should be placed, eg. ["National Datasets", "Social and Economic"].
 - `nameOutsideCatalog`: Optional value for the name of the item outside the catalog, if different from `name` below. You won't need this much, but can be useful when the ultimate name in the catalog is just something like "Size", so that we get a more descriptive name in the legend (eg. "Labour Force Size").
 - `group`: The group name to include this in, eg. "Person". This could have gone into `outerGroups` but is here for legacy reasons.
 - `subgroup`: An optional subgroup name, eg. "Education".
 - `name`: The name of the item, eg. "Number of Motor Vehicles".
 - `bys`: A string with the "by" variables, eg. "By Age by Sex".
-- `geoType`: One of '', 'SAx', 'LGA', 'SA1_SA' or something else. This generates a [level of hierarchy](../datasources/includes/sdmx-abs-geo-name.ejs), eg. named "By Statistical Area" (for "SAx").
+- `geoType`: One of '', 'SAx', 'LGA####', 'SA1_SA' or something else. This generates a [level of hierarchy](../datasources/includes/sdmx-abs-geo-name.ejs), eg. named "By Statistical Area" (for "SAx").
 - `series`: One of '', 'B', 'T' or something else. This affects the [name](../datasources/includes/sdmx-abs-name.ejs) of the item ('B' => '2011 Census', 'T' => 'Over time'), and the [description](../datasources/includes/sdmx-abs-description.ejs) of the item.
 
 The compilation process follows an overly complicated process to convert all that information into a position in the catalog hierarchy. I apologise for how complicated it is. It could be rewritten much more clearly.
 
-### Deal with hierarchical and missing values
+### 3. Deal with hierarchical and missing values
 
 As written, the gulp task `gulp get-abs-sdmx-metadata` will read the metadata for every dataset in the csv file from both the SDMX-JSON and the SDMX XML.
 
@@ -58,15 +59,58 @@ You probably don't want to do this for all the existing datasets. You can either
 - temporarily put "FALSE" in the first `#include` column for all the datasets you don't want it to run; or,
 - modify the task in `gulpfile.js` so that the variable `ids` only includes the new dataset ids.
 
-Then run the task. The output just goes to stdout in yaml format. Copy the output to the end of (sdmx-abs-metadata-for-reference.yaml)[../datasources/sdmx-abs-metadata-for-reference.yaml], for reference.
+Then run the task. The output just goes to stdout in yaml format (some irrelevant output is suppressed to remove clutter, eg. all the region codes). Copy the output to the end of (sdmx-abs-metadata-for-reference.yaml)[../datasources/sdmx-abs-metadata-for-reference.yaml], for reference.
 
-You can scan this yaml output to quickly find hierarchical dimension values.
+You can scan this yaml output to quickly find hierarchical dimension values. Eg. this output shows that the Sex dimension has a total value (id 3, name Persons) with males (id 1) and females (id 2) as children.
 
+```
+- id: ABS_C16_T11_LGA
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+```
 
+You now need to tell NationalMap which values to show and which to ignore, and which values correspond to the grand total for each dimension - often "TOT", but eg. for Sex it's "3", as above.  That’s needed so the map can show percentages of regional totals properly, and so the user can’t select "persons" and "male" together, which wouldn’t make sense.
 
-So I had to tell NationalMap which values to show and which to ignore, and which values correspond to the grand total for each dimension - often “TOT”, but eg. for sex it’s “3”.  That’s needed so the map can show %s of regional totals properly, and so the user can’t select “total” and “male” together, which wouldn’t make sense.
-• Also, as I mentioned before, the API doesn’t reliably return data for every possible value, so I have to manually check as many combinations as possible.
+The following column determine how each dimension is presented to the user:
 
-### ...
+- `sexId`: The sex dimension id, if present - usually "SEX_ABS", but in older datasets can be "SEX" or "MEASURE". The sole impact of this is that the ejs file automatically sets id "3" as the total measure for this dimension.
+- `ageId`: The age dimension id, if present. The ejs file adds "TT" and "O15" as totals, and sets a whitelist on the dimension to `["A[0-9]+", "T.*", "O.*"]`, so that only five-year ranges and totals, not individual years, are available.
+- `measureWhitelist`, `measureTotalValueIds`, `measureSelectedInitially`: These all apply only to the "measure" dimension.
+- `blacklist`: A custom blacklist, as an object whose keys are dimension ids, and values are arrays of blacklisted values.
 
-• I also had to manually identify the region dimension.  In the new datasets these always have id LGA_2016 or ASGS_2016, which is a big improvement on before… but it would be even better if we agreed on a way of identifying the region dimension that’s constant across region types and time, eg. id=REGION instead, or role=REGION.
+However, a big part of this process happens in [datasources/includes/sdmx-abs-item.ejs](../datasources/includes/sdmx-abs-item.ejs) - see the `totalValueIds` and `whitelist` sections. So you will probably need to add to those sections too. Please add comments to connect any changes to specific dataset ids. D'oh!
+
+Also, as mentioned earlier, the API doesn’t reliably return data for every possible dimension value, so once you have it all loaded into NationalMap, you'll need to manually check as many combinations of values as possible and check they work (eg. it might not return data when you choose a particular level of hierarchy in the dimension, eg. age in 5 year ranges, but work fine for 1-year ranges and for the total across all ages).
+
+### 4. Identify regions and region types
+
+Identify the region dimension.  In the 2016 datasets these always have id LGA_2016 or ASGS_2016, which is a big improvement on before. Place this name in the `regionDimensionId` column.  The region type is derived from the `geoType` column you filled in earlier.  For `SAx`, you need to tell it how to convert the region type name to a [csv-geo-au](https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au) code via the `regionNameTemplate` column, eg. `{{name}}_code_2016`.
+
+If the region type is something else, put the csv-geo-au-compliant region type code in the `regionType` column, eg. `ste` for states and territories.
+
+Finally, some of the older datasets have a `STATE` dimension which makes the display confusing - eg. LGAs in NSW all have STATE = NSW, LGAs in Victoria all have STATE = Victoria, etc.  As a result, by default NationalMap cannot show all LGAs at once. By setting `hasState` to TRUE, `ejs` directs TerriaJS to aggregate over this dimension, effectively removing it from consideration.
+
+Ideally we would agree with the ABS on a way of identifying the region dimension that's constant across region types and time, eg. `id=REGION` or `role=REGION` (preferably without losing the region-type information).
+
+### 5. Single-valued dimensions
+
+Some datasets have dimensions with values like "GDP (market exchange rates)", "GDP (PPP)", "GDP (USD)". These are alternatives, not values you can add together.
+
+Tell TerriaJS about such dimensions by setting `singleValuedDimensionIds` to an array of dimensions which can only take a single value, eg. ["SPC"].
+
+### 6. Descriptions
+
+Finally, anything in the  `description` column is placed at the front of the default description generated by [sdmx-abs-description.ejs](../datasources/includes/sdmx-abs-description.ejs).
+
+### 7. Compile and test!
+
+Type `gulp build` and try it out in your local NationalMap!
