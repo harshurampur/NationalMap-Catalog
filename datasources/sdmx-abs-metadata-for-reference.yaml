@@ -54709,3 +54709,3448 @@
           name: Quarterly
     - id: TIME_PERIOD
       name: Time
+- id: ABS_C16_T11_LGA
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: TYSTAP_2016
+      name: Educational Institution- Attendee Status
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '10'
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Part-time student: Aged 15-24 years
+            - id: '11'
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Part-time student: Aged 25 years and over
+            - id: '12'
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Full-time/Part-time student status not stated
+            - id: '13'
+              name: >-
+                University or other Tertiary Institution: Full-time student:
+                Aged 15-24 years
+            - id: '14'
+              name: >-
+                University or other Tertiary Institution: Full-time student:
+                Aged 25 years and over
+            - id: '15'
+              name: >-
+                University or other Tertiary Institution: Part-time student:
+                Aged 15-24 years
+            - id: '16'
+              name: >-
+                University or other Tertiary Institution: Part-time student:
+                Aged 25 years and over
+            - id: '17'
+              name: >-
+                University or other Tertiary Institution: Full-time/Part-time
+                student status not stated
+            - id: '18'
+              name: 'Other: Full-time student'
+            - id: '19'
+              name: 'Other: Part-time student'
+            - id: '20'
+              name: 'Other: Full-time/Part-time student status not stated'
+            - id: Z
+              name: Type of educational institution not stated
+            - id: '01'
+              name: Preschool
+            - id: '02'
+              name: Infants/Primary - Government
+            - id: '03'
+              name: Infants/Primary - Catholic
+            - id: '04'
+              name: Infants/Primary - Other Non Government
+            - id: '05'
+              name: Secondary - Government
+            - id: '06'
+              name: Secondary - Catholic
+            - id: '07'
+              name: Secondary - Other Non Government
+            - id: 08
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Full-time student: Aged 15-24 years
+            - id: 09
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Full-time student: Aged 25 years and over
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T11_SA
+  dimensions:
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: TYSTAP_2016
+      name: Educational Institution- Attendee Status
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '10'
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Part-time student: Aged 15-24 years
+            - id: '11'
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Part-time student: Aged 25 years and over
+            - id: '12'
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Full-time/Part-time student status not stated
+            - id: '13'
+              name: >-
+                University or other Tertiary Institution: Full-time student:
+                Aged 15-24 years
+            - id: '14'
+              name: >-
+                University or other Tertiary Institution: Full-time student:
+                Aged 25 years and over
+            - id: '15'
+              name: >-
+                University or other Tertiary Institution: Part-time student:
+                Aged 15-24 years
+            - id: '16'
+              name: >-
+                University or other Tertiary Institution: Part-time student:
+                Aged 25 years and over
+            - id: '17'
+              name: >-
+                University or other Tertiary Institution: Full-time/Part-time
+                student status not stated
+            - id: '18'
+              name: 'Other: Full-time student'
+            - id: '19'
+              name: 'Other: Part-time student'
+            - id: '20'
+              name: 'Other: Full-time/Part-time student status not stated'
+            - id: Z
+              name: Type of educational institution not stated
+            - id: '01'
+              name: Preschool
+            - id: '02'
+              name: Infants/Primary - Government
+            - id: '03'
+              name: Infants/Primary - Catholic
+            - id: '04'
+              name: Infants/Primary - Other Non Government
+            - id: '05'
+              name: Secondary - Government
+            - id: '06'
+              name: Secondary - Catholic
+            - id: '07'
+              name: Secondary - Other Non Government
+            - id: 08
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Full-time student: Aged 15-24 years
+            - id: 09
+              name: >-
+                Technical or Further Educational Institution (including TAFE
+                Colleges): Full-time student: Aged 25 years and over
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T12_LGA
+  dimensions:
+    - id: HSCP_2016
+      name: Highest Year of School Completed
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '1'
+              name: Year 12 or equivalent
+            - id: '2'
+              name: Year 11 or equivalent
+            - id: '3'
+              name: Year 10 or equivalent
+            - id: '4'
+              name: Year 9 or equivalent
+            - id: '5'
+              name: Year 8 or below
+            - id: '6'
+              name: Did not go to school
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T12_SA
+  dimensions:
+    - id: HSCP_2016
+      name: Highest Year of School Completed
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '1'
+              name: Year 12 or equivalent
+            - id: '2'
+              name: Year 11 or equivalent
+            - id: '3'
+              name: Year 10 or equivalent
+            - id: '4'
+              name: Year 9 or equivalent
+            - id: '5'
+              name: Year 8 or below
+            - id: '6'
+              name: Did not go to school
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T13_LGA
+  dimensions:
+    - id: INCP_2016
+      name: Total Personal Income - weekly
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,000-$1,249 ($52,000-$64,999) '
+            - id: '11'
+              name: '$1,250-$1,499 ($65,000-$77,999) '
+            - id: '12'
+              name: '$1,500-$1,749 ($78,000-$90,999) '
+            - id: '13'
+              name: '$1,750-$1,999 ($91,000-$103,999) '
+            - id: '14'
+              name: '$2,000-$2,999 ($104,000-$155,999) '
+            - id: '15'
+              name: '$3,000 or more ($156,000 or more) '
+            - id: Z
+              name: 'Not stated '
+            - id: '01'
+              name: 'Negative income '
+            - id: '02'
+              name: 'Nil income '
+            - id: '03'
+              name: '$1-$149 ($1-$7,799) '
+            - id: '04'
+              name: '$150-$299 ($7,800-$15,599)'
+            - id: '05'
+              name: '$300-$399 ($15,600-$20,799) '
+            - id: '06'
+              name: '$400-$499 ($20,800-$25,999) '
+            - id: '07'
+              name: '$500-$649 ($26,000-$33,799) '
+            - id: 08
+              name: '$650-$799 ($33,800-$41,599) '
+            - id: 09
+              name: '$800-$999 ($41,600-$51,999) '
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T13_SA
+  dimensions:
+    - id: INCP_2016
+      name: Total Personal Income - weekly
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,000-$1,249 ($52,000-$64,999) '
+            - id: '11'
+              name: '$1,250-$1,499 ($65,000-$77,999) '
+            - id: '12'
+              name: '$1,500-$1,749 ($78,000-$90,999) '
+            - id: '13'
+              name: '$1,750-$1,999 ($91,000-$103,999) '
+            - id: '14'
+              name: '$2,000-$2,999 ($104,000-$155,999) '
+            - id: '15'
+              name: '$3,000 or more ($156,000 or more) '
+            - id: Z
+              name: 'Not stated '
+            - id: '01'
+              name: 'Negative income '
+            - id: '02'
+              name: 'Nil income '
+            - id: '03'
+              name: '$1-$149 ($1-$7,799) '
+            - id: '04'
+              name: '$150-$299 ($7,800-$15,599)'
+            - id: '05'
+              name: '$300-$399 ($15,600-$20,799) '
+            - id: '06'
+              name: '$400-$499 ($20,800-$25,999) '
+            - id: '07'
+              name: '$500-$649 ($26,000-$33,799) '
+            - id: 08
+              name: '$650-$799 ($33,800-$41,599) '
+            - id: 09
+              name: '$800-$999 ($41,600-$51,999) '
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T14_LGA
+  dimensions:
+    - id: ASSNP_2016
+      name: Core Activity Need for Assistance
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Has need for assistance with core activities
+            - id: '2'
+              name: Does not have need for assistance with core activities
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T14_SA
+  dimensions:
+    - id: ASSNP_2016
+      name: Core Activity Need for Assistance
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Has need for assistance with core activities
+            - id: '2'
+              name: Does not have need for assistance with core activities
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T15_LGA
+  dimensions:
+    - id: VOLWP_2016
+      name: Voluntary Work for an Organisation or Group
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Not a volunteer
+            - id: '2'
+              name: Volunteer
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T15_SA
+  dimensions:
+    - id: VOLWP_2016
+      name: Voluntary Work for an Organisation or Group
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Not a volunteer
+            - id: '2'
+              name: Volunteer
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T16_LGA
+  dimensions:
+    - id: DOMP_2016
+      name: Unpaid Domestic Work - Number of Hours
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Nil hours
+            - id: '2'
+              name: Less than 5 hours
+            - id: '3'
+              name: 5 to 14 hours
+            - id: '4'
+              name: 15 to 29 hours
+            - id: '5'
+              name: 30 hours or more
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T16_SA
+  dimensions:
+    - id: DOMP_2016
+      name: Unpaid Domestic Work - Number of Hours
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Nil hours
+            - id: '2'
+              name: Less than 5 hours
+            - id: '3'
+              name: 5 to 14 hours
+            - id: '4'
+              name: 15 to 29 hours
+            - id: '5'
+              name: 30 hours or more
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T17_LGA
+  dimensions:
+    - id: UNCAREP_2016
+      name: Unpaid Assistance to a Person with a Disability
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '1'
+              name: No unpaid assistance provided
+            - id: '2'
+              name: Provided unpaid assistance
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T17_SA
+  dimensions:
+    - id: UNCAREP_2016
+      name: Unpaid Assistance to a Person with a Disability
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '1'
+              name: No unpaid assistance provided
+            - id: '2'
+              name: Provided unpaid assistance
+            - id: Z
+              name: Not stated
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T18_LGA
+  dimensions:
+    - id: CHCAREP_2016
+      name: Unpaid Child Care
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '1'
+              name: 'Did not provide child care '
+            - id: '2'
+              name: 'Cared for own child/children '
+            - id: '3'
+              name: 'Cared for other child/children '
+            - id: '4'
+              name: Cared for own child/children and other child/children
+            - id: Z
+              name: 'Not stated '
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T18_SA
+  dimensions:
+    - id: CHCAREP_2016
+      name: Unpaid Child Care
+      values:
+        - id: TOT
+          name: Total Persons
+          children:
+            - id: '1'
+              name: 'Did not provide child care '
+            - id: '2'
+              name: 'Cared for own child/children '
+            - id: '3'
+              name: 'Cared for other child/children '
+            - id: '4'
+              name: Cared for own child/children and other child/children
+            - id: Z
+              name: 'Not stated '
+    - id: AGE
+      name: Age
+      values:
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: A85
+          name: 85 - 89
+        - id: A90
+          name: 90 - 94
+        - id: A95
+          name: 95 - 99
+        - id: A99
+          name: 100 and over
+        - id: TT
+          name: All ages
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T19_LGA
+  dimensions:
+    - id: FMCF_2016
+      name: Family Composition
+      values:
+        - id: TOT
+          name: Total Families
+          children:
+            - id: '1'
+              name: Couple family with no children
+              children:
+                - id: '12'
+                  name: Couple family with no children
+                  children:
+                    - id: '122'
+                      name: Couple family with no children
+                      children:
+                        - id: '1222'
+                          name: Couple family with no children
+            - id: '2'
+              name: Couple family with children
+              children:
+                - id: '21'
+                  name: Couple family with children under 15
+                  children:
+                    - id: '211'
+                      name: >-
+                        Couple family with children under 15 and dependent
+                        students
+                      children:
+                        - id: '2111'
+                          name: >-
+                            Couple family with children under 15, dependent
+                            students and non-dependent children 
+                        - id: '2112'
+                          name: >-
+                            Couple family with children under 15, dependent
+                            students and no non-dependent children
+                    - id: '212'
+                      name: >-
+                        Couple family with children under 15 and no dependent
+                        students 
+                      children:
+                        - id: '2121'
+                          name: >-
+                            Couple family with children under 15, no dependent
+                            students and with non-dependent children
+                        - id: '2122'
+                          name: >-
+                            Couple family with children under 15, no dependent
+                            students and no non-dependent children 
+                - id: '22'
+                  name: Couple family with no children under 15
+                  children:
+                    - id: '221'
+                      name: >-
+                        Couple family with no children under 15 and with
+                        dependent students
+                      children:
+                        - id: '2211'
+                          name: >-
+                            Couple family with no children under 15, and with
+                            dependent students and non-dependent children 
+                        - id: '2212'
+                          name: >-
+                            Couple family with no children under 15, and with
+                            dependent students and no non-dependent children
+                    - id: '222'
+                      name: >-
+                        Couple family with no children under 15 and no dependent
+                        students
+                      children:
+                        - id: '2221'
+                          name: >-
+                            Couple family with no children under 15, no
+                            dependent students and with non-dependent children
+            - id: '3'
+              name: One parent family
+              children:
+                - id: '31'
+                  name: 'One parent family with children under 15 '
+                  children:
+                    - id: '311'
+                      name: >-
+                        One parent family with children under 15 and dependent
+                        students 
+                      children:
+                        - id: '3111'
+                          name: >-
+                            One parent family with children under 15, dependent
+                            students and non-dependent children 
+                        - id: '3112'
+                          name: >-
+                            One parent family with children under 15, dependent
+                            students and no non-dependent children
+                    - id: '312'
+                      name: >-
+                        One parent family with children under 15 and no
+                        dependent students 
+                      children:
+                        - id: '3121'
+                          name: >-
+                            One parent family with children under 15, no
+                            dependent students and with non-dependent children
+                        - id: '3122'
+                          name: >-
+                            One parent family with children under 15, no
+                            dependent students and no non-dependent children 
+                - id: '32'
+                  name: 'One parent family with no children under 15 '
+                  children:
+                    - id: '321'
+                      name: >-
+                        One parent family with no children under 15 and with
+                        dependent students 
+                      children:
+                        - id: '3211'
+                          name: >-
+                            One parent family with no children under 15, with
+                            dependent students and non-dependent children 
+                        - id: '3212'
+                          name: >-
+                            One parent family with no children under 15, with
+                            dependent students and no non-dependent children
+                    - id: '322'
+                      name: >-
+                        One parent family with no children under 15 and no
+                        dependent students 
+                      children:
+                        - id: '3221'
+                          name: >-
+                            One parent family with no children under 15, no
+                            dependent students and with non-dependent children 
+            - id: '9'
+              name: Other family
+              children:
+                - id: '92'
+                  name: Other family
+                  children:
+                    - id: '922'
+                      name: Other family
+                      children:
+                        - id: '9222'
+                          name: Other family
+    - id: FINF_2016
+      name: Total Family Income (weekly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,000-$1,249 ($52,000-$64,999)'
+            - id: '11'
+              name: '$1,250-$1,499 ($65,000-$77,999)'
+            - id: '12'
+              name: '$1,500-$1,749 ($78,000-$90,999)'
+            - id: '13'
+              name: '$1,750-$1,999 ($91,000-$103,999)'
+            - id: '14'
+              name: '$2,000-$2,499 ($104,000-$129,999)'
+            - id: '15'
+              name: '$2,500-$2,999 ($130,000-$155,999)'
+            - id: '16'
+              name: '$3,000-$3,499 ($156,000-$181,999)'
+            - id: '17'
+              name: '$3,500-$3,999 ($182,000-$207,999)'
+            - id: '18'
+              name: '$4,000-$4,499 ($208,000-$233,999)'
+            - id: '19'
+              name: '$4,500-$4,999 ($234,000-$259,999) '
+            - id: '20'
+              name: '$5,000-$5,999 ($260,000-$311,999) '
+            - id: '21'
+              name: '$6,000-$7,999 ($312,000-$415,999)'
+            - id: '22'
+              name: '$8,000 or more ($416,000 or more)'
+            - id: '23'
+              name: 'Partial income stated '
+            - id: Z
+              name: 'All incomes not stated '
+            - id: '01'
+              name: Negative income
+            - id: '02'
+              name: Nil income
+            - id: '03'
+              name: '$1-$149 ($1-$7,799)'
+            - id: '04'
+              name: '$150-$299 ($7,800-$15,599)'
+            - id: '05'
+              name: '$300-$399 ($15,600-$20,799)'
+            - id: '06'
+              name: '$400-$499 ($20,800-$25,999)'
+            - id: '07'
+              name: '$500-$649 ($26,000-$33,799)'
+            - id: 08
+              name: '$650-$799 ($33,800-$41,599)'
+            - id: 09
+              name: '$800-$999 ($41,600-$51,999)'
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T19_SA
+  dimensions:
+    - id: FMCF_2016
+      name: Family Composition
+      values:
+        - id: TOT
+          name: Total Families
+          children:
+            - id: '1'
+              name: Couple family with no children
+              children:
+                - id: '12'
+                  name: Couple family with no children
+                  children:
+                    - id: '122'
+                      name: Couple family with no children
+                      children:
+                        - id: '1222'
+                          name: Couple family with no children
+            - id: '2'
+              name: Couple family with children
+              children:
+                - id: '21'
+                  name: Couple family with children under 15
+                  children:
+                    - id: '211'
+                      name: >-
+                        Couple family with children under 15 and dependent
+                        students
+                      children:
+                        - id: '2111'
+                          name: >-
+                            Couple family with children under 15, dependent
+                            students and non-dependent children 
+                        - id: '2112'
+                          name: >-
+                            Couple family with children under 15, dependent
+                            students and no non-dependent children
+                    - id: '212'
+                      name: >-
+                        Couple family with children under 15 and no dependent
+                        students 
+                      children:
+                        - id: '2121'
+                          name: >-
+                            Couple family with children under 15, no dependent
+                            students and with non-dependent children
+                        - id: '2122'
+                          name: >-
+                            Couple family with children under 15, no dependent
+                            students and no non-dependent children 
+                - id: '22'
+                  name: Couple family with no children under 15
+                  children:
+                    - id: '221'
+                      name: >-
+                        Couple family with no children under 15 and with
+                        dependent students
+                      children:
+                        - id: '2211'
+                          name: >-
+                            Couple family with no children under 15, and with
+                            dependent students and non-dependent children 
+                        - id: '2212'
+                          name: >-
+                            Couple family with no children under 15, and with
+                            dependent students and no non-dependent children
+                    - id: '222'
+                      name: >-
+                        Couple family with no children under 15 and no dependent
+                        students
+                      children:
+                        - id: '2221'
+                          name: >-
+                            Couple family with no children under 15, no
+                            dependent students and with non-dependent children
+            - id: '3'
+              name: One parent family
+              children:
+                - id: '31'
+                  name: 'One parent family with children under 15 '
+                  children:
+                    - id: '311'
+                      name: >-
+                        One parent family with children under 15 and dependent
+                        students 
+                      children:
+                        - id: '3111'
+                          name: >-
+                            One parent family with children under 15, dependent
+                            students and non-dependent children 
+                        - id: '3112'
+                          name: >-
+                            One parent family with children under 15, dependent
+                            students and no non-dependent children
+                    - id: '312'
+                      name: >-
+                        One parent family with children under 15 and no
+                        dependent students 
+                      children:
+                        - id: '3121'
+                          name: >-
+                            One parent family with children under 15, no
+                            dependent students and with non-dependent children
+                        - id: '3122'
+                          name: >-
+                            One parent family with children under 15, no
+                            dependent students and no non-dependent children 
+                - id: '32'
+                  name: 'One parent family with no children under 15 '
+                  children:
+                    - id: '321'
+                      name: >-
+                        One parent family with no children under 15 and with
+                        dependent students 
+                      children:
+                        - id: '3211'
+                          name: >-
+                            One parent family with no children under 15, with
+                            dependent students and non-dependent children 
+                        - id: '3212'
+                          name: >-
+                            One parent family with no children under 15, with
+                            dependent students and no non-dependent children
+                    - id: '322'
+                      name: >-
+                        One parent family with no children under 15 and no
+                        dependent students 
+                      children:
+                        - id: '3221'
+                          name: >-
+                            One parent family with no children under 15, no
+                            dependent students and with non-dependent children 
+            - id: '9'
+              name: Other family
+              children:
+                - id: '92'
+                  name: Other family
+                  children:
+                    - id: '922'
+                      name: Other family
+                      children:
+                        - id: '9222'
+                          name: Other family
+    - id: FINF_2016
+      name: Total Family Income (weekly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,000-$1,249 ($52,000-$64,999)'
+            - id: '11'
+              name: '$1,250-$1,499 ($65,000-$77,999)'
+            - id: '12'
+              name: '$1,500-$1,749 ($78,000-$90,999)'
+            - id: '13'
+              name: '$1,750-$1,999 ($91,000-$103,999)'
+            - id: '14'
+              name: '$2,000-$2,499 ($104,000-$129,999)'
+            - id: '15'
+              name: '$2,500-$2,999 ($130,000-$155,999)'
+            - id: '16'
+              name: '$3,000-$3,499 ($156,000-$181,999)'
+            - id: '17'
+              name: '$3,500-$3,999 ($182,000-$207,999)'
+            - id: '18'
+              name: '$4,000-$4,499 ($208,000-$233,999)'
+            - id: '19'
+              name: '$4,500-$4,999 ($234,000-$259,999) '
+            - id: '20'
+              name: '$5,000-$5,999 ($260,000-$311,999) '
+            - id: '21'
+              name: '$6,000-$7,999 ($312,000-$415,999)'
+            - id: '22'
+              name: '$8,000 or more ($416,000 or more)'
+            - id: '23'
+              name: 'Partial income stated '
+            - id: Z
+              name: 'All incomes not stated '
+            - id: '01'
+              name: Negative income
+            - id: '02'
+              name: Nil income
+            - id: '03'
+              name: '$1-$149 ($1-$7,799)'
+            - id: '04'
+              name: '$150-$299 ($7,800-$15,599)'
+            - id: '05'
+              name: '$300-$399 ($15,600-$20,799)'
+            - id: '06'
+              name: '$400-$499 ($20,800-$25,999)'
+            - id: '07'
+              name: '$500-$649 ($26,000-$33,799)'
+            - id: 08
+              name: '$650-$799 ($33,800-$41,599)'
+            - id: 09
+              name: '$800-$999 ($41,600-$51,999)'
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T20_LGA
+  dimensions:
+    - id: FBLF_2016
+      name: Family Blending
+      values:
+        - id: TOT
+          name: Total Families
+          children:
+            - id: '1'
+              name: Intact family with no other children present
+            - id: '2'
+              name: Step family with no other children present
+            - id: '3'
+              name: Blended family with no other children present
+            - id: '4'
+              name: Intact family with other children present
+            - id: '5'
+              name: Step family with other children present
+            - id: '6'
+              name: Blended family with other children present
+            - id: '7'
+              name: Other couple family with other children only
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T20_SA
+  dimensions:
+    - id: FBLF_2016
+      name: Family Blending
+      values:
+        - id: TOT
+          name: Total Families
+          children:
+            - id: '1'
+              name: Intact family with no other children present
+            - id: '2'
+              name: Step family with no other children present
+            - id: '3'
+              name: Blended family with no other children present
+            - id: '4'
+              name: Intact family with other children present
+            - id: '5'
+              name: Step family with other children present
+            - id: '6'
+              name: Blended family with other children present
+            - id: '7'
+              name: Other couple family with other children only
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T21_LGA
+  dimensions:
+    - id: HHCD_2016
+      name: Household Composition
+      values:
+        - id: TOT
+          name: Total Households
+          children:
+            - id: '1'
+              name: One family household
+              children:
+                - id: '11'
+                  name: One family household with only family members present
+                  children:
+                    - id: '110'
+                      name: One family household with only family members present
+                - id: '12'
+                  name: One family household with non-family members present
+                  children:
+                    - id: '120'
+                      name: One family household with non-family members present
+            - id: '2'
+              name: Multiple family household
+              children:
+                - id: '21'
+                  name: Two family household
+                  children:
+                    - id: '211'
+                      name: Two family household with only family members present
+                    - id: '212'
+                      name: Two family household with non-family members present
+                - id: '22'
+                  name: Three or more family household
+                  children:
+                    - id: '221'
+                      name: >-
+                        Three or more family household with only family members
+                        present
+                    - id: '222'
+                      name: >-
+                        Three or more family household with non-family members
+                        present
+            - id: '3'
+              name: Non-family household
+              children:
+                - id: '31'
+                  name: Lone person household
+                  children:
+                    - id: '310'
+                      name: Lone person household
+                - id: '32'
+                  name: Group household
+                  children:
+                    - id: '320'
+                      name: Group household
+            - id: '4'
+              name: Non-classifiable
+              children:
+                - id: '41'
+                  name: Visitors only
+                  children:
+                    - id: '410'
+                      name: Visitors only
+                - id: '42'
+                  name: Other non-classifiable
+                  children:
+                    - id: '420'
+                      name: Other non-classifiable
+    - id: HIND_2016
+      name: Total Household Income (weekly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,000-$1,249 ($52,000-$64,999)'
+            - id: '11'
+              name: '$1,250-$1,499 ($65,000-$77,999)'
+            - id: '12'
+              name: '$1,500-$1,749 ($78,000-$90,999)'
+            - id: '13'
+              name: '$1,750-$1,999 ($91,000-$103,999)'
+            - id: '14'
+              name: '$2,000-$2,499 ($104,000-$129,999)'
+            - id: '15'
+              name: '$2,500-$2,999 ($130,000-$155,999)'
+            - id: '16'
+              name: '$3,000-$3,499 ($156,000-$181,999)'
+            - id: '17'
+              name: '$3,500-$3,999 ($182,000-$207,999)'
+            - id: '18'
+              name: '$4,000-$4,499 ($208,000-$233,999)'
+            - id: '19'
+              name: '$4,500-$4,999 ($234,000-$259,999)'
+            - id: '20'
+              name: '$5,000-$5,999 ($260,000-$311,999)'
+            - id: '21'
+              name: '$6,000-$7,999 ($312,000-$415,999)'
+            - id: '22'
+              name: '$8,000 or more ($416,000 or more)'
+            - id: '23'
+              name: Partial income stated
+            - id: Z
+              name: All incomes not stated
+            - id: '01'
+              name: Negative income
+            - id: '02'
+              name: Nil income
+            - id: '03'
+              name: '$1-$149 ($1-$7,799)'
+            - id: '04'
+              name: '$150-$299 ($7,800-$15,599)'
+            - id: '05'
+              name: '$300-$399 ($15,600-$20,799)'
+            - id: '06'
+              name: '$400-$499 ($20,800-$25,999)'
+            - id: '07'
+              name: '$500-$649 ($26,000-$33,799)'
+            - id: 08
+              name: '$650-$799 ($33,800-$41,599)'
+            - id: 09
+              name: '$800-$999 ($41,600-$51,999)'
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T21_SA
+  dimensions:
+    - id: HHCD_2016
+      name: Household Composition
+      values:
+        - id: TOT
+          name: Total Households
+          children:
+            - id: '1'
+              name: One family household
+              children:
+                - id: '11'
+                  name: One family household with only family members present
+                  children:
+                    - id: '110'
+                      name: One family household with only family members present
+                - id: '12'
+                  name: One family household with non-family members present
+                  children:
+                    - id: '120'
+                      name: One family household with non-family members present
+            - id: '2'
+              name: Multiple family household
+              children:
+                - id: '21'
+                  name: Two family household
+                  children:
+                    - id: '211'
+                      name: Two family household with only family members present
+                    - id: '212'
+                      name: Two family household with non-family members present
+                - id: '22'
+                  name: Three or more family household
+                  children:
+                    - id: '221'
+                      name: >-
+                        Three or more family household with only family members
+                        present
+                    - id: '222'
+                      name: >-
+                        Three or more family household with non-family members
+                        present
+            - id: '3'
+              name: Non-family household
+              children:
+                - id: '31'
+                  name: Lone person household
+                  children:
+                    - id: '310'
+                      name: Lone person household
+                - id: '32'
+                  name: Group household
+                  children:
+                    - id: '320'
+                      name: Group household
+            - id: '4'
+              name: Non-classifiable
+              children:
+                - id: '41'
+                  name: Visitors only
+                  children:
+                    - id: '410'
+                      name: Visitors only
+                - id: '42'
+                  name: Other non-classifiable
+                  children:
+                    - id: '420'
+                      name: Other non-classifiable
+    - id: HIND_2016
+      name: Total Household Income (weekly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,000-$1,249 ($52,000-$64,999)'
+            - id: '11'
+              name: '$1,250-$1,499 ($65,000-$77,999)'
+            - id: '12'
+              name: '$1,500-$1,749 ($78,000-$90,999)'
+            - id: '13'
+              name: '$1,750-$1,999 ($91,000-$103,999)'
+            - id: '14'
+              name: '$2,000-$2,499 ($104,000-$129,999)'
+            - id: '15'
+              name: '$2,500-$2,999 ($130,000-$155,999)'
+            - id: '16'
+              name: '$3,000-$3,499 ($156,000-$181,999)'
+            - id: '17'
+              name: '$3,500-$3,999 ($182,000-$207,999)'
+            - id: '18'
+              name: '$4,000-$4,499 ($208,000-$233,999)'
+            - id: '19'
+              name: '$4,500-$4,999 ($234,000-$259,999)'
+            - id: '20'
+              name: '$5,000-$5,999 ($260,000-$311,999)'
+            - id: '21'
+              name: '$6,000-$7,999 ($312,000-$415,999)'
+            - id: '22'
+              name: '$8,000 or more ($416,000 or more)'
+            - id: '23'
+              name: Partial income stated
+            - id: Z
+              name: All incomes not stated
+            - id: '01'
+              name: Negative income
+            - id: '02'
+              name: Nil income
+            - id: '03'
+              name: '$1-$149 ($1-$7,799)'
+            - id: '04'
+              name: '$150-$299 ($7,800-$15,599)'
+            - id: '05'
+              name: '$300-$399 ($15,600-$20,799)'
+            - id: '06'
+              name: '$400-$499 ($20,800-$25,999)'
+            - id: '07'
+              name: '$500-$649 ($26,000-$33,799)'
+            - id: 08
+              name: '$650-$799 ($33,800-$41,599)'
+            - id: 09
+              name: '$800-$999 ($41,600-$51,999)'
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T22_LGA
+  dimensions:
+    - id: VEHD_2016
+      name: Number of Motor Vehicles
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '0'
+              name: No motor vehicles
+            - id: '30'
+              name: 30 or more motor vehicles
+            - id: Z
+              name: Not stated
+            - id: '1'
+              name: 1 motor vehicle
+            - id: '2'
+              name: 2 motor vehicles
+            - id: '3'
+              name: 3 motor vehicles
+            - id: '4'
+              name: 4 motor vehicles
+            - id: '5'
+              name: 5 motor vehicles
+            - id: '6'
+              name: 6 motor vehicles
+            - id: '7'
+              name: 7 motor vehicles
+            - id: '8'
+              name: 8 motor vehicles
+            - id: '9'
+              name: 9 motor vehicles
+            - id: '10'
+              name: 10 motor vehicles
+            - id: '11'
+              name: 11 motor vehicles
+            - id: '12'
+              name: 12 motor vehicles
+            - id: '13'
+              name: 13 motor vehicles
+            - id: '14'
+              name: 14 motor vehicles
+            - id: '15'
+              name: 15 motor vehicles
+            - id: '16'
+              name: 16 motor vehicles
+            - id: '17'
+              name: 17 motor vehicles
+            - id: '18'
+              name: 18 motor vehicles
+            - id: '19'
+              name: 19 motor vehicles
+            - id: '20'
+              name: 20 motor vehicles
+            - id: '21'
+              name: 21 motor vehicles
+            - id: '22'
+              name: 22 motor vehicles
+            - id: '23'
+              name: 23 motor vehicles
+            - id: '24'
+              name: 24 motor vehicles
+            - id: '25'
+              name: 25 motor vehicles
+            - id: '26'
+              name: 26 motor vehicles
+            - id: '27'
+              name: 27 motor vehicles
+            - id: '28'
+              name: 28 motor vehicles
+            - id: '29'
+              name: 29 motor vehicles
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T22_SA
+  dimensions:
+    - id: VEHD_2016
+      name: Number of Motor Vehicles
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '0'
+              name: No motor vehicles
+            - id: '30'
+              name: 30 or more motor vehicles
+            - id: Z
+              name: Not stated
+            - id: '1'
+              name: 1 motor vehicle
+            - id: '2'
+              name: 2 motor vehicles
+            - id: '3'
+              name: 3 motor vehicles
+            - id: '4'
+              name: 4 motor vehicles
+            - id: '5'
+              name: 5 motor vehicles
+            - id: '6'
+              name: 6 motor vehicles
+            - id: '7'
+              name: 7 motor vehicles
+            - id: '8'
+              name: 8 motor vehicles
+            - id: '9'
+              name: 9 motor vehicles
+            - id: '10'
+              name: 10 motor vehicles
+            - id: '11'
+              name: 11 motor vehicles
+            - id: '12'
+              name: 12 motor vehicles
+            - id: '13'
+              name: 13 motor vehicles
+            - id: '14'
+              name: 14 motor vehicles
+            - id: '15'
+              name: 15 motor vehicles
+            - id: '16'
+              name: 16 motor vehicles
+            - id: '17'
+              name: 17 motor vehicles
+            - id: '18'
+              name: 18 motor vehicles
+            - id: '19'
+              name: 19 motor vehicles
+            - id: '20'
+              name: 20 motor vehicles
+            - id: '21'
+              name: 21 motor vehicles
+            - id: '22'
+              name: 22 motor vehicles
+            - id: '23'
+              name: 23 motor vehicles
+            - id: '24'
+              name: 24 motor vehicles
+            - id: '25'
+              name: 25 motor vehicles
+            - id: '26'
+              name: 26 motor vehicles
+            - id: '27'
+              name: 27 motor vehicles
+            - id: '28'
+              name: 28 motor vehicles
+            - id: '29'
+              name: 29 motor vehicles
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census year
+
+- id: ABS_C16_T23_LGA
+  dimensions:
+    - id: HHCD_2016
+      name: Household Composition
+      values:
+        - id: TOT
+          name: Total Households
+          children:
+            - id: '1'
+              name: One family household
+              children:
+                - id: '11'
+                  name: One family household with only family members present
+                  children:
+                    - id: '110'
+                      name: One family household with only family members present
+                - id: '12'
+                  name: One family household with non-family members present
+                  children:
+                    - id: '120'
+                      name: One family household with non-family members present
+            - id: '2'
+              name: Multiple family household
+              children:
+                - id: '21'
+                  name: Two family household
+                  children:
+                    - id: '211'
+                      name: Two family household with only family members present
+                    - id: '212'
+                      name: Two family household with non-family members present
+                - id: '22'
+                  name: Three or more family household
+                  children:
+                    - id: '221'
+                      name: >-
+                        Three or more family household with only family members
+                        present
+                    - id: '222'
+                      name: >-
+                        Three or more family household with non-family members
+                        present
+            - id: '3'
+              name: Non-family household
+              children:
+                - id: '31'
+                  name: Lone person household
+                  children:
+                    - id: '310'
+                      name: Lone person household
+                - id: '32'
+                  name: Group household
+                  children:
+                    - id: '320'
+                      name: Group household
+    - id: NPRD_2016
+      name: Number of Persons Usually Resident
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: One person
+            - id: '2'
+              name: Two persons
+            - id: '3'
+              name: Three persons
+            - id: '4'
+              name: Four persons
+            - id: '5'
+              name: Five persons
+            - id: '6'
+              name: Six persons
+            - id: '7'
+              name: Seven persons
+            - id: '8'
+              name: Eight or more persons
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T23_SA
+  dimensions:
+    - id: HHCD_2016
+      name: Household Composition
+      values:
+        - id: TOT
+          name: Total Households
+          children:
+            - id: '1'
+              name: One family household
+              children:
+                - id: '11'
+                  name: One family household with only family members present
+                  children:
+                    - id: '110'
+                      name: One family household with only family members present
+                - id: '12'
+                  name: One family household with non-family members present
+                  children:
+                    - id: '120'
+                      name: One family household with non-family members present
+            - id: '2'
+              name: Multiple family household
+              children:
+                - id: '21'
+                  name: Two family household
+                  children:
+                    - id: '211'
+                      name: Two family household with only family members present
+                    - id: '212'
+                      name: Two family household with non-family members present
+                - id: '22'
+                  name: Three or more family household
+                  children:
+                    - id: '221'
+                      name: >-
+                        Three or more family household with only family members
+                        present
+                    - id: '222'
+                      name: >-
+                        Three or more family household with non-family members
+                        present
+            - id: '3'
+              name: Non-family household
+              children:
+                - id: '31'
+                  name: Lone person household
+                  children:
+                    - id: '310'
+                      name: Lone person household
+                - id: '32'
+                  name: Group household
+                  children:
+                    - id: '320'
+                      name: Group household
+    - id: NPRD_2016
+      name: Number of Persons Usually Resident
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: One person
+            - id: '2'
+              name: Two persons
+            - id: '3'
+              name: Three persons
+            - id: '4'
+              name: Four persons
+            - id: '5'
+              name: Five persons
+            - id: '6'
+              name: Six persons
+            - id: '7'
+              name: Seven persons
+            - id: '8'
+              name: Eight or more persons
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T24_LGA
+  dimensions:
+    - id: DWTD_2016
+      name: Dwelling Type
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Occupied private dwellings
+            - id: '2'
+              name: Unoccupied private dwellings
+            - id: '3'
+              name: Non-private dwellings
+            - id: '4'
+              name: Migratory
+            - id: '5'
+              name: Off-shore
+            - id: '6'
+              name: Shipping
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+            - id: NA
+              name: Not appliacable
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T24_SA
+  dimensions:
+    - id: DWTD_2016
+      name: Dwelling Type
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Occupied private dwellings
+            - id: '2'
+              name: Unoccupied private dwellings
+            - id: '3'
+              name: Non-private dwellings
+            - id: '4'
+              name: Migratory
+            - id: '5'
+              name: Off-shore
+            - id: '6'
+              name: Shipping
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+            - id: NA
+              name: Not appliacable
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T25_LGA
+  dimensions:
+    - id: MRERD_2016
+      name: Mortgage Repayment (monthly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,400-$1,599'
+            - id: '11'
+              name: '$1,600-$1,799'
+            - id: '12'
+              name: '$1,800-$1,999'
+            - id: '13'
+              name: '$2,000-$2,199'
+            - id: '14'
+              name: '$2,200-$2,399'
+            - id: '15'
+              name: '$2,400-$2,599'
+            - id: '16'
+              name: '$2,600-$2,999'
+            - id: '17'
+              name: '$3,000-$3,999'
+            - id: '18'
+              name: '$4,000-$4,999'
+            - id: '19'
+              name: '$5,000 and over'
+            - id: Z
+              name: Not stated
+            - id: '01'
+              name: Nil repayments
+            - id: '02'
+              name: $1-$149
+            - id: '03'
+              name: $150-$299
+            - id: '04'
+              name: $300-$449
+            - id: '05'
+              name: $450-$599
+            - id: '06'
+              name: $600-$799
+            - id: '07'
+              name: $800-$999
+            - id: 08
+              name: '$1,000-$1,199'
+            - id: 09
+              name: '$1,200-$1,399'
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T25_SA
+  dimensions:
+    - id: MRERD_2016
+      name: Mortgage Repayment (monthly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '10'
+              name: '$1,400-$1,599'
+            - id: '11'
+              name: '$1,600-$1,799'
+            - id: '12'
+              name: '$1,800-$1,999'
+            - id: '13'
+              name: '$2,000-$2,199'
+            - id: '14'
+              name: '$2,200-$2,399'
+            - id: '15'
+              name: '$2,400-$2,599'
+            - id: '16'
+              name: '$2,600-$2,999'
+            - id: '17'
+              name: '$3,000-$3,999'
+            - id: '18'
+              name: '$4,000-$4,999'
+            - id: '19'
+              name: '$5,000 and over'
+            - id: Z
+              name: Not stated
+            - id: '01'
+              name: Nil repayments
+            - id: '02'
+              name: $1-$149
+            - id: '03'
+              name: $150-$299
+            - id: '04'
+              name: $300-$449
+            - id: '05'
+              name: $450-$599
+            - id: '06'
+              name: $600-$799
+            - id: '07'
+              name: $800-$999
+            - id: 08
+              name: '$1,000-$1,199'
+            - id: 09
+              name: '$1,200-$1,399'
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T26_LGA
+  dimensions:
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: RNTRD_2016
+      name: Rent (weekly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Nil payments
+            - id: '2'
+              name: $1-$74
+            - id: '3'
+              name: $75-$99
+            - id: '4'
+              name: $100-$124
+            - id: '5'
+              name: $125-$149
+            - id: '6'
+              name: $150-$174
+            - id: '7'
+              name: $175-$199
+            - id: '8'
+              name: $200-$224
+            - id: '9'
+              name: $225-$249
+            - id: '10'
+              name: $250-$274
+            - id: '11'
+              name: $275-$299
+            - id: '12'
+              name: $300-$324
+            - id: '13'
+              name: $325-$349
+            - id: '14'
+              name: $350-$374
+            - id: '15'
+              name: $375-$399
+            - id: '16'
+              name: $400-$424
+            - id: '17'
+              name: $425-$449
+            - id: '18'
+              name: $450-$549
+            - id: '19'
+              name: $550-$649
+            - id: '20'
+              name: $650-$749
+            - id: '21'
+              name: $750-$849
+            - id: '22'
+              name: $850-$949
+            - id: '23'
+              name: $950 and over
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T26_SA
+  dimensions:
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: RNTRD_2016
+      name: Rent (weekly)
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Nil payments
+            - id: '2'
+              name: $1-$74
+            - id: '3'
+              name: $75-$99
+            - id: '4'
+              name: $100-$124
+            - id: '5'
+              name: $125-$149
+            - id: '6'
+              name: $150-$174
+            - id: '7'
+              name: $175-$199
+            - id: '8'
+              name: $200-$224
+            - id: '9'
+              name: $225-$249
+            - id: '10'
+              name: $250-$274
+            - id: '11'
+              name: $275-$299
+            - id: '12'
+              name: $300-$324
+            - id: '13'
+              name: $325-$349
+            - id: '14'
+              name: $350-$374
+            - id: '15'
+              name: $375-$399
+            - id: '16'
+              name: $400-$424
+            - id: '17'
+              name: $425-$449
+            - id: '18'
+              name: $450-$549
+            - id: '19'
+              name: $550-$649
+            - id: '20'
+              name: $650-$749
+            - id: '21'
+              name: $750-$849
+            - id: '22'
+              name: $850-$949
+            - id: '23'
+              name: $950 and over
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T27_LGA
+  dimensions:
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: NEDD_2016
+      name: Type of Internet Connection
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Internet accessed from dwelling
+            - id: '2'
+              name: Internet not accessed from dwelling
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T27_SA
+  dimensions:
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: NEDD_2016
+      name: Type of Internet Connection
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '1'
+              name: Internet accessed from dwelling
+            - id: '2'
+              name: Internet not accessed from dwelling
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T28_LGA
+  dimensions:
+    - id: BEDRD_2016
+      name: Number of Bedrooms
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '0'
+              name: None (includes bedsitters)
+            - id: '1'
+              name: One bedroom
+            - id: '2'
+              name: Two bedrooms
+            - id: '3'
+              name: Three bedrooms
+            - id: '4'
+              name: Four bedrooms
+            - id: '5'
+              name: Five bedrooms
+            - id: '6'
+              name: Six bedrooms or more
+            - id: Z
+              name: Not stated
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
+
+- id: ABS_C16_T28_SA
+  dimensions:
+    - id: BEDRD_2016
+      name: Number of Bedrooms
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '0'
+              name: None (includes bedsitters)
+            - id: '1'
+              name: One bedroom
+            - id: '2'
+              name: Two bedrooms
+            - id: '3'
+              name: Three bedrooms
+            - id: '4'
+              name: Four bedrooms
+            - id: '5'
+              name: Five bedrooms
+            - id: '6'
+              name: Six bedrooms or more
+            - id: Z
+              name: Not stated
+    - id: STRD_2016
+      name: Dwelling Structure
+      values:
+        - id: TOT
+          name: Total
+          children:
+            - id: '11'
+              name: 'Separate house '
+            - id: '21'
+              name: One storey
+            - id: '22'
+              name: Two or more storeys
+            - id: '31'
+              name: In a one or two storey block
+            - id: '32'
+              name: In a three storey block
+            - id: '33'
+              name: In a four or more storey block
+            - id: '34'
+              name: Attached to a house
+            - id: '91'
+              name: Caravan
+            - id: '92'
+              name: 'Cabin, houseboat'
+            - id: '93'
+              name: 'Improved home, tent, sleepers out'
+            - id: '94'
+              name: 'House or flat attached to a shop, office, etc.'
+            - id: Z
+              name: Not stated
+    - id: STATE
+      name: State
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: TIME_PERIOD
+      name: Census Year
