@@ -98,3 +98,7 @@ From here you can create a new branch for some new changes:
 ```
 git checkout -b another-set-of-awesome-changes
 ```
+
+## Further documentation
+
+Documentation about specific catalog items is available in the [doc folder](./doc/README.md).
