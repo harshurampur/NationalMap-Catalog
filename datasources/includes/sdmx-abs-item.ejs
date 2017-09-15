@@ -173,6 +173,8 @@
                 "BPLP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T06,7_LGA/SA, only TOT and 4-digit children codes have valid data.
                 "RELP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T10_LGA/SA, only TOT and 4-digit children codes have valid data.
                 "LANP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T09_LGA/SA, only TOT and 4-digit children codes have valid data.
+                "FMCF_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T19_LGA/SA, as above. Note a different set have values to FMCF itself.
+                "HHCD_2016": ["TOT", "[0-9]{3}"], // For ABS_C16_T21_LGA/SA and ABS_C16_T23_LGA/SA, only the third (lowest) level has data.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
             },
             <% if (regionDimensionId) { %>
