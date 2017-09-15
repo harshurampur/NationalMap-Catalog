@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-09-15
+
+* Added more datasets from the 2016 Census.
+
 ### 2017-07-21-updated-2017-08-22
 
 * Fixed the URL to National Datasets -> Communications -> Radio Licenses (ACMA).
