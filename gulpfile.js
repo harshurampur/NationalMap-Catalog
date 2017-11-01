@@ -197,17 +197,17 @@ gulp.task('watch-datasource-templates', ['render-datasource-templates'], functio
 // Regenerate the anti-LGA filter in datasources/includes/lga_filter.ejs
 // Needs to be run manually every now and then.
 gulp.task('update-lga-filter', function() {
-    var requestp = require('request-promise');
-    console.log('Contacting data.gov.au');
-    return requestp({
-        url: 'https://data.gov.au/api/3/action/organization_list?all_fields=true&include_extras=true',
-        json: true
-    }).then(function(results) {
-        var filterFile = 'datasources/includes/lga_filter.ejs';
-        var r = results.result.filter( org => org.extras.filter(extra => extra.key === 'jurisdiction' && extra.value === 'Local Government').length > 0).map(org => 'organization:' + org.name);
-        fs.writeFileSync(filterFile, '<%# Generated automatically by gulpfile.js %>' + r.join(' OR '));
-        console.log('Updated filter from data.gov.au in ' + filterFile);
-    }).catch(function(e) {
-        console.error(e.message);
-    });
+    // var requestp = require('request-promise');
+    // console.log('Contacting data.gov.au');
+    // return requestp({
+    //     url: 'https://data.gov.au/api/3/action/organization_list?all_fields=true&include_extras=true',
+    //     json: true
+    // }).then(function(results) {
+    //     var filterFile = 'datasources/includes/lga_filter.ejs';
+    //     var r = results.result.filter( org => org.extras.filter(extra => extra.key === 'jurisdiction' && extra.value === 'Local Government').length > 0).map(org => 'organization:' + org.name);
+    //     fs.writeFileSync(filterFile, '<%# Generated automatically by gulpfile.js %>' + r.join(' OR '));
+    //     console.log('Updated filter from data.gov.au in ' + filterFile);
+    // }).catch(function(e) {
+    //     console.error(e.message);
+    // });
 });

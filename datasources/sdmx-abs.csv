@@ -304,6 +304,8 @@ TRUE,"['National Datasets', 'Social and Economic']",Industry of Employment,Perso
 TRUE,"['National Datasets', 'Social and Economic']",Industry of Employment,Person,,Industry of Employment,by Sex,ABS_CENSUS2011_T33_LGA,,LGA2011,TRUE,,MEASURE,,,,T,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_CENSUS2011_T33_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_CENSUS2011_T33_LGA
 TRUE,"['National Datasets', 'Social and Economic']",Occupation,Person,,Occupation,by Sex,ABS_CENSUS2011_T34,,SAx,TRUE,,MEASURE,,,{{name}}_code_2011,T,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_CENSUS2011_T34,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_CENSUS2011_T34
 TRUE,"['National Datasets', 'Social and Economic']",Occupation,Person,,Occupation,by Sex,ABS_CENSUS2011_T34_LGA,,LGA2011,TRUE,,MEASURE,,,,T,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_CENSUS2011_T34_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_CENSUS2011_T34_LGA
+FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TRUE,"['National Datasets', 'Social and Economic']",,Births and Deaths,,Aboriginal and Torres Strait Islander births,,ATSI_BIRTHS_SUMM,BIRTHS,,FALSE,['MEASURE'],,,ASGS_2011,,,ste,"['1','4','5','8','9','10','18','19','20']",,,,,,TRUE,,,
 FALSE,,,,,,,ATSI_BIRTHS_SUMM,"Aboriginal and Torres Strait Islander births and confinements, summary, by state",,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,ATSI_FERTILITY,"Aboriginal and Torres Strait Islander fertility, by age, by state",,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,ABS_ABORIGINAL_POPPROJ_INDREGION,Aboriginal and Torres Strait Islander Population Projections by Indigenous  Regions,,,,,,,,,,,,,,,,,,,
@@ -320,8 +322,8 @@ FALSE,,,,,,,BIRTHS_AGE_MOTHER,"Births, by nuptiality, by age of mother",,,,,,,,,
 FALSE,,,,,,,BIRTHS_MONTH_OCCURRENCE,"Births, by year and month of occurrence, by state",,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,BIRTHS_SUMMARY,"Births, summary, by state",,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,BA_GCCSA,Building Approvals by Greater Capital Cities Statistical Area (GCCSA) and above,,,,,,,,,,,,,,,,,,,
-,,,,,,,ABS_BLDG_APPROVALS_LGA2017,Building Approvals by Local Government Area (LGA 2017),,,,,,,,,,,,,,,,,,,
-,,,,,,,ABS_BLDG_APPROVALS_LGA2016,Building Approvals by Local Government Area (LGA 2016),,,,,,,,,,,,,,,,,,,
+FALSE,,,,,,,ABS_BLDG_APPROVALS_LGA2017,Building Approvals by Local Government Area (LGA 2017),,,,,,,,,,,,,,,,,,,
+FALSE,,,,,,,ABS_BLDG_APPROVALS_LGA2016,Building Approvals by Local Government Area (LGA 2016),,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,ABS_BA_SA2_ASGS2016,Building Approvals by Statistical Area (SA2 and above),,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,QBIS,Business Indicators,,,,,,,,,,,,,,,,,,,
 FALSE,,,,,,,CONFINEMENTS_NUPTIALITY,"Confinements, by nuptiality, by state",,,,,,,,,,,,,,,,,,,
