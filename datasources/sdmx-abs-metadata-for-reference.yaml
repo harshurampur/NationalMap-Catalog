@@ -13006,6 +13006,99 @@
     - id: TIME_PERIOD
       name: Time
 
+- id: ABS_ERP_LGA2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: ERP
+          name: Estimated Resident Population
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: FREQUENCY
+      name: FREQUENCY
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: TIME
+
+- id: ABS_ANNUAL_ERP_LGA2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: ERP
+          name: Estimated Resident Population
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: TT
+          name: All ages
+        - id: '8599'
+          name: 85 and over
+    - id: LGA_2016
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
 - id: ABS_ERP_ASGS
   dimensions:
     - id: MEASURE
