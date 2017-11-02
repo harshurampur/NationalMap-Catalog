@@ -333,8 +333,8 @@ FALSE,,,,,,,ERP_COB,"Estimated resident population, Country of birth, Age and se
 FALSE,,,,,,,ABS_ERP_COB_MAG_SEXRATIO,"Estimated resident population, Country of birth, Median age and Sex ratio - as at 30 June 1992 onwards",,,['MEASURE'],,,REGION,,,,,,,,,,,,,
 FALSE,,,,,,,FERTILITY_AGE_STATE,"Fertility, by age, by state",,,['MEASURE'],,AGE,ASGS_2011,,,ste,,,,,,,,,,
 FALSE,,,,,,,PATERNITY_AGE_STATE,"Paternity, by age, by state",,,['MEASURE'],,AGE,ASGS_2011,,,ste,,,,,,,,,,
-FALSE,,,,,,,RES_DWELL,Residential Dwellings: Unstratified Medians and Counts by Dwelling Type by GCCSA,,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
-FALSE,,,,,,,RES_PROP_INDEX,"Residential Property Price Indexes, All Series by GCCSA",,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
+TRUE,"['National Datasets', 'Social and Economic']",,Housing,,Unstratified Medians and Counts of Residential Dwellings,,RES_DWELL,,,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
+TRUE,"['National Datasets', 'Social and Economic']",,Housing,,Residential Property Price Indexes,,RES_PROP_INDEX,,,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
 FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,
 FALSE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_LGA,,LGA2016,TRUE,,SEX_ABS,AGE,LGA_2016,,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_LGA
 FALSE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_SA,,SAx,TRUE,,SEX_ABS,AGE,ASGS_2016,{{name}}_code_2016,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_SA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_SA
