@@ -152,7 +152,9 @@
                 "LANP": ["LOTE", "71", "52", "41", "65"], // For ABS_CENSUS2011_B13 and ABS_CENSUS2011_T10
                 "ENGLP": ["OTH", "SOL"],  // For ABS_CENSUS2011_B11, B12. Note T11 uses "SOL" in the MEASURE dim.
                 "WORK": ["9"],  // For ABS_BA_SA2_ASGS2016.  Actually only WORK=9 works.
+                "TYPE_WORK": ["9"],  // For ABS_BLDG_APPROVALS_LGA2016 and ABS_BLDG_APPROVALS_LGA2017
                 "BUILDING_TYPE": ["999", "100", "200", "300", "400", "700", "800"],  // For ABS_BA_SA2_ASGS2016
+                "TYPE_BLDG": ["999", "100", "200", "300", "400", "700", "800"],  // For ABS_BLDG_APPROVALS_LGA2016 and ABS_BLDG_APPROVALS_LGA2017
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
@@ -180,6 +182,7 @@
                 "HHCD_2016": ["TOT", "[0-9]{3}"], // For ABS_C16_T21_LGA/SA and ABS_C16_T23_LGA/SA, only the third (lowest) level has data.
                 "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"], // Only shows five-year ranges and totals, not individual years.
                 "BUILDING_TYPE": ["999", "100", "110", "700", "800", "850"],  // For ABS_BA_SA2_ASGS2016
+                "TYPE_BLDG": ["999", "100", "110", "700", "800", "850"],  // For ABS_BLDG_APPROVALS_LGA2016 and ABS_BLDG_APPROVALS_LGA2017
             },
             <% if (regionDimensionId) { %>
                 "regionDimensionId": "<%= regionDimensionId %>",
