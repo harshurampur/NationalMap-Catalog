@@ -306,7 +306,7 @@ TRUE,"['National Datasets', 'Social and Economic']",Occupation,Person,,Occupatio
 TRUE,"['National Datasets', 'Social and Economic']",Occupation,Person,,Occupation,by Sex,ABS_CENSUS2011_T34_LGA,,LGA2011,TRUE,,MEASURE,,,,T,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_CENSUS2011_T34_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_CENSUS2011_T34_LGA
 FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,
 TRUE,"['National Datasets', 'Social and Economic']",Aboriginal and Torres Strait Islander births,Births and Deaths,Births at Year of Registration,Aboriginal and Torres Strait Islander births,,ATSI_BIRTHS_SUMM,,,FALSE,"['MEASURE', 'INDIGENOUS_STATUS']",,,ASGS_2011,,,ste,,,,,,,TRUE,,,
-FALSE,,,,,,,ATSI_FERTILITY,"Aboriginal and Torres Strait Islander fertility, by age, by state",,FALSE,['MEASURE'],,AGE,ASGS_2011,,,,,,,,,,,,,
+FALSE,"['National Datasets', 'Social and Economic']",Aboriginal and Torres Strait Islander fertility,Births and Deaths,Fertility and Paternity,Aboriginal and Torres Strait Islander fertility,,ATSI_FERTILITY,,,FALSE,['INDIG_STATUS'],,AGE,ASGS_2011,,,ste,,,,,,,,,,
 FALSE,,,,,,,ABS_ABORIGINAL_POPPROJ_INDREGION,Aboriginal and Torres Strait Islander Population Projections by Indigenous  Regions,,FALSE,,SEX_ABS,AGE,INDIGENOUS_REGION,,,,,,,,,,,,,
 FALSE,,,,,,,ABORIGINAL_POP_PROJ_REMOTE,"Aboriginal and Torres Strait Islander Population Projections, Remoteness Area",,FALSE,,SEX_ABS,AGE,REGION,,,,,,,,,,,,,
 FALSE,,,,,,,ABORIGINAL_POP_PROJ,"Aboriginal and Torres Strait Islander Population Projections, State/Territory",,FALSE,,SEX_ABS,AGE,ASGS_2011,,,ste,,,,,,,,,,
@@ -331,10 +331,10 @@ FALSE,,,,,,,CPI,Consumer Price Index (CPI) 16th Series,,,"['MEASURE', 'TSEST']",
 FALSE,,,,,,,ABS_ERP_LGA2016,"ERP by LGA (ASGS 2016), 2001 to 2016",,,,,,LGA_2016,,,,,,,,,,,,,
 FALSE,,,,,,,ERP_COB,"Estimated resident population, Country of birth, Age and sex - as at 30 June 1992 onwards",,,,MEASURE,AGE,REGION,,,,,,,,,,,,,
 FALSE,,,,,,,ABS_ERP_COB_MAG_SEXRATIO,"Estimated resident population, Country of birth, Median age and Sex ratio - as at 30 June 1992 onwards",,,['MEASURE'],,,REGION,,,,,,,,,,,,,
-FALSE,,,,,,,FERTILITY_AGE_STATE,"Fertility, by age, by state",,,['MEASURE'],,AGE,ASGS_2011,,,ste,,,,,,,,,,
-FALSE,,,,,,,PATERNITY_AGE_STATE,"Paternity, by age, by state",,,['MEASURE'],,AGE,ASGS_2011,,,ste,,,,,,,,,,
+TRUE,"['National Datasets', 'Social and Economic']",,Births and Deaths,Fertility and Paternity,Fertility,,FERTILITY_AGE_STATE,,,,['MEASURE'],,AGE,ASGS_2011,,,ste,,,['11'],,,,,,,
+TRUE,"['National Datasets', 'Social and Economic']",,Births and Deaths,Fertility and Paternity,Paternity,,PATERNITY_AGE_STATE,,,,['MEASURE'],,AGE,ASGS_2011,,,ste,,,['12'],,,,,,,
 TRUE,"['National Datasets', 'Social and Economic']",,Housing,,Unstratified Medians and Counts of Residential Dwellings,,RES_DWELL,,,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
-TRUE,"['National Datasets', 'Social and Economic']",,Housing,,Residential Property Price Indexes,,RES_PROP_INDEX,,,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
+TRUE,"['National Datasets', 'Social and Economic']",,Housing,,Residential Property Price Index,,RES_PROP_INDEX,,,,['MEASURE'],,,ASGS_2011,,,gccsa_code_2011,,,,,,,,,,
 FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,
 FALSE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_LGA,,LGA2016,TRUE,,SEX_ABS,AGE,LGA_2016,,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_LGA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_LGA
 FALSE,"['National Datasets', 'Social and Economic']",Place of Residence on Census Night,Person,Age,Ranges,by Sex,ABS_C16_T01_SA,,SAx,TRUE,,SEX_ABS,AGE,ASGS_2016,{{name}}_code_2016,2016 Census,,,,,,,,TRUE,http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T01_SA,,http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/ABS_C16_T01_SA
