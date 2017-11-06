@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### Master
+### 2017-09-15-updated-2017-11-06
 
 * Removed from the catalog four datasets that have been taken down from the ABS SDMX-JSON service (ABS_ANNUAL_ERP_LGA2014, ABS_ERP_LGA2014, ABS_ANNUAL_ERP_LGA2015, ABS_ERP_LGA2015)
 * Added to the catalog two replacement datasets, ABS_ERP_LGA2016 and ABS_ANNUAL_ERP_LGA2016.
