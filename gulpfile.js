@@ -180,7 +180,7 @@ gulp.task('get-abs-sdmx-metadata', function() {
     const sdmxJsonDataFlow = "http://stat.data.abs.gov.au/sdmx-json/dataflow/";
     const sdmxDataStructure = "http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/";
     const ignoreJsonDimensionIds = ["TIME_PERIOD", "STATE", "REGION", "ASGS_2011", "ASGS_2016", "LGA_2011", "LGA_2013", "LGA_2014", "LGA2014",
-        "LGA_2015", "LGA_2016", "ASGS_2011_STATE_GCCSA_SA4_SA3_SA2", "ASGC_2010", "NRM_2012", "POA", "SSC"];
+        "LGA_2015", "LGA_2016", "LGA_2017", "ASGS_2011_STATE_GCCSA_SA4_SA3_SA2", "ASGC_2010", "NRM_2012", "POA", "SSC"];
     var getSdmxMetaData = require('./lib/getSdmxMetaData');
     var csv = require('./lib/ThirdParty/csv');
     var stringData = fs.readFileSync(absSdmxCsvPath, "utf8");

@@ -13006,6 +13006,99 @@
     - id: TIME_PERIOD
       name: Time
 
+- id: ABS_ERP_LGA2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: ERP
+          name: Estimated Resident Population
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
+      name: Region
+    - id: FREQUENCY
+      name: FREQUENCY
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: TIME
+
+- id: ABS_ANNUAL_ERP_LGA2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: ERP
+          name: Estimated Resident Population
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A04
+          name: 0 - 4
+        - id: A59
+          name: 5 - 9
+        - id: A10
+          name: 10 - 14
+        - id: A15
+          name: 15 - 19
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: TT
+          name: All ages
+        - id: '8599'
+          name: 85 and over
+    - id: LGA_2016
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
 - id: ABS_ERP_ASGS
   dimensions:
     - id: MEASURE
@@ -52748,6 +52841,250 @@
         - id: '999'
           name: Total
     - id: REGION
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: M
+          name: Monthly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_BLDG_APPROVALS_LGA2017
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Total number of dwelling units
+        - id: '2'
+          name: 'Total number of building jobs over $50,000'
+        - id: '3'
+          name: Total value of building jobs
+    - id: SECTOR
+      name: Sector of ownership
+      values:
+        - id: '1'
+          name: Private Sector
+        - id: '5'
+          name: Public Sector
+        - id: '9'
+          name: Total Sectors
+    - id: TYPE_WORK
+      name: Type of work
+      values:
+        - id: '1'
+          name: New
+        - id: '2'
+          name: Alterations and additions
+        - id: '7'
+          name: Conversions
+        - id: '8'
+          name: Alterations and additions including conversions
+        - id: '9'
+          name: Total Work
+    - id: TYPE_BLDG
+      name: Type of building
+      values:
+        - id: '110'
+          name: Houses
+        - id: '121'
+          name: 'Semi-detached, row or terrace houses, townhouses - One storey'
+        - id: '122'
+          name: >-
+            Semi-detached, row or terrace houses, townhouses - Two or more
+            storeys
+        - id: '120'
+          name: 'Semi-detached, row or terrace houses, townhouses - Total'
+        - id: '131'
+          name: Flats units or apartments - In a one or two storey block
+        - id: '132'
+          name: Flats units or apartments - In a three storey block
+        - id: '133'
+          name: Flats units or apartments - In a four or more storey block
+        - id: '130'
+          name: >-
+            Flats units or apartments - Total including those attached to a
+            house
+        - id: '150'
+          name: Total Other Residential
+        - id: '100'
+          name: Total Residential
+        - id: '210'
+          name: Retail and wholesale trade buildings
+        - id: '220'
+          name: Transport buildings
+        - id: '230'
+          name: Offices
+        - id: '290'
+          name: Commercial buildings n.e.c.
+        - id: '200'
+          name: Commercial Buildings - Total
+        - id: '310'
+          name: Factories and other secondary production buildings
+        - id: '320'
+          name: Warehouses
+        - id: '330'
+          name: Agricultural and aquacultural buildings
+        - id: '390'
+          name: Other industrial buildings n.e.c.
+        - id: '300'
+          name: Industrial Buildings - Total
+        - id: '410'
+          name: Education buildings
+        - id: '420'
+          name: Religion buildings
+        - id: '430'
+          name: Aged care facilities
+        - id: '440'
+          name: Health buildings
+        - id: '450'
+          name: Entertainment and recreation buildings
+        - id: '460'
+          name: Short term accommodation buildings
+        - id: '490'
+          name: Other non-residential n.e.c.
+        - id: '400'
+          name: Other Non-residential - Total
+        - id: '700'
+          name: Total Non-residential
+        - id: '800'
+          name: Dwellings excluding new residential
+        - id: '850'
+          name: Dwellings excluding houses
+        - id: '999'
+          name: Total
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2017
+              name: Local Government Areas (2017)
+    - id: LGA_2017
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: M
+          name: Monthly
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_BLDG_APPROVALS_LGA2016
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Total number of dwelling units
+        - id: '2'
+          name: 'Total number of building jobs over $50,000'
+        - id: '3'
+          name: Total value of building jobs
+    - id: SECTOR
+      name: Sector Of Ownership
+      values:
+        - id: '1'
+          name: Private Sector
+        - id: '5'
+          name: Public Sector
+        - id: '9'
+          name: Total Sectors
+    - id: TYPE_WORK
+      name: Type of Work
+      values:
+        - id: '1'
+          name: New
+        - id: '2'
+          name: Alterations and additions
+        - id: '7'
+          name: Conversions
+        - id: '8'
+          name: Alterations and additions including conversions
+        - id: '9'
+          name: Total Work
+    - id: TYPE_BLDG
+      name: Type of building
+      values:
+        - id: '110'
+          name: Houses
+        - id: '121'
+          name: 'Semi-detached, row or terrace houses, townhouses - One storey'
+        - id: '122'
+          name: >-
+            Semi-detached, row or terrace houses, townhouses - Two or more
+            storeys
+        - id: '120'
+          name: 'Semi-detached, row or terrace houses, townhouses - Total'
+        - id: '131'
+          name: Flats units or apartments - In a one or two storey block
+        - id: '132'
+          name: Flats units or apartments - In a three storey block
+        - id: '133'
+          name: Flats units or apartments - In a four or more storey block
+        - id: '130'
+          name: >-
+            Flats units or apartments - Total including those attached to a
+            house
+        - id: '150'
+          name: Total Other Residential
+        - id: '100'
+          name: Total Residential
+        - id: '210'
+          name: Retail and wholesale trade buildings
+        - id: '220'
+          name: Transport buildings
+        - id: '230'
+          name: Offices
+        - id: '290'
+          name: Commercial buildings n.e.c.
+        - id: '200'
+          name: Commercial Buildings - Total
+        - id: '310'
+          name: Factories and other secondary production buildings
+        - id: '320'
+          name: Warehouses
+        - id: '330'
+          name: Agricultural and aquacultural buildings
+        - id: '390'
+          name: Other industrial buildings n.e.c.
+        - id: '300'
+          name: Industrial Buildings - Total
+        - id: '410'
+          name: Education buildings
+        - id: '420'
+          name: Religion buildings
+        - id: '430'
+          name: Aged care facilities
+        - id: '440'
+          name: Health buildings
+        - id: '450'
+          name: Entertainment and recreation buildings
+        - id: '460'
+          name: Short term accommodation buildings
+        - id: '490'
+          name: Other non-residential n.e.c.
+        - id: '400'
+          name: Other Non-residential - Total
+        - id: '700'
+          name: Total Non-residential
+        - id: '800'
+          name: Dwellings excluding new residential
+        - id: '850'
+          name: Dwellings excluding houses
+        - id: '999'
+          name: Total
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: LGA
+          name: Local Government Areas
+          children:
+            - id: LGA2016
+              name: Local Government Areas (2016)
+    - id: LGA_2016
       name: Region
     - id: FREQUENCY
       name: Frequency

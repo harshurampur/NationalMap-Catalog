@@ -86,7 +86,8 @@
             <% } %>
             "type": "sdmx-json",
             "id": "ABS_SDMX-JSON_<%= subId %>_<%= id %>", // Give this a unique id so we can move it around in the catalog in subsequent versions and always find it.
-            "cacheDuration": "2h", // Cache data for 2 hours. Can reduce this if 11.30am data is made available within the hour.
+            "rectangle": [109, -45, 158, -8],
+            "cacheDuration": "300s", // Cache data for 5 minutes.
             <% if (regionNameTemplate) { %>
                 "regionNameTemplate": "<%= regionNameTemplate %>",
             <% } %>
@@ -143,13 +144,18 @@
                 "PERSON_LA": ["16"], // For ABS_PERSONS_PROJ
                 "LEASE_TYPE": ["3"], // For PETROLEUM_EXPLORATION
                 "ASSET": ["999"], // For CAPEX
-                "SECTOR": ["7"],  // For LABOUR_PRICE_INDEX
+                "SECTOR": ["7", "9"],  // 7 for LABOUR_PRICE_INDEX, 9 for ABS_BA_SA2_ASGS2016 - luckily 9, 7 not present in each others.
                 "VEHICLE": ["900"], // For NEWMVSALES
                 "IND_R": ["20"],  // For RT (Retail Trade)
                 "RELP": ["2"], // For ABS_CENSUS2011_B14 and T12, Religious Affiliation.
                 "ANCP": ["TOTP"], // For ABS_CENSUS2011_T09 and ABS_CENSUS2011_B08
                 "LANP": ["LOTE", "71", "52", "41", "65"], // For ABS_CENSUS2011_B13 and ABS_CENSUS2011_T10
                 "ENGLP": ["OTH", "SOL"],  // For ABS_CENSUS2011_B11, B12. Note T11 uses "SOL" in the MEASURE dim.
+                "WORK": ["9"],  // For ABS_BA_SA2_ASGS2016.  Actually only WORK=9 works.
+                "TYPE_WORK": ["9"],  // For ABS_BLDG_APPROVALS_LGA2016 and ABS_BLDG_APPROVALS_LGA2017
+                "BUILDING_TYPE": ["999", "100", "200", "300", "400", "700", "800"],  // For ABS_BA_SA2_ASGS2016
+                "TYPE_BLDG": ["999", "100", "200", "300", "400", "700", "800"],  // For ABS_BLDG_APPROVALS_LGA2016 and ABS_BLDG_APPROVALS_LGA2017
+                "PLURALITY": ["SX_6"],  // For CONFINEMENTS_PLURALITY
             },
             <% if (blacklist) { %>
                 // Include a custom blacklist.
@@ -175,7 +181,9 @@
                 "LANP_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T09_LGA/SA, only TOT and 4-digit children codes have valid data.
                 "FMCF_2016": ["TOT", "[0-9]{4}"], // For ABS_C16_T19_LGA/SA, as above. Note a different set have values to FMCF itself.
                 "HHCD_2016": ["TOT", "[0-9]{3}"], // For ABS_C16_T21_LGA/SA and ABS_C16_T23_LGA/SA, only the third (lowest) level has data.
-                "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"] // Only shows five-year ranges and totals, not individual years.
+                "<%= ageId %>": ["A[0-9]+", "T.*", "O.*"], // Only shows five-year ranges and totals, not individual years.
+                "BUILDING_TYPE": ["999", "100", "110", "700", "800", "850"],  // For ABS_BA_SA2_ASGS2016
+                "TYPE_BLDG": ["999", "100", "110", "700", "800", "850"],  // For ABS_BLDG_APPROVALS_LGA2016 and ABS_BLDG_APPROVALS_LGA2017
             },
             <% if (regionDimensionId) { %>
                 "regionDimensionId": "<%= regionDimensionId %>",
