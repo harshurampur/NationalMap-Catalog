@@ -86,7 +86,8 @@
             <% } %>
             "type": "sdmx-json",
             "id": "ABS_SDMX-JSON_<%= subId %>_<%= id %>", // Give this a unique id so we can move it around in the catalog in subsequent versions and always find it.
-            "cacheDuration": "2h", // Cache data for 2 hours. Can reduce this if 11.30am data is made available within the hour.
+            "rectangle": [109, -45, 158, -8],
+            "cacheDuration": "300s", // Cache data for 5 minutes.
             <% if (regionNameTemplate) { %>
                 "regionNameTemplate": "<%= regionNameTemplate %>",
             <% } %>
