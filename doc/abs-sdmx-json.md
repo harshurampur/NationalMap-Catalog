@@ -6,7 +6,7 @@ Ideally APIs should be fully machine-readable and "just work".
 
 Unfortunately the SDMX-JSON API needs a fair bit of customisation to work with TerriaJS. In particular:
 
-1. There is no SDMX-JSON API endpoint that lists the available datasets - so the catalog cannot self-update.
+1. There is no SDMX-JSON API endpoint that lists the available datasets - so the catalog cannot self-update. This means adding new and removing datasets is a manual process. In particular when datasets are removed from the API, they continue to appear in the NationalMap catalog, but give an error message when opened (eg. a number of LGA ERP datasets were removed in mid 2017).
 2. The datasets are not categorised in any way, so we have to define ahead of time where each one should appear in the NationalMap catalog hierarchy.
 3. SDMX-JSON does not support hierarchical dimension values (eg. Age -> 0-4 year olds -> 0,1,2,3,4 year olds). However, the datasets are organised with hierarchical dimension values; the SDMX-JSON server simply ignores that detail. As a result, a user could get very confused, eg. “Buddhism” appears three times as a religion at different levels of the "religious affiliation" hierarchy, meaning different things.
 4. The API doesn’t reliably return data for every possible value (eg. its metadata may include 0-4 years as a possibility, but it doesn't have any data).
