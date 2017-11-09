@@ -18,6 +18,8 @@ Unfortunately the SDMX-JSON API needs a fair bit of customisation to work with T
 
 The hierarchical values issue (#3) means the values for every dataset have to be checked against a more definitive SDMX (XML) source and remapped. This can't be fully automated at runtime because we also have to suppress those values for which no data will be returned (issue #4). Also, I don't want to introduce a runtime dependency on an exactly equivalent SDMX version of the data.
 
+An extra problem: the service occasionally has errors, eg. for a short period on the morning of 10 November 2017 http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T20_SA returned an html error page instead of the usual json. That's not a big problem if they are flagged as such by the service, but they are not: it returned that page with a 200 success code. That's a big problem - the internet relies on these codes, eg. for caching. In this case the error page was cached by National Map and shown for the next 2 hours, when the underlying problem was fixed much sooner.  It would also be nice if that URL did not switch from json to html in the case of an error.
+
 ## Compilation process overview
 
 The source of truth is this file: [datasources/sdmx-abs.csv](../datasources/sdmx-abs.csv).  Changes to this file are picked up by `gulp build` and incorporated into `build/nm.json`. The rows of this file are reformatted by [datasources/includes/sdmx-abs-item.ejs](../datasources/includes/sdmx-abs-item.ejs), which briefly explains the meaning of each column.
