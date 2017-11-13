@@ -18,7 +18,9 @@ Unfortunately the SDMX-JSON API needs a fair bit of customisation to work with T
 
 The hierarchical values issue (#3) means the values for every dataset have to be checked against a more definitive SDMX (XML) source and remapped. This can't be fully automated at runtime because we also have to suppress those values for which no data will be returned (issue #4). Also, I don't want to introduce a runtime dependency on an exactly equivalent SDMX version of the data.
 
-An extra problem: the service occasionally has errors, eg. for a short period on the morning of 10 November 2017 http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T20_SA returned an html error page instead of the usual json. That's not a big problem if they are flagged as such by the service, but they are not: it returned that page with a 200 success code. That's a big problem - the internet relies on these codes, eg. for caching. In this case the error page was cached by National Map and shown for the next 2 hours, when the underlying problem was fixed much sooner.  It would also be nice if that URL did not switch from json to html in the case of an error.
+## Additional issues
+- The service should return error codes when it has an error. Eg. for a short period on the morning of 10 November 2017 http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T20_SA returned an html error page, but with a 200 success code. That's a problem - the internet relies on these codes, eg. for caching (in this case the error page was cached by National Map and shown for the next 2 hours, when the underlying problem was fixed much sooner).  It would also be better if that URL did not switch from json to html in the case of an error.
+- Lack of a supported SDK for SDMX-JSON. I built TerriaJS's capability using https://github.com/airosa/sdmxjsonlib. This mostly works, but is labelled "experimental" and has not been updated in 3 years.
 
 ## Compilation process overview
 
