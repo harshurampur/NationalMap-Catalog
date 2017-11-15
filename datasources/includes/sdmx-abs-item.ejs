@@ -14,6 +14,7 @@
 // regionDimensionId: Required if the dimension id is not REGION, Eg. "ASGS_2011".
 // regionType:  The region type, eg. "aus".
 // series:      Either "B" or "T" if this is B- or T- series Census data.
+// canNotDisplayPercent:  If true, sets canDisplayPercent=false (done backwards because the default is true).
 // measureWhitelist: Eg. Labour Force MEASURE has invalid entries such as "M" for "Migration:".
 // measureTotalValueIds: Additional total fields in the MEASURE dimension, eg. for Census B12, "8" is Total dependent children.
 // measureSelectedInitially: Which values of MEASURE are selectedInitially.
@@ -99,6 +100,9 @@
             "description": <%- include("sdmx-abs-description", {"description": description, "id": id}) %>,
             <% if (hasState) { %>
                "aggregatedDimensionIds": ["STATE"],
+            <% } %>
+            <% if (canNotDisplayPercent) { %>
+                "canDisplayPercent": false,
             <% } %>
             <% if (singleValuedDimensionIds) { %>
                 "singleValuedDimensionIds": <%- JSON.stringify(singleValuedDimensionIds) %>,
