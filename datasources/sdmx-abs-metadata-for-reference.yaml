@@ -58492,3 +58492,3156 @@
       name: Region
     - id: TIME_PERIOD
       name: Census Year
+- id: ABS_LAMPS2014
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Estimated value
+        - id: '2'
+          name: Estimated count
+    - id: MGT_PRACTICE
+      name: Management Practice
+      values:
+        - id: AGLANDTOTLAHA_D
+          name: Area of holding at 30 June- Total area (ha)
+        - id: HEADER_2
+          name: Land use details
+          children:
+            - id: AGLANDGRAZEHA_D
+              name: >-
+                Land use details - Land mainly used for grazing - Total area
+                (ha)
+            - id: AGNONPROD_AHACON
+              name: >-
+                Land use details - Land set aside for conservation or protection
+                (ha)
+            - id: AGNONPROD_AHAOTH
+              name: >-
+                Land use details - Other land not used for agricultural
+                production (ha)
+            - id: AGNONPRODAHA_D
+              name: >-
+                Land use details - Total land not used for agricultural
+                production (ha)
+            - id: AGPROD_AHACRP
+              name: Land use details - Land mainly used for crops (ha)
+            - id: AGPROD_AHAGRI
+              name: >-
+                Land use details - Land mainly used for grazing on improved
+                pastures (ha)
+            - id: AGPROD_AHAGRO
+              name: >-
+                Land use details - Land mainly used for grazing on other land
+                (ha)
+            - id: AGPROD_AHACRGR_D
+              name: >-
+                Land use details - Land mainly used for cropping and improved
+                pastures - Total area (ha)
+            - id: AGPROD_AHAFOR
+              name: >-
+                Land use details - Land mainly used for forestry plantations
+                (ha)
+            - id: AGPROD_AHAOTH
+              name: >-
+                Land use details - Land mainly used for other agricultural
+                production (ha)
+        - id: HEADER_3
+          name: Land use details  (%)
+          children:
+            - id: LANDCONSERV_AOH_PC
+              name: >-
+                Land use details - Land set aside for conservation or protection
+                - Percentage (%)
+            - id: OTHLANDNOTAG_AOH_PC
+              name: >-
+                Land use details - Other land not used for agricultural
+                production - Percentage (%)
+            - id: CROPLAND_AOH_PC
+              name: Land use details - Land mainly used for crops - Percentage (%)
+            - id: GRAZIMPROV_AOH_PC
+              name: >-
+                Land use details - Land mainly used for grazing on improved
+                pastures - Percentage (%)
+            - id: GRAZOTHLAND_AOH_PC
+              name: >-
+                Land use details - Land mainly used for grazing on other land -
+                Percentage (%)
+            - id: FOREST_AOH_PC
+              name: >-
+                Land use details - Land mainly used for forestry plantations -
+                Percentage (%)
+            - id: LANDOTHAG_AOH_PC
+              name: >-
+                Land use details - Land mainly used for other agricultural
+                production - Percentage (%)
+        - id: HEADER_24
+          name: Fertiliser
+          children:
+            - id: ZZUSEDFERTASTY_D
+              name: >-
+                Fertiliser - Fertiliser applied during reference period - Yes -
+                Number of businesses (n)
+            - id: HEADER_25
+              name: Fertiliser - Fertiliser application method
+              children:
+                - id: LMFERTNITMD_D
+                  name: >-
+                    Fertiliser - Fertiliser application method - All methods -
+                    Area (ha)
+                  children:
+                    - id: LMFERTDNITBSAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Broadcast
+                        on surface - Dry nitrogen - Area (ha)
+                    - id: LMFERTLNITBSAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Broadcast
+                        on surface - Liquid nitrogen - Area (ha)
+                    - id: LMFERTDNITDBAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Drilled
+                        below surface - Dry nitrogen - Area (ha)
+                    - id: LMFERTLNITDBAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Drilled
+                        below surface - Liquid nitrogen - Area (ha)
+                    - id: LMFERTGASDBAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Drilled
+                        below surface - Gaseous nitrogen - Area (ha)
+                    - id: LMFERTNITFGATAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Fertigation
+                        - Area (ha)
+                    - id: LMFERTSPRAYNAHA
+                      name: >-
+                        Fertiliser - Fertiliser application method - Foliar
+                        spray  - Nitrogen - Area (ha)
+        - id: HEADER_26
+          name: Fertiliser - Slow release fertiliser
+          children:
+            - id: LMSLFERTAHA_D
+              name: >-
+                Fertiliser - Slow release fertiliser - Fertiliser type - All
+                types - Area (ha)
+              children:
+                - id: LMSLFERTAHANITRA
+                  name: >-
+                    Fertiliser - Slow release fertiliser - Fertiliser type -
+                    Nitrate - Area (ha)
+                - id: LMSLFERTAHAURE
+                  name: >-
+                    Fertiliser - Slow release fertiliser - Fertiliser type -
+                    Urea - Area (ha)
+                - id: LMSLFERTAHAOT
+                  name: >-
+                    Fertiliser - Slow release fertiliser - Fertiliser type -
+                    Other - Area (ha)
+                - id: LMSLFERTATONITRA
+                  name: >-
+                    Fertiliser - Slow release fertiliser - Fertiliser type -
+                    Nitrate - Weight (t)
+                - id: LMSLFERTATOURE
+                  name: >-
+                    Fertiliser - Slow release fertiliser - Fertiliser type -
+                    Urea - Weight (t)
+                - id: LMSLFERTATOOT
+                  name: >-
+                    Fertiliser - Slow release fertiliser - Fertiliser type -
+                    Other - Weight (t)
+            - id: LMSLFERTATO_D
+              name: >-
+                Fertiliser - Slow release fertiliser - Fertiliser type - All
+                types - Weight (t)
+        - id: HEADER_28
+          name: Fertiliser - Nitrification inhibitor
+          children:
+            - id: LMFINHIBAHA
+              name: >-
+                Fertiliser - Fertiliser containing nitrification inhibitor -
+                Land applied to - Area (ha)
+            - id: LMFINHIBATO
+              name: >-
+                Fertiliser - Fertiliser containing nitrification inhibitor -
+                Land applied to - Weight (t)
+            - id: LMFINHIBALT
+              name: >-
+                Fertiliser - Fertiliser containing nitrification inhibitor -
+                Land applied to - Volume (L)
+        - id: HEADER_27
+          name: Fertiliser - Nitrogen-based fertiliser
+          children:
+            - id: AGFERTTYPEAHA_D
+              name: >-
+                Fertiliser - Nitrogen-based fertiliser - Fertiliser type - All
+                types - Area applied to (ha)
+              children:
+                - id: LMFERTNITAHA_D
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied during
+                    cropping period - Total area applied to (ha)
+                - id: LMFERTNITBSAHA
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied before sowing
+                    - Area applied to (ha)
+                - id: LMFERTNITASAHA
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied after sowing
+                    - Area applied to (ha)
+                - id: LMFERTNITATO_D
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied during
+                    cropping period - Total weight applied (t)
+                - id: LMFERTNITBSATO
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied before sowing
+                    - Weight applied (t)
+                - id: LMFERTNITASATO
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied after sowing
+                    - Weight applied (t)
+                - id: LMFERTNITALT_D
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied during
+                    cropping period - Total volume applied (L)
+                - id: LMFERTNITBSALT
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied before sowing
+                    - Volume applied (L)
+                - id: LMFERTNITASALT
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser applied after sowing
+                    - Volume applied (L)
+                - id: AGFERTTYPEAHAURE
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Urea - Area applied to (ha)
+                - id: AGFERTTYPEAHAAMS
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Ammonium sulphate - Area applied to (ha)
+                - id: AGFERTTYPEAHAUAN
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Urea ammonium nitrate - Area applied to (ha)
+                - id: AGFERTTYPEAHAANA
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Anhydrous ammonia - Area applied to (ha)
+                - id: AGFERTTYPEAHAPTN
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Potassium nitrate - Area applied to (ha)
+                - id: AGFERTTYPEAHAAMP
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Ammonium phosphates - Area applied to (ha)
+                - id: AGFERTTYPEAHAONS
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Other nitrogen-based specialised blends - Area applied to
+                    (ha)
+                - id: AGFERTTYPEATOURE
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Urea - Weight applied (t)
+                - id: AGFERTTYPEATOAMS
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Ammonium sulphate - Weight applied (t)
+                - id: AGFERTTYPEATOANA
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Anhydrous ammonia - Weight applied (t)
+                - id: AGFERTTYPEATOPTN
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Potassium nitrate - Weight applied (t)
+                - id: AGFERTTYPEATOAMP
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Ammonium phosphate - Weight applied (t)
+                - id: AGFERTTYPEATOONB
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Other specialised blends - Weight applied (t)
+                - id: AGFERTTYPEALOURA
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Urea - Volume applied (L)
+                - id: AGFERTTYPEALOAMS
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Ammonium sulfate - Volume applied (L)
+                - id: AGFERTTYPEALOUAN
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Urea ammonium nitrate - Volume applied (L)
+                - id: AGFERTTYPEALOPTN
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Potassium nitrate - Volume applied (L)
+                - id: AGFERTTYPEALOAMP
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Ammonium phosphates - Volume applied (L)
+                - id: AGFERTTYPELTRONB
+                  name: >-
+                    Fertiliser - Nitrogen-based fertiliser - Fertiliser type -
+                    Other specialised blends - Volume applied (L)
+            - id: AGFERTTYPEATO_D
+              name: >-
+                Fertiliser - Nitrogen-based fertiliser - Fertiliser type - All
+                types - Weight applied (t)
+            - id: AGFERTTYPEALO_D
+              name: >-
+                Fertiliser - Nitrogen-based fertiliser - Fertiliser type - All
+                types - Volume applied (L)
+        - id: HEADER_29
+          name: 'Soil management - Soil enhancer '
+          children:
+            - id: LMSOILENHAHA_D
+              name: >-
+                Soil management - Soil enhancer - All soil enhancers - Area
+                applied to (ha)
+              children:
+                - id: LMSOILENHAHACO
+                  name: >-
+                    Soil management - Soil enhancer - Compost - Area applied to
+                    (ha)
+                - id: LMSOILENHAHAGM
+                  name: >-
+                    Soil management - Soil enhancer - Green manure - Area
+                    applied to (ha)
+                - id: LMSOILENHAHAMU
+                  name: >-
+                    Soil management - Soil enhancer - Mulch - Area applied to
+                    (ha)
+                - id: LMSOILENHAHALD
+                  name: >-
+                    Soil management - Soil enhancer - Lime and/or dolomite -
+                    Area applied to (ha)
+                - id: LMSOILENHAHAGY
+                  name: >-
+                    Soil management - Soil enhancer - Gypsum - Area applied to
+                    (ha)
+                - id: LMSOILENHAHABI
+                  name: >-
+                    Soil management - Soil enhancer - Biochar - Area applied to
+                    (ha)
+                - id: LMSOILENHAHAPM
+                  name: >-
+                    Soil management - Soil enhancer - Poultry manure - Area
+                    applied to (ha)
+                - id: LMSOILENHAHAOT
+                  name: >-
+                    Soil management - Soil enhancer - Other soil enhancers -
+                    Area applied to (ha)
+                - id: LMSOILENHATOCO
+                  name: >-
+                    Soil management - Soil enhancer - Compost - Weight applied
+                    (t)
+                - id: LMSOILENHATOMU
+                  name: Soil management - Soil enhancer - Mulch - Weight applied (t)
+                - id: LMSOILENHATOLD
+                  name: >-
+                    Soil management - Soil enhancer - Lime and/or dolomite -
+                    Weight applied (t)
+                - id: LMSOILENHATOGY
+                  name: >-
+                    Soil management - Soil enhancer - Gypsum - Weight applied
+                    (t)
+                - id: LMSOILENHATOBI
+                  name: >-
+                    Soil management - Soil enhancer - Biochar - Weight applied
+                    (t)
+                - id: LMSOILENHATOPM
+                  name: >-
+                    Soil management - Soil enhancer - Poultry manure - Weight
+                    applied (t)
+                - id: LMSOILENHATOOT
+                  name: >-
+                    Soil management - Soil enhancer - Other soil enhancers -
+                    Weight applied (t)
+                - id: LMSOILENHALTCO
+                  name: >-
+                    Soil management - Soil enhancer - Compost - Volume applied
+                    (L)
+                - id: LMSOILENHALTMU
+                  name: Soil management - Soil enhancer - Mulch - Volume applied (L)
+                - id: LMSOILENHALTLD
+                  name: >-
+                    Soil management - Soil enhancer - Lime and/or dolomite -
+                    Volume applied (L)
+                - id: LMSOILENHALTGY
+                  name: >-
+                    Soil management - Soil enhancer - Gypsum - Volume applied
+                    (L)
+                - id: LMSOILENHALTPM
+                  name: >-
+                    Soil management - Soil enhancer - Poultry manure - Volume
+                    applied (L)
+                - id: LMSOILENHALTOT
+                  name: >-
+                    Soil management - Soil enhancer - Other soil enhancers -
+                    Volume applied (L)
+            - id: LMSOILENHATO_D
+              name: >-
+                Soil management - Soil enhancer - All soil enhancers - Weight
+                applied (t)
+            - id: LMSOILENHALT_D
+              name: >-
+                Soil management - Soil enhancer - All soil enhancers - Volume
+                applied (L)
+        - id: HEADER_20
+          name: Pasture management
+          children:
+            - id: LMPAST100ANPAHA
+              name: Pasture management - Area 100 percent annual pasture - Area (ha)
+            - id: LMPEREPASAHA_D
+              name: >-
+                Pasture management - Management practices for perennial pastures
+                - All management practices - Total area (ha)
+              children:
+                - id: LMPASTANNPERAHA
+                  name: >-
+                    Pasture management - Area mix of annual and perennial
+                    pasture - Area (ha)
+                - id: LMPAST100PERAHA
+                  name: >-
+                    Pasture management - Area 100 percent perennial pasture -
+                    Area (ha)
+                - id: LMPERESCAHARAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Scarifying / harrowing then top sown - Area (ha)
+                - id: LMPERETOPOSAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Top sowing / oversowing only - Area (ha)
+                - id: LMPERESPRAYAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Spraying with herbicide - Area (ha)
+                - id: LMPERESPRTOPAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Spray topping - Area (ha)
+                - id: LMPERESLAMOWAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Slashing / mowing - Area (ha)
+                - id: LMPEREAERATAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Aerating the soil - Area (ha)
+                - id: LMPEREGRAZAHA
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Grazing - Area (ha)
+                - id: LMPEREMANAHAOT
+                  name: >-
+                    Pasture management - Management practices for perennial
+                    pastures - Other pasture management practice - Area (ha)
+        - id: HEADER_4
+          name: 'Pasture and crop cultivation '
+          children:
+            - id: LMPASTCULTPAAHA_D
+              name: >-
+                Pasture and crop cultivation - Pasture land cultivated - Total
+                area cultivated - Area (ha)
+              children:
+                - id: LMPAST1CULTPAAHA
+                  name: >-
+                    Pasture and crop cultivation - Pasture land cultivated - One
+                    cultivation - Area (ha)
+                - id: LMPAST2CULTPAAHA
+                  name: >-
+                    Pasture and crop cultivation - Pasture land cultivated - Two
+                    cultivations - Area (ha)
+                - id: LMPAST3CULTPAAHA
+                  name: >-
+                    Pasture and crop cultivation - Pasture land cultivated -
+                    Three or more cultivations - Area (ha)
+                - id: LMPAST1CULCRAHA
+                  name: >-
+                    Pasture and crop cultivation - Crop land cultivated - One
+                    cultivation - Area (ha)
+                - id: LMPAST2CULTCRAHA
+                  name: >-
+                    Pasture and crop cultivation - Crop land cultivated - Two
+                    cultivations - Area (ha)
+                - id: LMPAST3CULTCRAHA
+                  name: >-
+                    Pasture and crop cultivation - Crop land cultivated - Three
+                    or more cultivations - Area (ha)
+            - id: LMPASTNOCULPAAHA
+              name: >-
+                Pasture and crop cultivation - Pasture land cultivated - No
+                cultivation apart from sowing - Area (ha)
+            - id: LMPASTCULTCRAHA_D
+              name: >-
+                Pasture and crop cultivation - Crop land cultivated - Total area
+                cultivated - Area (ha)
+            - id: LMPASTNOCULCRAHA
+              name: >-
+                Pasture and crop cultivation - Crop land cultivated - No
+                cultivation apart from sowing - Area (ha)
+        - id: HEADER_5
+          name: Crop management - Intercropping
+          children:
+            - id: LMINTCROPNEW_D
+              name: Crop management - Intercropping - Total Area (ha)
+              children:
+                - id: LMINTCROPAHAMS
+                  name: >-
+                    Crop management - Intercropping - Mixed inter-row/strip
+                    cropping - Area (ha)
+                - id: LMINTCROPAHARE
+                  name: Crop management - Intercropping - Relay cropping - Area (ha)
+                - id: LMINTCROPAHARA
+                  name: >-
+                    Crop management - Intercropping - Row alley cropping - Area
+                    (ha)
+                - id: LMINTCROPAHACO
+                  name: Crop management - Intercropping - Cover cropping - Area (ha)
+                - id: LMINTCROPAHAPA
+                  name: >-
+                    Crop management - Intercropping - Pasture cropping - Area
+                    (ha)
+                - id: LMINTCROPAHAOT
+                  name: >-
+                    Crop management - Intercropping - Other crop management
+                    practices - Area (ha)
+            - id: LMINTCROPAHANO
+              name: >-
+                Crop management - Intercropping - No intercropping - Number of
+                businesses (n)
+        - id: HEADER_6
+          name: Crop management - Pasture used for crop rotation
+          children:
+            - id: LMCROPSOWPAST_D
+              name: >-
+                Crop management - Pasture used for crop rotation - Crop land
+                sown to pasture - Total area (ha)
+              children:
+                - id: LMCROPSOWU6AHA
+                  name: >-
+                    Crop management - Pasture used for crop rotation - Crop land
+                    sown to pasture - less than 6 months - Area (ha)
+                - id: LMCRROTAHALT6
+                  name: >-
+                    Crop management - Pasture used for crop rotation - Crop land
+                    sown to pasture - 6 months or more - Area (ha)
+        - id: HEADER_7
+          name: Crop management - Precision agriculture
+          children:
+            - id: AGCTRLTRAFAAHA
+              name: >-
+                Crop management - Precision agriculture - Controlled traffic
+                farming - Area (ha)
+            - id: LMCROPSPATAHA
+              name: >-
+                Crop management - Precision agriculture - Spatial yield
+                monitoring / mapping - Area (ha)
+            - id: LMCROPRATEAHA
+              name: >-
+                Crop management - Precision agriculture - Variable rate
+                application - Area (ha)
+            - id: ZZCROPNONEASTN
+              name: >-
+                Crop management - Precision agriculture - None undertaken -
+                Number of businesses (n)
+        - id: HEADER_8
+          name: Crop stubble/trash management
+          children:
+            - id: HEADER_9
+              name: Crop stubble/trash management - Cereals
+              children:
+                - id: LMCRSTMAHACE_DRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Cereals - Total Area (ha)
+                  children:
+                    - id: LMCRSTCBAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Cereals - Area (ha)
+                    - id: LMCRSTCBAHACE_RS_C
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Cereals - Number of businesses (n)
+                    - id: LMCRSTHBAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Cereals -
+                        Area (ha)
+                    - id: LMCRSTHBAHACE_RS_C
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Cereals -
+                        Number of businesses (n)
+                    - id: LMCRSTWLAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Cereals - Area (ha)
+                    - id: LMCRSTWLAHACE_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Cereals - Number of businesses (n)
+                    - id: LMCRSTINCAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Cereals - Area (ha)
+                    - id: LMCRSTINCAHACE_RSC
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Cereals - Number of businesses (n)
+                    - id: LMCRSTWRAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Cereals - Area (ha)
+                    - id: LMCRSTWRAHACE_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Cereals - Number of businesses (n)
+                    - id: LMCRSTRETAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Cereals - Area (ha)
+                    - id: LMCRSTRETAHACE_RSC
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Cereals - Number of businesses (n)
+                    - id: LMCRSTRSAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Cereals - Area (ha)
+                    - id: LMCRSTRSAHACE_RS_C
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Cereals - Number of businesses (n)
+                    - id: LMCRSTGOAHACE_RS
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Cereals -
+                        Area (ha)
+                    - id: LMCRSTGOAHACE_RS_C
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Cereals -
+                        Number of businesses (n)
+                    - id: LMCRSTCBAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Oilseeds - Area (ha)
+                    - id: LMCRSTCBAHAOS_RS_C
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Oilseeds - Number of businesses (n)
+                    - id: LMCRSTHBAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Oilseeds -
+                        Area (ha)
+                    - id: LMCRSTHBAHAOS_RS_C
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Oilseeds -
+                        Number of businesses (n)
+                    - id: LMCRSTWLAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Oilseeds - Area (ha)
+                    - id: LMCRSTWLAHAOS_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Oilseeds - Number of businesses (n)
+                    - id: LMCRSTINCAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Oilseeds - Area (ha)
+                    - id: LMCRSTINCAHAOS_RSC
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Oilseeds - Number of businesses (n)
+                    - id: LMCRSTWRAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Oilseeds - Area (ha)
+                    - id: LMCRSTWRAHAOS_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Oilseeds - Number of businesses (n)
+                    - id: LMCRSTRETAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Oilseeds - Area (ha)
+                    - id: LMCRSTRETAHAOS_RSC
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Oilseeds - Number of businesses (n)
+                    - id: LMCRSTRSAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Oilseeds - Area (ha)
+                    - id: LMCRSTRSAHAOS_RS_C
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Oilseeds - Number of businesses (n)
+                    - id: LMCRSTGOAHAOS_RS
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Oilseeds -
+                        Area (ha)
+                    - id: LMCRSTGOAHAOS_RS_C
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Oilseeds -
+                        Number of businesses (n)
+                    - id: LMCRSTCBAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Pulses - Area (ha)
+                    - id: LMCRSTCBAHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Pulses - Number of businesses (n)
+                    - id: LMCRSTHBAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Pulses - Area
+                        (ha)
+                    - id: LMCRSTHBAHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Pulses -
+                        Number of businesses (n)
+                    - id: LMCRSTWLAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Pulses - Area (ha)
+                    - id: LMCRSTWLAHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Pulses - Number of businesses (n)
+                    - id: LMCRSTINCHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Pulses - Area (ha)
+                    - id: LMCRSTINCHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Pulses - Number of businesses (n)
+                    - id: LMCRSTWRAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Pulses - Area (ha)
+                    - id: LMCRSTWRAHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Pulses - Number of businesses (n)
+                    - id: LMCRSTRETAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Pulses - Area (ha)
+                    - id: LMCRSTRETAHAPU_RSC
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Pulses - Number of businesses (n)
+                    - id: LMCRSTRSAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Pulses - Area (ha)
+                    - id: LMCRSTRSAHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Pulses - Number of businesses (n)
+                    - id: LMCRSTGOAHAPU_RS
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Pulses -
+                        Area (ha)
+                    - id: LMCRSTGOAHAPU_RS_C
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Pulses -
+                        Number of businesses (n)
+                    - id: LMCRSTCBAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Rice - Area (ha)
+                    - id: LMCRSTCBAHARI_RS_C
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Rice - Number of businesses (n)
+                    - id: LMCRSTHBAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Rice - Area
+                        (ha)
+                    - id: LMCRSTHBAHARI_RS_C
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Rice - Number
+                        of businesses (n)
+                    - id: LMCRSTINCAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Rice - Area (ha)
+                    - id: LMCRSTINCAHARI_RSC
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Rice - Number of businesses (n)
+                    - id: LMCRSTWRAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Rice - Area (ha)
+                    - id: LMCRSTWRAHARI_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Rice - Number of businesses (n)
+                    - id: LMCRSTRETAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Rice - Area (ha)
+                    - id: LMCRSTRETAHARI_RSC
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Rice - Number of businesses (n)
+                    - id: LMCRSTRSAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Retained standing - Rice
+                        - Area (ha)
+                    - id: LMCRSTRSAHARI_RS_C
+                      name: >-
+                        Crop stubble/trash management - Retained standing - Rice
+                        - Number of businesses (n)
+                    - id: LMCRSTGOAHARI_RS
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Rice - Area
+                        (ha)
+                    - id: LMCRSTGOAHARI_RS_C
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Rice -
+                        Number of businesses (n)
+                    - id: LMCRSTCBAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Cotton - Area (ha)
+                    - id: LMCRSTCBAHACOT_RSC
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Cotton - Number of businesses (n)
+                    - id: LMCRSTHBAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Cotton - Area
+                        (ha)
+                    - id: LMCRSTHBAHACOT_RSC
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Cotton -
+                        Number of businesses (n)
+                    - id: LMCRSTWLAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Cotton - Area (ha)
+                    - id: LMCRSTWLAHACOT_RSC
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Cotton - Number of businesses (n)
+                    - id: LMCRSTINCAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Cotton - Area (ha)
+                    - id: LMCRSTINCAHACOTRSC
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Cotton - Number of businesses (n)
+                    - id: LMCRSTWRAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Cotton - Area (ha)
+                    - id: LMCRSTWRAHACOT_RSC
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Cotton - Number of businesses (n)
+                    - id: LMCRSTRETAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Retained on ground-
+                        Cotton - Area (ha)
+                    - id: LMCRSTRETAHACOTRSC
+                      name: >-
+                        Crop stubble/trash management - Retained on ground-
+                        Cotton - Number of businesses (n)
+                    - id: LMCRSTRSAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Cotton - Area (ha)
+                    - id: LMCRSTRSAHACOT_RSC
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Cotton - Number of businesses (n)
+                    - id: LMCRSTGOAHACOT_RS
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Cotton -
+                        Area (ha)
+                    - id: LMCRSTGOAHACOT_RSC
+                      name: >-
+                        Crop stubble/trash management - Grazed off - Cotton -
+                        Number of businesses (n)
+                    - id: LMCRSTCBAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Sugar Cane - Area (ha)
+                    - id: LMCRSTCBAHASC_RS_C
+                      name: >-
+                        Crop stubble/trash management - Cool-moderate burn -
+                        Sugar Cane - Number of businesses (n)
+                    - id: LMCRSTHBAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Sugar Cane -
+                        Area (ha)
+                    - id: LMCRSTHBAHASC_RS_C
+                      name: >-
+                        Crop stubble/trash management - Hot burn - Sugar Cane -
+                        Number of businesses (n)
+                    - id: LMCRSTWLAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Sugar Cane - Area (ha)
+                    - id: LMCRSTWLAHASC_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and left -
+                        Sugar Cane - Number of businesses (n)
+                    - id: LMCRSTINCAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Sugar Cane - Area (ha)
+                    - id: LMCRSTINCAHASC_RSC
+                      name: >-
+                        Crop stubble/trash management - Incorporated into soil -
+                        Sugar Cane - Number of businesses (n)
+                    - id: LMCRSTWRAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Sugar Cane - Area (ha)
+                    - id: LMCRSTWRAHASC_RS_C
+                      name: >-
+                        Crop stubble/trash management - Windrowed and removed -
+                        Sugar Cane - Number of businesses (n)
+                    - id: LMCRSTRETAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Sugar Cane - Area (ha)
+                    - id: LMCRSTRETAHASC_RSC
+                      name: >-
+                        Crop stubble/trash management - Retained on ground -
+                        Sugar Cane - Number of businesses (n)
+                    - id: LMCRSTRSAHASC_RS
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Sugar Cane - Area (ha)
+                    - id: LMCRSTRSAHASC_RS_C
+                      name: >-
+                        Crop stubble/trash management - Retained standing -
+                        Sugar Cane - Number of businesses (n)
+                - id: LMCRSTMAHACE_CRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Cereals - Total Number of businesses (n)
+            - id: HEADER_10
+              name: Crop stubble/trash management - Oilseeds
+              children:
+                - id: LMCRSTMAHAOI_DRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Oilseeds - Total Area (ha)
+                - id: LMCRSTMAHAOI_CRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Oilseeds - Total number of businesses (n)
+            - id: HEADER_12
+              name: Crop stubble/trash management - Pulses
+              children:
+                - id: LMCRSTMAHAPU_DRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Pulses - Total Area (ha)
+                - id: LMCRSTMAHAPU_CRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Pulses - Total number of businesses (n)
+            - id: HEADER_11
+              name: Crop stubble/trash management - Rice
+              children:
+                - id: LMCRSTMAHARI_DRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Rice - Total Area (ha)
+                - id: LMCRSTMAHARI_CRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Rice - Total number of businesses (n)
+            - id: HEADER_13
+              name: Crop stubble/trash management -Cotton
+              children:
+                - id: LMCRSTMAHACO_DRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Cotton - Total Area (ha)
+                - id: LMCRSTMAHACO_CRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Cotton - Total number of businesses (n)
+            - id: HEADER_14
+              name: Crop stubble/trash management -Sugar Cane
+              children:
+                - id: LMCRSTMAHASC_DRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Sugar cane - Total Area (ha)
+                - id: LMCRSTMAHASC_CRS
+                  name: >-
+                    Crop stubble/trash management - Crop stubble/trash managed -
+                    Sugar cane - Total number of businesses (n)
+            - id: LMCRSTMTAHA_DRS
+              name: >-
+                Crop stubble/trash management - Crop stubble/trash managed -
+                Total Area (ha)
+            - id: LMCRSTMTAHA_CRS
+              name: >-
+                Crop stubble/trash management - Crop stubble/trash managed -
+                Total number of businesses (n)
+            - id: LMCRSTMCMBAHA_DRS
+              name: >-
+                Crop stubble/trash management - Cool-moderate burn - Total Area
+                (ha)
+              children:
+                - id: LMCRSTMCMBAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Cool-moderate burn - Total
+                    number of businesses (n)
+                - id: LMCRSTMHOBAHA_DRS
+                  name: Crop stubble/trash management - Hot burn - Total Area (ha)
+                - id: LMCRSTMHOBAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Hot burn - Total number of
+                    businesses (n)
+                - id: LMCRSTMWDLAHA_DRS
+                  name: >-
+                    Crop stubble/trash management - Windrowed and left - Total
+                    Area (ha)
+                - id: LMCRSTMWDLAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Windrowed and left - Total
+                    number of businesses (n)
+                - id: LMCRSTMINCSAHA_DRS
+                  name: >-
+                    Crop stubble/trash management - Incorporated into soil -
+                    Total Area (ha)
+                - id: LMCRSTMINCSAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Incorporated into soil -
+                    Total number of businesses (n)
+                - id: LMCRSTMWDRAHA_DRS
+                  name: >-
+                    Crop stubble/trash management - Windrowed and removed -
+                    Total Area (ha)
+                - id: LMCRSTMWDRAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Windrowed and removed -
+                    Total number of businesses (n)
+                - id: LMCRSTMRETGAHA_DRS
+                  name: >-
+                    Crop stubble/trash management - Retained on ground- Total
+                    Area (ha)
+                - id: LMCRSTMRETGAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Retained on ground- Total
+                    number of businesses (n)
+                - id: LMCRSTMRESAHA_DRS
+                  name: >-
+                    Crop stubble/trash management - Retained standing - Total
+                    Area (ha)
+                - id: LMCRSTMRESAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Retained standing - Total
+                    number of businesses (n)
+                - id: LMCRSTMGROAHA_DRS
+                  name: Crop stubble/trash management - Grazed off - Total Area (ha)
+                - id: LMCRSTMGROAHA_CRS
+                  name: >-
+                    Crop stubble/trash management - Grazed off - Total number of
+                    businesses (n)
+        - id: HEADER_21
+          name: Vegetation management - Land converted
+          children:
+            - id: LMCONVAHA_D
+              name: >-
+                Vegetation management - Land converted - Total conversion - Area
+                (ha)
+              children:
+                - id: LMCONVAHAC2P
+                  name: >-
+                    Vegetation management - Land converted - Crop to pasture -
+                    Area (ha)
+                - id: LMCONVAHAC2SS
+                  name: >-
+                    Vegetation management - Land converted - Crop to shrub or
+                    saltbush/mixed plant form or trees - Area (ha)
+                - id: LMCONVAHAC2MA
+                  name: >-
+                    Vegetation management - Land converted - Crop to mallee -
+                    Area (ha)
+                - id: LMCONVAHAP2C
+                  name: >-
+                    Vegetation management - Land converted - Pasture to crop -
+                    Area (ha)
+                - id: LMCONVAHAP2SSM
+                  name: >-
+                    Vegetation management - Land converted - Pasture to shrub or
+                    saltbush/mixed plant form or trees - Area (ha)
+                - id: LMCONVAHAP2MA
+                  name: >-
+                    Vegetation management - Land converted - Pasture to Mallee -
+                    Area (ha)
+                - id: LMCONVAHASSM2C
+                  name: >-
+                    Vegetation management - Land converted - Shrub or
+                    saltbush/mixed plant form or tree to crop - Area (ha)
+                - id: LMCONVAHASSM2P
+                  name: >-
+                    Vegetation management - Land converted - Shrub or
+                    saltbush/mixed plant form or tree to pasture - Area (ha)
+                - id: LMCONVAHAMA2P
+                  name: >-
+                    Vegetation management - Land converted - Mallee to pasture -
+                    Area (ha)
+                - id: LMCONVAHAOT
+                  name: >-
+                    Vegetation management - Land converted - Other conversion -
+                    Area (ha)
+        - id: HEADER_22
+          name: Vegetation management - Planting or sowing for revegetation
+          children:
+            - id: LMREVEGTOAHA_D
+              name: >-
+                Vegetation management - Planting or sowing for revegetation -
+                Total all plant types - Total area (ha)
+              children:
+                - id: LMREVEGLAHA_D
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Total all plant types - Legislative requirement - Area
+                    (ha)
+                - id: LMREVEGNLAHA_D
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Total all plant types - Non-legislative requirement - Area
+                    (ha)
+            - id: LMREVEGTOAHAMA_D
+              name: >-
+                Vegetation management - Planting or sowing for revegetation -
+                Mallee - Total area (ha)
+              children:
+                - id: LMREVEGLAHAMA
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Mallee - Legislative requirement - Area (ha)
+                - id: LMREVEGNLAHAMA
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Mallee - Non-legislative requirement - Area (ha)
+            - id: LMREVEGTOAHASS_D
+              name: >-
+                Vegetation management - Planting or sowing for revegetation -
+                Shrub or saltbush - Total area (ha)
+              children:
+                - id: LMREVEGLAHASS
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Shrub or saltbush - Legislative requirement - Area (ha)
+                - id: LMREVEGNLAHASS
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Shrub or saltbush - Non-legislative requirement - Area
+                    (ha)
+            - id: LMREVEGTOAHAP_D
+              name: >-
+                Vegetation management - Planting or sowing for revegetation -
+                Pasture/grass - Total area (ha)
+              children:
+                - id: LMREVEGLAHAP
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Pasture/grass - Legislative requirement - Area (ha)
+                - id: LMREVEGNLAHAP
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Pasture/grass - Non-legislative requirement - Area (ha)
+            - id: LMREVEGTOAHATR_D
+              name: >-
+                Vegetation management - Planting or sowing for revegetation -
+                Trees - Total area (ha)
+              children:
+                - id: LMREVEGLAHATR
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Trees - Legislative requirement - Area (ha)
+                - id: LMREVEGNLAHATR
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Trees - Non-legislative requirement - Area (ha)
+            - id: LMREVEGTOAHAMI_D
+              name: >-
+                Vegetation management - Planting or sowing for revegetation -
+                Mixed plant form - Total area (ha)
+              children:
+                - id: LMREVEGLAHAMI
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Mixed plant form - Legislative requirement - Area (ha)
+                - id: LMREVEGNLAHAMI
+                  name: >-
+                    Vegetation management - Planting or sowing for revegetation
+                    - Mixed plant form - Non-legislative requirement - Area (ha)
+        - id: HEADER_23
+          name: Vegetation management - Main purpose for revegetation
+          children:
+            - id: LMREVEGPUAHA_D
+              name: >-
+                Vegetation management - Main purpose for revegetation - Total
+                all purposes - Area (ha)
+              children:
+                - id: LMREVEGPUAHAPL
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Plantation for harvest - Area (ha)
+                - id: LMREVEGPUAHASH
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Stock shelter - Area (ha)
+                - id: LMREVEGPUAHAPR
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Protection for crop - Area (ha)
+                - id: LMREVEGPUAHAEN
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Environmental purposes - Area (ha)
+                - id: LMREVEGPUAHAOF
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Environmental purposes for an off-farm development project -
+                    Area (ha)
+                - id: LMREVEGPUAHALP
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Grazing and livestock production - Area (ha)
+                - id: LMREVEGPUAHAOT
+                  name: >-
+                    Vegetation management - Main purpose for revegetation -
+                    Other main purpose - Area (ha)
+        - id: HEADER_30
+          name: 'Animal waste management '
+          children:
+            - id: LMAWMTOTAST_D
+              name: >-
+                Animal waste management - Animal waste management method - All
+                animal waste management practices - Number of businesses (n)
+              children:
+                - id: LMAWMDRYAST_D
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Dry manure - All dry manure methods - Number of businesses
+                    (n)
+                - id: LMAWMDRYASTPIL
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Dry manure - Collected into piles then spread - Number of
+                    businesses (n)
+                - id: LMAWMDRYASTCOM_D
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Dry manure - Turned into compost - Total - Number of
+                    businesses (n)
+                - id: LMAWMDRYCASTPUL
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Dry manure - Turned into compost - Piled up and left -
+                    Number of businesses (n)
+                - id: LMAWMDRYCASTMAN
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Dry manure - Turned into compost - Actively managed - Number
+                    of businesses (n)
+                - id: LMAWMDRYASTDIG
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Dry manure - Placed in digester - Number of businesses (n)
+                - id: LMAWMWETCOVAST_D
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Wet manure flushed (covered) - All covered wet manure
+                    methods - Number of businesses (n)
+                  children:
+                    - id: LMAWMWETASTFLA
+                      name: >-
+                        Animal waste management - Animal waste management method
+                        - Wet manure flushed (covered) - Methane flared - Number
+                        of businesses (n)
+                    - id: LMAWMWETASTGEN
+                      name: >-
+                        Animal waste management - Animal waste management method
+                        - Wet manure flushed (covered) - Energy generation from
+                        methane - Number of businesses (n)
+                    - id: LMAWMWETUNCAST_D
+                      name: >-
+                        Animal waste management - Animal waste management method
+                        - Wet manure flushed (uncovered) - All uncovered wet
+                        manure methods - Number of businesses (n)
+                    - id: LMAWMWETASTSPR
+                      name: >-
+                        Animal waste management - Animal waste management method
+                        - Wet manure flushed (uncovered) - Collected and spread
+                        on property - Number of businesses (n)
+                    - id: LMAWMWETASTSEL
+                      name: >-
+                        Animal waste management - Animal waste management method
+                        - Wet manure flushed (uncovered) - Collected and removed
+                        by sale or otherwise - Number of businesses (n)
+                - id: LMAWMTRANSAST
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Transport off site - Sold or given away - Number of
+                    businesses (n)
+                - id: LMAWMPYROLAST
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Pyrolysis of manure - Number of businesses (n)
+                - id: LMAWMASTOTH
+                  name: >-
+                    Animal waste management - Animal waste management method -
+                    Other animal waste management practices - Number of
+                    businesses (n)
+        - id: HEADER_15
+          name: Sheep and cattle management - Sheep
+          children:
+            - id: LMLAMRATEANOME_C
+              name: >-
+                Sheep and cattle management - Lambing rate  - Meat ewes -
+                Average rate (per 100) - Number of businesses (n)
+            - id: LAMBING_RATE_MEAT
+              name: >-
+                Sheep and cattle management - Lambing rate  - Meat ewes -
+                Average Rate (per 100)
+            - id: LMWERATEANOME_C
+              name: >-
+                Sheep and cattle management - Weaning rate  - Meat ewes -
+                Average rate (per 100) - Number of businesses (n)
+            - id: WEANING_RATE_MEAT
+              name: >-
+                Sheep and cattle management - Weaning rate  - Meat ewes -
+                Average Rate (per 100)
+            - id: LMLAMRATEANOWE_C
+              name: >-
+                Sheep and cattle management - Lambing rate  - Wool ewes -
+                Average rate (per 100) - Number of businesses (n)
+            - id: LAMBING_RATE_WOOL
+              name: >-
+                Sheep and cattle management - Lambing rate  - Wool ewes -
+                Average Rate (per 100)
+            - id: LMWERATEANOWE_C
+              name: >-
+                Sheep and cattle management - Weaning rate  - Wool ewes -
+                Average rate (per 100) - Number of businesses (n)
+            - id: WEANING_RATE_WOOL
+              name: >-
+                Sheep and cattle management - Weaning rate  - Wool ewes -
+                Average Rate (per 100)
+            - id: LMLAMWEANONO
+              name: >-
+                Sheep and cattle management - Sheep - No lambing or weaning -
+                Number of businesses (n)
+            - id: LMLAMTOAGEAMO_C
+              name: >-
+                Sheep and cattle management - Sheep turned off - Lambs - Average
+                age - Number of businesses (n)
+              children:
+                - id: AGE_TURNED_OFF_LAMBS
+                  name: >-
+                    Sheep and cattle management - Sheep turned off - Lambs -
+                    Average age (months)
+                - id: WGT_TURNED_OFF_LAMBS
+                  name: >-
+                    Sheep and cattle management - Sheep turned off - Lambs -
+                    Average weight (kg)
+            - id: LMLAMTOWTAKG_C
+              name: >-
+                Sheep and cattle management - Sheep turned off - Lambs - Average
+                weight - Number of businesses (n)
+            - id: LMEWETOAGEMO_C
+              name: >-
+                Sheep and cattle management - Sheep turned off - Ewes - Average
+                age - Number of businesses (n)
+              children:
+                - id: AGE_TURNED_OFF_EWES
+                  name: >-
+                    Sheep and cattle management - Sheep turned off - Ewes -
+                    Average age (months)
+                - id: WGT_TURNED_OFF_EWES
+                  name: >-
+                    Sheep and cattle management - Sheep turned off - Ewes -
+                    Average weight (kg)
+            - id: LMEWETOWTAKG_C
+              name: >-
+                Sheep and cattle management - Sheep turned off - Ewes - Average
+                weight - Number of businesses (n)
+            - id: LMWETTOAGEAMO_C
+              name: >-
+                Sheep and cattle management - Sheep turned off - Wethers -
+                Average age - Number of businesses (n)
+              children:
+                - id: AGE_TURNED_OFF_WETHERS
+                  name: >-
+                    Sheep and cattle management - Sheep turned off - Wethers -
+                    Average age (months)
+                - id: WGT_TURNED_OFF_WETHERS
+                  name: >-
+                    Sheep and cattle management - Sheep turned off - Wethers -
+                    Average weight (kg)
+            - id: LMWETTOWTAKG_C
+              name: >-
+                Sheep and cattle management - Sheep turned off - Wethers -
+                Average weight - Number of businesses (n)
+            - id: LMSHEEPTOANONO
+              name: >-
+                Sheep and cattle management - Sheep turned off - No sheep turned
+                off - Number of businesses (n)
+        - id: HEADER_16
+          name: Sheep and cattle management -Cattle
+          children:
+            - id: LMCVRATEANOME_C
+              name: >-
+                Sheep and cattle management - Calving rate - Meat cows - Average
+                rate (per 100) - Number of businesses (n)
+            - id: CALVING_RATE_MEAT
+              name: >-
+                Sheep and cattle management - Calving rate - Meat cows - Average
+                rate (per 100)
+            - id: LMWNRATEANOME_C
+              name: >-
+                Sheep and cattle management - Weaning rate - Meat cows - Average
+                rate (per 100) - Number of businesses (n)
+            - id: WEANING_RATE_MEAT_COWS
+              name: >-
+                Sheep and cattle management - Weaning rate - Meat cows - Average
+                rate (per 100)
+            - id: LMCVRATEANODA_C
+              name: >-
+                Sheep and cattle management - Calving rate - Dairy cows -
+                Average rate (per 100) - Number of businesses (n)
+            - id: CALVING_RATE_DAIRY
+              name: >-
+                Sheep and cattle management - Calving rate - Dairy cows -
+                Average rate (per 100)
+            - id: LMWNRATEANODA_C
+              name: >-
+                Sheep and cattle management - Weaning rate - Dairy cows -
+                Average rate (per 100) - Number of businesses (n)
+            - id: WEANING_RATE_DAIRY
+              name: >-
+                Sheep and cattle management - Weaning rate - Dairy cows -
+                Average rate (per 100)
+            - id: LMCVWEANONO
+              name: >-
+                Sheep and cattle management - Cattle - No calving or weaning -
+                Number of businesses (n)
+            - id: LMTOAGEAMOCV_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Calves -
+                Average age - Number of businesses (n)
+              children:
+                - id: AGE_TURNED_OFF_CALVES
+                  name: >-
+                    Sheep and cattle management - Cattle turned off - Calves -
+                    Average age (months)
+                - id: WGT_TURNED_OFF_CALVES
+                  name: >-
+                    Sheep and cattle management - Cattle turned off - Calves -
+                    Average weight (kg)
+            - id: LMTOWTAKGCV_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Calves -
+                Average weight - Number of businesses (n)
+            - id: LMTOAGEAMOBU_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Bulls -
+                Average age - Number of businesses (n)
+            - id: AGE_TURNED_OFF_BULLS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Bulls -
+                Average age (months)
+            - id: LMTOWTAKGBU_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Bulls -
+                Average weight - Number of businesses (n)
+            - id: WGT_TURNED_OFF_BULLS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Bulls -
+                Average weight (kg)
+            - id: LMTOAGEAMOST_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Steers -
+                Average age - Number of businesses (n)
+            - id: AGE_TURNED_OFF_STEERS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Steers -
+                Average age (months)
+            - id: LMTOWTAKGST_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Steers -
+                Average weight - Number of businesses (n)
+            - id: WGT_TURNED_OFF_STEERS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Steers -
+                Average weight (kg)
+            - id: LMTOAGEAMOCOW_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Cows - Average
+                age - Number of businesses (n)
+            - id: AGE_TURNED_OFF_COWS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Cows - Average
+                age (months)
+            - id: LMTOWTAKGCOW_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Cows - Average
+                weight - Number of businesses (n)
+            - id: WGT_TURNED_OFF_COWS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Cows - Average
+                weight (kg)
+            - id: LMTOAGEAMOHEIF_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Heifers -
+                Average age - Number of businesses (n)
+            - id: AGE_TURNED_OFF_HEIFERS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Heifers -
+                Average age (months)
+            - id: LMTOWTAKGHEIF_C
+              name: >-
+                Sheep and cattle management - Cattle turned off - Heifers -
+                Average weight - Number of businesses (n)
+            - id: WGT_TURNED_OFF_HEIFERS
+              name: >-
+                Sheep and cattle management - Cattle turned off - Heifers -
+                Average weight (kg)
+            - id: LMCATTOANONO
+              name: >-
+                Sheep and cattle management - Cattle turned off - No cattle
+                turned off - Number of businesses (n)
+        - id: HEADER_17
+          name: Sheep and cattle management - Grazing practices
+          children:
+            - id: LMSHEPROTANOSS
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep - Set
+                stocking - Number of livestock (n)
+            - id: LMSHEPROTANORG
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep -
+                Rotational grazing - Number of livestock (n)
+            - id: LMSHEPROTANOTG
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep -
+                Tactical grazing - Number of livestock (n)
+            - id: LMSHEPROTAHASS
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep - Set
+                stocking - Area grazed (ha)
+            - id: LMSHEPROTAHARG
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep -
+                Rotational grazing - Area grazed (ha)
+            - id: LMSHEPROTAHATG
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep -
+                Tactical grazing - Area grazed (ha)
+            - id: LMSHEPROTPANOSS
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep - Set
+                stocking - Number of paddocks (n)
+            - id: LMSHEPROTPANORG
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep -
+                Rotational grazing - Number of paddocks (n)
+            - id: LMSHEPROTPANOTG
+              name: >-
+                Sheep and cattle management - Grazing practices - Sheep -
+                Tactical grazing - Number of paddocks (n)
+            - id: LMCATROTANOSS
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle - Set
+                stocking - Number of livestock (n)
+            - id: LMCATROTANORG
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle -
+                Rotational grazing - Number of livestock (n)
+            - id: LMCATROTANOTG
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle -
+                Tactical grazing - Number of livestock (n)
+            - id: LMCATROTAHASS
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle - Set
+                stocking - Area grazed (ha)
+            - id: LMCATROTAHARG
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle -
+                Rotational grazing - Area grazed (ha)
+            - id: LMCATROTAHATG
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle -
+                Tactical grazing - Area grazed (ha)
+            - id: LMCATROTPANOSS
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle - Set
+                stocking - Number of paddocks (n)
+            - id: LMCATROTPANORG
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle -
+                Rotational grazing - Number of paddocks (n)
+            - id: LMCATROTPANOTG
+              name: >-
+                Sheep and cattle management - Grazing practices - Cattle -
+                Tactical grazing - Number of paddocks (n)
+            - id: LMPRESTANODAY_C
+              name: >-
+                Sheep and cattle management - Average length of time pasture
+                rested between grazing periods - Number of businesses (n)
+            - id: DAYS_PASTURE_RESTED
+              name: >-
+                Sheep and cattle management - Average length of time pasture
+                rested between grazing periods - Average number of days (n)
+            - id: LMPRESTANONO
+              name: >-
+                Sheep and cattle management - No resting period between grazing
+                periods - Number of businesses (n)
+            - id: ZZSHCAFEEDASTN
+              name: >-
+                Sheep and cattle management - Used residual feed intake measures
+                (e.g. EBVs) for sheep or cattle to reduce methane production -
+                No - Number of businesses (n)
+            - id: ZZSHCAFEEDASTY
+              name: >-
+                Sheep and cattle management - Used residual feed intake measures
+                (e.g. EBVs) for sheep or cattle to reduce methane production -
+                Yes - Number of businesses (n)
+        - id: HEADER_19
+          name: Sheep and cattle management - Feedlots
+          children:
+            - id: ZZCATTFLOTASTN
+              name: >-
+                Sheep and cattle management - Business operated a cattle feedlot
+                for full reference period - No - Number of businesses (n)
+            - id: ZZCATTFLOTASTY
+              name: >-
+                Sheep and cattle management - Business operated a cattle feedlot
+                for full reference period - Yes - Number of businesses (n)
+              children:
+                - id: LMCATTFLOTAGEMO_C
+                  name: >-
+                    Sheep and cattle management - Average age of cattle entering
+                    feedlot - Number of businesses (n)
+                - id: AGE_CATT_ENTER_FEEDLOT
+                  name: >-
+                    Sheep and cattle management - Average age of cattle entering
+                    feedlot - Average age (months)
+                - id: LMCATTFLOTWTAKG_C
+                  name: >-
+                    Sheep and cattle management - Average weight of cattle
+                    entering feedlot - Number of businesses (n)
+                - id: WGT_CATT_ENTER_FEEDLOT
+                  name: >-
+                    Sheep and cattle management - Average weight of cattle
+                    entering feedlot - Average weight (kg)
+                - id: LMCATTFLOTTIMEDA_C
+                  name: >-
+                    Sheep and cattle management - Average time cattle spent on
+                    feedlot - Number of businesses (n)
+                - id: TIME_CATT_SPENT_FEEDLOT
+                  name: >-
+                    Sheep and cattle management - Average time cattle spent on
+                    feedlot - Average time (days)
+                - id: LMCATTFLOTWTGNKG_C
+                  name: >-
+                    Sheep and cattle management - Average liveweight gain of
+                    cattle - Number of businesses (n)
+                - id: WGT_GAIN_CATT_FEEDLOT
+                  name: >-
+                    Sheep and cattle management - Average liveweight gain of
+                    cattle - Average kilograms per day (kg)
+        - id: HEADER_18
+          name: Sheep and cattle management - Feed additives and/or supplements
+          children:
+            - id: LMFASTOTSHEP_D
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - All additives or supplements - Number of sheep supplied to (n)
+            - id: LMFASRUMENSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Rumen buffers - Number of sheep supplied to (n)
+            - id: LMFASPROPRESHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Probiotics or prebiotics - Number of sheep supplied to (n)
+            - id: LMFASANTIBIOSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Antibiotics - Number of sheep supplied to (n)
+            - id: LMFASTANNINSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Tannins - Number of sheep supplied to (n)
+            - id: LMFASNITRATSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Nitrates in lick/supplement form - Number of sheep supplied to
+                (n)
+            - id: LMFASFATOILSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                -  Feeding fats and oils - Number of sheep supplied to (n)
+            - id: LMFASLICKBSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Lick blocks and/or vitamin and mineral supplements - Number of
+                sheep supplied to (n)
+            - id: LMFASOTHFASSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Other feed additives/supplements - Number of sheep supplied to
+                (n)
+            - id: LMFASAFPSALTSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Saltbush - Number of sheep
+                supplied to (n)
+            - id: LMFASAFPEMUSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Emu bush/tar bush - Number of
+                sheep supplied to (n)
+            - id: LMFASAFPTAGASHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Tagasaste/tree lucerne - Number of
+                sheep supplied to (n)
+            - id: LMFASAFPLELSHEP
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Leucaena - Number of sheep
+                supplied to (n)
+            - id: LMFASTOTCATT_D
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - All additives or supplements - Number of cattle supplied to
+                (n)
+            - id: LMFASRUMENCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Rumen buffers - Number of cattle supplied to (n)
+            - id: LMFASPROPRECATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Probiotics or prebiotics - Number of cattle supplied to (n)
+            - id: LMFASANTIBIOCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Antibiotics - Number of cattle supplied to (n)
+            - id: LMFASTANNINCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Tannins - Number of cattle supplied to (n)
+            - id: LMFASNITRATCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Nitrates in lick/supplement form - Number of cattle supplied
+                to (n)
+            - id: LMFASFATSOILCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Feeding fats and oils - Number of cattle supplied to (n)
+            - id: LMFASLICKBCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Lick blocks and/or vitamin and mineral supplements - Number of
+                cattle supplied to (n)
+            - id: LMFASOTHFASCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Other feed additives/supplements - Number of cattle supplied
+                to (n)
+            - id: LMFASAFPSALTCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Saltbush - Number of cattle
+                supplied to (n)
+            - id: LMFASAFPEMUCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Emu bush/tar bush - Number of
+                cattle supplied to (n)
+            - id: LMFASAFPTAGACATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Tagasaste/tree lucerne - Number of
+                cattle supplied to (n)
+            - id: LMFASAFPLELCCATT
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Alternative forage plants - Leucaena - Number of cattle
+                supplied to (n)
+            - id: LMFASTOTALL_C
+              name: >-
+                Sheep and cattle management - Feed additives and/or supplements
+                - Supplied additives to sheep or cattle - Number of businesses
+                (n)
+    - id: ANZSIC
+      name: Industry
+      values:
+        - id: '0111_0112'
+          name: Nursery Production
+        - id: '0113'
+          name: Turf Growing
+        - id: '0114_0115'
+          name: Floriculture Production
+        - id: '0121'
+          name: Mushroom Growing
+        - id: '0122_0123'
+          name: Vegetable Growing
+        - id: '0131'
+          name: Grape Growing
+        - id: 0132_0133_0135_0137_0139
+          name: >-
+            Kiwifruit Growing_Berry Fruit Growing_Stone Fruit Growing_Olive
+            Growing_Other Fruit and Tree Nut Growing
+        - id: '0134'
+          name: Apple and Pear Growing
+        - id: '0136'
+          name: Citrus Fruit Growing
+        - id: '0141'
+          name: Sheep Farming (Specialised)
+        - id: '0142'
+          name: Beef Cattle Farming (Specialised)
+        - id: '0143'
+          name: Beef Cattle Feedlots (Specialised)
+        - id: '0144'
+          name: Sheep-Beef Cattle Farming
+        - id: '0145'
+          name: Grain-Sheep or Grain-Beef Cattle Farming
+        - id: '0146'
+          name: Rice Growing
+        - id: 0149
+          name: Other Grain Growing
+        - id: '0151'
+          name: Sugar Cane Growing
+        - id: '0152'
+          name: Cotton Growing
+        - id: 0159
+          name: Other Crop Growing n.e.c.
+        - id: '0160'
+          name: Dairy Cattle Farming
+        - id: '0171'
+          name: Poultry Farming (Meat)
+        - id: '0172'
+          name: Poultry Farming (Eggs)
+        - id: 0180_0191_0193_0199
+          name: Deer Farming_Horse Farming_Beekeeping_Other Livestock Farming n.e.c.
+        - id: 0192
+          name: Pig Farming
+        - id: '01'
+          name: Agriculture
+        - id: '99'
+          name: All Other Industries
+        - id: TOTAL
+          name: Total All Industries
+    - id: REGION_ACZ
+      name: Region
+      values:
+        - id: '0'
+          name: Total
+        - id: '1'
+          name: New South Wales / ACT Combined
+        - id: '2'
+          name: Victoria
+        - id: '3'
+          name: Queensland
+        - id: '4'
+          name: South Australia
+        - id: '5'
+          name: Western Australia
+        - id: '6'
+          name: Tasmania
+        - id: '7'
+          name: Northern Territory
+        - id: AAE01
+          name: Tropics
+        - id: AAE02
+          name: Tropical Coast
+        - id: AAE03
+          name: Semi Arid
+        - id: AAE04
+          name: Subtropical Plains
+        - id: AAE05
+          name: Temperate Coast South
+        - id: AAE06
+          name: Subtropical Coast
+        - id: AAE07
+          name: Wheatbelt Downs
+        - id: AAE08
+          name: Wheatbelt North
+        - id: AAE09
+          name: Subtropical Highlands
+        - id: AAE10
+          name: Temperate Coast East
+        - id: AAE11
+          name: Wheatbelt Central
+        - id: AAE12
+          name: Wheatbelt Central East
+        - id: AAE13
+          name: Temperate Highlands
+        - id: AAE14
+          name: Wheatbelt East
+        - id: AAE15
+          name: Wheatbelt West
+        - id: AAE16
+          name: Mediterranean West
+        - id: AAE17
+          name: Temperate Coast West
+        - id: AAE18
+          name: Arid
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
+
+- id: ABS_REGIONAL_ASGS2016
+  dimensions:
+    - id: MEASURE
+      name: Data item
+      values:
+        - id: POP
+          name: POPULATION AND PEOPLE
+          children:
+            - id: ERP
+              name: Estimated Resident Population - Population - As at 30 June
+              children:
+                - id: ERP_5
+                  name: Estimated Resident Population - Persons
+                  children:
+                    - id: ERP_6
+                      name: Persons - 0-14 years (%)
+                    - id: ERP_7
+                      name: Persons - 15-24 years (%)
+                    - id: ERP_8
+                      name: Persons - 25-34 years (%)
+                    - id: ERP_9
+                      name: Persons - 35-44 years (%)
+                    - id: ERP_10
+                      name: Persons - 45-54 years (%)
+                    - id: ERP_11
+                      name: Persons - 55-64 years (%)
+                    - id: ERP_12
+                      name: Persons - 65-74 years (%)
+                    - id: ERP_13
+                      name: Persons - 75-84 years (%)
+                    - id: ERP_14
+                      name: Persons - 85 years and over (%)
+                - id: ERP_M_1
+                  name: Estimated Resident Population - Males
+                  children:
+                    - id: ERP_M_2
+                      name: Males - 0-4 years (no.)
+                    - id: ERP_M_3
+                      name: Males - 5-9 years (no.)
+                    - id: ERP_M_4
+                      name: Males - 10-14 years (no.)
+                    - id: ERP_M_5
+                      name: Males - 15-19 years (no.)
+                    - id: ERP_M_6
+                      name: Males - 20-24 years (no.)
+                    - id: ERP_M_7
+                      name: Males - 25-29 years (no.)
+                    - id: ERP_M_8
+                      name: Males - 30-34 years (no.)
+                    - id: ERP_M_9
+                      name: Males - 35-39 years (no.)
+                    - id: ERP_M_10
+                      name: Males - 40-44 years (no.)
+                    - id: ERP_M_11
+                      name: Males - 45-49 years (no.)
+                    - id: ERP_M_12
+                      name: Males - 50-54 years (no.)
+                    - id: ERP_M_13
+                      name: Males - 55-59 years (no.)
+                    - id: ERP_M_14
+                      name: Males - 60-64 years (no.)
+                    - id: ERP_M_15
+                      name: Males - 65-69 years (no.)
+                    - id: ERP_M_16
+                      name: Males - 70-74 years (no.)
+                    - id: ERP_M_17
+                      name: Males - 75-79 years (no.)
+                    - id: ERP_M_18
+                      name: Males - 80-84 years (no.)
+                    - id: ERP_M_19
+                      name: Males - 85 and over (no.)
+                    - id: ERP_M_20
+                      name: Males - Total (no.)
+                    - id: ERP_19
+                      name: Median Age - Males (years)
+                - id: ERP_F_1
+                  name: Estimated Resident Population - Females
+                  children:
+                    - id: ERP_F_2
+                      name: Females - 0-4 years (no.)
+                    - id: ERP_F_3
+                      name: Females - 5-9 years (no.)
+                    - id: ERP_F_4
+                      name: Females - 10-14 years (no.)
+                    - id: ERP_F_5
+                      name: Females - 15-19 years (no.)
+                    - id: ERP_F_6
+                      name: Females - 20-24 years (no.)
+                    - id: ERP_F_7
+                      name: Females - 25-29 years (no.)
+                    - id: ERP_F_8
+                      name: Females - 30-34 years (no.)
+                    - id: ERP_F_9
+                      name: Females - 35-39 years (no.)
+                    - id: ERP_F_10
+                      name: Females - 40-44 years (no.)
+                    - id: ERP_F_11
+                      name: Females - 45-49 years (no.)
+                    - id: ERP_F_12
+                      name: Females - 50-54 years (no.)
+                    - id: ERP_F_13
+                      name: Females - 55-59 years (no.)
+                    - id: ERP_F_14
+                      name: Females - 60-64 years (no.)
+                    - id: ERP_F_15
+                      name: Females - 65-69 years (no.)
+                    - id: ERP_F_16
+                      name: Females - 70-74 years (no.)
+                    - id: ERP_F_17
+                      name: Females - 75-79 years (no.)
+                    - id: ERP_F_18
+                      name: Females - 80-84 years (no.)
+                    - id: ERP_F_19
+                      name: Females - 85 and over (no.)
+                    - id: ERP_F_20
+                      name: Females - Total (no.)
+                    - id: ERP_22
+                      name: Median Age - Females (years)
+                - id: ERP_P_1
+                  name: Estimated Resident Population - Persons
+                  children:
+                    - id: ERP_P_2
+                      name: Persons - 0-4 years (no.)
+                    - id: ERP_P_3
+                      name: Persons - 5-9 years (no.)
+                    - id: ERP_P_4
+                      name: Persons - 10-14 years (no.)
+                    - id: ERP_P_5
+                      name: Persons - 15-19 years (no.)
+                    - id: ERP_P_6
+                      name: Persons - 20-24 years (no.)
+                    - id: ERP_P_7
+                      name: Persons - 25-29 years (no.)
+                    - id: ERP_P_8
+                      name: Persons - 30-34 years (no.)
+                    - id: ERP_P_9
+                      name: Persons - 35-39 years (no.)
+                    - id: ERP_P_10
+                      name: Persons - 40-44 years (no.)
+                    - id: ERP_P_11
+                      name: Persons - 45-49 years (no.)
+                    - id: ERP_P_12
+                      name: Persons - 50-54 years (no.)
+                    - id: ERP_P_13
+                      name: Persons - 55-59 years (no.)
+                    - id: ERP_P_14
+                      name: Persons - 60-64 years (no.)
+                    - id: ERP_P_15
+                      name: Persons - 65-69 years (no.)
+                    - id: ERP_P_16
+                      name: Persons - 70-74 years (no.)
+                    - id: ERP_P_17
+                      name: Persons - 75-79 years (no.)
+                    - id: ERP_P_18
+                      name: Persons - 80-84 years (no.)
+                    - id: ERP_P_19
+                      name: Persons - 85 and over (no.)
+                    - id: ERP_P_20
+                      name: Persons - Total (no.)
+                    - id: ERP_18
+                      name: Working Age Population (aged 15-64 years)
+                    - id: ERP_23
+                      name: Median Age - Persons (years)
+            - id: ERP_20
+              name: 'Population Density '
+              children:
+                - id: ERP_21
+                  name: Population density (ERP at 30 June) (persons/km2)
+            - id: CENSUS_1
+              name: 'Aboriginal and Torres Strait Islander Peoples - Census '
+              children:
+                - id: CENSUS_2
+                  name: >-
+                    Aboriginal and Torres Strait Islander Peoples - Proportion
+                    of total population (%)
+            - id: CENSUS_3
+              name: >-
+                Overseas Born Population - Proportion of Total Population -
+                Census
+              children:
+                - id: CENSUS_4
+                  name: Born in Oceania and Antarctica (excluding Australia) (%)
+                - id: CENSUS_5
+                  name: Born in North-West Europe (%)
+                - id: CENSUS_6
+                  name: Born in Southern and Eastern Europe (%)
+                - id: CENSUS_7
+                  name: Born in North Africa and the Middle East (%)
+                - id: CENSUS_8
+                  name: Born in South-East Asia (%)
+                - id: CENSUS_9
+                  name: Born in North-East Asia (%)
+                - id: CENSUS_10
+                  name: Born in Southern and Central Asia (%)
+                - id: CENSUS_11
+                  name: Born in Americas (%)
+                - id: CENSUS_12
+                  name: Born in Sub-Saharan Africa (%)
+                - id: CENSUS_13
+                  name: Total born overseas (%)
+            - id: CENSUS_14
+              name: >-
+                Religious Affiliation - Proportion of Total Population - 2016
+                Census
+              children:
+                - id: CENSUS_15
+                  name: Buddhism (%)
+                - id: CENSUS_16
+                  name: Christianity (%)
+                - id: CENSUS_17
+                  name: Hinduism (%)
+                - id: CENSUS_18
+                  name: Islam (%)
+                - id: CENSUS_19
+                  name: Judaism (%)
+                - id: CENSUS_20
+                  name: Other Religions (%)
+                - id: CENSUS_21
+                  name: >-
+                    Secular Beliefs, Other Spiritual Beliefs and No Religious
+                    Affiliation (%)
+                - id: CENSUS_22
+                  name: >-
+                    Religious Affiliation - Inadequately described or not stated
+                    (%)
+            - id: CENSUS_23
+              name: >-
+                Year of Arrival in Australia - Proportion of Total Population -
+                Census
+              children:
+                - id: CENSUS_24
+                  name: Persons born overseas who arrived less than 5 years ago (%)
+                - id: CENSUS_25
+                  name: Persons born overseas who arrived 5 to 10 years ago (%)
+                - id: CENSUS_26
+                  name: Persons born overseas who arrived over 10 years ago (%)
+                - id: CENSUS_27
+                  name: Year of Arrival in Australia - Not stated (%)
+            - id: CENSUS_28
+              name: Australian Citizenship - Census
+              children:
+                - id: CENSUS_29
+                  name: Australian citizen (%)
+                - id: CENSUS_30
+                  name: Not an Australian citizen (%)
+                - id: CENSUS_31
+                  name: Australian Citizenship - Not stated (%)
+            - id: CENSUS_32
+              name: Speaks a Language Other Than English at Home - Census
+              children:
+                - id: CENSUS_33
+                  name: >-
+                    Speaks a Language Other Than English at Home - Proportion of
+                    total population (%)
+        - id: ECON
+          name: ECONOMY AND INDUSTRY
+          children:
+            - id: CABEE_1
+              name: Number of Businesses - As at 30 June
+              children:
+                - id: CABEE_2
+                  name: Number of non-employing businesses (no.)
+                - id: CABEE_3
+                  name: 'Number of employing businesses: 1-4 employees (no.)'
+                - id: CABEE_4
+                  name: 'Number of employing businesses: 5-19 employees (no.)'
+                - id: CABEE_38
+                  name: 'Number of employing businesses: 20 or more employees (no.)'
+                - id: CABEE_5
+                  name: Total number of businesses (no.)
+            - id: CABEE_6
+              name: Business Entries - Year ended 30 June
+              children:
+                - id: CABEE_7
+                  name: Number of non employing business entries (no.)
+                - id: CABEE_8
+                  name: 'Number of employing business entries: 1-4 employees (no.)'
+                - id: CABEE_9
+                  name: 'Number of employing business entries: 5-19 employees (no.)'
+                - id: CABEE_39
+                  name: >-
+                    Number of employing business entries: 20 or more employees
+                    (no.)
+                - id: CABEE_10
+                  name: Total number of business entries (no.)
+            - id: CABEE_11
+              name: Business Exits - Year ended 30 June
+              children:
+                - id: CABEE_12
+                  name: Number of non employing business exits (no.)
+                - id: CABEE_13
+                  name: 'Number of employing business exits: 1-4 employees (no.)'
+                - id: CABEE_14
+                  name: 'Number of employing business exits: 5-19 employees (no.)'
+                - id: CABEE_40
+                  name: >-
+                    Number of employing business exits: 20 or more employees
+                    (no.)
+                - id: CABEE_15
+                  name: Total number of business exits (no.)
+            - id: CABEE_16
+              name: Number of Businesses by Industry - As at 30 June
+              children:
+                - id: CABEE_19
+                  name: 'Agriculture, Forestry and Fishing (no.)'
+                - id: CABEE_28
+                  name: Mining (no.)
+                - id: CABEE_27
+                  name: Manufacturing (no.)
+                - id: CABEE_23
+                  name: 'Electricity, Gas, Water & Waste Services (no.)'
+                - id: CABEE_21
+                  name: Construction (no.)
+                - id: CABEE_37
+                  name: Wholesale trade (no.)
+                - id: CABEE_34
+                  name: Retail trade (no.)
+                - id: CABEE_17
+                  name: Accommodation and food services (no.)
+                - id: CABEE_36
+                  name: 'Transport, Postal and Warehousing (no.)'
+                - id: CABEE_26
+                  name: Information media and telecommunications (no.)
+                - id: CABEE_24
+                  name: Financial and insurance services (no.)
+                - id: CABEE_33
+                  name: 'Rental, Hiring, & Real Estate Services (no.)'
+                - id: CABEE_31
+                  name: Professional Scientific & Technical Services (no.)
+                - id: CABEE_18
+                  name: Administrative and support services (no.)
+                - id: CABEE_32
+                  name: Public administration and safety (no.)
+                - id: CABEE_22
+                  name: Education and training (no.)
+                - id: CABEE_25
+                  name: Health care and social assistance (no.)
+                - id: CABEE_20
+                  name: Arts and recreation services (no.)
+                - id: CABEE_30
+                  name: Other services (no.)
+                - id: CABEE_29
+                  name: Currently unknown (no.)
+                - id: CABEE_35
+                  name: Number of Businesses by Industry - Total (no.)
+            - id: BUILDING_1
+              name: Building Approvals - Year ended 30 June
+              children:
+                - id: BUILDING_2
+                  name: Private sector houses (no.)
+                - id: BUILDING_3
+                  name: Private sector dwellings excluding houses (no.)
+                - id: BUILDING_12
+                  name: Total private sector dwelling units (no.)
+                - id: BUILDING_4
+                  name: Total dwelling units (no.)
+                - id: BUILDING_5
+                  name: Value of private sector houses ($m)
+                - id: BUILDING_6
+                  name: Value of private sector dwellings excluding houses ($m)
+                - id: BUILDING_7
+                  name: Total value of private sector dwelling units ($m)
+                - id: BUILDING_8
+                  name: Value of residential building ($m)
+                - id: BUILDING_9
+                  name: Value of non-residential building ($m)
+                - id: BUILDING_10
+                  name: Value of total building ($m)
+            - id: HOUSES_1
+              name: Residential Property Prices - Year ended 30 June
+              children:
+                - id: HOUSES_2
+                  name: Houses - number of transfers (no.)
+                - id: HOUSES_3
+                  name: Houses - median sale price ($)
+                - id: HOUSES_4
+                  name: Attached Dwellings - number of transfers (no.)
+                - id: HOUSES_5
+                  name: Attached Dwellings - median sale price ($)
+            - id: PATENTS_1
+              name: Patent and Trademark Applicants - Year Ending 31 December
+              children:
+                - id: PATENTS_2
+                  name: Patent applicants (no.)
+                - id: PATENTS_3
+                  name: Trademark applicants (no.)
+            - id: INSOLV_1
+              name: Insolvencies - Year ended 30 June
+              children:
+                - id: INSOLV_2
+                  name: >-
+                    Total debtors entering business related personal
+                    insolvencies (no.)
+                - id: INSOLV_3
+                  name: >-
+                    Total debtors entering non-business related personal
+                    insolvencies (no.)
+                - id: INSOLV_4
+                  name: Total debtors entering personal insolvencies (no.)
+                - id: INSOLV_6
+                  name: >-
+                    Business related insolvencies caused by economic conditions
+                    (no.)
+                - id: INSOLV_7
+                  name: >-
+                    Non-business related insolvencies caused by excessive use of
+                    credit (no.)
+                - id: INSOLV_8
+                  name: >-
+                    Non-business related insolvencies caused by unemployment or
+                    loss of income (no.)
+                - id: INSOLV_10
+                  name: Managers (no.)
+                - id: INSOLV_11
+                  name: Professionals (no.)
+                - id: INSOLV_12
+                  name: Technicians and trades workers (no.)
+                - id: INSOLV_13
+                  name: Community and personal service workers (no.)
+                - id: INSOLV_14
+                  name: Clerical and administrative workers (no.)
+                - id: INSOLV_15
+                  name: Sales workers (no.)
+                - id: INSOLV_16
+                  name: Machinery operators and drivers (no.)
+                - id: INSOLV_17
+                  name: Labourers (no.)
+                - id: INSOLV_18
+                  name: Debtors with other or unknown occupations (no.)
+            - id: 200IND
+              name: >-
+                Registered Motor Vehicles - Number by type of vehicle -  As at
+                31 January
+              children:
+                - id: MVC_14
+                  name: Passenger vehicles (no.)
+                - id: MVC_15
+                  name: Campervans (no.)
+                - id: MVC_16
+                  name: Light commercial vehicles (no.)
+                - id: MVC_17
+                  name: Light rigid trucks (no.)
+                - id: MVC_18
+                  name: Heavy rigid trucks (no.)
+                - id: MVC_19
+                  name: Articulated trucks (no.)
+                - id: MVC_20
+                  name: Non-freight carrying trucks (no.)
+                - id: MVC_21
+                  name: Buses (no.)
+                - id: MVC_22
+                  name: Motorcycles (no.)
+            - id: MVC_34
+              name: >-
+                Registered Motor Vehicles -Year of Manufacture -  As at 31
+                January 
+              children:
+                - id: MVC_38
+                  name: Total Registered Motor Vehicles (no.)
+                - id: MVC_35
+                  name: Less than 5 years (no.)
+                - id: MVC_36
+                  name: 5 to 10 years (no.)
+                - id: MVC_37
+                  name: Over 10 years (no.)
+            - id: 400IND
+              name: >-
+                Registered Motor Vehicles - Number by type of fuel -  As at 31
+                January
+              children:
+                - id: MVC_29
+                  name: Petrol (no.)
+                - id: MVC_30
+                  name: Diesel (no.)
+                - id: MVC_31
+                  name: LPG/Dual/Other (no.)
+                - id: MVC_33
+                  name: Electric (no.)
+            - id: TOURIST_1
+              name: Tourist Accommodation Establishments - As at 30 June
+              children:
+                - id: TOURIST_2
+                  name: Establishments with 15 or more rooms (no.)
+            - id: AGRIC_1
+              name: Agricultural Commodities - Year ended 30 June
+              children:
+                - id: AGRIC_3
+                  name: Area of holding - Total area (ha)
+                - id: AGRIC_5
+                  name: Vegetables for human consumption - Total area (ha)
+                - id: AGRIC_6
+                  name: >-
+                    Fruit and nuts - Orchard fruit and nut trees - Total area
+                    (ha)
+                - id: AGRIC_10
+                  name: Dairy cattle - Total (no.)
+                - id: AGRIC_11
+                  name: Meat cattle - Total (no.)
+                - id: AGRIC_12
+                  name: Sheep - Total (no.)
+                - id: AGRIC_13
+                  name: Pigs - Total (no.)
+                - id: AGRIC_19
+                  name: Meat chickens - Total (no.)
+                - id: AGRIC_20
+                  name: Broadacre crops - total area (ha)
+            - id: AGRIC_14
+              name: Gross Value of Agricultural Production - Year ended 30 June
+              children:
+                - id: AGRIC_15
+                  name: Agricultural production  - Total gross value ($m)
+                - id: AGRIC_16
+                  name: Crops - Total gross value ($m)
+                - id: AGRIC_17
+                  name: >-
+                    Livestock - Livestock slaughtered and other disposals -
+                    Total gross value ($m)
+            - id: EMP_IND_1
+              name: Industry of Employment - Proportion of Employed Persons - Census
+              children:
+                - id: EMP_IND_2
+                  name: 'Agriculture, Forestry and Fishing (%)'
+                - id: EMP_IND_3
+                  name: Mining (%)
+                - id: EMP_IND_4
+                  name: Manufacturing  (%)
+                - id: EMP_IND_5
+                  name: 'Electricity, Gas, Water & Waste Services (%)'
+                - id: EMP_IND_6
+                  name: Construction (%)
+                - id: EMP_IND_7
+                  name: Wholesale trade (%)
+                - id: EMP_IND_8
+                  name: Retail trade (%)
+                - id: EMP_IND_9
+                  name: Accommodation and food services (%)
+                - id: EMP_IND_10
+                  name: 'Transport, Postal and Warehousing (%)'
+                - id: EMP_IND_11
+                  name: Information media and telecommunications (%)
+                - id: EMP_IND_12
+                  name: Financial and insurance services (%)
+                - id: EMP_IND_13
+                  name: 'Rental, Hiring, & Real Estate Services (%)'
+                - id: EMP_IND_14
+                  name: Professional Scientific & Technical Services (%)
+                - id: EMP_IND_15
+                  name: Administrative and support services (%)
+                - id: EMP_IND_16
+                  name: Public administration and safety (%)
+                - id: EMP_IND_17
+                  name: Education and training (%)
+                - id: EMP_IND_18
+                  name: Health care and social assistance (%)
+                - id: EMP_IND_19
+                  name: Arts and recreation services (%)
+                - id: EMP_IND_20
+                  name: Other services (%)
+                - id: EMP_IND_21
+                  name: Total persons employed (no.)
+        - id: INC
+          name: INCOME (INCLUDING GOVERNMENT ALLOWANCES)
+          children:
+            - id: INCOME_1
+              name: Estimates of Personal Income - Year ended 30 June
+              children:
+                - id: INCOME_4
+                  name: Employee income earners (no.)
+                - id: INCOME_20
+                  name: Employee income earners - median age (years)
+                - id: INCOME_3
+                  name: Total employee income ($)
+                - id: INCOME_2
+                  name: Median employee income ($)
+                - id: INCOME_21
+                  name: Mean employee income ($)
+                - id: INCOME_22
+                  name: Employee income as main source of income (%)
+                - id: INCOME_7
+                  name: Own unincorporated business income earners (no.)
+                - id: INCOME_23
+                  name: >-
+                    Own unincorporated business income earners - median age
+                    (years)
+                - id: INCOME_6
+                  name: Total own unincorporated business income ($)
+                - id: INCOME_5
+                  name: Median own unincorporated business income ($)
+                - id: INCOME_24
+                  name: Mean own unincorporated business income ($)
+                - id: INCOME_25
+                  name: >-
+                    Own unincorporated business income as main source of income
+                    (%)
+                - id: INCOME_10
+                  name: Investment income earners (no.)
+                - id: INCOME_26
+                  name: Investment income earners - median age (years)
+                - id: INCOME_9
+                  name: Total investment income ($)
+                - id: INCOME_8
+                  name: Median investment income ($)
+                - id: INCOME_27
+                  name: Mean investment income ($)
+                - id: INCOME_28
+                  name: Investment income as main source of income (%)
+                - id: INCOME_13
+                  name: Superannuation and annuity income earners (no.)
+                - id: INCOME_29
+                  name: >-
+                    Superannuation and annuity income earners - median age
+                    (years)
+                - id: INCOME_12
+                  name: Total superannuation and annuity income ($)
+                - id: INCOME_11
+                  name: Median superannuation and annuity income ($)
+                - id: INCOME_30
+                  name: Mean superannuation and annuity income ($)
+                - id: INCOME_31
+                  name: >-
+                    Superannuation and annuity income as main source of income
+                    (%)
+                - id: INCOME_16
+                  name: >-
+                    Other income earners (excl. Government pensions and
+                    allowances) (no.)
+                - id: INCOME_32
+                  name: >-
+                    Other income earners (excl. Government pensions and
+                    allowances) - median age (years)
+                - id: INCOME_15
+                  name: >-
+                    Total other income (excl. Government pensions and
+                    allowances) ($)
+                - id: INCOME_14
+                  name: >-
+                    Median other income (excl. Government pensions and
+                    allowances) ($)
+                - id: INCOME_33
+                  name: >-
+                    Mean other income (excl. Government pensions and allowances)
+                    ($)
+                - id: INCOME_34
+                  name: >-
+                    Other income (excl. Government pensions and allowances) as
+                    main source of income (%)
+                - id: INCOME_19
+                  name: >-
+                    Total income earners (excl. Government pensions and
+                    allowances) (no.)
+                - id: INCOME_35
+                  name: >-
+                    Total income earners (excl. Government pensions and
+                    allowances) - median age (years)
+                - id: INCOME_18
+                  name: Total income (excl. Government pensions and allowances) ($)
+                - id: INCOME_17
+                  name: >-
+                    Median total income (excl. Government pensions and
+                    allowances) ($)
+                - id: INCOME_36
+                  name: >-
+                    Mean total income (excl. Government pensions and allowances)
+                    ($)
+                - id: INCOME_37
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    P80/P20 ratio
+                - id: INCOME_38
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    P80/P50 ratio
+                - id: INCOME_39
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    P20/P50 ratio
+                - id: INCOME_40
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    P10/P50 ratio
+                - id: INCOME_41
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Gini coefficient
+                - id: INCOME_42
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Income share of top 1% of earners
+                - id: INCOME_43
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Income share of top 5% of earners
+                - id: INCOME_44
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Income share of top 10% of earners
+                - id: INCOME_45
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Lowest Quartile (%)
+                - id: INCOME_46
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Second Quartile (%)
+                - id: INCOME_47
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Third Quartile (%)
+                - id: INCOME_48
+                  name: >-
+                    Total income (excl. Government pensions and allowances) -
+                    Highest Quartile (%)
+            - id: CAPGAINS
+              name: Gross Capital Gains reported by taxpayers - Year ended 30 June
+              children:
+                - id: CAPGAINS_1
+                  name: Gross Capital Gains reported by taxpayers - Persons (no.)
+                - id: CAPGAINS_2
+                  name: Gross Capital Gains reported by taxpayers - Amount ($m)
+                - id: CAPGAINS_3
+                  name: Gross Capital Gains reported by taxpayers  - Median ($)
+                - id: CAPGAINS_4
+                  name: Gross Capital Gains reported by taxpayers - Mean ($)
+            - id: PENSION_1
+              name: Selected Government Pensions and Allowances - As at 30 June
+              children:
+                - id: PENSION_2
+                  name: Age Pension - Centrelink (no.)
+                - id: PENSION_3
+                  name: Age Pension - DVA (no.)
+                - id: PENSION_4
+                  name: Service Pension - DVA (no.)
+                - id: PENSION_5
+                  name: Income Support Supplement - DVA (no.)
+                - id: PENSION_6
+                  name: Carer Payment (no.)
+                - id: PENSION_7
+                  name: Disability Support Pension (no.)
+                - id: PENSION_8
+                  name: Newstart Allowance (no.)
+                - id: PENSION_9
+                  name: >-
+                    Newstart Allowance - on income support more than 365 days
+                    (%)
+                - id: PENSION_10
+                  name: Parenting Payment - Single (no.)
+                - id: PENSION_11
+                  name: Youth Allowance (Full time students/apprentices) (no.)
+                - id: PENSION_12
+                  name: Youth Allowance (Other) (no.)
+                - id: PENSION_13
+                  name: Family Tax Benefit A (no.)
+                - id: PENSION_14
+                  name: Family Tax Benefit B (no.)
+                - id: PENSION_15
+                  name: Total Family Tax Benefit recipients (no.)
+            - id: PERSINC_1
+              name: >-
+                Total Personal Income (Weekly) - Persons over 15 years - 2016
+                Census
+              children:
+                - id: PERSINC_2
+                  name: Persons earning $1-$499 per week (%)
+                - id: PERSINC_3
+                  name: Persons earning $500-$999 per week (%)
+                - id: PERSINC_4
+                  name: Persons earning $1000-$1999 per week (%)
+                - id: PERSINC_5
+                  name: Persons earning $2000-$2999 per week (%)
+                - id: PERSINC_6
+                  name: Persons earning $3000 or more per week (%)
+                - id: PERSINC_7
+                  name: Persons earning nil income (%)
+                - id: PERSINC_8
+                  name: Persons with a negative income (%)
+            - id: EQUIV_1
+              name: >-
+                Equivalised Total Household Income - Family, Lone Person and
+                Group Households - Census
+              children:
+                - id: EQUIV_2
+                  name: Median equivalised total household income (weekly)  ($)
+        - id: EDU
+          name: EDUCATION AND EMPLOYMENT
+          children:
+            - id: PRESCH_1
+              name: Children Enrolled in a Preschool Program - As at 1 July
+              children:
+                - id: PRESCH_2
+                  name: 4 year olds enrolled in preschool (no.)
+                - id: PRESCH_3
+                  name: 5 year olds enrolled in preschool (no.)
+                - id: PRESCH_5
+                  name: Total enrolled in preschool (no.)
+                - id: PRESCH_6
+                  name: >-
+                    Enrolled in preschool program within a long day care centre
+                    (no.)
+                - id: PRESCH_7
+                  name: Children enrolled across more than one provider type (no.)
+                - id: PRESCH_8
+                  name: Total enrolled in a preschool program (no.)
+            - id: PRESCH_9
+              name: Children Attending a Preschool Program - As at 1 July
+              children:
+                - id: PRESCH_10
+                  name: Children attending preschool for less than 15 hours (no.)
+                - id: PRESCH_11
+                  name: Children attending preschool for 15 hours or more (no.)
+            - id: SCHOOL_1
+              name: >-
+                Persons with Post School Qualifications - Persons aged 15 years
+                and over - Census 
+              children:
+                - id: SCHOOL_2
+                  name: With Post School Qualifications (%)
+                - id: SCHOOL_3
+                  name: With Postgraduate Degree (%)
+                - id: SCHOOL_4
+                  name: With Graduate Diploma/Graduate Certificate (%)
+                - id: SCHOOL_5
+                  name: With Bachelor Degree (%)
+                - id: SCHOOL_6
+                  name: With Advanced Diploma/Diploma (%)
+                - id: SCHOOL_7
+                  name: With Certificate (%)
+                - id: SCHOOL_8
+                  name: >-
+                    Post School Qualifications - Inadequately described, not
+                    stated (%)
+            - id: HELP_1
+              name: Higher Education Loan Program (HELP) Repayments
+              children:
+                - id: HELP_2
+                  name: >-
+                    Taxpayers with Higher Education Loan Program (HELP)
+                    repayment (no.)
+            - id: HIGH_1
+              name: >-
+                Highest Year of School Completed - Persons aged 15 years and
+                over - Census
+              children:
+                - id: HIGH_2
+                  name: Completed Year 12 or equivalent (%)
+                - id: HIGH_3
+                  name: Completed Year 11 or equivalent (%)
+                - id: HIGH_4
+                  name: Completed Year 10 or equivalent (%)
+                - id: HIGH_5
+                  name: Completed Year 9 or equivalent (%)
+                - id: HIGH_6
+                  name: Completed Year 8 or below (%)
+                - id: HIGH_7
+                  name: Did not go to school (%)
+                - id: HIGH_8
+                  name: Highest Year of School Completed - Not stated (%)
+            - id: EMP_OCC_1
+              name: Occupation of Employed Persons - as % of Total Employed - Census
+              children:
+                - id: EMP_OCC_2
+                  name: Managers (%)
+                - id: EMP_OCC_3
+                  name: Professionals (%)
+                - id: EMP_OCC_4
+                  name: Technicians and trades workers (%)
+                - id: EMP_OCC_5
+                  name: Community and personal service workers (%)
+                - id: EMP_OCC_6
+                  name: Clerical and administrative workers (%)
+                - id: EMP_OCC_7
+                  name: Sales workers (%)
+                - id: EMP_OCC_8
+                  name: Machinery operators and drivers (%)
+                - id: EMP_OCC_9
+                  name: Labourers (%)
+                - id: EMP_OCC_10
+                  name: Occupation of Employed Persons - Inadequately described (%)
+            - id: YOUTH_1
+              name: Youth (15-19 Years) Engagement in Work/Study - Census
+              children:
+                - id: YOUTH_2
+                  name: Working full-time and studying part-time (%)
+                - id: YOUTH_3
+                  name: Working part time and studying part-time (%)
+                - id: YOUTH_4
+                  name: Working part-time and studying full-time (%)
+                - id: YOUTH_5
+                  name: Working full-time (not studying) (%)
+                - id: YOUTH_6
+                  name: Studying full-time (not working) (%)
+                - id: YOUTH_7
+                  name: Working full-time and studying full-time (%)
+                - id: YOUTH_8
+                  name: Fully engaged (%)
+                - id: YOUTH_9
+                  name: Total persons aged 15-19 years (no.)
+            - id: LF_1
+              name: Labour Force Status - Persons aged 15 years and over - Census
+              children:
+                - id: LF_2
+                  name: Labour Force (no. )
+                - id: LF_3
+                  name: Unemployed (no. )
+                - id: LF_4
+                  name: Unemployment rate (%)
+                - id: LF_5
+                  name: Participation rate (%)
+        - id: HEAL
+          name: HEALTH AND DISABILITY
+          children:
+            - id: DISAB_1
+              name: Disability Estimates (modelled) - 2012
+              children:
+                - id: DISAB_2
+                  name: Persons with a disability living in private dwellings (no.)
+                - id: DISAB_3
+                  name: Persons with a disability living in private dwellings (%)
+            - id: HEALTH_1
+              name: >-
+                Selected Health Characteristics (modelled) - Persons over 18
+                years living in private dwellings - 2011-12 & 2014-15
+              children:
+                - id: HEALTH_2
+                  name: Males who are current smokers (no.)
+                - id: HEALTH_3
+                  name: Males who are current smokers (%)
+                - id: HEALTH_4
+                  name: Females who are current smokers (no.)
+                - id: HEALTH_5
+                  name: Females who are current smokers (%)
+                - id: HEALTH_6
+                  name: >-
+                    Persons with high or very high psychological distress, based
+                    on the Kessler 10 (K10) scale (no.)
+                - id: HEALTH_7
+                  name: >-
+                    Persons with high or very high psychological distress, based
+                    on the Kessler 10 (K10) scale (%)
+                - id: HEALTH_8
+                  name: Persons with fair or poor self-assessed health (no.)
+                - id: HEALTH_9
+                  name: Persons with fair or poor self-assessed health (%)
+                - id: HEALTH_10
+                  name: >-
+                    Persons who had high blood pressure (measured
+                    systolic/diastolic blood pressure was equal to or greater
+                    than 140/90 mmHg) (no.)
+            - id: PRIVATE_1
+              name: Private Health
+              children:
+                - id: PRIVATE_2
+                  name: Taxpayers who report having private health insurance (no.)
+            - id: ACTIV_1
+              name: Core Activity Need for Assistance - Census
+              children:
+                - id: ACTIV_2
+                  name: >-
+                    Persons who have need for assistance with core activities
+                    (%)
+        - id: FAM
+          name: FAMILY AND COMMUNITY
+          children:
+            - id: GIFTS1
+              name: Gifts/donations reported by taxpayers
+              children:
+                - id: GIFTS2
+                  name: Gifts/donations reported by taxpayers - Persons (no.)
+                - id: GIFTS3
+                  name: Gifts/donations reported by taxpayers - Median ($)
+            - id: WORK_TRAV_1
+              name: Method of Travel to Work - Employed Persons - Census
+              children:
+                - id: WORK_TRAV_3
+                  name: Used one method - Train or tram (no.)
+                - id: WORK_TRAV_4
+                  name: Used one method - Bus (no.)
+                - id: WORK_TRAV_5
+                  name: Used one method - Car (as driver or passenger) (no.)
+                - id: WORK_TRAV_6
+                  name: Used one method - Motor bike/scooter (no.)
+                - id: WORK_TRAV_7
+                  name: Used one method - Bicycle (no.)
+                - id: WORK_TRAV_8
+                  name: Used one method - Other (inc. taxis) (no.)
+                - id: WORK_TRAV_9
+                  name: Used one method - Walked only (no.)
+                - id: WORK_TRAV_10
+                  name: Used one method - Total - used one method (no.)
+                - id: WORK_TRAV_12
+                  name: Total - used more than one method (no. )
+                - id: WORK_TRAV_14
+                  name: Other - Worked from home (no.)
+                - id: WORK_TRAV_15
+                  name: Other - Employed but did not go to work (no.)
+                - id: WORK_TRAV_16
+                  name: Other - Method of travel not stated (no.)
+                - id: WORK_TRAV_17
+                  name: Total employed (no.)
+            - id: HHTYPE_1
+              name: Households by Type - Census
+              children:
+                - id: HHTYPE_2
+                  name: Lone person households (no.)
+                - id: HHTYPE_3
+                  name: Group households (no.)
+                - id: HHTYPE_4
+                  name: Family households (no.)
+                - id: HHTYPE_5
+                  name: Total households (no.)
+                - id: HHTYPE_6
+                  name: Average household size (no. of persons)
+            - id: FAMILY_1
+              name: Families by Type - Census
+              children:
+                - id: FAMILY_2
+                  name: >-
+                    Couple families with children under 15 and/or dependent
+                    students (no.)
+                - id: FAMILY_3
+                  name: Couple families with non-dependent children only (no.)
+                - id: FAMILY_4
+                  name: Couple families without children (no.)
+                - id: FAMILY_5
+                  name: >-
+                    One parent families with children under 15 and/or dependent
+                    students (no.)
+                - id: FAMILY_6
+                  name: One parent families with non-dependent children only (no.)
+                - id: FAMILY_7
+                  name: Other families (no.)
+                - id: FAMILY_8
+                  name: Total families (no.)
+                - id: FAMILY_9
+                  name: Average family size (no. of persons)
+            - id: MARRIAGE_1
+              name: >-
+                Social Marital Status & Registered Marital Status - Persons aged
+                15 years and over - Census
+              children:
+                - id: MARRIAGE_2
+                  name: Married in a registered marriage (no.)
+                - id: MARRIAGE_3
+                  name: Married in a de facto marriage (no.)
+                - id: MARRIAGE_4
+                  name: Not married (no.)
+                - id: MARRIAGE_5
+                  name: Married (%)
+                - id: MARRIAGE_6
+                  name: Never Married (%)
+                - id: MARRIAGE_7
+                  name: Widowed (%)
+                - id: MARRIAGE_8
+                  name: Divorced (%)
+                - id: MARRIAGE_9
+                  name: Separated (%)
+            - id: INTERNET_1
+              name: Access to Internet at Home - Occupied Private Dwellings - Census
+              children:
+                - id: INTERNET_2
+                  name: Dwellings with internet access (%)
+                - id: INTERNET_3
+                  name: Dwellings with no internet access (%)
+            - id: RENT_1
+              name: Rent and Mortgage Payments - Census
+              children:
+                - id: RENT_2
+                  name: Average monthly household rental payment ($)
+                - id: RENT_3
+                  name: Average monthly household mortgage payment ($)
+            - id: CHILDCAR_1
+              name: >-
+                Unpaid Child Care - Proportion of persons aged 15 years and over
+                - Census
+              children:
+                - id: CHILDCAR_2
+                  name: Persons who did not provide child care (%)
+                - id: CHILDCAR_3
+                  name: Persons who cared for own child/children (%)
+                - id: CHILDCAR_4
+                  name: Persons who cared for other child/children (%)
+                - id: CHILDCAR_5
+                  name: >-
+                    Persons who cared for own child/children and other
+                    child/children (%)
+                - id: CHILDCAR_6
+                  name: Unpaid Child Care - Not stated (%)
+            - id: UNPAIDW_1
+              name: >-
+                Unpaid Work - Proportion of total population aged 15 years and
+                over - Census
+              children:
+                - id: UNPAIDW_2
+                  name: >-
+                    Persons who provided unpaid assistance to a person with a
+                    disability (%)
+                - id: UNPAIDW_3
+                  name: >-
+                    Persons undertaking voluntary work for an organisation or
+                    group (%)
+                - id: UNPAIDW_4
+                  name: >-
+                    Persons providing unpaid care, help or assistance to others
+                    (%)
+            - id: CHILD_1
+              name: Count of All Children in Family - Census
+              children:
+                - id: CHILD_2
+                  name: Average number of all children in a family
+            - id: HOUSE_1
+              name: >-
+                Housing Suitability - Numbers of occupied private dwellings -
+                Census
+              children:
+                - id: HOUSE_2
+                  name: Dwellings with extra bedrooms needed (no.)
+                - id: HOUSE_3
+                  name: Dwellings with bedrooms spare (no.)
+                - id: HOUSE_4
+                  name: Dwellings with no bedrooms needed or spare (no.)
+            - id: DWELL_1
+              name: Dwelling Structure - Numbers of private dwellings - Census
+              children:
+                - id: DWELL_2
+                  name: Separate house (no.)
+                - id: DWELL_3
+                  name: 'Semi-detached, row or terrace house, townhouse etc. (no.)'
+                - id: DWELL_4
+                  name: Flat or apartment (no.)
+                - id: DWELL_5
+                  name: Other dwelling (no.)
+            - id: TENURE_1
+              name: Tenure Type - Occupied private dwellings - Census
+              children:
+                - id: TENURE_2
+                  name: Owned Outright (%)
+                - id: TENURE_3
+                  name: Owned with a mortgage (%)
+                - id: TENURE_4
+                  name: Rented (%)
+                - id: TENURE_5
+                  name: Being occupied rent free (%)
+        - id: ENV
+          name: LAND AND ENVIRONMENT
+          children:
+            - id: LAND
+              name: Land Area (Ha)
+            - id: WATER_1
+              name: Water Use on Australian Farms - Year ended 30 June
+              children:
+                - id: WATER_2
+                  name: Area of agricultural land (ha)
+                - id: WATER_3
+                  name: Area irrigated (ha)
+                - id: WATER_4
+                  name: Volume of water applied (ML)
+                - id: WATER_7
+                  name: Application rate - Total area watered and used (ML/ha)
+            - id: PROTECTED_AREA_1
+              name: Protected Areas - Year ended 30 June
+              children:
+                - id: PROTECTED_AREA_2
+                  name: Indigenous Protected Area (no.)
+                - id: PROTECTED_AREA_3
+                  name: National Parks (no.)
+                - id: PROTECTED_AREA_4
+                  name: Nature Reserves (no.)
+                - id: PROTECTED_AREA_5
+                  name: All Other Protected Areas (no.)
+                - id: PROTECTED_AREA_6
+                  name: Protected Areas - Total (no.)
+                - id: PROTECTED_AREA_7
+                  name: Indigenous Protected Area (ha)
+                - id: PROTECTED_AREA_8
+                  name: National Parks (ha)
+                - id: PROTECTED_AREA_9
+                  name: Nature Reserves (ha)
+                - id: PROTECTED_AREA_10
+                  name: All Other Protected Areas (ha)
+                - id: PROTECTED_AREA_11
+                  name: Protected Areas -Total (ha)
+                - id: PROTECTED_AREA_12
+                  name: Indigenous Protected Area (%)
+                - id: PROTECTED_AREA_13
+                  name: National Parks (%)
+                - id: PROTECTED_AREA_14
+                  name: Nature Reserves (%)
+                - id: PROTECTED_AREA_15
+                  name: All Other Protected Areas (%)
+                - id: PROTECTED_AREA_16
+                  name: Protected Areas - Total (%)
+            - id: SOLAR_1
+              name: Solar Installations - Accumulative totals as at 2014 & 2015
+              children:
+                - id: SOLAR_2
+                  name: Small-scale solar panel system installations (no.)
+                - id: SOLAR_3
+                  name: Increase in installations from previous year (%)
+                - id: SOLAR_4
+                  name: Solar water heater installations (no.)
+                - id: SOLAR_5
+                  name: Increase in SWH installations from previous year (%)
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: SA4
+          name: Statistical Area Level 4
+        - id: SA3
+          name: Statistical Area Level 3
+        - id: SA2
+          name: Statistical Area Level 2
+        - id: GCCSA
+          name: Greater Capital City Statistical Areas
+    - id: ASGS_2016
+      name: Region
+    - id: FREQUENCY
+      name: Frequency
+      values:
+        - id: A
+          name: Annual
+    - id: TIME_PERIOD
+      name: Time
