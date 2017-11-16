@@ -14,7 +14,7 @@
 // regionDimensionId: Required if the dimension id is not REGION, Eg. "ASGS_2011".
 // regionType:  The region type, eg. "aus".
 // series:      Either "B" or "T" if this is B- or T- series Census data.
-// cannotBeSummed
+// cannotSum
 // measureWhitelist: Eg. Labour Force MEASURE has invalid entries such as "M" for "Migration:".
 // measureTotalValueIds: Additional total fields in the MEASURE dimension, eg. for Census B12, "8" is Total dependent children.
 // measureSelectedInitially: Which values of MEASURE are selectedInitially.
@@ -101,8 +101,8 @@
             <% if (hasState) { %>
                "aggregatedDimensionIds": ["STATE"],
             <% } %>
-            <% if (cannotBeSummed) { %>
-                "cannotBeSummed": <%- JSON.stringify(cannotBeSummed) %>,
+            <% if (cannotSum) { %>
+                "cannotSum": <%- JSON.stringify(cannotSum) %>,
             <% } %>
             <% if (singleValuedDimensionIds) { %>
                 "singleValuedDimensionIds": <%- JSON.stringify(singleValuedDimensionIds) %>,
