@@ -6,17 +6,23 @@ Ideally APIs should be fully machine-readable and "just work".
 
 Unfortunately the SDMX-JSON API needs a fair bit of customisation to work with TerriaJS. In particular:
 
-1. There is no SDMX-JSON API endpoint that lists the available datasets - so the catalog cannot self-update.
+1. There is no SDMX-JSON API endpoint that lists the available datasets - so the catalog cannot self-update. This means adding new and removing datasets is a manual process. In particular when datasets are removed from the API, they continue to appear in the NationalMap catalog, but give an error message when opened (eg. a number of LGA ERP datasets were removed in mid 2017).
 2. The datasets are not categorised in any way, so we have to define ahead of time where each one should appear in the NationalMap catalog hierarchy.
 3. SDMX-JSON does not support hierarchical dimension values (eg. Age -> 0-4 year olds -> 0,1,2,3,4 year olds). However, the datasets are organised with hierarchical dimension values; the SDMX-JSON server simply ignores that detail. As a result, a user could get very confused, eg. “Buddhism” appears three times as a religion at different levels of the "religious affiliation" hierarchy, meaning different things.
-4. The API doesn’t reliably return data for every possible value (eg. its metadata may include 0-4 years as a possibility, but it doesn't have any data).
+4. The API doesn’t reliably return data for every possible value (eg. its metadata may include 0-4 years as a possibility, but it doesn't have any data). Eg. the metadata for [DEATHS_AGESPECIFIC_REGISTRATIONYEAR](http://stat.data.abs.gov.au/sdmx-json/dataflow/DEATHS_AGESPECIFIC_REGISTRATIONYEAR) says AGE can take both the value TOT (for total) or TT (for "all ages"), but only the latter has any data. (This is an unusually bad case, as the [XML](http://stat.data.abs.gov.au/restsdmx/sdmx.ashx/GetDataStructure/DEATHS_AGESPECIFIC_REGISTRATIONYEAR) does not list either as a parent, so there is also no way to detect that either should be considered a total.)
 5. When the API doesn't have any data, instead of returning no data, it returns badly formed JSON.
 6. The region dimension is identified inconsistently across datasets.
 7. Some datasets have an extra STATE dimension that needs to be aggregated over explicitly.
 8. Some datasets have dimensions with values like "GDP (market exchange rates)", "GDP (PPP)", "GDP (USD)". These are alternatives, not values you can add together. This is not indicated in the SDMX-JSON.
-9. There is no explanatory description of the dataset in the SDMX-JSON.
+9. The user often wants to see the results as a percentage of the regional total, and there is a checkbox for this in NationalMap. Eg. if AGE is a dimension with a "total" defined, and you are showing 45-64 year olds, you can display the results divided by the totals in each region. However, this is only appropriate for counts; it is not meaningful for rates or averages. Some datasets only show rates; others have another dimension (eg. "MEASURE") which dictates whether the result is a total count or a rate. It would be useful if the SDMX-JSON data could flag whether the returned data corresponds to a count, so that it makes sense to offer the user the option to show the result as a percentage of the region totals.
+10. There is no explanatory description of the dataset in the SDMX-JSON.
 
 The hierarchical values issue (#3) means the values for every dataset have to be checked against a more definitive SDMX (XML) source and remapped. This can't be fully automated at runtime because we also have to suppress those values for which no data will be returned (issue #4). Also, I don't want to introduce a runtime dependency on an exactly equivalent SDMX version of the data.
+
+## Additional issues
+- The service should return error codes when it has an error. Eg. for a short period on the morning of 10 November 2017 http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_C16_T20_SA returned an html error page, but with a 200 success code. That's a problem - the internet relies on these codes, eg. for caching (in this case the error page was cached by National Map and shown for the next 2 hours, when the underlying problem was fixed much sooner).  It would also be better if that URL did not switch from json to html in the case of an error.
+- Lack of a supported SDK for SDMX-JSON. I built TerriaJS's capability using https://github.com/airosa/sdmxjsonlib. This mostly works, but is labelled "experimental" and has not been updated in 3 years.
+- The titles the ABS has given to the values often include plain-text references to footnotes, eg. (a), at the end of the text, which are not suitable to display to users. An example is "Total responses(c)" at [this link](http://stat.data.abs.gov.au/sdmx-json/dataflow/ABS_CENSUS2011_B08), where "(c)" is not defined anywhere in the response. I have added a flag which searches for these references and suppresses them.
 
 ## Compilation process overview
 

@@ -2,11 +2,16 @@
 Change Log
 ==========
 
-### 2017-09-15-updated-2017-11-06
+### 2017-11-??
+
+* Added items for the response and participation in the Australian Marriage Law Postal Survey to the catalog.
+
+### 2017-11-09
 
 * Removed six datasets from the catalog that have been taken down from the ABS SDMX-JSON service (ABS_ERP_LGA, ABS_ANNUAL_ERP_LGA, ABS_ANNUAL_ERP_LGA2014, ABS_ERP_LGA2014, ABS_ANNUAL_ERP_LGA2015, ABS_ERP_LGA2015)
 * Added two replacement datasets to the catalog, ABS_ERP_LGA2016 and ABS_ANNUAL_ERP_LGA2016.
 * Added ATSI_BIRTHS_SUMM, ATSI_FERTILITY, ABS_BLDG_APPROVALS_LGA2016, ABS_BA_SA2_ASGS2016, CONFINEMENTS_NUPTIALITY, CONFINEMENTS_PLURALITY, FERTILITY_AGE_STATE, PATERNITY_AGE_STATE, RES_DWELL, RES_PROP_INDEX.
+* Fix broken link in Broadband layer descriptions and add some text explaining that the data is historical.
 
 ### 2017-09-15
 
