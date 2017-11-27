@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-11-21
+
+* Added `Land Management Practices Survey 2013-2014` and `Land Use - Agricultural Commodities 2011-2016` datasets to the `National Datasets` -> `Land` -> `Agriculture and Mining` group.
+
 ### 2017-11-09
 
 * Removed six datasets from the catalog that have been taken down from the ABS SDMX-JSON service (ABS_ERP_LGA, ABS_ANNUAL_ERP_LGA, ABS_ANNUAL_ERP_LGA2014, ABS_ERP_LGA2014, ABS_ANNUAL_ERP_LGA2015, ABS_ERP_LGA2015)
