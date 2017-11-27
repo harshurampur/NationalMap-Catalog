@@ -420,7 +420,7 @@
     "measureSelectedInitially": null,
     "blacklist": null,
     "cannotSum": null,
-    "description": "This table counts persons where they were staying on Census Night. It also shows the number of persons who were visiting away from their usual residence on Census Night.\r"
+    "description": "This table counts persons where they were staying on Census Night. It also shows the number of persons who were visiting away from their usual residence on Census Night.\r\n"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
     "outerGroups": [
@@ -448,7 +448,7 @@
     "measureSelectedInitially": null,
     "blacklist": null,
     "cannotSum": null,
-    "description": "This table counts persons where they were staying on Census Night. It also shows the number of persons who were visiting away from their usual residence on Census Night.\r"
+    "description": "This table counts persons where they were staying on Census Night. It also shows the number of persons who were visiting away from their usual residence on Census Night.\r\n"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
     "outerGroups": [
@@ -476,7 +476,7 @@
     "measureSelectedInitially": null,
     "blacklist": null,
     "cannotSum": null,
-    "description": "This table counts persons where they were staying on Census Night. It also shows the number of persons who were visiting away from their usual residence on Census Night.\r"
+    "description": "This table counts persons where they were staying on Census Night. It also shows the number of persons who were visiting away from their usual residence on Census Night.\r\n"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
     "outerGroups": [
@@ -4999,7 +4999,7 @@
     "nameOutsideCatalog": null,
     "group": "Agriculture and Mining",
     "subgroup": null,
-    "name": "Land Management Practices Survey",
+    "name": "Land Management Practices Survey 2011-2012",
     "bys": null,
     "id": "ABS_LAMPS",
     "subId": null,
@@ -5023,8 +5023,43 @@
         "HEADER_.+"
       ]
     },
-    "cannotSum": null,
-    "description": "This dataset presents detailed information on agricultural land management practices used on Australian farms, using data collected from the 2011-12 Land Management Practices Survey (LaMPS). Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/4630.0Explanatory%20Notes12011-12?OpenDocument)."
+    "cannotSum": "This dataset presents detailed information on agricultural land management practices used on Australian farms, using data collected from the 2011-12 Land Management Practices Survey (LaMPS). Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/4630.0Explanatory%20Notes12011-12?OpenDocument).\\n\\nNote that ACT is included in the NSW figures.\\n\\n",
+    "description": null
+        }) %>,
+        <%- include("../datasources/includes/sdmx-abs-item", {
+    "outerGroups": [
+      "National Datasets",
+      "Land"
+    ],
+    "nameOutsideCatalog": null,
+    "group": "Agriculture and Mining",
+    "subgroup": null,
+    "name": "Land Management Practices Survey 2013-2014",
+    "bys": null,
+    "id": "ABS_LAMPS2014",
+    "subId": null,
+    "geoType": null,
+    "hasState": null,
+    "singleValuedDimensionIds": [
+      "MEASURE",
+      "MGT_PRACTICE"
+    ],
+    "sexId": null,
+    "ageId": null,
+    "regionDimensionId": "REGION_ACZ",
+    "regionNameTemplate": null,
+    "series": null,
+    "regionType": "ste",
+    "measureWhitelist": null,
+    "measureTotalValueIds": null,
+    "measureSelectedInitially": null,
+    "blacklist": {
+      "MGT_PRACTICE": [
+        "HEADER_.+"
+      ]
+    },
+    "cannotSum": "This dataset presents detailed information on agricultural land management practices used on Australian farms, using data collected from the 2013-2014 Land Management Practices Survey (LaMPS). Explanatory notes are available [here](http://www.abs.gov.au/Ausstats/abs@.nsf/Previousproducts/4627.0Explanatory%20Notes12013-14). \\n\\nNote that ACT is included in the NSW figures.\\n\\n",
+    "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
     "outerGroups": [
@@ -5921,6 +5956,42 @@
     },
     "cannotSum": null,
     "description": "Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1379.0.55.001Explanatory%20Notes12009-13?OpenDocument)."
+        }) %>,
+        <%- include("../datasources/includes/sdmx-abs-item", {
+    "outerGroups": [
+      "National Datasets",
+      "Land"
+    ],
+    "nameOutsideCatalog": null,
+    "group": "Agriculture and Mining",
+    "subgroup": null,
+    "name": "Land Use - Agricultural Commodities 2011-2016",
+    "bys": null,
+    "id": "ABS_REGIONAL_ASGS2016",
+    "subId": "AGRIC",
+    "geoType": "SAx",
+    "hasState": null,
+    "singleValuedDimensionIds": [
+      "MEASURE"
+    ],
+    "sexId": null,
+    "ageId": null,
+    "regionDimensionId": "ASGS_2016",
+    "regionNameTemplate": "{{name}}_code_2016",
+    "series": null,
+    "regionType": null,
+    "measureWhitelist": [
+      "AGRIC_.*"
+    ],
+    "measureTotalValueIds": null,
+    "measureSelectedInitially": null,
+    "blacklist": {
+      "MEASURE": [
+        "AGRIC_[12]"
+      ]
+    },
+    "cannotSum": "Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1379.0.55.001Explanatory%20Notes12009-13?OpenDocument).",
+    "description": null
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
     "outerGroups": [
@@ -10072,7 +10143,7 @@
     ],
     "blacklist": null,
     "cannotSum": null,
-    "description": "The following information is drawn from the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n\\n\r\rThe Treasurer, under the Census and Statistics Act 1905, directed the Australian Statistician to collect and publish statistical information from all eligible Australians on the Commonwealth Electoral Roll, about their views on whether or not the law should be changed to allow same-sex couples to marry.\\n\\n\r\rThe survey asked just one question: Should the law be changed to allow same-sex couples to marry?\\n\\n\r\rSurvey materials were mailed to eligible Australians on the Commonwealth Electoral Roll over a two week period from 13 to 25 September 2017. Requests for replacement forms were available from 25 September to 20 October 2017. Eligible Australians were encouraged to complete the survey using the instructions provided and mail it back straight away.\\n\\n\r\rAll survey responses had to be received by 6pm on 7 November 2017.\\n\\n\r\r#### Definitions\\n\r- *Federal Electoral Divisions* - Federal Electoral Divisions are administered by the Australian Electoral Commission. They are legally prescribed geographic areas of Australia represented by a member of parliament elected at a House of Representatives election. The Divisions used in the Australian Marriage Law Postal Survey are the current Federal Electoral Divisions as at 24 August 2017.  Federal Electoral Divisions do not cross State and Territory borders. Note that Jervis Bay Territory is included in the Australian Capital Territory Division of Fenner, the Territory of Norfolk Island is included in the Australian Capital Territory Division of Canberra and the Territories of Christmas Island and Cocos (Keeling) Islands are included in the Northern Territory Division of Lingiari.\\n\r- *Eligible participants* - Eligible participants are those enrolled on the Commonwealth Electoral Roll, or those who made a legitimate application for enrolment, by midnight on 24 August 2017 and were eligible to vote in a federal election as at 24 August 2017.\\n\r- *Participation* - Participating in the survey means returning a survey response on a paper form, the online form or on the telephone. In some cases the response was unclear and therefore did not contribute to the yes/no outcome.\\n\r- *Response* - The responses were 'Yes' or 'No' as well as 'Response not clear' where the intended response was not able to be determined.\\n\r- *Response clear* - A clear response is recorded where the markings on the form can be clearly identified as indicating yes or no to the survey question.\\n\r- *Response not clear* - Responses where there is not a clear 'Yes' or 'No' recorded. This includes (but is not limited to) forms where both boxes have been ticked, where there is no marks on the form (blank response) or where the question has been changed to make the answer unclear.\\n\r\r#### Further information\\n\rFurther information about the survey and the results is available at the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n\\n"
+    "description": "The following information is drawn from the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n\\n\r\n\r\nThe Treasurer, under the Census and Statistics Act 1905, directed the Australian Statistician to collect and publish statistical information from all eligible Australians on the Commonwealth Electoral Roll, about their views on whether or not the law should be changed to allow same-sex couples to marry.\\n\\n\r\n\r\nThe survey asked just one question: Should the law be changed to allow same-sex couples to marry?\\n\\n\r\n\r\nSurvey materials were mailed to eligible Australians on the Commonwealth Electoral Roll over a two week period from 13 to 25 September 2017. Requests for replacement forms were available from 25 September to 20 October 2017. Eligible Australians were encouraged to complete the survey using the instructions provided and mail it back straight away.\\n\\n\r\n\r\nAll survey responses had to be received by 6pm on 7 November 2017.\\n\\n\r\n\r\n#### Definitions\\n\r\n- *Federal Electoral Divisions* - Federal Electoral Divisions are administered by the Australian Electoral Commission. They are legally prescribed geographic areas of Australia represented by a member of parliament elected at a House of Representatives election. The Divisions used in the Australian Marriage Law Postal Survey are the current Federal Electoral Divisions as at 24 August 2017.  Federal Electoral Divisions do not cross State and Territory borders. Note that Jervis Bay Territory is included in the Australian Capital Territory Division of Fenner, the Territory of Norfolk Island is included in the Australian Capital Territory Division of Canberra and the Territories of Christmas Island and Cocos (Keeling) Islands are included in the Northern Territory Division of Lingiari.\\n\r\n- *Eligible participants* - Eligible participants are those enrolled on the Commonwealth Electoral Roll, or those who made a legitimate application for enrolment, by midnight on 24 August 2017 and were eligible to vote in a federal election as at 24 August 2017.\\n\r\n- *Participation* - Participating in the survey means returning a survey response on a paper form, the online form or on the telephone. In some cases the response was unclear and therefore did not contribute to the yes/no outcome.\\n\r\n- *Response* - The responses were 'Yes' or 'No' as well as 'Response not clear' where the intended response was not able to be determined.\\n\r\n- *Response clear* - A clear response is recorded where the markings on the form can be clearly identified as indicating yes or no to the survey question.\\n\r\n- *Response not clear* - Responses where there is not a clear 'Yes' or 'No' recorded. This includes (but is not limited to) forms where both boxes have been ticked, where there is no marks on the form (blank response) or where the question has been changed to make the answer unclear.\\n\r\n\r\n#### Further information\\n\r\nFurther information about the survey and the results is available at the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n\\n"
         }) %>,
         <%- include("../datasources/includes/sdmx-abs-item", {
     "outerGroups": [
@@ -10108,5 +10179,5 @@
         "PART_PCT"
       ]
     },
-    "description": "The following information is drawn from the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n\\n\r\rThe Treasurer, under the Census and Statistics Act 1905, directed the Australian Statistician to collect and publish statistical information from all eligible Australians on the Commonwealth Electoral Roll, about their views on whether or not the law should be changed to allow same-sex couples to marry.\\n\\n\r\rThe survey asked just one question: Should the law be changed to allow same-sex couples to marry?\\n\\n\r\rSurvey materials were mailed to eligible Australians on the Commonwealth Electoral Roll over a two week period from 13 to 25 September 2017. Requests for replacement forms were available from 25 September to 20 October 2017. Eligible Australians were encouraged to complete the survey using the instructions provided and mail it back straight away.\\n\\n\r\rAll survey responses had to be received by 6pm on 7 November 2017.\\n\\n\r\r#### Definitions\\n\r- *Federal Electoral Divisions* - Federal Electoral Divisions are administered by the Australian Electoral Commission. They are legally prescribed geographic areas of Australia represented by a member of parliament elected at a House of Representatives election. The Divisions used in the Australian Marriage Law Postal Survey are the current Federal Electoral Divisions as at 24 August 2017.  Federal Electoral Divisions do not cross State and Territory borders. Note that Jervis Bay Territory is included in the Australian Capital Territory Division of Fenner, the Territory of Norfolk Island is included in the Australian Capital Territory Division of Canberra and the Territories of Christmas Island and Cocos (Keeling) Islands are included in the Northern Territory Division of Lingiari.\\n\r- *Eligible participants* - Eligible participants are those enrolled on the Commonwealth Electoral Roll, or those who made a legitimate application for enrolment, by midnight on 24 August 2017 and were eligible to vote in a federal election as at 24 August 2017.\\n\r- *Participation* - Participating in the survey means returning a survey response on a paper form, the online form or on the telephone.\\n\r- *Age* - Age is calculated as at 24 August 2017 using the date of birth on the Commonwealth Electoral Roll.\\n\r- *Gender* - The gender of eligible participants was taken from the Commonwealth Electoral Roll as at 24 August 2017.\\n\r- *Not further defined (nfd)* - Not further defined is used for records that do not fit in the other categories. This includes (but is not limited to) silent electors and Defence Force personnel deployed overseas whose age and gender were not provided to the ABS.\\n\\n\r\r#### Further information\\n\rFurther information about the survey and the results is available at the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n"
+    "description": "The following information is drawn from the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n\\n\r\n\r\nThe Treasurer, under the Census and Statistics Act 1905, directed the Australian Statistician to collect and publish statistical information from all eligible Australians on the Commonwealth Electoral Roll, about their views on whether or not the law should be changed to allow same-sex couples to marry.\\n\\n\r\n\r\nThe survey asked just one question: Should the law be changed to allow same-sex couples to marry?\\n\\n\r\n\r\nSurvey materials were mailed to eligible Australians on the Commonwealth Electoral Roll over a two week period from 13 to 25 September 2017. Requests for replacement forms were available from 25 September to 20 October 2017. Eligible Australians were encouraged to complete the survey using the instructions provided and mail it back straight away.\\n\\n\r\n\r\nAll survey responses had to be received by 6pm on 7 November 2017.\\n\\n\r\n\r\n#### Definitions\\n\r\n- *Federal Electoral Divisions* - Federal Electoral Divisions are administered by the Australian Electoral Commission. They are legally prescribed geographic areas of Australia represented by a member of parliament elected at a House of Representatives election. The Divisions used in the Australian Marriage Law Postal Survey are the current Federal Electoral Divisions as at 24 August 2017.  Federal Electoral Divisions do not cross State and Territory borders. Note that Jervis Bay Territory is included in the Australian Capital Territory Division of Fenner, the Territory of Norfolk Island is included in the Australian Capital Territory Division of Canberra and the Territories of Christmas Island and Cocos (Keeling) Islands are included in the Northern Territory Division of Lingiari.\\n\r\n- *Eligible participants* - Eligible participants are those enrolled on the Commonwealth Electoral Roll, or those who made a legitimate application for enrolment, by midnight on 24 August 2017 and were eligible to vote in a federal election as at 24 August 2017.\\n\r\n- *Participation* - Participating in the survey means returning a survey response on a paper form, the online form or on the telephone.\\n\r\n- *Age* - Age is calculated as at 24 August 2017 using the date of birth on the Commonwealth Electoral Roll.\\n\r\n- *Gender* - The gender of eligible participants was taken from the Commonwealth Electoral Roll as at 24 August 2017.\\n\r\n- *Not further defined (nfd)* - Not further defined is used for records that do not fit in the other categories. This includes (but is not limited to) silent electors and Defence Force personnel deployed overseas whose age and gender were not provided to the ABS.\\n\\n\r\n\r\n#### Further information\\n\r\nFurther information about the survey and the results is available at the [Australian Marriage Law Postal Survey website](https://marriagesurvey.abs.gov.au).\\n"
         }) %>
