@@ -58492,6 +58492,779 @@
       name: Region
     - id: TIME_PERIOD
       name: Census Year
+- id: AMLPS_RESP_2017
+  dimensions:
+    - id: RESPONSE_CAT
+      name: Response
+      values:
+        - id: EP_TOT
+          name: Eligible Participant - Total
+          children:
+            - id: EP_CLR
+              name: Eligible Participant - Response clear
+            - id: EP_NCLR
+              name: Eligible Participant - Response not clear
+            - id: EP_NR
+              name: Eligible Participant - Non-responding
+        - id: RESPCLR_TOT
+          name: Response clear - Total
+          children:
+            - id: RESPCLR_Y
+              name: Response clear - Yes
+            - id: RESPCLR_N
+              name: Response clear - No
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: '1'
+          name: Number (No.)
+        - id: '2'
+          name: Percentage (%)
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: FED
+          name: Federal Electoral Division
+    - id: AEC_FED_2017
+      name: Federal Electoral Division
+      values:
+        - id: '0'
+          name: Australia
+          children:
+            - id: '1'
+              name: New South Wales
+              children:
+                - id: BANK
+                  name: Banks
+                - id: BART
+                  name: Barton
+                - id: BENN
+                  name: Bennelong
+                - id: BERO
+                  name: Berowra
+                - id: BLAX
+                  name: Blaxland
+                - id: BRFD
+                  name: Bradfield
+                - id: CALA
+                  name: Calare
+                - id: CHIF
+                  name: Chifley
+                - id: COOK
+                  name: Cook
+                - id: COWP
+                  name: Cowper
+                - id: CUNN
+                  name: Cunningham
+                - id: DOBE
+                  name: Dobell
+                - id: EMON
+                  name: Eden-Monaro
+                - id: FARR
+                  name: Farrer
+                - id: FOWL
+                  name: Fowler
+                - id: GILM
+                  name: Gilmore
+                - id: GRAY
+                  name: Grayndler
+                - id: GREE
+                  name: Greenway
+                - id: HUGH
+                  name: Hughes
+                - id: HUME
+                  name: Hume
+                - id: HUNT
+                  name: Hunter
+                - id: KSMI
+                  name: Kingsford Smith
+                - id: LIND
+                  name: Lindsay
+                - id: LYNE
+                  name: Lyne
+                - id: MACA
+                  name: Macarthur
+                - id: MACK
+                  name: Mackellar
+                - id: MACQ
+                  name: Macquarie
+                - id: MCMA
+                  name: McMahon
+                - id: MITC
+                  name: Mitchell
+                - id: NENG
+                  name: New England
+                - id: NEWC
+                  name: Newcastle
+                - id: NSYD
+                  name: North Sydney
+                - id: PAGE
+                  name: Page
+                - id: PARK
+                  name: Parkes
+                - id: PARR
+                  name: Parramatta
+                - id: PATE
+                  name: Paterson
+                - id: REID
+                  name: Reid
+                - id: RICH
+                  name: Richmond
+                - id: RIVE
+                  name: Riverina
+                - id: ROBE
+                  name: Robertson
+                - id: SHOR
+                  name: Shortland
+                - id: SYDN
+                  name: Sydney
+                - id: WARR
+                  name: Warringah
+                - id: WATS
+                  name: Watson
+                - id: WENT
+                  name: Wentworth
+                - id: WERR
+                  name: Werriwa
+                - id: WHIT
+                  name: Whitlam
+            - id: '2'
+              name: Victoria
+              children:
+                - id: ASTO
+                  name: Aston
+                - id: BALL
+                  name: Ballarat
+                - id: BATM
+                  name: Batman
+                - id: BEND
+                  name: Bendigo
+                - id: BRUC
+                  name: Bruce
+                - id: CALW
+                  name: Calwell
+                - id: CASE
+                  name: Casey
+                - id: CHIS
+                  name: Chisholm
+                - id: CORA
+                  name: Corangamite
+                - id: CORI
+                  name: Corio
+                - id: DEAK
+                  name: Deakin
+                - id: DUNK
+                  name: Dunkley
+                - id: FLIN
+                  name: Flinders
+                - id: GELL
+                  name: Gellibrand
+                - id: GIPP
+                  name: Gippsland
+                - id: GOLD
+                  name: Goldstein
+                - id: GORT
+                  name: Gorton
+                - id: HIGG
+                  name: Higgins
+                - id: HOLT
+                  name: Holt
+                - id: HOTH
+                  name: Hotham
+                - id: INDI
+                  name: Indi
+                - id: ISAA
+                  name: Isaacs
+                - id: JAGA
+                  name: Jagajaga
+                - id: KOOY
+                  name: Kooyong
+                - id: LALO
+                  name: Lalor
+                - id: LTRO
+                  name: La Trobe
+                - id: MALL
+                  name: Mallee
+                - id: MARI
+                  name: Maribyrnong
+                - id: MCEW
+                  name: McEwen
+                - id: MCMI
+                  name: McMillan
+                - id: MELB
+                  name: Melbourne
+                - id: MENZ
+                  name: Menzies
+                - id: MPOR
+                  name: Melbourne Ports
+                - id: MURR
+                  name: Murray
+                - id: SCUL
+                  name: Scullin
+                - id: WANN
+                  name: Wannon
+                - id: WILL
+                  name: Wills
+            - id: '3'
+              name: Queensland
+              children:
+                - id: BLAI
+                  name: Blair
+                - id: BONN
+                  name: Bonner
+                - id: BOWM
+                  name: Bowman
+                - id: BRIS
+                  name: Brisbane
+                - id: CAPR
+                  name: Capricornia
+                - id: DAWS
+                  name: Dawson
+                - id: DICK
+                  name: Dickson
+                - id: FADD
+                  name: Fadden
+                - id: FAIR
+                  name: Fairfax
+                - id: FISH
+                  name: Fisher
+                - id: FLYN
+                  name: Flynn
+                - id: FORD
+                  name: Forde
+                - id: GRIF
+                  name: Griffith
+                - id: GROO
+                  name: Groom
+                - id: HERB
+                  name: Herbert
+                - id: HINK
+                  name: Hinkler
+                - id: KENN
+                  name: Kennedy
+                - id: LEIC
+                  name: Leichhardt
+                - id: LILL
+                  name: Lilley
+                - id: LONG
+                  name: Longman
+                - id: MARA
+                  name: Maranoa
+                - id: MCPH
+                  name: McPherson
+                - id: MONC
+                  name: Moncrieff
+                - id: MORE
+                  name: Moreton
+                - id: OXLE
+                  name: Oxley
+                - id: PETR
+                  name: Petrie
+                - id: RANK
+                  name: Rankin
+                - id: RYAN
+                  name: Ryan
+                - id: WBAY
+                  name: Wide Bay
+                - id: WRIG
+                  name: Wright
+            - id: '4'
+              name: South Australia
+              children:
+                - id: ADEL
+                  name: Adelaide
+                - id: BARK
+                  name: Barker
+                - id: BOOT
+                  name: Boothby
+                - id: GREY
+                  name: Grey
+                - id: HIND
+                  name: Hindmarsh
+                - id: KING
+                  name: Kingston
+                - id: MAKI
+                  name: Makin
+                - id: MAYO
+                  name: Mayo
+                - id: PADE
+                  name: Port Adelaide
+                - id: STUR
+                  name: Sturt
+                - id: WAKE
+                  name: Wakefield
+            - id: '5'
+              name: Western Australia
+              children:
+                - id: BRAN
+                  name: Brand
+                - id: BURT
+                  name: Burt
+                - id: CANN
+                  name: Canning
+                - id: COWA
+                  name: Cowan
+                - id: CURT
+                  name: Curtin
+                - id: DURA
+                  name: Durack
+                - id: FORR
+                  name: Forrest
+                - id: FREM
+                  name: Fremantle
+                - id: HASL
+                  name: Hasluck
+                - id: MOOR
+                  name: Moore
+                - id: OCON
+                  name: O'Connor
+                - id: PEAR
+                  name: Pearce
+                - id: PERT
+                  name: Perth
+                - id: STIR
+                  name: Stirling
+                - id: SWAN
+                  name: Swan
+                - id: TANG
+                  name: Tangney
+            - id: '6'
+              name: Tasmania
+              children:
+                - id: BASS
+                  name: Bass
+                - id: BRAD
+                  name: Braddon
+                - id: DENI
+                  name: Denison
+                - id: FRAN
+                  name: Franklin
+                - id: LYON
+                  name: Lyons
+            - id: '7'
+              name: Northern Territory
+              children:
+                - id: LING
+                  name: Lingiari
+                - id: SOLO
+                  name: Solomon
+            - id: '8'
+              name: Australian Capital Territory
+              children:
+                - id: CANB
+                  name: Canberra
+                - id: FENN
+                  name: Fenner
+            - id: '9'
+              name: Other Territories
+    - id: TIME_PERIOD
+      name: Year
+
+- id: AMLPS_PART_2017
+  dimensions:
+    - id: MEASURE
+      name: Measure
+      values:
+        - id: PART_TOT
+          name: Total participants
+        - id: PART_EL
+          name: Eligible participants
+        - id: PART_PCT
+          name: Participation rate (%)
+    - id: REGIONTYPE
+      name: Geography Level
+      values:
+        - id: AUS
+          name: Australia
+        - id: STE
+          name: States and Territories
+        - id: FED
+          name: Federal Electoral Division
+    - id: AEC_FED_2017
+      name: Federal Electoral Division
+      values:
+        - id: '0'
+          name: Australia
+          children:
+            - id: '1'
+              name: New South Wales
+              children:
+                - id: BANK
+                  name: Banks
+                - id: BART
+                  name: Barton
+                - id: BENN
+                  name: Bennelong
+                - id: BERO
+                  name: Berowra
+                - id: BLAX
+                  name: Blaxland
+                - id: BRFD
+                  name: Bradfield
+                - id: CALA
+                  name: Calare
+                - id: CHIF
+                  name: Chifley
+                - id: COOK
+                  name: Cook
+                - id: COWP
+                  name: Cowper
+                - id: CUNN
+                  name: Cunningham
+                - id: DOBE
+                  name: Dobell
+                - id: EMON
+                  name: Eden-Monaro
+                - id: FARR
+                  name: Farrer
+                - id: FOWL
+                  name: Fowler
+                - id: GILM
+                  name: Gilmore
+                - id: GRAY
+                  name: Grayndler
+                - id: GREE
+                  name: Greenway
+                - id: HUGH
+                  name: Hughes
+                - id: HUME
+                  name: Hume
+                - id: HUNT
+                  name: Hunter
+                - id: KSMI
+                  name: Kingsford Smith
+                - id: LIND
+                  name: Lindsay
+                - id: LYNE
+                  name: Lyne
+                - id: MACA
+                  name: Macarthur
+                - id: MACK
+                  name: Mackellar
+                - id: MACQ
+                  name: Macquarie
+                - id: MCMA
+                  name: McMahon
+                - id: MITC
+                  name: Mitchell
+                - id: NENG
+                  name: New England
+                - id: NEWC
+                  name: Newcastle
+                - id: NSYD
+                  name: North Sydney
+                - id: PAGE
+                  name: Page
+                - id: PARK
+                  name: Parkes
+                - id: PARR
+                  name: Parramatta
+                - id: PATE
+                  name: Paterson
+                - id: REID
+                  name: Reid
+                - id: RICH
+                  name: Richmond
+                - id: RIVE
+                  name: Riverina
+                - id: ROBE
+                  name: Robertson
+                - id: SHOR
+                  name: Shortland
+                - id: SYDN
+                  name: Sydney
+                - id: WARR
+                  name: Warringah
+                - id: WATS
+                  name: Watson
+                - id: WENT
+                  name: Wentworth
+                - id: WERR
+                  name: Werriwa
+                - id: WHIT
+                  name: Whitlam
+            - id: '2'
+              name: Victoria
+              children:
+                - id: ASTO
+                  name: Aston
+                - id: BALL
+                  name: Ballarat
+                - id: BATM
+                  name: Batman
+                - id: BEND
+                  name: Bendigo
+                - id: BRUC
+                  name: Bruce
+                - id: CALW
+                  name: Calwell
+                - id: CASE
+                  name: Casey
+                - id: CHIS
+                  name: Chisholm
+                - id: CORA
+                  name: Corangamite
+                - id: CORI
+                  name: Corio
+                - id: DEAK
+                  name: Deakin
+                - id: DUNK
+                  name: Dunkley
+                - id: FLIN
+                  name: Flinders
+                - id: GELL
+                  name: Gellibrand
+                - id: GIPP
+                  name: Gippsland
+                - id: GOLD
+                  name: Goldstein
+                - id: GORT
+                  name: Gorton
+                - id: HIGG
+                  name: Higgins
+                - id: HOLT
+                  name: Holt
+                - id: HOTH
+                  name: Hotham
+                - id: INDI
+                  name: Indi
+                - id: ISAA
+                  name: Isaacs
+                - id: JAGA
+                  name: Jagajaga
+                - id: KOOY
+                  name: Kooyong
+                - id: LALO
+                  name: Lalor
+                - id: LTRO
+                  name: La Trobe
+                - id: MALL
+                  name: Mallee
+                - id: MARI
+                  name: Maribyrnong
+                - id: MCEW
+                  name: McEwen
+                - id: MCMI
+                  name: McMillan
+                - id: MELB
+                  name: Melbourne
+                - id: MENZ
+                  name: Menzies
+                - id: MPOR
+                  name: Melbourne Ports
+                - id: MURR
+                  name: Murray
+                - id: SCUL
+                  name: Scullin
+                - id: WANN
+                  name: Wannon
+                - id: WILL
+                  name: Wills
+            - id: '3'
+              name: Queensland
+              children:
+                - id: BLAI
+                  name: Blair
+                - id: BONN
+                  name: Bonner
+                - id: BOWM
+                  name: Bowman
+                - id: BRIS
+                  name: Brisbane
+                - id: CAPR
+                  name: Capricornia
+                - id: DAWS
+                  name: Dawson
+                - id: DICK
+                  name: Dickson
+                - id: FADD
+                  name: Fadden
+                - id: FAIR
+                  name: Fairfax
+                - id: FISH
+                  name: Fisher
+                - id: FLYN
+                  name: Flynn
+                - id: FORD
+                  name: Forde
+                - id: GRIF
+                  name: Griffith
+                - id: GROO
+                  name: Groom
+                - id: HERB
+                  name: Herbert
+                - id: HINK
+                  name: Hinkler
+                - id: KENN
+                  name: Kennedy
+                - id: LEIC
+                  name: Leichhardt
+                - id: LILL
+                  name: Lilley
+                - id: LONG
+                  name: Longman
+                - id: MARA
+                  name: Maranoa
+                - id: MCPH
+                  name: McPherson
+                - id: MONC
+                  name: Moncrieff
+                - id: MORE
+                  name: Moreton
+                - id: OXLE
+                  name: Oxley
+                - id: PETR
+                  name: Petrie
+                - id: RANK
+                  name: Rankin
+                - id: RYAN
+                  name: Ryan
+                - id: WBAY
+                  name: Wide Bay
+                - id: WRIG
+                  name: Wright
+            - id: '4'
+              name: South Australia
+              children:
+                - id: ADEL
+                  name: Adelaide
+                - id: BARK
+                  name: Barker
+                - id: BOOT
+                  name: Boothby
+                - id: GREY
+                  name: Grey
+                - id: HIND
+                  name: Hindmarsh
+                - id: KING
+                  name: Kingston
+                - id: MAKI
+                  name: Makin
+                - id: MAYO
+                  name: Mayo
+                - id: PADE
+                  name: Port Adelaide
+                - id: STUR
+                  name: Sturt
+                - id: WAKE
+                  name: Wakefield
+            - id: '5'
+              name: Western Australia
+              children:
+                - id: BRAN
+                  name: Brand
+                - id: BURT
+                  name: Burt
+                - id: CANN
+                  name: Canning
+                - id: COWA
+                  name: Cowan
+                - id: CURT
+                  name: Curtin
+                - id: DURA
+                  name: Durack
+                - id: FORR
+                  name: Forrest
+                - id: FREM
+                  name: Fremantle
+                - id: HASL
+                  name: Hasluck
+                - id: MOOR
+                  name: Moore
+                - id: OCON
+                  name: O'Connor
+                - id: PEAR
+                  name: Pearce
+                - id: PERT
+                  name: Perth
+                - id: STIR
+                  name: Stirling
+                - id: SWAN
+                  name: Swan
+                - id: TANG
+                  name: Tangney
+            - id: '6'
+              name: Tasmania
+              children:
+                - id: BASS
+                  name: Bass
+                - id: BRAD
+                  name: Braddon
+                - id: DENI
+                  name: Denison
+                - id: FRAN
+                  name: Franklin
+                - id: LYON
+                  name: Lyons
+            - id: '7'
+              name: Northern Territory
+              children:
+                - id: LING
+                  name: Lingiari
+                - id: SOLO
+                  name: Solomon
+            - id: '8'
+              name: Australian Capital Territory
+              children:
+                - id: CANB
+                  name: Canberra
+                - id: FENN
+                  name: Fenner
+            - id: '9'
+              name: Other Territories
+    - id: SEX_ABS
+      name: Sex
+      values:
+        - id: '3'
+          name: Persons
+          children:
+            - id: '1'
+              name: Males
+            - id: '2'
+              name: Females
+    - id: AGE
+      name: Age
+      values:
+        - id: A20
+          name: 20 - 24
+        - id: A25
+          name: 25 - 29
+        - id: A30
+          name: 30 - 34
+        - id: A35
+          name: 35 - 39
+        - id: A40
+          name: 40 - 44
+        - id: A45
+          name: 45 - 49
+        - id: A50
+          name: 50 - 54
+        - id: A55
+          name: 55 - 59
+        - id: A60
+          name: 60 - 64
+        - id: A65
+          name: 65 - 69
+        - id: A70
+          name: 70 - 74
+        - id: A75
+          name: 75 - 79
+        - id: A80
+          name: 80 - 84
+        - id: TOT
+          name: Total
+        - id: '8599'
+          name: 85 and over
+        - id: AGE_NFD
+          name: Age and/or gender nfd.
+        - id: '1819'
+          name: 18 - 19
+    - id: TIME_PERIOD
+      name: Year
 - id: ABS_LAMPS2014
   dimensions:
     - id: MEASURE

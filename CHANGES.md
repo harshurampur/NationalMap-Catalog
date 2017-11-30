@@ -2,8 +2,9 @@
 Change Log
 ==========
 
-### 2017-11-21
+### 2017-11-28
 
+* Added items for the response and participation in the Australian Marriage Law Postal Survey to the catalog.
 * Added `Land Management Practices Survey 2013-2014` and `Land Use - Agricultural Commodities 2011-2016` datasets to the `National Datasets` -> `Land` -> `Agriculture and Mining` group.
 
 ### 2017-11-09

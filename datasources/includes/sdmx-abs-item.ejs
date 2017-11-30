@@ -6,7 +6,7 @@
 // bys:         A string with the "by" variables, eg. "By Age by Sex".
 // id:          The dataset id for the item, eg. "ABS_CENSUS2011_B29".
 // subId:       In case some dataset ids are repeated (eg. to show different aspects of a dataset), you must use different subId to distinguish them.
-// geoType:     One of "SAx" (for SA1-4 datasets), "LGA2011" (for LGA_2011 datasets), "SA1_SA" (for South Aust SA1 datasets).
+// geoType:     One of "SAx" (for SA1-4 datasets), "LGA2011" (for LGA_2011 datasets), "SA1_SA" (for South Aust SA1 datasets), or "FED".
 // hasState:    Do we need to aggregate over the unnecessary STATE dimension?
 // singleValuedDimensionIds: An array of dimensions which can only take a single value, eg. ["SPC"].
 // sexId:       The sex dimension id - usually "MEASURE". Pass "" if none.
@@ -14,6 +14,7 @@
 // regionDimensionId: Required if the dimension id is not REGION, Eg. "ASGS_2011".
 // regionType:  The region type, eg. "aus".
 // series:      Either "B" or "T" if this is B- or T- series Census data.
+// cannotSum
 // measureWhitelist: Eg. Labour Force MEASURE has invalid entries such as "M" for "Migration:".
 // measureTotalValueIds: Additional total fields in the MEASURE dimension, eg. for Census B12, "8" is Total dependent children.
 // measureSelectedInitially: Which values of MEASURE are selectedInitially.
@@ -99,6 +100,9 @@
             "description": <%- include("sdmx-abs-description", {"description": description, "id": id}) %>,
             <% if (hasState) { %>
                "aggregatedDimensionIds": ["STATE"],
+            <% } %>
+            <% if (cannotSum) { %>
+                "cannotSum": <%- JSON.stringify(cannotSum) %>,
             <% } %>
             <% if (singleValuedDimensionIds) { %>
                 "singleValuedDimensionIds": <%- JSON.stringify(singleValuedDimensionIds) %>,
@@ -199,11 +203,15 @@
                 <% if (geoType=="SAx") { %>
                     "REGIONTYPE": ["SA4"],
                 <% } %>
+                <% if (geoType=="FED") { %>
+                    "REGIONTYPE": ["FED"],
+                <% } %>
                 <% if (measureSelectedInitially) { %>
                     "MEASURE": <%- JSON.stringify(measureSelectedInitially) %>,
                 <% } %>
                 "COB": ["1101"], // Start with Australia. There is no working total value.
                 "DT": ["2"], // for series HF and RT, start with a $ amount (was "5" but that breaks RT).
+                "RESPONSE_CAT": ["RESPCLR_Y"],  // for AMLPS_RESP_2017
                 "STATE": ["1", "2", "3", "4", "5", "6", "7", "8"], // In the rare case where STATE is not aggregated over (eg. ABS_DEM_QIM), start with all selected.
                 "ASGS_2011": ["1", "2", "3", "4", "5", "6", "7", "8"] // In the rare case where ASGS_2011 is not shown as a region (eg. ABS_DEM_QIM), start with all selected.
             }
