@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2017-12-XX
+
+* Replaced reference to https://marriagesurvey.abs.gov.au/ with http://www.abs.gov.au/ausstats/abs@.nsf/mf/1800.0, as the former is being decommissioned.
+
 ### 2017-11-30
 
 * Added items for the response and participation in the Australian Marriage Law Postal Survey to the catalog.
