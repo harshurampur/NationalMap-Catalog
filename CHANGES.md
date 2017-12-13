@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### 2017-12-XX
+### 2017-12-13
 
 * Replaced reference to https://marriagesurvey.abs.gov.au/ with http://www.abs.gov.au/ausstats/abs@.nsf/mf/1800.0, as the former is being decommissioned.
 
