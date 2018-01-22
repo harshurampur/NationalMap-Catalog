@@ -5,6 +5,8 @@ Change Log
 ### 2017-11-30-updated-2018-01-22
 
 * Removed some missing layers from the Australian Capital Territory Government group, and configured most of the groups to do a live query from the ACT servers rather than hard-coding the list of layers.
+* Removed Rockhampton QLD's localdata.net.au CKAN server, because it appears to no longer exist.
+* Removed Tasmanian Government -> Placename Points because the service no longer exists.
 
 ### 2017-11-30-updated-2017-12-13
 
