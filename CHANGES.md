@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-02-15
+
+* Removed broken 2016 version of Catchment Scale Land Use and adding working 2017 version.
+
 ### 2017-11-30-updated-2018-02-12
 
 * Updated list of local governments.
