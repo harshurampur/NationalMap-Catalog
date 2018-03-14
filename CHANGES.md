@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-03-15
+
+* GZIP the published the catalog on S3 for a smaller download size.
+
 ### 2018-02-15
 
 * Removed broken 2016 version of Catchment Scale Land Use and adding working 2017 version.
