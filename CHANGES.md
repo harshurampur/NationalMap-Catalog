@@ -2,9 +2,9 @@
 Change Log
 ==========
 
-### 2018-03-16
+### 2018-03-15-updated-2018-03-16
 
-* Add hew Digital Earth Australia Landsat layers.
+* Add new Digital Earth Australia Landsat layers.
 
 ### 2018-03-15
 
