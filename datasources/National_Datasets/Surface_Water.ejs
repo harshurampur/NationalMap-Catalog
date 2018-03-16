@@ -663,8 +663,52 @@
               ],
               "type": "group",
               "name": "Water Observations from Space"
+            },
+            {
+              "name": "Tidal",
+              "type": "group",
+              "description": "<% include includes/DigitalEarthAustralia-description %>",
+              "preserveOrder": true,
+              "items": [
+                {
+                  "name": "DEA High Tide Composite 25m v2.0 false colour",
+                  "url": "http://gsky.nci.org.au/ows",
+                  "layers": "hltc:high:fc",
+                  "type": "wms"
+                },
+                {
+                  "name": "DEA High Tide Composite 25m v2.0 true colour",
+                  "url": "http://gsky.nci.org.au/ows",
+                  "layers": "hltc:high:tc",
+                  "type": "wms"
+                },
+                {
+                  "name": "DEA Low Tide Composite 25m v2.0 false colour",
+                  "url": "http://gsky.nci.org.au/ows",
+                  "layers": "hltc:low:fc",
+                  "type": "wms"
+                },
+                {
+                  "name": "DEA Low Tide Composite 25m v2.0 true colour",
+                  "url": "http://gsky.nci.org.au/ows",
+                  "layers": "hltc:low:tc",
+                  "type": "wms"
+                },
+                {
+                  "name": "DEA Intertidal Extents Model Confidence Layer 25m v2.0",
+                  "url": "http://gsky.nci.org.au/ows",
+                  "layers": "item:stddev",
+                  "type": "wms"
+                },
+                {
+                  "name": "DEA Intertidal Extents Model Relative Layer 25m v2.0",
+                  "url": "http://gsky.nci.org.au/ows",
+                  "layers": "item:relative",
+                  "type": "wms"
+                }
+              ]
             }
           ],
-          "name": "Surface Water",
+          "name": "Surface Water and Marine",
           "type": "group"
         }
