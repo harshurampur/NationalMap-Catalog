@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-03-16
+
+* Add hew Digital Earth Australia Landsat layers.
+
 ### 2018-03-15
 
 * GZIP the published the catalog on S3 for a smaller download size.
@@ -85,7 +89,7 @@ Change Log
 * Created a catalog group for State of the Environment in the Data Providers group.
 * Added a Beta Queeensland Government Group for their new webservices.
 * Added `Telecommunications in New Developments` to Communications.
-* Restructured `Surface Water` National Dataset and added `Dynamic Hydrology and Marine Layer`. 
+* Restructured `Surface Water` National Dataset and added `Dynamic Hydrology and Marine Layer`.
 
 ### 2017-03-15
 
