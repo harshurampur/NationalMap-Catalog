@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-03-15-updated-2018-03-21
+
+* Fixed a bad URL for the "Radio Licenses" layer.
+
 ### 2018-03-15-updated-2018-03-16
 
 * Add new Digital Earth Australia Landsat layers.
