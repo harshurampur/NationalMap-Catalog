@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-04-15
+
+* Removed specified rectangle for the Population Estimates layer as it was causing the layer to be incorrectly clipped.
+
 ### 2018-03-15-updated-2018-03-21
 
 * Fixed a bad URL for the "Radio Licenses" layer.
