@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-04-16
+
+* Tweaked formatting of DEA ITEM feature info template.
+
 ### 2018-03-15-updated-2018-04-13
 
 * Added new polygon layers for data access to the Digital Earth Australia layers in National Datasets -> Surface Water and Marine -> Tidal.
