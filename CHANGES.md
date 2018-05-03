@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-05-03
+
+* Tweaked image chart caption for DEA Tidal Polygon layers.
+
 ### 2018-04-16
 
 * Tweaked formatting of DEA ITEM feature info template.
