@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-05-16
+
+* Add feature info image to the "DEA Intertidal Extents Relative Model and Confidence Layer 25m v2.0 polygons for access to data" layer.
+
 ### 2018-04-16-updated-2018-05-03
 
 * Added Taxation Statistics 2015-2016.
