@@ -4,6 +4,7 @@ Change Log
 
 ### 2018-05-16
 
+* Removing "National Datasets -> Framework -> Waste Management Facilities" as this is a duplicate to the layer in "Infrastructure".
 * Removing "National Datasets -> Elevation -> Flow Grid Direction Image" as the dataset has been decomissioned by the data custodian.
 
 ### 2018-04-16-updated-2018-05-03
