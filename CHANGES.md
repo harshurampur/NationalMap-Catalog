@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-05-16
+
+* Removing "National Datasets -> Elevation -> Flow Grid Direction Image" as the dataset has been decomissioned by the data custodian.
+
 ### 2018-04-16-updated-2018-05-03
 
 * Added Taxation Statistics 2015-2016.
