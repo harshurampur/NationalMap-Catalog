@@ -4,6 +4,7 @@ Change Log
 
 ### 2018-05-16
 
+* Move the "Data Providers -> Water (Bureau of Meteorology Geofabric)" into "National Datasets -> Surface Water and Marine" to replace the manually curated "Australian Hydrological Geospatial Fabric (Geofabric)".
 * Removing "National Datasets -> Framework -> Waste Management Facilities" as this is a duplicate to the layer in "Infrastructure".
 * Removing "National Datasets -> Elevation -> Flow Grid Direction Image" as the dataset has been decomissioned by the data custodian.
 
