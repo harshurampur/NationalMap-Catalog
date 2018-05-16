@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-05-16
+
+* Added year range to Landsat 5/7/8 group names.
+
 ### 2018-04-16-updated-2018-05-14
 
 * Move the "Data Providers -> Water (Bureau of Meteorology Geofabric)" into "National Datasets -> Surface Water and Marine" to replace the manually curated "Australian Hydrological Geospatial Fabric (Geofabric)".
