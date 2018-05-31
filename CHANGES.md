@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### 2018-05-16-updated-2018-05-30
+### 2018-05-16-updated-2018-05-31
 
 * Added Sydney to "Local Government -> New South Wales".
 
