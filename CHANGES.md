@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-05-16-updated-2018-05-30
+
+* Added Sydney to "Local Government -> New South Wales".
+
 ### 2018-05-16
 
 * Added year range to Landsat 5/7/8 group names.
