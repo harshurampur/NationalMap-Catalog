@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-05-16-updated-2018-06-06
+
+* Updated the Telecommunications in New Developments layer to point to the correct CKAN resourceID.
+
 ### 2018-05-16-updated-2018-05-31
 
 * Added Sydney to "Local Government -> New South Wales".
