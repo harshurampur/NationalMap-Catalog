@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-07-23
+
+* Added `Postal Areas (2016)` under `National Boundaries`.
+
 ### 2018-05-16-updated-2018-06-06
 
 * Updated the Telecommunications in New Developments layer to point to the correct CKAN resourceID.
