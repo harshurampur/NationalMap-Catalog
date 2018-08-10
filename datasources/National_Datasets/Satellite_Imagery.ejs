@@ -1,12 +1,12 @@
         {
           "name": "Satellite Imagery",
           "type": "group",
-          "description": "<% include includes/DigitalEarthAustralia-description %>",
           "items": [
             {
               "name": "Landsat 16 day aggregate terrain corrected surface reflectance",
               "type": "group",
               "preserveOrder": true,
+              "description": "<% include includes/DigitalEarthAustralia-description %>",
               "items": [
                 {
                   "name": "Landsat 8 - March 2013 - onwards",
@@ -17,14 +17,16 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS8:NBART:FALSE",
                       "type": "wms",
-                      "useOwnClock": true
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
                       "name": "Landsat 8 True colour",
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS8:NBART:TRUE",
                       "type": "wms",
-                      "useOwnClock": true
+                      "useOwnClock": true,
+                      "opacity": 1
                     }
                   ]
                 },
@@ -37,14 +39,16 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS7:NBART:FALSE",
                       "type": "wms",
-                      "useOwnClock": true
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
                       "name": "Landsat 7 True colour",
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS7:NBART:TRUE",
                       "type": "wms",
-                      "useOwnClock": true
+                      "useOwnClock": true,
+                      "opacity": 1
                     }
                   ]
                 },
@@ -57,18 +61,31 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS5:NBART:FALSE",
                       "type": "wms",
-                      "useOwnClock": true
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
                       "name": "Landsat 5 True colour",
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS5:NBART:TRUE",
                       "type": "wms",
-                      "useOwnClock": true
+                      "useOwnClock": true,
+                      "opacity": 1
                     }
                   ]
                 }
               ]
+            },
+            {
+              "id": "55921c56",
+              "name": "Sentinel-2 A/B Near Real-Time (NRT) terrain corrected surface reflectance",
+              "url": "https://nrt-au.dea.ga.gov.au/",
+              "type": "wms-getCapabilities",
+              "flatten": true,
+              "itemProperties": {
+                "ignoreUnknownTileErrors": true,
+                "opacity": 1
+              }
             }
           ]
         }

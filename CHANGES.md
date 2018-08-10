@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-07-16-updated-2018-08-10
+
+* Added Sentinel-2 satellite imagery to "National Datasets -> Satellite Imagery" from Digital Earth Australia.
+
 ### 2018-07-16-updated-2018-07-23
 
 * Added `Postal Areas (2016)` under `National Boundaries`.
