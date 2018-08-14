@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-07-16-updated-2018-08-14
+
+* Set Digital Earth Australia AWS based layers to be accessed directly using CORS.
+
 ### 2018-07-16-updated-2018-08-10
 
 * Added Sentinel-2 satellite imagery to "National Datasets -> Satellite Imagery" from Digital Earth Australia.
