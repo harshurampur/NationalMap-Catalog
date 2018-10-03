@@ -17,6 +17,7 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS8:NBART:FALSE",
                       "type": "wms",
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
                     },
@@ -25,6 +26,7 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS8:NBART:TRUE",
                       "type": "wms",
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
                     }
@@ -39,6 +41,7 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS7:NBART:FALSE",
                       "type": "wms",
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
                     },
@@ -47,6 +50,7 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS7:NBART:TRUE",
                       "type": "wms",
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
                     }
@@ -61,6 +65,7 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS5:NBART:FALSE",
                       "type": "wms",
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
                     },
@@ -69,6 +74,7 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS5:NBART:TRUE",
                       "type": "wms",
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
                     }
@@ -86,6 +92,40 @@
                 "ignoreUnknownTileErrors": true,
                 "opacity": 1
               }
+            },
+            {
+              "name": "Surface Reflectance 25m Annual Geomedian",
+              "type": "group",
+              "preserveOrder": true,
+              "items": [
+                {
+                  "name": "Surface Reflectance 25m Annual Geomedian (Landsat 8)",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "layers": "ls8_nbart_geomedian_annual",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                },
+                {
+                  "name": "Surface Reflectance 25m Annual Geomedian (Landsat 7)",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "layers": "ls7_nbart_geomedian_annual",
+                  "type": "wms",
+                  "ignoreUnknownTileErrors": true,
+                  "useOwnClock": true,
+                  "opacity": 1
+                },
+                {
+                  "name": "Surface Reflectance 25m Annual Geomedian (Landsat 5)",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "layers": "ls5_nbart_geomedian_annual",
+                  "type": "wms",
+                  "ignoreUnknownTileErrors": true,
+                  "useOwnClock": true,
+                  "opacity": 1
+                }
+              ]
             }
           ]
         }
