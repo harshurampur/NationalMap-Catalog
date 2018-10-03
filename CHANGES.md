@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-09-14-updated-2018-10-04
+
+* Temporarily remove the ACT Mapi layers while we work around a problem.
+
 ### 2018-09-14-updated-2018-10-03
 
 * Add Geomedian layers from Digital Earth Australia to "National Datasets -> Satellite Imagery".
