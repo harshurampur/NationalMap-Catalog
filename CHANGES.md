@@ -2,10 +2,11 @@
 Change Log
 ==========
 
-### 2018-07-16-updated-2018-10-03
+### 2018-09-14-updated-2018-10-03
 
 * Add Geomedian layers from Digital Earth Australia to "National Datasets -> Satellite Imagery".
 * Add Mangrove Canopy Cover from Digital Earth Australia to "National Datasets -> Surface Water and Marine -> Tidal".
+* Replace the existing layers in "National Datasets -> Surface Water and Marine -> Water Observations from Space" with new updated layers from Digital Earth Australia.
 
 ### 2018-07-16-updated-2018-08-14
 
