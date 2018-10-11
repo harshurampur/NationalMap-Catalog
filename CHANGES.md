@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-10-11
+
+* No changes in this release.
+
 ### 2018-09-14-updated-2018-10-04
 
 * Temporarily remove the ACT Mapi layers while we work around a problem.
