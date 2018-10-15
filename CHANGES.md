@@ -4,6 +4,7 @@ Change Log
 
 ### 2018-10-11-updated-2018-10-15
 
+* Add the layer "National Datasets -> Surface Water and Marine -> Water Observations from Space -> Daily Water Observation Feature Layer" from Digital Earth Australia.
 * Add the layer "National Datasets -> Satellite Imagery -> Barest Earth -> Barest Earth 25m (Landsat 8)" from Digital Earth Australia.
 * Add the layers "Multi-Scale Topographic Position" and "Weathering Intensity" from Digital Earth Australia to the "National Datasets -> Land" group.
 * Add CORS support and change to using TLS for NCI GSKY based Digital Earth Australia layers.
