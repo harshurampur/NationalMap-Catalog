@@ -4,6 +4,7 @@ Change Log
 
 ### 2018-10-11-updated-2018-10-15
 
+* Updated the Digital Earth Australia layers in "National Datasets -> Satellite Imagery -> Sentinel-2 A/B Near Real-Time (NRT) terrain corrected surface reflectance" to use a new service endpoint which has a 90 day sliding window of imagery.
 * Add the layer "National Datasets -> Surface Water and Marine -> Water Observations from Space -> Daily Water Observation Feature Layer" from Digital Earth Australia.
 * Add the layer "National Datasets -> Satellite Imagery -> Barest Earth -> Barest Earth 25m (Landsat 8)" from Digital Earth Australia.
 * Add the layers "Multi-Scale Topographic Position" and "Weathering Intensity" from Digital Earth Australia to the "National Datasets -> Land" group.
