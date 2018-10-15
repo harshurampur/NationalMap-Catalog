@@ -4,6 +4,7 @@ Change Log
 
 ### 2018-10-11-updated-2018-10-15
 
+* Add the layers "Multi-Scale Topographic Position" and "Weathering Intensity" from Digital Earth Australia to the "National Datasets -> Land" group.
 * Add CORS support and change to using TLS for NCI GSKY based Digital Earth Australia layers.
 
 ### 2018-10-11
