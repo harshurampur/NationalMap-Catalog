@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-10-11-updated-2018-10-15
+
+* Add CORS support and change to using TLS for NCI GSKY based Digital Earth Australia layers.
+
 ### 2018-10-11
 
 * No changes in this release.
