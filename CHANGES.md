@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### In the next release
+
+* Change visualisation of "National Datasets -> Health -> Primary Health Networks" to colour in each region with a different colour.
+
 ### 2018-10-11
 
 * No changes in this release.
