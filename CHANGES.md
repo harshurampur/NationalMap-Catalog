@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-11-20
+
+* Added Latrobe City Council to local council list for data.gov.au query.
+
 ### 2018-10-12-updated-2018-10-24
 
 * Change visualisation of "National Datasets -> Health -> Primary Health Networks" to colour in each region with a different colour.
