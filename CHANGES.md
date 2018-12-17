@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2018-12-17
+
+* No changes in this release.
+
 ### 2018-11-20
 
 * Added Latrobe City Council to local council list for data.gov.au query.
