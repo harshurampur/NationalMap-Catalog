@@ -2,6 +2,13 @@
 Change Log
 ==========
 
+### Next release
+
+* Make www.data.vic.gov.au use https and CORS instead of going through the proxy.
+* Add new Digital Earth Australia National Intertidal Digital Elevation Model (NIDEM) to the "National Datasets -> Surface Water and Marine -> Tidal" group.
+* Replace existing layers with new Digital Earth Australia Water Observations from Space layers in "National Datasets -> Surface Water and Marine -> Water Observations from Space".
+* Add new Digital Earth Australia Daily Landsat imagery to the group "National Datasets -> Satellite Imagery -> Landsat Daily Aggregate Terrain Corrected Surface Reflectance".
+
 ### 2018-12-17
 
 * No changes in this release.
