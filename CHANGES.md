@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### Next release
+### 2018-12-17-updated-2019-01-29
 
 * Make www.data.vic.gov.au use https and CORS instead of going through the proxy.
 * Add new Digital Earth Australia National Intertidal Digital Elevation Model (NIDEM) to the "National Datasets -> Surface Water and Marine -> Tidal" group.
