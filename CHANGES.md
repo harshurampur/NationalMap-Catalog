@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-###
+### 2018-12-17-updated-2019-02-19
 
 * Removing the defunct layer "Dynamic Hydrology and Marine Layer" from "National Datasets -> Surface Water and Marine" group.
 * Add new Digital Earth Australia Fractional Cover Percentiles(FCP) to the "National Datasets -> Vegetation" group.
