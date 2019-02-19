@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+###
+
+* Add new Digital Earth Australia Fractional Cover Percentiles(FCP) to the "National Datasets -> Vegetation" group.
+
 ### 2018-12-17-updated-2019-01-29
 
 * Make www.data.vic.gov.au use https and CORS instead of going through the proxy.
