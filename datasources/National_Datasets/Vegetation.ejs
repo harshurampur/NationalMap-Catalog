@@ -27,42 +27,93 @@
             {
               "name": "Fractional Cover Percentiles",
               "type": "group",
+              "preserveOrder": true,
               "items": [
                 {
-                  "id": "bcfefc7b",
-                  "name": "Fractional Cover Percentiles - Median",
-                  "layers": "fcp_rgb",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "type": "wms",
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1
+                  "type": "group",
+                  "name": "Fractional Cover Percentiles Annual",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                        "id": "bcfefc7b",
+                        "name": "Fractional Cover Percentiles - Median",
+                        "layers": "fcp_rgb",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "348f6c87",
+                        "name": "Fractional Cover Percentiles - Green Vegetation",
+                        "layers": "fcp_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "e3bb2e0d",
+                        "name": "Fractional Cover Percentiles - Non-Green Vegetation",
+                        "layers": "fcp_non_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "561d50b6",
+                        "name": "Fractional Cover Percentiles - Bare Soil",
+                        "layers": "fcp_bare_ground",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    }
+                  ]
                 },
                 {
-                  "id": "348f6c87",
-                  "name": "Fractional Cover Percentiles - Green Vegetation",
-                  "layers": "fcp_green_veg",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "type": "wms",
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1
-                },
-                {
-                  "id": "e3bb2e0d",
-                  "name": "Fractional Cover Percentiles - Non-Green Vegetation",
-                  "layers": "fcp_non_green_veg",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "type": "wms",
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1
-                },
-                {
-                  "id": "561d50b6",
-                  "name": "Fractional Cover Percentiles - Bare Soil",
-                  "layers": "fcp_bare_ground",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "type": "wms",
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1
+                  "name": "Fractional Cover Percentiles Seasonal",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                        "id": "80df5d0b",
+                        "name": "Fractional Cover Percentiles Seasonal - Median",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_rgb",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "c3847ddb",
+                        "name": "Fractional Cover Percentiles Seasonal - Green Vegetation",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "815134b7",
+                        "name": "Fractional Cover Percentiles Seasonal - Non-Green Vegetation",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_non_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "80427f06",
+                        "name": "Fractional Cover Percentiles Seasonal - Bare Soil",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_bare_ground",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                     }
+                  ]
                 }
               ]
             }
