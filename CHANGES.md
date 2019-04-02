@@ -2,6 +2,11 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-04-02
+
+* Added National Datasets -> Framework -> Northern Australia Infrastructure Facility Boundary.
+* Enabled "Export" option for the catalog items in Data Providers -> Digital Earth Australia.
+
 ### 2019-02-18-updated-2019-03-20
 
 * Added Fractional Cover Percentiles Seasonal layers.
