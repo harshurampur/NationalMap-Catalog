@@ -38,11 +38,6 @@
                   "includeKml": true,
                   "includeGeoJson": true
                 },
-                {
-                  "type": "esri-group",
-                  "name": "Sunshine Coast",
-                  "url": "https://gisservices.scc.qld.gov.au/arcgis/rest/services"
-                },
                 <%- include('includes/dga_org', { name: 'Cairns', org: 'cairns-regional-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Ipswich', org: 'city-of-ipswich' }) %>,
                 <%- include('includes/dga_org', { name: 'Fraser Coast', org: 'fraser-coast-regional-council' }) %>,
@@ -50,6 +45,13 @@
                 <%- include('includes/dga_org', { name: 'Logan', org: 'logan-city-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Moreton Bay', org: 'moreton-bay-regional-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Noosa', org: 'noosa-shire-council' }) %>,
+                {
+                "type": "esri-group",
+                "name": "Sunshine Coast",
+                "url": "https://gisservices.scc.qld.gov.au/arcgis/rest/services"
+                },
+                <%- include('includes/dga_org', { name: 'Toowoomba', org: 'toowoomba-regional-council' }) %>,
+
             ]
         },
         {
@@ -128,6 +130,7 @@
                 <%- include('includes/dga_org', { name: 'Mildura', org: 'mildura-rural-city-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Mitchell', org: 'www-mitchellshirecouncil-vic-gov-au' }) %>,
                 <%- include('includes/dga_org', { name: 'Monash', org: 'city-of-monash' }) %>,
+                <%- include('includes/dga_org', { name: 'Moorabool', org: 'moorabool-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Moyne', org: 'moyne-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Nillumbik', org: 'nillumbik-shire-council' }) %>,
                 <%- include('includes/dga_org', { name: 'Northern Grampians', org: 'northern-grampians-shire-council' }) %>,
