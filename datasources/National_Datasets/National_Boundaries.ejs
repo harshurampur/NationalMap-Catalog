@@ -92,6 +92,27 @@
                   }
               ]
           },
+          {
+            type: 'mvt',
+            name: 'Commonwealth Electoral Divisions (2019)',
+            description: 'Federal electoral boundaries which will apply at the 2019 federal election. Produced by combining boundary datasets provided by AEC for each state.',
+            url: 'https://tiles.terria.io/ELB_2019/{z}/{x}/{y}.pbf',
+            layer: 'ELB_2019',
+            lineColor: 'hsl(180,80%,30%)',
+            maximumNativeZoom: 12,
+            minimumZoom: 0,
+            treat403AsError: false,
+            dataUrl: 'https://www.aec.gov.au/electorates/gis/index.htm',
+            info: [
+              {
+                "name": "Licence",
+                "content": "[Australian Electoral Commission Data download licence](http://www.aec.gov.au/Electorates/gis/GIS_Data_Download_Data_Licence.htm)"
+              }
+            ]
+
+          },
+
+
             {
               "layers": "admin_bnds:COM20160509_ELB",
               "url": "http://geoserver.nationalmap.nicta.com.au/admin_bnds_abs/ows",
