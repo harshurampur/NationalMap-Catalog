@@ -2,8 +2,18 @@
 Change Log
 ==========
 
-###
+### 2019-02-18-updated-2019-04-02
 
+* Added National Datasets -> Framework -> Northern Australia Infrastructure Facility Boundary.
+* Enabled "Export" option for the catalog items in Data Providers -> Digital Earth Australia.
+
+### 2019-02-18-updated-2019-03-20
+
+* Added Fractional Cover Percentiles Seasonal layers.
+
+### 2018-12-17-updated-2019-02-19
+
+* Removing the defunct layer "Dynamic Hydrology and Marine Layer" from "National Datasets -> Surface Water and Marine" group.
 * Add new Digital Earth Australia Fractional Cover Percentiles(FCP) to the "National Datasets -> Vegetation" group.
 
 ### 2018-12-17-updated-2019-01-29
