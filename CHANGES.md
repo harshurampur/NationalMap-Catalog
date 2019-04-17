@@ -2,6 +2,13 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-04-17
+
+* Added `Mobile Black Spot Program - PL Round Funded Base Stations` and `Mobile Black Spot Program - Round 4 Funded Base Stations`.
+* Added `Commonwealth Electoral Divisions (2019)` and `Commonwealth electoral divisions 2018 (CED)`.
+* Disconnected `National Intertidal Digital Elevation Model` from the timeline.
+* Added `Toowoomba` to the Queensland local government group and `Moorabool` to the Victoria local government group.
+
 ### 2019-02-18-updated-2019-04-02
 
 * Added National Datasets -> Framework -> Northern Australia Infrastructure Facility Boundary.
