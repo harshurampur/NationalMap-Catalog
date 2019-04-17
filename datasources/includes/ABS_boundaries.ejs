@@ -115,6 +115,34 @@
             <%- include('includes/censusdata2016', { name: 'State electoral divisions (SED)', layer: '2' }) %>,
             <%- include('includes/censusdata2016', { name: 'Greater capital city statistical areas (GCCSA)', layer: '3' }) %>,
         ]
+    },
+    {
+        type: 'group',
+        name: '2018',
+        items: [
+            {
+                type: 'mvt',
+                name: 'Commonwealth electoral divisions 2018 (CED)',
+                url: 'https://tiles.terria.io/CED_2018/{z}/{x}/{y}.pbf',
+                layer: 'CED_2018',
+                lineColor: '#33f',
+                maximumNativeZoom: 12,
+                minimumZoom: 0,
+                description: "The ASGS Commonwealth Electoral Divisions are an ABS approximation of Australian Electoral Commission (AEC) electoral division boundaries. An AEC electoral division boundary is an area legally prescribed for the purpose of returning one member to the House of Representatives, Australia's Federal Lower House of Parliament.\n\nThe 2018 Australian Statistical Geography Standard (ASGS) edition of the Commonwealth Electoral Divisions (CED) structure includes updates to the definition of electoral divisions that have occurred prior to 31 July 2018. This updates the 2017 edition of Commonwealth Electoral Divisions released in the [ASGS Volume 3 - Non ABS Structures, July 2017](https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202017~Main%20Features~Overview~1). It includes gazetted changes to electoral divisions in Victoria, Queensland, South Australia, Tasmania and the Australian Capital Territory.",
+                info: [
+                    {
+                        name: 'Licence',
+                        content: '[Create Commons Attribution 4.0 International](https://www.abs.gov.au/websitedbs/D3310114.nsf/Home/%A9+Copyright?opendocument)'
+                    },
+                    {
+                        name: 'More information',
+                        content: '[1270.0.55.003 - Australian Statistical Geography Standard (ASGS): Volume 3 - Non ABS Structures, July 2018  ](https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202018~Main%20Features~Commonwealth%20Electoral%20Divisions%20(CEDs)~3)',
+                    }
+                ],
+                dataUrl: 'https://www.abs.gov.au/ausstats/subscriber.nsf/log?openagent&1270055003_ced_2018_aust_shp.zip&1270.0.55.003&Data%20Cubes&BF4D23C712D492CFCA2582F600180556&0&July%202018&28.08.2018&Latest',
+                dataUrlType: 'direct'
+            }
+        ]
     }
     ]
 }
