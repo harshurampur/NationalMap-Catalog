@@ -2,9 +2,10 @@
 Change Log
 ==========
 
-### Next release
+### 2019-02-18-updated-2019-05-07
 
 * Added State Electoral Divisions 2018 layer.
+* Enabled Export for the Sentinel 2A/2B layers.
 
 ### 2019-02-18-updated-2019-04-17
 
