@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-05-13
+
+* Removed the Broadband layers from the catalog as they no longer exist on the server.
+
 ### 2019-02-18-updated-2019-05-07
 
 * Added State Electoral Divisions 2018 layer.
