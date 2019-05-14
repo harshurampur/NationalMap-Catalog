@@ -647,7 +647,22 @@
                 }
 
               ]
-            }
+            },
+            {
+              "name": "GSKY",
+              "type": "group",
+              "items": [
+                {
+                  "name": "DEA Water Observation Feature Layer",
+                  "type": "wms",
+                  "layers": "wofs",
+                  "url": "http://gsky.nci.org.au/ows/dea",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                }
+              ]
+            },
           ],
           "name": "Surface Water and Marine",
           "type": "group"
