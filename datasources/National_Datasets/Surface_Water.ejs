@@ -1,5 +1,6 @@
         {
           "items": [
+            <%- include('includes/dga_org', { name: 'Australian Institute of Marine Science', org: 'australian-institute-of-marine-science' }) %>,
             {
               "name": "Individual Hydrology and Marine Layers",
               "type": "group",
@@ -299,7 +300,9 @@
                       "type": "wms",
                       "useOwnClock": true,
                       "ignoreUnknownTileErrors": true,
-                      "opacity": 1
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_filtered_summary"
                     },
                     {
                       "id": "495a59f9",
@@ -309,7 +312,9 @@
                       "type": "wms",
                       "useOwnClock": true,
                       "ignoreUnknownTileErrors": true,
-                      "opacity": 1
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_summary_wet"
                     },
                     {
                       "id": "9ea33576",
@@ -319,7 +324,9 @@
                       "type": "wms",
                       "useOwnClock": true,
                       "ignoreUnknownTileErrors": true,
-                      "opacity": 1
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_summary_clear"
                     },
                     {
                       "id": "39df208d",
@@ -339,7 +346,9 @@
                       "type": "wms",
                       "useOwnClock": true,
                       "ignoreUnknownTileErrors": true,
-                      "opacity": 1
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_filtered_summary_confidence"
                     }
                   ]
                 },
@@ -633,11 +642,28 @@
                   "type": "wms",
                   "useOwnClock": true,
                   "ignoreUnknownTileErrors": true,
-                  "opacity": 1
+                  "opacity": 1,
+                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                  "linkedWcsCoverage": "mangrove_cover"
                 }
 
               ]
-            }
+            },
+            {
+              "name": "GSKY",
+              "type": "group",
+              "items": [
+                {
+                  "name": "DEA Water Observation Feature Layer",
+                  "type": "wms",
+                  "layers": "wofs",
+                  "url": "http://gsky.nci.org.au/ows/dea",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                }
+              ]
+            },
           ],
           "name": "Surface Water and Marine",
           "type": "group"
