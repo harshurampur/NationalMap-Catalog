@@ -2,6 +2,13 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-05-20
+
+* Re-added the Broadband layers because they have been re-added to the server. Add "Last Updated August 2015" after the name of each.
+* Moved the State of the Environment 2016 group from Data Providers to National Datasets -> Environment.
+* Moved the ABS Statistical Boundaries group from Data Providers to National Datasets -> Statistical Boundaries.
+* Add WCS Export capability for several layers in the Land, Satellite Imagery, and Surface Water groups.
+
 ### 2019-02-18-updated-2019-05-13
 
 * Removed the Broadband layers from the catalog as they no longer exist on the server.
