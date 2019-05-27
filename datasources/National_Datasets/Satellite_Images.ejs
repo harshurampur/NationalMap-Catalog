@@ -37,7 +37,7 @@
               ]
             },
             {
-              "name": "Satellite Images 25m pixels",
+              "name": "Satellite Images 25m pixels - daily",
               "type": "group",
               "items": [
                 {
@@ -142,6 +142,90 @@
                     }
                   ]
                 },
+              ]
+            },
+            {
+              "name": "Satellite Images 25m pixels - 16 day composite",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Hill shadows removed",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "2436cf84",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_nbart_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "2f1e3d2d",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_nbart_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "5cc3b401",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_nbart_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "2cade3f2",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_nbar_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "5bf4ce52",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_nbar_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "be67777f",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_nbar_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Satellite Images 25m pixels",
+              "type": "group",
+              "items": [
                 {
                   "name": "Yearly average image",
                   "type": "group",

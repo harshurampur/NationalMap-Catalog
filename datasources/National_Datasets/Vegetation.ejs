@@ -25,18 +25,18 @@
               ]
             },
             {
-              "name": "Fractional Cover Percentiles",
+              "name": "Fractional Cover",
               "type": "group",
               "preserveOrder": true,
               "items": [
                 {
                   "type": "group",
-                  "name": "Fractional Cover Percentiles Annual",
+                  "name": "Yearly Summaries",
                   "preserveOrder": true,
                   "items": [
                     {
                         "id": "bcfefc7b",
-                        "name": "Fractional Cover Percentiles - Median",
+                        "name": "Median",
                         "layers": "fcp_rgb",
                         "url": "https://ows.services.dea.ga.gov.au",
                         "type": "wms",
@@ -45,7 +45,7 @@
                     },
                     {
                         "id": "348f6c87",
-                        "name": "Fractional Cover Percentiles - Green Vegetation",
+                        "name": "Green Vegetation",
                         "layers": "fcp_green_veg",
                         "url": "https://ows.services.dea.ga.gov.au",
                         "type": "wms",
@@ -54,7 +54,7 @@
                     },
                     {
                         "id": "e3bb2e0d",
-                        "name": "Fractional Cover Percentiles - Non-Green Vegetation",
+                        "name": "Non-Green Vegetation",
                         "layers": "fcp_non_green_veg",
                         "url": "https://ows.services.dea.ga.gov.au",
                         "type": "wms",
@@ -63,7 +63,7 @@
                     },
                     {
                         "id": "561d50b6",
-                        "name": "Fractional Cover Percentiles - Bare Soil",
+                        "name": "Bare Ground",
                         "layers": "fcp_bare_ground",
                         "url": "https://ows.services.dea.ga.gov.au",
                         "type": "wms",
@@ -73,13 +73,13 @@
                   ]
                 },
                 {
-                  "name": "Fractional Cover Percentiles Seasonal",
+                  "name": "Seasonal",
                   "type": "group",
                   "preserveOrder": true,
                   "items": [
                     {
                         "id": "80df5d0b",
-                        "name": "Fractional Cover Percentiles Seasonal - Median",
+                        "name": "Median",
                         "type": "wms",
                         "layers": "fcp_seasonal_rgb",
                         "url": "https://ows.services.dea.ga.gov.au",
@@ -88,7 +88,7 @@
                     },
                     {
                         "id": "c3847ddb",
-                        "name": "Fractional Cover Percentiles Seasonal - Green Vegetation",
+                        "name": "Green Vegetation",
                         "type": "wms",
                         "layers": "fcp_seasonal_green_veg",
                         "url": "https://ows.services.dea.ga.gov.au",
@@ -97,7 +97,7 @@
                     },
                     {
                         "id": "815134b7",
-                        "name": "Fractional Cover Percentiles Seasonal - Non-Green Vegetation",
+                        "name": "Non-Green Vegetation",
                         "type": "wms",
                         "layers": "fcp_seasonal_non_green_veg",
                         "url": "https://ows.services.dea.ga.gov.au",
@@ -106,7 +106,7 @@
                     },
                     {
                         "id": "80427f06",
-                        "name": "Fractional Cover Percentiles Seasonal - Bare Soil",
+                        "name": "Bare Ground",
                         "type": "wms",
                         "layers": "fcp_seasonal_bare_ground",
                         "url": "https://ows.services.dea.ga.gov.au",
@@ -114,6 +114,23 @@
                         "opacity": 1
                      }
                   ]
+                }
+              ]
+            },
+            {
+              "name": "Mangroves",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Mangrove canopy cover",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "layers": "mangrove_cover",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1,
+                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                  "linkedWcsCoverage": "mangrove_cover"
                 }
               ]
             }
