@@ -468,18 +468,7 @@
               "description": "<% include includes/DigitalEarthAustralia-description %>",
               "preserveOrder": true,
               "items": [
-                {
-                  "id": "625552e5",
-                  "name": "National Intertidal Digital Elevation Model",
-                  "type": "wms",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "layers": "NIDEM",
-                  "linkedWcsCoverage": "NIDEM",
-                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                  "useOwnClock": true,
-                  "availableDimensions": [],
-                  "opacity": 1
-                },
+                <% include IntertidalElevation %>,
                 {
                   "id": "9f6cb4a8",
                   "name": "High Tide Low Tide Composite 25m Tidal Composite (High Tide)",
@@ -624,19 +613,7 @@
                     }
                   ]
                 },
-
-                {
-                  "name": "Mangrove Canopy Cover 25m",
-                  "url": "https://ows.services.dea.ga.gov.au/",
-                  "layers": "mangrove_cover",
-                  "type": "wms",
-                  "useOwnClock": true,
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1,
-                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                  "linkedWcsCoverage": "mangrove_cover"
-                }
-
+                <% include MangroveCanopyCover %>
               ]
             },
             {
