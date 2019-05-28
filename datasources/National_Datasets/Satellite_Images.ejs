@@ -91,7 +91,13 @@
                       "shareKeys": [
                         "0de1b493"
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "name": "Hill shadows included",
+                  "type": "group",
+                  "items": [
                     {
                       "id": "0d7e458a",
                       "name": "Landsat 5 satellite images",
@@ -185,6 +191,12 @@
                       "useOwnClock": true,
                       "opacity": 1
                     },
+                  ]
+                },
+                {
+                  "name": "Hill shadows included",
+                  "type": "group",
+                  "items": [
                     {
                       "id": "2cade3f2",
                       "name": "Landsat 8 satellite images",
@@ -281,15 +293,21 @@
                   ]
                 },
                 {
-                  "id": "0711af5e",
                   "name": "Barest Earth",
-                  "url": "https://ows.services.dea.ga.gov.au/",
-                  "layers": "ls8_barest_earth_mosaic",
-                  "type": "wms",
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1,
-                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                  "linkedWcsCoverage": "ls8_barest_earth_mosaic"
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "0711af5e",
+                      "name": "Imagery",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "layers": "ls8_barest_earth_mosaic",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ls8_barest_earth_mosaic"
+                    }
+                  ]
                 }
               ]
             }
