@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-05-28
+
+* New satellite imagery from DEA added to catalogue.
+
 ### 2019-02-18-updated-2019-05-20
 
 * Re-added the Broadband layers because they have been re-added to the server. Add "Last Updated August 2015" after the name of each.
