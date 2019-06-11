@@ -11,31 +11,67 @@
                   "type": "group",
                   "items": [
                     {
-                      "id": "351222a9",
-                      "name": "Sentinel 2A satellite images",
-                      "layers": "s2a_nrt_granule_nbar_t",
-                      "url": "https://ows.services.dea.ga.gov.au",
-                      "type": "wms",
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "s2a_nrt_granule_nbar_t",
-                      "featureTimesProperty": "data_available_for_dates"
-                    },
-                    {
-                      "id": "afc9f4b0",
-                      "name": "Sentinel 2B satellite images",
-                      "layers": "s2b_nrt_granule_nbar_t",
-                      "url": "https://ows.services.dea.ga.gov.au",
-                      "type": "wms",
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "s2b_nrt_granule_nbar_t",
-                      "featureTimesProperty": "data_available_for_dates"
+		      "name": "Sentinel 2 Near Real-Time",
+                      "type": "group",
+                      "items": [
+                        {
+                      	  "id": "351222a9",
+                      	  "name": "Sentinel 2A satellite images",
+                      	  "layers": "s2a_nrt_granule_nbar_t",
+                      	  "url": "https://ows.services.dea.ga.gov.au",
+                          "type": "wms",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "s2a_nrt_granule_nbar_t",
+                          "featureTimesProperty": "data_available_for_dates"
+                    	},
+                    	{
+                      	  "id": "afc9f4b0",
+                      	  "name": "Sentinel 2B satellite images",
+                      	  "layers": "s2b_nrt_granule_nbar_t",
+                      	  "url": "https://ows.services.dea.ga.gov.au",
+                      	  "type": "wms",
+                      	  "ignoreUnknownTileErrors": true,
+                      	  "opacity": 1,
+                      	  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      	  "linkedWcsCoverage": "s2b_nrt_granule_nbar_t",
+                      	  "featureTimesProperty": "data_available_for_dates"
+                    	}	
+                      ]
+               	    },
+		    {
+                      "name": "Sentinel 2 Definitive",
+                      "type": "group",
+                      "items": [
+                        {
+                          "id": "e3ab5938",
+                          "name": "Sentinel 2A satellite images",
+                          "layers": "s2a_ard_granule_nbar_t",
+                          "url": "https://ows.services.dea.ga.gov.au",
+                          "type": "wms",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "s2a_ard_granule_nbar_t",
+                          "featureTimesProperty": "data_available_for_dates"
+                        },
+                        {
+                          "id": "268065ec",
+                          "name": "Sentinel 2B satellite images",
+                          "layers": "s2b_ard_granule_nbar_t",
+                          "url": "https://ows.services.dea.ga.gov.au",
+                          "type": "wms",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "s2b_ard_granule_nbar_t",
+                          "featureTimesProperty": "data_available_for_dates"
+                        }
+                      ] 
                     }
-                  ]
-                }
+		  ]
+	        }
               ]
             },
             {
