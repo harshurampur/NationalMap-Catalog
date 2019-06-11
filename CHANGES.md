@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-06-11
+
+* Add new Sentinel-2 A/B Definitive satellite layers from Digital Earth Australia.
+
 ### 2019-02-18-updated-2019-05-28
 
 * New satellite imagery from DEA added to catalogue.
