@@ -2,6 +2,33 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-05-28
+
+* New satellite imagery from DEA added to catalogue.
+
+### 2019-02-18-updated-2019-05-20
+
+* Re-added the Broadband layers because they have been re-added to the server. Add "Last Updated August 2015" after the name of each.
+* Moved the State of the Environment 2016 group from Data Providers to National Datasets -> Environment.
+* Moved the ABS Statistical Boundaries group from Data Providers to National Datasets -> Statistical Boundaries.
+* Add WCS Export capability for several layers in the Land, Satellite Imagery, and Surface Water groups.
+
+### 2019-02-18-updated-2019-05-13
+
+* Removed the Broadband layers from the catalog as they no longer exist on the server.
+
+### 2019-02-18-updated-2019-05-07
+
+* Added State Electoral Divisions 2018 layer.
+* Enabled Export for the Sentinel 2A/2B layers.
+
+### 2019-02-18-updated-2019-04-17
+
+* Added `Mobile Black Spot Program - PL Round Funded Base Stations` and `Mobile Black Spot Program - Round 4 Funded Base Stations`.
+* Added `Commonwealth Electoral Divisions (2019)` and `Commonwealth electoral divisions 2018 (CED)`.
+* Disconnected `National Intertidal Digital Elevation Model` from the timeline.
+* Added `Toowoomba` to the Queensland local government group and `Moorabool` to the Victoria local government group.
+
 ### 2019-02-18-updated-2019-04-02
 
 * Added National Datasets -> Framework -> Northern Australia Infrastructure Facility Boundary.
