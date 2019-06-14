@@ -189,6 +189,30 @@
               ]
             },
             {
+              "name": "Satellite Images Multi-Sensor Blended - daily",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Hill shadows removed",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "b7c1ecb3",
+                      "name": "Landsat and Sentinel-2 Blended Service",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "blend_sentinel2_landsat_nbart_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "blend_sentinel2_landsat_nbart_daily",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "name": "Satellite Images 25m pixels - 16 day composite",
               "type": "group",
               "items": [
