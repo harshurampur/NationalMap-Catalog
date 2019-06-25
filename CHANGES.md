@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### 2019-02-18-updated-2019-06-14
+### 2019-02-18-updated-2019-06-25
 
 * Add new Multi sensor blended service ( Landsat and Sentinel 2 ) layer from GSKY
 
