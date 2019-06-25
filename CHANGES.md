@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-06-14
+
+* Add new Multi sensor blended service ( Landsat and Sentinel 2 ) layer from GSKY
+
 ### 2019-02-18-updated-2019-06-11
 
 * Add new Sentinel-2 A/B Definitive satellite layers from Digital Earth Australia.
