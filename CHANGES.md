@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-07-11
+
+* Updated the URL of the Victorian Government CKAN server, and changed it to group by organisation instead of by CKAN group.
+
 ### 2019-02-18-updated-2019-06-25
 
 * Add new Multi sensor blended service ( Landsat and Sentinel 2 ) layer from GSKY
