@@ -2,6 +2,9 @@
 Change Log
 ==========
 
+### 2019-02-18-updated-2019-07-24
+* Added featureTimesProperties for Landsat and Sentinel-2 Blended Service
+
 ### 2019-02-18-updated-2019-07-11
 
 * Updated the URL of the Victorian Government CKAN server, and changed it to group by organisation instead of by CKAN group.
