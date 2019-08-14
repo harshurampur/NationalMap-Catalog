@@ -2,7 +2,7 @@
 Change Log
 ==========
 
-### Next
+### 2019-08-14
 
 * Added Australia Post locations under `Habitation`
 * Added ASGS Remotness Areas for years 2011 & 2016 under `National Boundaries`
