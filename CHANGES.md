@@ -4,6 +4,7 @@ Change Log
 
 ### Next
 
+* Added Australia Post locations under `Habitation`
 * Added ASGS Remotness Areas for years 2011 & 2016 under `National Boundaries`
 * Added `Bathymetry` group to `Surface Water and Marine`
 * Removed Broadband layers from `Communications`
