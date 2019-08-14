@@ -500,6 +500,27 @@
                 }
               ]
             },
+            {
+              "name": "Bathymetry",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Geoscience Australia Marine Data (WMS)",
+                  "type": "wms-getCapabilities",
+                  "url": "http://marine.ga.gov.au/geoserver/marine/wms",
+                  "dataUrl": "http://marine.ga.gov.au/geoserver/marine/wfs",
+                  "dataUrlType": "wfs-getCapabilities",
+                  "itemProperties": {
+                    "linkedWcsUrl": "http://marine.ga.gov.au/geoserver/marine/wcs"
+                  }
+                },
+                {
+                  "name": "Geoscience Australia Marine Data (WFS)",
+                  "type": "wfs-getCapabilities",
+                  "url": "http://marine.ga.gov.au/geoserver/marine/wfs"
+                }
+              ]
+            }
           ],
           "name": "Surface Water and Marine",
           "type": "group"

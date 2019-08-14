@@ -2,6 +2,17 @@
 Change Log
 ==========
 
+### 2019-08-14
+
+* Added Australia Post locations under `Habitation`
+* Added ASGS Remotness Areas for years 2011 & 2016 under `National Boundaries`
+* Added `Bathymetry` group to `Surface Water and Marine`
+* Removed Broadband layers from `Communications`
+
+### 2019-02-18-updated-2019-08-13
+
+* Added GSKY blended True Colour and False Colour layer, removed old
+
 ### 2019-02-18-updated-2019-07-24
 * Added featureTimesProperties for Landsat and Sentinel-2 Blended Service
 
