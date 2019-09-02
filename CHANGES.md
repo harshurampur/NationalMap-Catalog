@@ -2,6 +2,10 @@
 Change Log
 ==========
 
+### Next
+
+* Updated the URL of Tasmanian Government LIST services to use HTTPS and MapServer rather than ImageServer endpoints
+
 ### 2019-08-14
 
 * Added Australia Post locations under `Habitation`
